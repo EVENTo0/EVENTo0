@@ -1,0 +1,45 @@
+// EVENTO - الصفحة الرئيسية التسويقية + هيكل الموقع العام
+
+import { useTranslation } from "react-i18next"; import { Button } from "@/components/ui/button"; import { Card, CardContent } from "@/components/ui/card"; import Link from "next/link";
+
+export default function LandingPage() { const { t } = useTranslation();
+
+const services = [ { title: t("websites"), desc: t("services.web"), link: "/#web" }, { title: t("design"), desc: t("services.design"), link: "/#design" }, { title: t("ai"), desc: t("services.ai"), link: "/#ai" }, { title: t("import"), desc: t("services.import"), link: "/#import" }, ];
+
+return ( <div className="min-h-screen flex flex-col"> {/* Navbar */} <nav className="bg-white border-b shadow-sm p-4 flex justify-between items-center"> <Link href="/" className="text-xl font-bold">EVENTO</Link> <div className="flex gap-4 items-center"> <Link href="/pricing">{t("pricing")}</Link> <Link href="/portfolio">{t("portfolio")}</Link> <Link href="/ideas">{t("ideas")}</Link> <Link href="/auth" className="font-medium">{t("login")}</Link> </div> </nav>
+
+{/* Hero */}
+  <section className="flex-1 flex flex-col justify-center items-center text-center p-8 space-y-4">
+    <h1 className="text-4xl md:text-5xl font-bold">{t("hero.title")}</h1>
+    <p className="text-muted-foreground max-w-xl">{t("hero.subtitle")}</p>
+    <Link href="/auth">
+      <Button size="lg" className="mt-4">{t("cta.start")}</Button>
+    </Link>
+  </section>
+
+  {/* Services */}
+  <section className="p-6 max-w-6xl mx-auto space-y-6" id="services">
+    <h2 className="text-3xl font-bold text-center">{t("our_services")}</h2>
+    <div className="grid md:grid-cols-4 gap-6">
+      {services.map((s, i) => (
+        <Card key={i}><CardContent className="p-4 space-y-2">
+          <h3 className="text-xl font-semibold">{s.title}</h3>
+          <p className="text-sm text-muted-foreground">{s.desc}</p>
+          <Link href={s.link} className="text-blue-600 text-sm underline">{t("learn_more")}</Link>
+        </CardContent></Card>
+      ))}
+    </div>
+  </section>
+
+  {/* Footer */}
+  <footer className="bg-gray-50 mt-10 border-t p-4 text-center text-sm text-muted-foreground">
+    <p>© {new Date().getFullYear()} EVENTO. {t("rights_reserved")}</p>
+    <div className="flex justify-center gap-4 mt-2">
+      <Link href="/privacy">{t("privacy_policy")}</Link>
+      <Link href="/terms">{t("terms")}</Link>
+    </div>
+  </footer>
+</div>
+
+); }
+
