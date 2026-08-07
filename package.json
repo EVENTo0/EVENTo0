@@ -1,0 +1,27 @@
+{
+  "name": "evento0",
+  "version": "1.0.0",
+  "description": "**EVENTO** هو نظام متكامل لإدارة وتطوير المشاريع التجارية باستخدام الذكاء الاصطناعي، يقدم خدمات رقمية متقدمة للسوق المحلي تشمل:",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EVENTo0/EVENTo0.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EVENTo0/EVENTo0/issues"
+  },
+  "homepage": "https://github.com/EVENTo0/EVENTo0#readme",
+  "dependencies": {
+    "next": "^14.2.35",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
