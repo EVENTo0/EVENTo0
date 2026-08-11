@@ -104,27 +104,50 @@ Applied only to the development branch:
 - `20260811230010_evento_contract_review_evidence_v1`
 - `20260811230510_evento_contract_operator_visibility_v1`
 
-### R3 — Security / negative tests — IN PROGRESS, CORE FLOW PROVEN
+### R3 — Security / negative tests — COMPLETE FOR TEST BRANCH
 
-Rollback-only E2E evidence currently proves:
+Rollback-only E2E and negative authorization evidence proves:
 
 - wrong customer quote acceptance is blocked;
+- cross-user quote/contract/payment reads are blocked by RLS;
+- anonymous users cannot read commercial quote/contract/payment rows;
+- direct authenticated execution of privileged quote/contract/fulfillment RPCs is blocked;
 - payment before contract acceptance is blocked;
 - contract draft cannot start already approved for use;
 - unreviewed contract cannot be sent;
 - owner review evidence is recorded before send;
+- currency mismatch is blocked;
+- amount mismatch is blocked;
 - payment verification does not start build;
 - human authorization is required before build queue promotion;
-- synthetic data is rolled back.
+- all synthetic test rows are rolled back.
 
 Legacy authenticated execution of `start_project_workflow` and `approve_project_scope` is revoked in the development branch because the active mobile design uses the authenticated `workflow-transition` Edge Function.
 
-Still required before R3 closes:
+Security Advisor now reports no high-risk warning introduced by the reconciled commercial bridge. Remaining WARN items are limited to the intentional anonymous demo/request layer and remain a separate Production auth-policy decision. Performance Advisor reports only INFO-level unused-index observations on the empty development branch plus the Auth connection-allocation advisory; no actionable bridge performance warning remains.
 
-- authenticated cross-user SELECT tests using real user JWT contexts;
-- anonymous commercial-transition tests through Edge Functions;
-- amount/currency mismatch provider tests;
-- final Security + Performance Advisor review with no unresolved high-risk blocker.
+### Mobile reconciliation — CI GREEN
+
+Stacked mobile Draft PR #5 targets `feat/evento-control-plane-v1` and keeps the parent mobile PR isolated.
+
+Verified workflow run: `31545455807`
+
+- Flutter 3.44.9 install: success
+- static analysis: success
+- reconciled workflow/quote/contract tests: success
+- contract Edge Function boundary checks: success
+- isolated Android APK build: success
+- artifact upload: success
+
+Artifact:
+
+- name: `evento-runtime-reconciliation-apk`
+- artifact ID: `9122449791`
+- source commit: `9c346781e20621eac7d697ce59bbd131a8ec2a72`
+- artifact digest: `sha256:4c6c1a3bb0606f135f2cb930cd22618b1df24ee44ab0a2395d18eb19629ae6eb`
+- expiration: 2026-08-18
+
+The APK points to the isolated Supabase development branch, not Production.
 
 ### R4 — Stripe test payment/build proof — NEXT
 
@@ -132,7 +155,7 @@ Required proof:
 
 `accepted reviewed contract -> Stripe test Checkout -> signed test webhook -> project_payments=paid -> project_build_queue remains pending_payment -> owner fulfillment authorization -> project_build_queue=queued`
 
-No live Stripe charging is part of R4.
+Browser redirects never prove payment. No live Stripe charging is part of R4.
 
 ### R5 — Real Vercel branch Preview — PENDING
 
@@ -144,15 +167,9 @@ Phone verification must cover Arabic/English rendering, account session, own-pro
 
 Tie one exact build and Preview identity to customer feedback, revision classification, included-revision accounting, change-order boundary, delivery package, customer acceptance and separate owner release authorization.
 
-## Mobile reconciliation
-
-A stacked mobile branch/PR is used so EVENTO Control Plane V1 remains isolated.
-
-Mobile target flow:
+## Mobile target flow
 
 `Quote Center -> customer quote acceptance -> Contract Center draft/review/send -> customer contract acceptance -> payment -> verified payment -> human fulfillment authorization`
-
-The isolated mobile build points to the Supabase development branch, not Production.
 
 ## Deferred Production actions
 
