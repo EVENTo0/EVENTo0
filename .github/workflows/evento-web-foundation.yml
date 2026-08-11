@@ -19,9 +19,15 @@ jobs:
         run: npm install --no-audit --no-fund
       - name: Production build
         run: npm run build
-      - name: Require lockfile before recovery PR leaves Draft
+      - name: Capture generated recovery lockfile
+        uses: actions/upload-artifact@v4
+        with:
+          name: evento-recovery-package-lock
+          path: package-lock.json
+          if-no-files-found: error
+      - name: Require reviewed committed lockfile before merge
         run: |
-          test -f package-lock.json || {
-            echo 'package-lock.json must be generated, reviewed and committed before this PR is ready to merge.'
+          git ls-files --error-unmatch package-lock.json >/dev/null 2>&1 || {
+            echo 'package-lock.json was generated and uploaded as an artifact. Review and commit it before this PR can leave Draft.'
             exit 1
           }
