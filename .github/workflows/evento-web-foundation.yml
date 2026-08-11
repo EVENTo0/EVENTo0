@@ -15,9 +15,13 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20.19.0'
-          cache: npm
-          cache-dependency-path: package-lock.json
-      - name: Install dependencies
-        run: npm ci
+      - name: Install pinned runtime dependencies for recovery build
+        run: npm install --no-audit --no-fund
       - name: Production build
         run: npm run build
+      - name: Require lockfile before recovery PR leaves Draft
+        run: |
+          test -f package-lock.json || {
+            echo 'package-lock.json must be generated, reviewed and committed before this PR is ready to merge.'
+            exit 1
+          }
