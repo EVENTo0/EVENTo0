@@ -1,5 +1,5 @@
 {
-  "version": "2026-08-12-v3",
+  "version": "2026-08-12-v4",
   "canonicalRepository": "EVENTo0/EVENTo0",
   "supabaseProjectRef": "jaxhaiaftpegcodkzaus",
   "supabaseDevelopmentBranchRef": "zgyovnqjmaognsjyylvk",
@@ -35,6 +35,15 @@
     "preview": "preview is never production or delivery acceptance",
     "release": "customer acceptance never grants merge/deploy/store/domain release authority"
   },
+  "phaseStatus": {
+    "R0_contractCapture": "complete",
+    "R1_isolatedSupabase": "complete",
+    "R2_additiveBridge": "complete-test-branch",
+    "R3_securityNegativeTests": "complete-test-branch",
+    "R4_stripeTestProof": "next",
+    "R5_vercelPreview": "pending",
+    "R6_previewRevisionDelivery": "pending"
+  },
   "branchEvidence": {
     "migrationBaselineThrough": "20260811213155_fix_evento_payment_event_status_v1",
     "reconciliationMigrations": [
@@ -45,13 +54,21 @@
       "20260811230510_evento_contract_operator_visibility_v1"
     ],
     "e2eRollbackSmoke": "passed",
+    "negativeAuthorizationSuite": "passed",
     "crossUserQuoteAcceptance": "blocked",
+    "crossUserCommercialReads": "blocked",
+    "anonymousCommercialReads": "blocked",
+    "directAuthenticatedPrivilegedRpcExecution": "blocked",
+    "paymentCurrencyMismatch": "blocked",
+    "paymentAmountMismatch": "blocked",
     "paymentBeforeContract": "blocked",
     "contractStartsReviewRequired": true,
     "unreviewedContractSend": "blocked",
     "contractReviewEvidence": "required",
     "paidBeforeHumanAuthorizationBuildState": "pending_payment",
     "afterHumanAuthorizationBuildState": "queued",
+    "securityAdvisorHighRiskBridgeWarnings": 0,
+    "performanceAdvisorActionableBridgeWarnings": 0,
     "productionRowsMutated": false
   },
   "writeGates": {
