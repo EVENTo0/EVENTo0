@@ -1,0 +1,47 @@
+{
+  "version": "2026-08-12-v1",
+  "canonicalRepository": "EVENTo0/EVENTo0",
+  "supabaseProjectRef": "jaxhaiaftpegcodkzaus",
+  "mode": "reconcile-live-before-new-gates",
+  "liveRuntime": {
+    "request": "project_requests",
+    "analysis": "request_analyses",
+    "events": "project_request_events",
+    "workflow": "project_workflows",
+    "quote": "project_quotes",
+    "payment": "project_payments",
+    "buildQueue": "project_build_queue"
+  },
+  "recoveryModel": {
+    "quote": ["quotes", "quote_versions", "quote_items", "proposal_acceptances"],
+    "contract": ["contract_agreements", "contract_versions", "contract_acceptances"],
+    "payment": ["payment_orders", "payment_attempts", "payment_events", "refunds"],
+    "fulfillment": ["customer_projects", "project_workspaces", "project_agent_runs"],
+    "preview": ["project_preview_versions", "project_preview_feedback"],
+    "delivery": ["project_revision_cases", "project_delivery_packages", "project_delivery_acceptances", "project_release_authorizations"]
+  },
+  "commercialTruth": {
+    "quote": "live project_quotes until versioned quote reconciliation is proven",
+    "payment": "live project_payments updated only from verified provider events",
+    "buildAuthorization": "verified payment is necessary but never sufficient; human fulfillment authorization remains separate",
+    "preview": "preview is never production or delivery acceptance",
+    "release": "customer acceptance never grants merge/deploy/store/domain release authority"
+  },
+  "writeGates": {
+    "productionSchemaMutation": false,
+    "liveBilling": false,
+    "automaticAgentBuild": false,
+    "automaticRelease": false
+  },
+  "activationSequence": [
+    "capture-live-contract",
+    "create-isolated-supabase-test-environment",
+    "apply-additive-reconciliation-migrations",
+    "run-negative-auth-and-rls-tests",
+    "prove-request-to-paid-build-queue",
+    "prove-real-vercel-branch-preview",
+    "prove-preview-feedback-revision-delivery",
+    "owner-review",
+    "consider-production-promotion"
+  ]
+}
