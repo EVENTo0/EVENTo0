@@ -30,13 +30,16 @@ jobs:
           set -euo pipefail
           test -f config/runtime-reconciliation.json
           test -f docs/RUNTIME_RECONCILIATION_SPRINT.md
+          test -f docs/verification/2026-08-12-runtime-reconciliation-branch.md
           test -f supabase/review/runtime_reconciliation_preflight.sql
           test -f supabase/migrations/20260811225144_evento_runtime_reconciliation_bridge_v1.sql
           test -f supabase/migrations/20260811225244_evento_runtime_reconciliation_hardening_v1.sql
+          test -f supabase/migrations/20260811225610_evento_internalize_fulfillment_authorization_v1.sql
           test -f supabase/tests/runtime_reconciliation_smoke.sql
           grep -qi "set transaction read only" supabase/review/runtime_reconciliation_preflight.sql
           grep -q "accepted_contract_required" supabase/migrations/20260811225144_evento_runtime_reconciliation_bridge_v1.sql
           grep -q "fulfillment_authorization" supabase/migrations/20260811225144_evento_runtime_reconciliation_bridge_v1.sql
+          grep -q "private.project_fulfillment_authorizations" supabase/migrations/20260811225610_evento_internalize_fulfillment_authorization_v1.sql
           grep -q "rollback;" supabase/tests/runtime_reconciliation_smoke.sql
           grep -q '"productionSchemaMutation": false' config/runtime-reconciliation.json
           grep -q '"liveBilling": false' config/runtime-reconciliation.json
