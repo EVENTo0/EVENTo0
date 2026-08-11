@@ -1,5 +1,5 @@
 {
-  "version": "2026-08-12-v2",
+  "version": "2026-08-12-v3",
   "canonicalRepository": "EVENTo0/EVENTo0",
   "supabaseProjectRef": "jaxhaiaftpegcodkzaus",
   "supabaseDevelopmentBranchRef": "zgyovnqjmaognsjyylvk",
@@ -13,6 +13,13 @@
     "payment": "project_payments",
     "buildQueue": "project_build_queue"
   },
+  "recoveryModel": {
+    "quote": "quotes + quote_versions + quote_items + proposal_acceptances",
+    "contract": "contract_agreements + contract_versions + contract_acceptances",
+    "payment": "payment_orders + payment_attempts + payment_events + refunds",
+    "preview": "project_preview_versions + project_preview_feedback",
+    "delivery": "project_delivery_packages + project_delivery_acceptances + project_release_authorizations"
+  },
   "reconciledEvidence": {
     "quoteVersions": "project_quote_versions",
     "quoteAcceptances": "project_quote_acceptances",
@@ -21,9 +28,9 @@
     "fulfillmentAuthorizations": "private.project_fulfillment_authorizations"
   },
   "commercialTruth": {
-    "quote": "project_quotes remains the compatibility header; immutable sent snapshots live in project_quote_versions",
-    "contract": "payment preparation requires an accepted reviewed contract version",
-    "payment": "project_payments remains the compatibility payment summary and only verified provider logic may mark it paid",
+    "quote": "live project_quotes remains the compatibility header; immutable sent snapshots live in project_quote_versions",
+    "contract": "payment preparation requires an accepted reviewed contract version with explicit review evidence",
+    "payment": "project_payments remains the compatibility payment summary and only verified provider events or equivalent verified provider logic may mark it paid",
     "buildAuthorization": "paid does not queue work; an owner/admin/ops fulfillment authorization is required to promote pending_payment to queued",
     "preview": "preview is never production or delivery acceptance",
     "release": "customer acceptance never grants merge/deploy/store/domain release authority"
@@ -33,11 +40,16 @@
     "reconciliationMigrations": [
       "20260811225144_evento_runtime_reconciliation_bridge_v1",
       "20260811225244_evento_runtime_reconciliation_hardening_v1",
-      "20260811225610_evento_internalize_fulfillment_authorization_v1"
+      "20260811225610_evento_internalize_fulfillment_authorization_v1",
+      "20260811230010_evento_contract_review_evidence_v1",
+      "20260811230510_evento_contract_operator_visibility_v1"
     ],
     "e2eRollbackSmoke": "passed",
     "crossUserQuoteAcceptance": "blocked",
     "paymentBeforeContract": "blocked",
+    "contractStartsReviewRequired": true,
+    "unreviewedContractSend": "blocked",
+    "contractReviewEvidence": "required",
     "paidBeforeHumanAuthorizationBuildState": "pending_payment",
     "afterHumanAuthorizationBuildState": "queued",
     "productionRowsMutated": false
