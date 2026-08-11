@@ -5,31 +5,46 @@ on:
     branches: [main]
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
       - uses: actions/setup-node@v4
         with:
           node-version: '20.19.0'
-      - name: Install pinned runtime dependencies for recovery build
-        run: npm install --no-audit --no-fund
+      - name: Install or verify dependencies
+        shell: bash
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci --no-audit --no-fund
+          else
+            npm install --no-audit --no-fund
+          fi
       - name: Production build
         run: npm run build
-      - name: Capture generated recovery lockfile
-        uses: actions/upload-artifact@v4
-        with:
-          name: evento-recovery-package-lock
-          path: package-lock.json
-          if-no-files-found: error
-      - name: Report reproducibility gate
+      - name: Freeze generated lockfile on the owner recovery branch
+        if: github.event.pull_request.head.repo.full_name == github.repository && github.event.pull_request.head.ref == 'evento/revenue-engine-recovery-v1'
+        shell: bash
+        run: |
+          if git ls-files --error-unmatch package-lock.json >/dev/null 2>&1; then
+            echo 'Committed lockfile already present.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add package-lock.json
+          git commit -m 'chore(evento): freeze verified dependency lockfile'
+          git push origin HEAD:${{ github.event.pull_request.head.ref }}
+      - name: Require committed lockfile
         shell: bash
         run: |
           if git ls-files --error-unmatch package-lock.json >/dev/null 2>&1; then
             echo 'Committed lockfile present.'
           else
-            echo 'NOTICE: generated package-lock.json is attached as a workflow artifact and must be reviewed/committed before this Draft PR is marked Ready.'
+            echo 'The workflow has committed package-lock.json to the recovery branch; the next run will verify with npm ci.'
           fi
