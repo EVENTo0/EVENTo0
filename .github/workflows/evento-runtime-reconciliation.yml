@@ -1,0 +1,46 @@
+name: EVENTO Runtime Reconciliation
+
+on:
+  pull_request:
+    branches: [evento/revenue-engine-recovery-v1]
+  push:
+    branches: [evento/runtime-reconciliation-v1]
+
+permissions:
+  contents: read
+
+jobs:
+  reconciliation-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.x'
+          cache: npm
+      - name: Reproducible dependency install
+        run: npm ci --no-audit --no-fund
+      - name: Revenue Engine and reconciliation contract tests
+        run: npm test
+      - name: Production build
+        run: npm run build
+      - name: Require reconciliation evidence files
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f config/runtime-reconciliation.json
+          test -f docs/RUNTIME_RECONCILIATION_SPRINT.md
+          test -f supabase/review/runtime_reconciliation_preflight.sql
+          grep -qi "set transaction read only" supabase/review/runtime_reconciliation_preflight.sql
+          grep -q '"productionSchemaMutation": false' config/runtime-reconciliation.json
+          grep -q '"liveBilling": false' config/runtime-reconciliation.json
+          grep -q '"automaticAgentBuild": false' config/runtime-reconciliation.json
+          grep -q '"automaticRelease": false' config/runtime-reconciliation.json
+      - name: Basic secret hygiene
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git grep -nEI '(sk-ant-[A-Za-z0-9_-]{20,}|sk_live_[A-Za-z0-9]{20,}|rk_live_[A-Za-z0-9]{20,}|sb_secret_[A-Za-z0-9_-]{20,}|github_pat_[A-Za-z0-9_]{20,}|ghp_[A-Za-z0-9]{20,})' -- ':!*.md'; then
+            echo 'Potential production secret found in source.'
+            exit 1
+          fi
