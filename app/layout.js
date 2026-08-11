@@ -1,4 +1,5 @@
 import './globals.css'
+import './quote.css'
 
 export const metadata = {
   title: 'EVENTO Project Development',
