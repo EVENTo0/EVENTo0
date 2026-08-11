@@ -1,0 +1,26 @@
+name: EVENTO Web Foundation
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.x'
+          cache: npm
+      - name: Reproducible dependency install
+        run: npm ci --no-audit --no-fund
+      - name: Revenue Engine contract tests
+        run: npm test
+      - name: Production build
+        run: npm run build
+      - name: Require committed lockfile
+        run: git ls-files --error-unmatch package-lock.json

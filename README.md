@@ -1,43 +1,60 @@
-# EVENTO - إدارة وتطوير المشاريع الذكية
+# EVENTO Project Development — Revenue Engine
 
-**EVENTO** هو نظام متكامل لإدارة وتطوير المشاريع التجارية باستخدام الذكاء الاصطناعي، يقدم خدمات رقمية متقدمة للسوق المحلي تشمل:
+**EVENTO Project Development** is the legal company and commercial parent for the projects, products and client work developed under the EVENTO portfolio.
 
-- إنشاء المواقع والمتاجر الإلكترونية
-- تصميم داخلي وخارجي ذكي
-- تحليل المشاريع والأفكار تلقائيًا
-- تقديم خدمات مخصصة لكل مجال
-- إدارة الطلبات والدفع إلكترونيًا
+This repository is the authoritative GitHub source for the **EVENTO company website / PWA Revenue Engine**.
 
----
+## Primary objective
 
-## الميزات الرئيسية
+Build one evidence-backed business flow:
 
-- ✅ واجهة عربية/إنجليزية احترافية
-- ✅ تسجيل دخول متعدد الأدوار (عميل / مدير)
-- ✅ مساعد ذكي داخل كل مشروع
-- ✅ تحليل وصف المشروع وتوليد أفكار قابلة للبيع
-- ✅ صفحة تسعير ديناميكية مع خيارات الدفع Stripe / Tap
-- ✅ إدارة الطلبات وتقييم العملاء
-- ✅ معرض المشاريع السابقة والأفكار المميزة
+`visitor → customer → project request → AI-assisted scope → reviewed quote → approval → payment → controlled build → phone/web preview → revision → acceptance → delivery → rating → maintenance / upsell`
 
----
+EVENTO should also become the commercialization surface for eligible EVENTO ventures: ready-project catalog, demo/request/license/subscription paths, and ongoing support.
 
-## التقنيات المستخدمة
+## Current stage
 
-- **Next.js** + **React**
-- **Tailwind CSS** + **ShadCN UI**
-- **Supabase** (قاعدة البيانات + التخزين + Auth)
-- **Stripe API**
-- **OpenAI GPT-4 API**
-- **i18next** (دعم اللغات)
+**Recovery → Production Track**
 
----
+The legacy `main` branch contains early EVENTO concept/source material but is not yet a reproducible modern production application. Active recovery work belongs on:
 
-## الإعداد المحلي
+`evento/revenue-engine-recovery-v1`
 
-```bash
-git clone https://github.com/yourusername/evento.git
-cd evento
-cp .env.example .env.local
-npm install
-npm run dev
+Do not treat a mockup, old Vercel deployment or isolated database table as production readiness.
+
+## Connected systems
+
+- Company web source: `EVENTo0/EVENTo0`
+- Company mobile app: `EVENTo0/evento-mobile`
+- Production backend: Supabase `jaxhaiaftpegcodkzaus`
+- Current Vercel project: `evento-empire` (source/framework linkage is part of recovery)
+- Internal engineering/R&D: `EVENTo0/AAA-prompt-empire`
+- Internal phone command center: `EVENTo0/empire-mobile-control-plane`
+
+## Repository isolation
+
+Unrelated products must not be merged into this repository. The film project **الجذر / THE ROOT** was isolated by closing its unmerged PR and preserving its branch for migration to a standalone repository.
+
+EVENTO ventures such as FamilyOS, EVEX, History-Med-1, OCTORIMAL/Al-Andalus and others keep their own authoritative repositories. EVENTO links to, commercializes and orchestrates them; it does not absorb their source code.
+
+## Execution documents
+
+Start here:
+
+- `AGENTS.md` — repository/agent operating contract
+- `docs/LIVE_SYSTEM_AUDIT_2026-08-11.md` — live GitHub/Vercel/Supabase/mobile baseline
+- `docs/REVENUE_ENGINE_MASTER_BACKLOG.md` — sequential Gate 0 → Gate 11 implementation plan
+- `docs/PRODUCTION_READINESS.md` — release/commercial evidence gates
+
+## Technology policy
+
+Use current supported production technology verified from primary documentation. Major framework/SDK/database/payment changes are project-local branches with tests, migration evidence and rollback. New Agents, Skills, MCPs and automation are adopted only when a representative trial demonstrates measurable improvement in speed, quality, security, cost, phone-first operability or time-to-market.
+
+## Safety and approval
+
+- branch/PR-first development;
+- no agent self-approval;
+- no speculative production database mutation;
+- no credentials in source/client bundles;
+- payment fulfillment only after server-side verified payment state;
+- owner review before Production promotion, store publication or sensitive governance changes.
