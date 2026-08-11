@@ -74,12 +74,20 @@ test('quote schema keeps customer prices separate from internal economics', asyn
   assert.doesNotMatch(migration, /grant\s+(select|insert|update|delete|all).*pricing_rules.*authenticated/i)
 })
 
+test('quote ownership and current-version integrity are enforced by composite foreign keys', async () => {
+  const migration = await read('supabase/migrations/20260811_quote_pricing_proposal_foundation.sql')
+  assert.match(migration, /foreign key \(request_id, user_id\)[\s\S]*references public\.project_requests\(id, user_id\)/i)
+  assert.match(migration, /foreign key \(current_version_id, id\)[\s\S]*references public\.quote_versions\(id, quote_id\)/i)
+  assert.match(migration, /foreign key \(quote_version_id, quote_id, request_id, user_id\)[\s\S]*references public\.quote_versions\(id, quote_id, request_id, user_id\)/i)
+})
+
 test('customers cannot mutate quote prices and acceptance binds the exact current version', async () => {
   const migration = await read('supabase/migrations/20260811_quote_pricing_proposal_foundation.sql')
   assert.match(migration, /revoke all on public\.quote_versions from anon, authenticated/i)
   assert.match(migration, /grant select on public\.quote_versions to authenticated/i)
   assert.match(migration, /accept_quote_version/i)
   assert.match(migration, /quote_version_not_current/i)
+  assert.match(migration, /quote_totals_invalid/i)
   assert.match(migration, /scope_not_approved/i)
   assert.match(migration, /quote_expired/i)
   assert.match(migration, /extensions\.digest\(v_quote_payload, 'sha256'\)/i)
