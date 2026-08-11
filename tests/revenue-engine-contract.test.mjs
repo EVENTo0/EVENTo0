@@ -38,12 +38,15 @@ test('customer project writes remain gated until the security migration is appro
   assert.match(env, /EVENTO_REQUEST_WRITE_MODE=disabled/)
 })
 
-test('commercial acceptance has a separate default-off kill switch', async () => {
+test('commercial and contract acceptance use independent default-off kill switches', async () => {
   const actions = await read('app/projects/[id]/actions.js')
   const env = await read('.env.example')
   assert.match(actions, /EVENTO_COMMERCIAL_WRITE_MODE !== 'enabled'/)
   assert.match(actions, /accept_quote_version/)
   assert.match(env, /EVENTO_COMMERCIAL_WRITE_MODE=disabled/)
+  assert.match(actions, /EVENTO_CONTRACT_WRITE_MODE !== 'enabled'/)
+  assert.match(actions, /from\('contract_acceptances'\)/)
+  assert.match(env, /EVENTO_CONTRACT_WRITE_MODE=disabled/)
 })
 
 test('scope review reuses the existing mobile-compatible RPC contract', async () => {
@@ -99,6 +102,52 @@ test('customer quote UI never queries internal economics or pricing rules', asyn
   assert.match(detail, /from\('quote_versions'\)/)
   assert.match(detail, /from\('quote_items'\)/)
   assert.doesNotMatch(detail, /quote_version_economics|pricing_rules|expected_variable_cost|gross_margin/i)
+})
+
+test('Gate 4 contract is bound to the exact accepted quote and current contract version', async () => {
+  const migration = await read('supabase/migrations/20260811_terms_contract_approval_foundation.sql')
+  assert.match(migration, /foreign key \(quote_version_id, quote_id, request_id, user_id\)[\s\S]*references public\.quote_versions\(id, quote_id, request_id, user_id\)/i)
+  assert.match(migration, /foreign key \(current_version_id, id, request_id, user_id, quote_id, quote_version_id\)[\s\S]*references public\.contract_versions\(id, agreement_id, request_id, user_id, quote_id, quote_version_id\)/i)
+  assert.match(migration, /contract_version_not_current/i)
+  assert.match(migration, /accepted_quote_required/i)
+  assert.match(migration, /quote_acceptance_evidence_required/i)
+})
+
+test('Gate 4 requires reviewed terms and immutable hash evidence', async () => {
+  const migration = await read('supabase/migrations/20260811_terms_contract_approval_foundation.sql')
+  assert.match(migration, /legal_review_status.*approved_for_use/is)
+  assert.match(migration, /legal_review_required/i)
+  assert.match(migration, /agreement_sha256/i)
+  assert.match(migration, /extensions\.digest\(v_payload, 'sha256'\)/i)
+  assert.match(migration, /unique \(agreement_id, user_id\)/i)
+  assert.match(migration, /unique \(agreement_version_id, user_id\)/i)
+})
+
+test('Gate 4 elevated trigger functions stay private and are not customer RPCs', async () => {
+  const migration = await read('supabase/migrations/20260811_terms_contract_approval_foundation.sql')
+  assert.match(migration, /create schema if not exists private/i)
+  assert.match(migration, /create or replace function private\.finalize_contract_acceptance\(\)/i)
+  assert.match(migration, /create or replace function private\.after_contract_acceptance\(\)/i)
+  assert.match(migration, /revoke all on function private\.finalize_contract_acceptance\(\) from public, anon, authenticated/i)
+  assert.doesNotMatch(migration, /grant execute on function private\.(finalize_contract_acceptance|after_contract_acceptance).*authenticated/i)
+  assert.doesNotMatch(migration, /create or replace function public\.accept_contract/i)
+})
+
+test('browser can insert only the contract version id, while authoritative acceptance fields remain database-owned', async () => {
+  const migration = await read('supabase/migrations/20260811_terms_contract_approval_foundation.sql')
+  assert.match(migration, /grant insert \(agreement_version_id\) on public\.contract_acceptances to authenticated/i)
+  assert.doesNotMatch(migration, /grant insert on public\.contract_acceptances to authenticated/i)
+  assert.match(migration, /new\.user_id := v_uid/i)
+  assert.match(migration, /new\.quote_version_id := v_agreement\.quote_version_id/i)
+  assert.match(migration, /new\.terms_version := v_version\.terms_version/i)
+})
+
+test('customer contract UI queries only customer-visible contract tables', async () => {
+  const detail = await read('app/projects/[id]/page.js')
+  assert.match(detail, /from\('contract_agreements'\)/)
+  assert.match(detail, /from\('contract_versions'\)/)
+  assert.match(detail, /from\('contract_acceptances'\)/)
+  assert.doesNotMatch(detail, /from\('private\.|service_role|SUPABASE_SERVICE_ROLE_KEY/i)
 })
 
 test('THE ROOT does not re-enter EVENTO runtime source', async () => {
