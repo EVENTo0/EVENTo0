@@ -82,6 +82,7 @@ export default async function DashboardPage({ searchParams }) {
               <div className="progressTrack"><span style={{ width: `${workflow?.progress_percent ?? 10}%` }} /></div>
               {analysis ? <p className="muted">{analysis.summary_ar || analysis.summary}</p> : <p className="muted">التحليل لم يكتمل بعد.</p>}
               <div className="projectMeta"><span>{workflow?.current_stage || 'intake'}</span><span>{analysis?.complexity || 'pending'}</span></div>
+              <Link className="textLink" href={`/projects/${request.id}`}>فتح المشروع ومراجعة النطاق ←</Link>
             </article>
           )
         })}
