@@ -1,7 +1,8 @@
 {
-  "version": "2026-08-12-v1",
+  "version": "2026-08-12-v2",
   "canonicalRepository": "EVENTo0/EVENTo0",
   "supabaseProjectRef": "jaxhaiaftpegcodkzaus",
+  "supabaseDevelopmentBranchRef": "zgyovnqjmaognsjyylvk",
   "mode": "reconcile-live-before-new-gates",
   "liveRuntime": {
     "request": "project_requests",
@@ -12,20 +13,34 @@
     "payment": "project_payments",
     "buildQueue": "project_build_queue"
   },
-  "recoveryModel": {
-    "quote": ["quotes", "quote_versions", "quote_items", "proposal_acceptances"],
-    "contract": ["contract_agreements", "contract_versions", "contract_acceptances"],
-    "payment": ["payment_orders", "payment_attempts", "payment_events", "refunds"],
-    "fulfillment": ["customer_projects", "project_workspaces", "project_agent_runs"],
-    "preview": ["project_preview_versions", "project_preview_feedback"],
-    "delivery": ["project_revision_cases", "project_delivery_packages", "project_delivery_acceptances", "project_release_authorizations"]
+  "reconciledEvidence": {
+    "quoteVersions": "project_quote_versions",
+    "quoteAcceptances": "project_quote_acceptances",
+    "contractVersions": "project_contract_versions",
+    "contractAcceptances": "project_contract_acceptances",
+    "fulfillmentAuthorizations": "private.project_fulfillment_authorizations"
   },
   "commercialTruth": {
-    "quote": "live project_quotes until versioned quote reconciliation is proven",
-    "payment": "live project_payments updated only from verified provider events",
-    "buildAuthorization": "verified payment is necessary but never sufficient; human fulfillment authorization remains separate",
+    "quote": "project_quotes remains the compatibility header; immutable sent snapshots live in project_quote_versions",
+    "contract": "payment preparation requires an accepted reviewed contract version",
+    "payment": "project_payments remains the compatibility payment summary and only verified provider logic may mark it paid",
+    "buildAuthorization": "paid does not queue work; an owner/admin/ops fulfillment authorization is required to promote pending_payment to queued",
     "preview": "preview is never production or delivery acceptance",
     "release": "customer acceptance never grants merge/deploy/store/domain release authority"
+  },
+  "branchEvidence": {
+    "migrationBaselineThrough": "20260811213155_fix_evento_payment_event_status_v1",
+    "reconciliationMigrations": [
+      "20260811225144_evento_runtime_reconciliation_bridge_v1",
+      "20260811225244_evento_runtime_reconciliation_hardening_v1",
+      "20260811225610_evento_internalize_fulfillment_authorization_v1"
+    ],
+    "e2eRollbackSmoke": "passed",
+    "crossUserQuoteAcceptance": "blocked",
+    "paymentBeforeContract": "blocked",
+    "paidBeforeHumanAuthorizationBuildState": "pending_payment",
+    "afterHumanAuthorizationBuildState": "queued",
+    "productionRowsMutated": false
   },
   "writeGates": {
     "productionSchemaMutation": false,
@@ -38,7 +53,8 @@
     "create-isolated-supabase-test-environment",
     "apply-additive-reconciliation-migrations",
     "run-negative-auth-and-rls-tests",
-    "prove-request-to-paid-build-queue",
+    "adapt-mobile-and-web-to-contract-before-payment",
+    "prove-stripe-test-webhook",
     "prove-real-vercel-branch-preview",
     "prove-preview-feedback-revision-delivery",
     "owner-review",
