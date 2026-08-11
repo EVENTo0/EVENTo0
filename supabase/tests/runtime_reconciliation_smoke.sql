@@ -86,7 +86,7 @@ begin
   if not exists(select 1 from public.project_quote_versions where quote_id=v_quote_id) then raise exception 'quote_version_evidence_missing'; end if;
   if not exists(select 1 from public.project_quote_acceptances where quote_id=v_quote_id and user_id=v_customer) then raise exception 'quote_acceptance_evidence_missing'; end if;
   if not exists(select 1 from public.project_contract_acceptances where quote_id=v_quote_id and user_id=v_customer) then raise exception 'contract_acceptance_evidence_missing'; end if;
-  if not exists(select 1 from public.project_fulfillment_authorizations where payment_id=v_payment_id and authorized_by_user_id=v_owner) then raise exception 'fulfillment_authorization_evidence_missing'; end if;
+  if not exists(select 1 from private.project_fulfillment_authorizations where payment_id=v_payment_id and authorized_by_user_id=v_owner) then raise exception 'fulfillment_authorization_evidence_missing'; end if;
 end $$;
 
 rollback;
