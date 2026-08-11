@@ -18,94 +18,120 @@ A real customer can:
 
 ## Gate 0 — Revenue Engine Recovery [P0]
 
-Status: IN PROGRESS
+Status: IMPLEMENTATION COMPLETE / ACTIVATION BLOCKED
 
 ### 0.1 Repository authority and isolation
 - [x] Reserve `EVENTo0/EVENTo0` for EVENTO company web/PWA.
 - [x] Close THE ROOT PR without merge and preserve its branch for dedicated-repository migration.
 - [ ] Migrate THE ROOT branch/history to a standalone repository when repository creation is available.
-- [ ] Remove stale mixed-lineage references from portfolio registry after PR #19 reconciliation.
+- [x] Reconcile the portfolio registry so EVENTO web is authoritative rather than mixed/triage source.
 
 ### 0.2 Reproducible web foundation
-- [ ] Inventory the current `main`; it is a concept/skeleton, not a reproducible production app.
-- [ ] Create a clean supported Next.js production scaffold on this branch using current official guidance.
-- [ ] Pin runtime/package versions and commit lockfile.
-- [ ] Arabic-first RTL + English LTR baseline.
-- [ ] Add lint/typecheck/unit/build CI.
-- [ ] Add browser smoke tests for core routes.
+- [x] Inventory legacy `main` as concept/skeleton rather than reproducible production app.
+- [x] Create a supported Next.js App Router production scaffold using current official guidance.
+- [x] Pin runtime/package versions and commit generated lockfile.
+- [x] Arabic-first responsive baseline.
+- [x] Add contract/build CI.
+- [ ] Add browser-level smoke tests after Preview URL exists.
+
+Current verified tuple:
+- Node.js 24 LTS line;
+- Next.js 16.2.11;
+- React / React DOM 19.2.0;
+- `@supabase/ssr` 0.12.4;
+- `@supabase/supabase-js` 2.111.0.
 
 ### 0.3 Vercel recovery
 Current observed project: `evento-empire`.
 - [ ] Reconnect the authoritative EVENTO Git repository to the Vercel project or replace the stale project deliberately.
 - [ ] Confirm framework detection instead of current `framework: null` state.
 - [ ] Confirm Preview vs Production environments and Git branch mapping.
-- [ ] Run dry/deployment-manifest inspection where supported.
-- [ ] Require lint/typecheck/test/security deployment checks before Production promotion.
+- [x] Commit `vercel.json` with explicit Next.js framework and Node 24 runtime intent.
+- [ ] Require test/security deployment checks before Production promotion.
 - [ ] Confirm production domain strategy before public launch.
 - [ ] Add runtime/error/analytics observability after the real app is deployed.
 
+Observed blocker: connected Vercel project still reports `framework: null` and `live: false`; current connector does not expose a safe project/Git-link mutation for this repository, so no deployment is being claimed.
+
 ### 0.4 Supabase production security recovery
 Observed production project: `jaxhaiaftpegcodkzaus`.
-- [x] Existing request/analysis/event/workflow tables inventoried; all public tables currently have RLS enabled.
-- [ ] Review `approve_project_scope(uuid)` SECURITY DEFINER exposure to authenticated users; prefer SECURITY INVOKER or explicit restricted execution model.
-- [ ] Review `start_project_workflow(uuid)` SECURITY DEFINER exposure similarly.
-- [ ] Review policies flagged as anonymous-access capable; explicitly distinguish anonymous users from authenticated human customers.
+- [x] Existing request/analysis/event/workflow tables inventoried; public business tables have RLS enabled.
+- [x] Inspect live `approve_project_scope(uuid)` SECURITY DEFINER definition and ownership checks.
+- [x] Inspect live `start_project_workflow(uuid)` definition and EVENTO Mobile dependency.
+- [x] Prepare review-only migration adding permanent-user restrictions, explicit RPC authorization, RLS optimization and covering indexes.
+- [ ] Apply/test the migration on an isolated Supabase branch or equivalent safe environment.
 - [ ] Enable leaked-password protection in Supabase Auth settings.
-- [ ] Add negative authorization tests: user A cannot read/update/approve/start user B request/workflow.
-- [ ] Optimize RLS init-plan usage (`(select auth.uid())` pattern where applicable).
-- [ ] Add covering indexes for workflow foreign keys if query design requires them.
-- [ ] Re-run security/performance advisors after every DDL/RLS change.
+- [ ] Add live negative authorization tests: user A cannot read/update/approve/start user B request/workflow.
+- [ ] Re-run security/performance advisors after migration application.
 
 ### 0.5 Analyze-request function
 - [x] Function is ACTIVE and manually validates bearer token/user ownership.
-- [ ] Review why platform `verify_jwt` is disabled; enable native JWT verification if compatible with the intended authentication model.
-- [ ] If custom auth remains necessary, add explicit contract tests for missing, malformed, publishable-key-like, expired and cross-user tokens.
-- [ ] Version the analysis engine independently from customer-facing state.
+- [x] Web project request action integrates the existing `analyze-request` function without exposing privileged keys.
+- [ ] Review whether native JWT verification can replace the custom bearer verification without breaking the current client flow.
+- [ ] Add live negative tests for missing/malformed/expired/cross-user tokens in a non-production environment.
 - [ ] Replace heuristic-only analysis with provider-neutral AI-assisted analysis only after evaluation fixtures exist.
 
-**Gate 0 exit:** clean source authority, reproducible web build, correct Git/Vercel linkage, P0 auth/RLS/RPC findings resolved or explicitly accepted with tests, no mixed THE ROOT source.
+**Gate 0 exit:** repository/build/reproducibility portion is complete. Full exit remains blocked on real Vercel Preview linkage plus tested Supabase hardening/authorization evidence.
 
 ---
 
 ## Gate 1 — Public Company Site + Customer Identity [P0]
 
+Status: IMPLEMENTED / PREVIEW + LIVE AUTH VALIDATION PENDING
+
 ### Public experience
-- [ ] Home: what EVENTO does, why EVENTO, trust/evidence, CTA.
-- [ ] Services: websites/apps/AI automation/design/project development and clearly scoped offerings.
-- [ ] Ready Projects catalog: EVENTO ventures eligible for display/sale/license.
+- [x] Home: EVENTO value proposition, services, Revenue Engine journey and ventures positioning.
+- [x] Mobile-responsive Arabic-first layout.
+- [x] Clear project-request CTA.
+- [ ] Full Services pages and packaged offers.
+- [ ] Ready Projects catalog with commercial eligibility state.
 - [ ] Case studies/portfolio with evidence rather than unverified marketing claims.
-- [ ] AI Workflow page explaining the controlled process and owner review.
+- [ ] AI Workflow explainer page.
 - [ ] About/Contact/WhatsApp/business identity.
 - [ ] Privacy, Terms, service/delivery/refund boundaries.
 
 ### Account/customer model
-- [ ] Email/password or approved authentication method with secure password policy.
-- [ ] Customer profile; individual/company fields kept minimal.
-- [ ] Customer dashboard.
-- [ ] Session/logout/account recovery tests.
+- [x] Email/password sign-up and sign-in server actions.
+- [x] Email confirmation callback with safe redirect handling.
+- [x] Supabase SSR cookie/session refresh using Next.js Proxy.
+- [x] Permanent-user check rejects anonymous sessions from customer project routes.
+- [x] Customer dashboard reads owned requests/workflows/analyses via RLS.
+- [x] Logout action.
+- [ ] Live password/reset/recovery UX tests in Preview.
 - [ ] Optional MFA later for sensitive/admin roles.
 
-**Gate 1 exit:** a customer can understand EVENTO, register/sign in and reach a secure dashboard from phone and desktop.
+**Gate 1 exit:** implementation exists and builds. Exit remains blocked until Preview is connected and customer Auth is validated end-to-end against the intended environment.
 
 ---
 
 ## Gate 2 — Smart Project Request + AI Scoping [P0]
 
-Leverage existing `project_requests`, `request_analyses`, `project_request_events` rather than duplicating them.
+Status: IMPLEMENTED BEHIND WRITE KILL-SWITCH
 
-- [ ] Project type, objective, requirements, target platforms, references, budget range, desired timeline and attachments.
-- [ ] Create draft → analyze → awaiting_scope lifecycle.
-- [ ] AI/heuristic analysis output includes bilingual summary, assumptions, proposed scope, risks, complexity and evidence/version metadata.
-- [ ] Human/owner review before a commercial scope reaches customer.
-- [ ] Missing-information loop instead of guessing requirements.
-- [ ] Cost/latency measurement for every AI scoping run.
-- [ ] Evaluation fixtures for representative website/app/AI/design/game/client requests.
+Leverages existing `project_requests`, `request_analyses`, `project_request_events`, `project_workflows` rather than duplicating them.
 
-**Gate 2 exit:** a real request produces an auditable reviewed scope without exposing admin credentials or cross-customer data.
+- [x] Project type, title/objective and detailed requirements intake.
+- [x] Persistent server action implemented using the customer's Supabase session and RLS.
+- [x] Production write kill-switch `EVENTO_REQUEST_WRITE_MODE=disabled` by default.
+- [x] New request invokes the existing authenticated `analyze-request` function when writes are enabled.
+- [x] Customer dashboard shows lifecycle/progress/analysis summary.
+- [x] Project detail shows bilingual analysis, proposed scope, risks and engine version.
+- [x] Project timeline reads `project_request_events`.
+- [x] Start-workflow and scope-approval actions reuse the EVENTO Mobile-compatible RPC contract.
+- [x] Scope actions are also protected by permanent-user validation + write kill-switch.
+- [ ] Add budget range, desired timeline, references and attachments after storage policy design.
+- [ ] Add owner/human-review state before a commercial scope reaches the customer as final.
+- [ ] Add missing-information loop instead of guessing requirements.
+- [ ] Record cost/latency for every future model-backed scoping run.
+- [ ] Add representative evaluation fixtures before replacing heuristic analysis.
+
+**Gate 2 exit:** implementation is ready but activation remains blocked until Supabase hardening is tested and the write kill-switch is deliberately enabled in a non-production Preview environment first.
 
 ---
 
 ## Gate 3 — Quote, Pricing & Proposal [P0]
+
+Status: NEXT IMPLEMENTATION SLICE
 
 New domain required; design migration before production mutation.
 
