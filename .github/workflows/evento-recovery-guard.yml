@@ -1,0 +1,51 @@
+name: EVENTO Recovery Guard
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  recovery-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify EVENTO recovery source contract
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f README.md
+          test -f AGENTS.md
+          test -f docs/LIVE_SYSTEM_AUDIT_2026-08-11.md
+          test -f docs/REVENUE_ENGINE_MASTER_BACKLOG.md
+          test -f docs/PRODUCTION_READINESS.md
+          grep -q "EVENTO Project Development" README.md
+          grep -q "authoritative GitHub source" README.md
+          grep -q "visitor.*customer.*project request" README.md
+          grep -q "THE ROOT" AGENTS.md
+          grep -q "Gate 0" docs/REVENUE_ENGINE_MASTER_BACKLOG.md
+          grep -q "Supabase" docs/LIVE_SYSTEM_AUDIT_2026-08-11.md
+      - name: Block accidental THE ROOT application merge into EVENTO
+        shell: bash
+        run: |
+          set -euo pipefail
+          forbidden=0
+          for path in components/PipelineDashboard.jsx pages/api/generate.js docs/product/STORYBOARD-BRIEF.md docs/architecture/STORYBOARD-ARCHITECTURE.md; do
+            if [ -e "$path" ]; then
+              echo "Forbidden unrelated THE ROOT path present: $path"
+              forbidden=1
+            fi
+          done
+          test "$forbidden" -eq 0
+      - name: Basic secret hygiene
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git grep -nEI '(sk-ant-[A-Za-z0-9_-]{20,}|sk_live_[A-Za-z0-9]{20,}|sb_secret_[A-Za-z0-9_-]{20,}|github_pat_[A-Za-z0-9_]{20,}|ghp_[A-Za-z0-9]{20,})' -- ':!*.md'; then
+            echo 'Potential production secret found in source.'
+            exit 1
+          fi
