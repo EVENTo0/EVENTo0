@@ -29,12 +29,21 @@ test('customer project writes remain gated until the security migration is appro
   const workflowActions = await read('app/projects/[id]/actions.js')
   const env = await read('.env.example')
 
+  assert.match(requestAction, /EVENTO_REQUEST_WRITE_MODE !== 'enabled'/)
+  assert.match(workflowActions, /EVENTO_REQUEST_WRITE_MODE !== 'enabled'/)
   for (const action of [requestAction, workflowActions]) {
-    assert.match(action, /EVENTO_REQUEST_WRITE_MODE !== 'enabled'/)
     assert.match(action, /getClaims\(\)/)
     assert.match(action, /is_anonymous === true/)
   }
   assert.match(env, /EVENTO_REQUEST_WRITE_MODE=disabled/)
+})
+
+test('commercial acceptance has a separate default-off kill switch', async () => {
+  const actions = await read('app/projects/[id]/actions.js')
+  const env = await read('.env.example')
+  assert.match(actions, /EVENTO_COMMERCIAL_WRITE_MODE !== 'enabled'/)
+  assert.match(actions, /accept_quote_version/)
+  assert.match(env, /EVENTO_COMMERCIAL_WRITE_MODE=disabled/)
 })
 
 test('scope review reuses the existing mobile-compatible RPC contract', async () => {
@@ -53,6 +62,35 @@ test('security migration preserves mobile RPC names while rejecting anonymous ac
   assert.match(migration, /approve_project_scope/i)
   assert.match(migration, /is_anonymous/i)
   assert.doesNotMatch(migration, /drop function\s+public\.(start_project_workflow|approve_project_scope)/i)
+})
+
+test('quote schema keeps customer prices separate from internal economics', async () => {
+  const migration = await read('supabase/migrations/20260811_quote_pricing_proposal_foundation.sql')
+  assert.match(migration, /create table if not exists public\.quote_versions/i)
+  assert.match(migration, /create table if not exists public\.quote_version_economics/i)
+  assert.match(migration, /create table if not exists public\.pricing_rules/i)
+  assert.match(migration, /grant select on public\.quote_versions to authenticated/i)
+  assert.doesNotMatch(migration, /grant\s+(select|insert|update|delete|all).*quote_version_economics.*authenticated/i)
+  assert.doesNotMatch(migration, /grant\s+(select|insert|update|delete|all).*pricing_rules.*authenticated/i)
+})
+
+test('customers cannot mutate quote prices and acceptance binds the exact current version', async () => {
+  const migration = await read('supabase/migrations/20260811_quote_pricing_proposal_foundation.sql')
+  assert.match(migration, /revoke all on public\.quote_versions from anon, authenticated/i)
+  assert.match(migration, /grant select on public\.quote_versions to authenticated/i)
+  assert.match(migration, /accept_quote_version/i)
+  assert.match(migration, /quote_version_not_current/i)
+  assert.match(migration, /scope_not_approved/i)
+  assert.match(migration, /quote_expired/i)
+  assert.match(migration, /extensions\.digest\(v_quote_payload, 'sha256'\)/i)
+})
+
+test('customer quote UI never queries internal economics or pricing rules', async () => {
+  const detail = await read('app/projects/[id]/page.js')
+  assert.match(detail, /from\('quotes'\)/)
+  assert.match(detail, /from\('quote_versions'\)/)
+  assert.match(detail, /from\('quote_items'\)/)
+  assert.doesNotMatch(detail, /quote_version_economics|pricing_rules|expected_variable_cost|gross_margin/i)
 })
 
 test('THE ROOT does not re-enter EVENTO runtime source', async () => {
