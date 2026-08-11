@@ -72,7 +72,7 @@ export default async function ProjectPaymentPage({ params }) {
     <main className="shell requestWrap">
       <header className="nav compactNav">
         <Link className="brand" href="/">EVENTO</Link>
-        <nav className="links"><Link href={`/projects/${id}`}>تفاصيل المشروع</Link><Link href="/dashboard">مشاريعي</Link></nav>
+        <nav className="links"><Link href={`/projects/${id}`}>تفاصيل المشروع</Link><Link href={`/projects/${id}/workspace`}>مساحة التنفيذ</Link><Link href="/dashboard">مشاريعي</Link></nav>
       </header>
 
       <section className="requestCard wideCard">
@@ -100,9 +100,9 @@ export default async function ProjectPaymentPage({ params }) {
             </div>
 
             {order.status === 'paid' ? (
-              <div className="note success">الدفع مسجل كـPaid بعد حدث مزود موثّق خادميًا. لا تعتمد EVENTO على صفحة الرجوع من مزود الدفع وحدها.</div>
+              <div className="note success">الدفع مسجل كـPaid بعد حدث مزود موثّق خادميًا. الخطوة التالية ليست تشغيل Agent تلقائيًا؛ يلزم Fulfillment Authorization بشرية مستقلة. <Link className="inlineLink" href={`/projects/${id}/workspace`}>عرض مساحة التنفيذ</Link></div>
             ) : (
-              <div className="note">الحالة الحالية لا تثبت دفعًا مكتملًا. التنفيذ لا يبدأ حتى يصبح Payment Order موثّقًا كـPaid.</div>
+              <div className="note">الحالة الحالية لا تثبت دفعًا مكتملًا. التنفيذ لا يبدأ حتى يصبح Payment Order موثّقًا كـPaid ثم يمر بإذن التنفيذ المستقل.</div>
             )}
 
             <h2>محاولات الدفع</h2>
