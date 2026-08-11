@@ -28,8 +28,8 @@ create table if not exists public.contract_agreements (
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now(),
   unique (id, request_id, user_id, quote_id, quote_version_id),
-  foreign key (quote_id, quote_version_id, request_id, user_id)
-    references public.quote_versions(quote_id, id, request_id, user_id) on delete restrict
+  foreign key (quote_version_id, quote_id, request_id, user_id)
+    references public.quote_versions(id, quote_id, request_id, user_id) on delete restrict
 );
 
 create table if not exists public.contract_versions (
