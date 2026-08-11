@@ -15,6 +15,12 @@ function ensureCommercialWritesEnabled(id) {
   }
 }
 
+function ensureContractWritesEnabled(id) {
+  if (process.env.EVENTO_CONTRACT_WRITE_MODE !== 'enabled') {
+    redirect(`/projects/${id}?error=contract_gate`)
+  }
+}
+
 async function ensurePermanentUser(supabase, id) {
   const { data: claimsData, error: claimsError } = await supabase.auth.getClaims()
   const claims = claimsData?.claims
@@ -73,4 +79,21 @@ export async function acceptQuote(formData) {
 
   if (error) redirect(`/projects/${id}?error=quote_acceptance_failed`)
   redirect(`/projects/${id}?success=quote_accepted`)
+}
+
+export async function acceptContract(formData) {
+  const id = String(formData.get('request_id') || '')
+  const contractVersionId = String(formData.get('contract_version_id') || '')
+  if (!id || !contractVersionId) redirect('/dashboard?error=missing_contract')
+  ensureContractWritesEnabled(id)
+
+  const supabase = await createClient()
+  await ensurePermanentUser(supabase, id)
+
+  const { error } = await supabase
+    .from('contract_acceptances')
+    .insert({ agreement_version_id: contractVersionId })
+
+  if (error) redirect(`/projects/${id}?error=contract_acceptance_failed`)
+  redirect(`/projects/${id}?success=contract_accepted`)
 }
