@@ -38,6 +38,7 @@ jobs:
           test -f supabase/migrations/20260811230010_evento_contract_review_evidence_v1.sql
           test -f supabase/migrations/20260811230510_evento_contract_operator_visibility_v1.sql
           test -f supabase/tests/runtime_reconciliation_smoke.sql
+          test -f supabase/tests/runtime_reconciliation_negative.sql
           grep -qi "set transaction read only" supabase/review/runtime_reconciliation_preflight.sql
           grep -q "accepted_contract_required" supabase/migrations/20260811225144_evento_runtime_reconciliation_bridge_v1.sql
           grep -q "private.project_fulfillment_authorizations" supabase/migrations/20260811225610_evento_internalize_fulfillment_authorization_v1.sql
@@ -45,6 +46,9 @@ jobs:
           grep -q "legal_review_must_start_required" supabase/migrations/20260811230010_evento_contract_review_evidence_v1.sql
           grep -q "rollback;" supabase/tests/runtime_reconciliation_smoke.sql
           grep -q "unreviewed_contract_was_sendable" supabase/tests/runtime_reconciliation_smoke.sql
+          grep -q "currency_mismatch_not_blocked" supabase/tests/runtime_reconciliation_negative.sql
+          grep -q "cross_user_quote_read_leak" supabase/tests/runtime_reconciliation_negative.sql
+          grep -q "authenticated_can_execute_fulfillment_rpc" supabase/tests/runtime_reconciliation_negative.sql
           grep -q '"productionSchemaMutation": false' config/runtime-reconciliation.json
           grep -q '"liveBilling": false' config/runtime-reconciliation.json
           grep -q '"automaticAgentBuild": false' config/runtime-reconciliation.json
