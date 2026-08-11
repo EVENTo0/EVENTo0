@@ -1,0 +1,63 @@
+name: EVENTO Runtime Reconciliation
+
+on:
+  pull_request:
+    branches: [evento/revenue-engine-recovery-v1]
+  push:
+    branches: [evento/runtime-reconciliation-v1]
+
+permissions:
+  contents: read
+
+jobs:
+  reconciliation-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.x'
+          cache: npm
+      - name: Reproducible dependency install
+        run: npm ci --no-audit --no-fund
+      - name: Revenue Engine and reconciliation contract tests
+        run: npm test
+      - name: Production build
+        run: npm run build
+      - name: Require reconciliation evidence files
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f config/runtime-reconciliation.json
+          test -f docs/RUNTIME_RECONCILIATION_SPRINT.md
+          test -f docs/verification/2026-08-12-runtime-reconciliation-branch.md
+          test -f supabase/review/runtime_reconciliation_preflight.sql
+          test -f supabase/migrations/20260811225144_evento_runtime_reconciliation_bridge_v1.sql
+          test -f supabase/migrations/20260811225244_evento_runtime_reconciliation_hardening_v1.sql
+          test -f supabase/migrations/20260811225610_evento_internalize_fulfillment_authorization_v1.sql
+          test -f supabase/migrations/20260811230010_evento_contract_review_evidence_v1.sql
+          test -f supabase/migrations/20260811230510_evento_contract_operator_visibility_v1.sql
+          test -f supabase/tests/runtime_reconciliation_smoke.sql
+          test -f supabase/tests/runtime_reconciliation_negative.sql
+          grep -qi "set transaction read only" supabase/review/runtime_reconciliation_preflight.sql
+          grep -q "accepted_contract_required" supabase/migrations/20260811225144_evento_runtime_reconciliation_bridge_v1.sql
+          grep -q "private.project_fulfillment_authorizations" supabase/migrations/20260811225610_evento_internalize_fulfillment_authorization_v1.sql
+          grep -q "evento_approve_contract_for_use_v1" supabase/migrations/20260811230010_evento_contract_review_evidence_v1.sql
+          grep -q "legal_review_must_start_required" supabase/migrations/20260811230010_evento_contract_review_evidence_v1.sql
+          grep -q "rollback;" supabase/tests/runtime_reconciliation_smoke.sql
+          grep -q "unreviewed_contract_was_sendable" supabase/tests/runtime_reconciliation_smoke.sql
+          grep -q "currency_mismatch_not_blocked" supabase/tests/runtime_reconciliation_negative.sql
+          grep -q "cross_user_quote_read_leak" supabase/tests/runtime_reconciliation_negative.sql
+          grep -q "authenticated_can_execute_fulfillment_rpc" supabase/tests/runtime_reconciliation_negative.sql
+          grep -q '"productionSchemaMutation": false' config/runtime-reconciliation.json
+          grep -q '"liveBilling": false' config/runtime-reconciliation.json
+          grep -q '"automaticAgentBuild": false' config/runtime-reconciliation.json
+          grep -q '"automaticRelease": false' config/runtime-reconciliation.json
+      - name: Basic secret hygiene
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git grep -nEI '(sk-ant-[A-Za-z0-9_-]{20,}|sk_live_[A-Za-z0-9]{20,}|rk_live_[A-Za-z0-9]{20,}|sb_secret_[A-Za-z0-9_-]{20,}|github_pat_[A-Za-z0-9_]{20,}|ghp_[A-Za-z0-9]{20,})' -- ':!*.md'; then
+            echo 'Potential production secret found in source.'
+            exit 1
+          fi
