@@ -26,6 +26,8 @@ jobs:
           else
             npm install --no-audit --no-fund
           fi
+      - name: Revenue Engine contract tests
+        run: npm test
       - name: Production build
         run: npm run build
       - name: Freeze dependency lockfile on the owner recovery branch
