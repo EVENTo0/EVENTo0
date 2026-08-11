@@ -34,6 +34,8 @@ test('recovery model is explicit and never silently replaces live commercial tru
   assert.ok(config.recoveryModel.delivery.includes('project_delivery_acceptances'))
   assert.match(config.commercialTruth.quote, /live project_quotes/i)
   assert.match(config.commercialTruth.payment, /verified provider events/i)
+  assert.equal(config.reconciledEvidence.contractVersions, 'project_contract_versions')
+  assert.equal(config.reconciledEvidence.fulfillmentAuthorizations, 'private.project_fulfillment_authorizations')
 })
 
 test('dangerous production automation remains closed during reconciliation', () => {
@@ -57,10 +59,11 @@ test('preflight SQL is transaction-level read only and contains no mutation stat
   assert.doesNotMatch(withoutComments, /\b(create|alter|drop|insert|update|delete|truncate|grant|revoke)\b\s+/)
 })
 
-test('sprint preserves payment, fulfillment, preview and release separation', () => {
-  assert.match(sprint, /Browser redirects never prove payment/i)
+test('sprint preserves contract, payment, fulfillment, preview and release separation', () => {
+  assert.match(sprint, /Browser return\/success state never proves payment/i)
+  assert.match(sprint, /contract draft always starts with `legal_review_status=required`/i)
   assert.match(sprint, /human fulfillment authorization/i)
-  assert.match(sprint, /Preview is not Production/i)
-  assert.match(sprint, /Customer delivery acceptance never grants merge/i)
+  assert.match(sprint, /Vercel Preview is a review channel, not Production/i)
+  assert.match(sprint, /Customer acceptance never grants merge/i)
   assert.match(sprint, /Do not perform these yet/i)
 })
