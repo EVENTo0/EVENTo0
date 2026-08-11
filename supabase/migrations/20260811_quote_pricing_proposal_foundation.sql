@@ -13,7 +13,7 @@ end $$;
 
 create table if not exists public.quotes (
   id uuid primary key default gen_random_uuid(),
-  request_id uuid not null references public.project_requests(id) on delete restrict,
+  request_id uuid not null,
   user_id uuid not null references auth.users(id) on delete restrict,
   quote_number text not null unique,
   status public.evento_quote_status not null default 'draft',
@@ -24,7 +24,9 @@ create table if not exists public.quotes (
   expires_at timestamptz null,
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now(),
-  unique (id, request_id, user_id)
+  unique (id, request_id, user_id),
+  foreign key (request_id, user_id)
+    references public.project_requests(id, user_id) on delete restrict
 );
 
 create table if not exists public.quote_versions (
@@ -45,6 +47,7 @@ create table if not exists public.quote_versions (
   customer_note text null check (customer_note is null or char_length(customer_note) <= 5000),
   created_at timestamptz not null default now(),
   unique (quote_id, version_number),
+  unique (id, quote_id),
   unique (id, quote_id, request_id, user_id),
   foreign key (quote_id, request_id, user_id)
     references public.quotes(id, request_id, user_id) on delete restrict,
@@ -52,10 +55,11 @@ create table if not exists public.quote_versions (
   check (valid_until > created_at)
 );
 
+-- Composite FK prevents a quote from pointing at another quote's version.
 alter table public.quotes
   add constraint quotes_current_version_fkey
-  foreign key (current_version_id)
-  references public.quote_versions(id)
+  foreign key (current_version_id, id)
+  references public.quote_versions(id, quote_id)
   deferrable initially deferred;
 
 create table if not exists public.quote_items (
@@ -95,14 +99,16 @@ create table if not exists public.pricing_rules (
 
 create table if not exists public.proposal_acceptances (
   id uuid primary key default gen_random_uuid(),
-  quote_id uuid not null references public.quotes(id) on delete restrict,
-  quote_version_id uuid not null references public.quote_versions(id) on delete restrict,
-  request_id uuid not null references public.project_requests(id) on delete restrict,
+  quote_id uuid not null,
+  quote_version_id uuid not null,
+  request_id uuid not null,
   user_id uuid not null references auth.users(id) on delete restrict,
   quote_sha256 text not null check (quote_sha256 ~ '^[0-9a-f]{64}$'),
   terms_version text not null,
   accepted_at timestamptz not null default now(),
-  unique (quote_version_id, user_id)
+  unique (quote_version_id, user_id),
+  foreign key (quote_version_id, quote_id, request_id, user_id)
+    references public.quote_versions(id, quote_id, request_id, user_id) on delete restrict
 );
 
 create index if not exists quotes_user_created_idx on public.quotes(user_id, created_at desc);
@@ -202,6 +208,7 @@ declare
   v_acceptance_id uuid;
   v_quote_payload text;
   v_hash text;
+  v_items_total numeric(14,2);
 begin
   v_uid := auth.uid();
   if v_uid is null then raise exception 'authentication_required'; end if;
@@ -220,11 +227,17 @@ begin
   for update;
 
   if v_quote.user_id <> v_uid or v_version.user_id <> v_uid then raise exception 'forbidden'; end if;
+  if v_quote.request_id <> v_version.request_id then raise exception 'quote_request_mismatch'; end if;
   if v_quote.status <> 'sent' then raise exception 'quote_not_accepting'; end if;
   if v_quote.current_version_id is distinct from v_version.id then raise exception 'quote_version_not_current'; end if;
   if v_version.valid_until <= now() or (v_quote.expires_at is not null and v_quote.expires_at <= now()) then
     raise exception 'quote_expired';
   end if;
+
+  select coalesce(sum(qi.line_total_aed), 0)::numeric(14,2) into v_items_total
+  from public.quote_items qi
+  where qi.quote_version_id = v_version.id;
+  if v_items_total <> v_version.subtotal_aed then raise exception 'quote_totals_invalid'; end if;
 
   select pw.current_stage into v_workflow_stage
   from public.project_workflows pw
@@ -278,4 +291,4 @@ grant execute on function public.accept_quote_version(uuid) to authenticated;
 
 comment on table public.quote_version_economics is 'Internal EVENTO economics. Never grant customer/browser roles access.';
 comment on table public.pricing_rules is 'Internal EVENTO pricing configuration. No customer/browser grants.';
-comment on function public.accept_quote_version(uuid) is 'Accepts only the current, non-expired quote version owned by a permanent authenticated customer after scope approval.';
+comment on function public.accept_quote_version(uuid) is 'Accepts only the exact current, totals-consistent, non-expired quote version owned by a permanent authenticated customer after scope approval.';
