@@ -13,13 +13,9 @@ test('runtime is current LTS and Vercel is explicitly Next.js', async () => {
 
 test('Supabase web clients use only public runtime configuration', async () => {
   const files = [
-    await read('lib/supabase/client.js'),
-    await read('lib/supabase/server.js'),
-    await read('lib/supabase/proxy.js'),
-    await read('app/request/actions.js'),
-    await read('app/projects/[id]/actions.js'),
+    await read('lib/supabase/client.js'), await read('lib/supabase/server.js'), await read('lib/supabase/proxy.js'),
+    await read('app/request/actions.js'), await read('app/projects/[id]/actions.js'),
   ].join('\n')
-
   assert.match(files, /NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY/)
   assert.doesNotMatch(files, /service_role|SUPABASE_SERVICE_ROLE_KEY|sb_secret_/i)
 })
@@ -28,7 +24,6 @@ test('customer project writes remain gated until the security migration is appro
   const requestAction = await read('app/request/actions.js')
   const workflowActions = await read('app/projects/[id]/actions.js')
   const env = await read('.env.example')
-
   assert.match(requestAction, /EVENTO_REQUEST_WRITE_MODE !== 'enabled'/)
   assert.match(workflowActions, /EVENTO_REQUEST_WRITE_MODE !== 'enabled'/)
   for (const action of [requestAction, workflowActions]) {
@@ -38,7 +33,7 @@ test('customer project writes remain gated until the security migration is appro
   assert.match(env, /EVENTO_REQUEST_WRITE_MODE=disabled/)
 })
 
-test('commercial and contract acceptance use independent default-off kill switches', async () => {
+test('commercial, contract and payment gates are independent and default off', async () => {
   const actions = await read('app/projects/[id]/actions.js')
   const env = await read('.env.example')
   assert.match(actions, /EVENTO_COMMERCIAL_WRITE_MODE !== 'enabled'/)
@@ -47,6 +42,7 @@ test('commercial and contract acceptance use independent default-off kill switch
   assert.match(actions, /EVENTO_CONTRACT_WRITE_MODE !== 'enabled'/)
   assert.match(actions, /from\('contract_acceptances'\)/)
   assert.match(env, /EVENTO_CONTRACT_WRITE_MODE=disabled/)
+  assert.match(env, /EVENTO_PAYMENT_WRITE_MODE=disabled/)
 })
 
 test('scope review reuses the existing mobile-compatible RPC contract', async () => {
@@ -142,6 +138,55 @@ test('browser can insert only the contract version id, while authoritative accep
   assert.match(migration, /new\.terms_version := v_version\.terms_version/i)
 })
 
+test('Gate 5 payment order is bound to exact accepted contract evidence', async () => {
+  const migration = await read('supabase/migrations/20260811_verified_payment_ledger_foundation.sql')
+  assert.match(migration, /contract_acceptances_binding_unique/i)
+  assert.match(migration, /foreign key \(contract_acceptance_id, agreement_id, agreement_version_id, request_id, user_id, quote_id, quote_version_id\)[\s\S]*references public\.contract_acceptances\(id, agreement_id, agreement_version_id, request_id, user_id, quote_id, quote_version_id\)/i)
+  assert.match(migration, /accepted_contract_required/i)
+})
+
+test('Gate 5 browser roles cannot create or mutate payment truth', async () => {
+  const migration = await read('supabase/migrations/20260811_verified_payment_ledger_foundation.sql')
+  for (const table of ['payment_orders','payment_attempts','payment_provider_attempt_details','payment_events','refunds','payment_provider_refund_details']) {
+    assert.match(migration, new RegExp(`revoke all on public\\.${table} from anon, authenticated`, 'i'))
+  }
+  assert.match(migration, /grant select on public\.payment_orders to authenticated/i)
+  assert.match(migration, /grant select on public\.payment_attempts to authenticated/i)
+  assert.match(migration, /grant select on public\.refunds to authenticated/i)
+  assert.doesNotMatch(migration, /grant\s+(insert|update|delete|all)\s+on public\.(payment_orders|payment_attempts|payment_events|refunds).*authenticated/i)
+})
+
+test('Gate 5 provider internals and webhook evidence are not exposed to customers', async () => {
+  const migration = await read('supabase/migrations/20260811_verified_payment_ledger_foundation.sql')
+  assert.match(migration, /create table if not exists public\.payment_provider_attempt_details/i)
+  assert.match(migration, /create table if not exists public\.payment_events/i)
+  assert.doesNotMatch(migration, /grant\s+select\s+on public\.(payment_provider_attempt_details|payment_events|payment_provider_refund_details)\s+to authenticated/i)
+})
+
+test('Gate 5 only verified normalized provider events can mutate payment state', async () => {
+  const migration = await read('supabase/migrations/20260811_verified_payment_ledger_foundation.sql')
+  assert.match(migration, /unique \(provider, provider_event_id\)/i)
+  assert.match(migration, /if new\.signature_verified is not true then[\s\S]*return new/i)
+  assert.match(migration, /amount_mismatch/i)
+  assert.match(migration, /currency_mismatch/i)
+  assert.match(migration, /provider_mismatch/i)
+  assert.match(migration, /refund_exceeds_paid_amount/i)
+  assert.match(migration, /set status = 'paid'/i)
+  assert.match(migration, /create or replace function private\.apply_verified_payment_event\(\)/i)
+  assert.match(migration, /revoke all on function private\.apply_verified_payment_event\(\) from public, anon, authenticated/i)
+})
+
+test('Gate 5 customer payment UI is read only and never queries provider-internal tables', async () => {
+  const paymentPage = await read('app/projects/[id]/payment/page.js')
+  const env = await read('.env.example')
+  assert.match(paymentPage, /from\('payment_orders'\)/)
+  assert.match(paymentPage, /from\('payment_attempts'\)/)
+  assert.match(paymentPage, /from\('refunds'\)/)
+  assert.match(paymentPage, /type="button" disabled/)
+  assert.match(env, /EVENTO_PAYMENT_WRITE_MODE=disabled/)
+  assert.doesNotMatch(paymentPage, /payment_events|payment_provider_attempt_details|provider_session_id|idempotency_key|service_role|sk_live_|rk_live_|whsec_/i)
+})
+
 test('customer contract UI queries only customer-visible contract tables', async () => {
   const detail = await read('app/projects/[id]/page.js')
   assert.match(detail, /from\('contract_agreements'\)/)
@@ -152,10 +197,8 @@ test('customer contract UI queries only customer-visible contract tables', async
 
 test('THE ROOT does not re-enter EVENTO runtime source', async () => {
   const runtime = [
-    await read('app/page.js'),
-    await read('app/request/page.js'),
-    await read('app/projects/[id]/page.js'),
-    await read('package.json'),
+    await read('app/page.js'), await read('app/request/page.js'), await read('app/projects/[id]/page.js'),
+    await read('app/projects/[id]/payment/page.js'), await read('package.json'),
   ].join('\n')
   assert.doesNotMatch(runtime, /THE ROOT|الجذر|ANTHROPIC_API_KEY|storyboard/i)
 })
