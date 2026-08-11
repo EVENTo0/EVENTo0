@@ -3,7 +3,7 @@ import { readFile } from 'node:fs/promises'
 import test from 'node:test'
 
 const read = (path) => readFile(new URL(`../${path}`, import.meta.url), 'utf8')
-const migrationPath = 'supabase/migrations/20260811_project_workspace_agent_orchestration_foundation.sql'
+const migrationPath = 'supabase/migrations/20260811124000_project_workspace_agent_orchestration_foundation.sql'
 
 test('Gate 6 fulfillment is an independent default-off application gate', async () => {
   const env = await read('.env.example')
