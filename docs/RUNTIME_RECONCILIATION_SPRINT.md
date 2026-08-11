@@ -5,14 +5,15 @@ Status: ACTIVE / ISOLATED
 Canonical company repository: `EVENTo0/EVENTo0`
 Parent recovery branch: `evento/revenue-engine-recovery-v1`
 Supabase production ref: `jaxhaiaftpegcodkzaus`
+Supabase development ref: `zgyovnqjmaognsjyylvk`
 
 ## Objective
 
 Move EVENTO from source-complete Revenue Engine foundations toward one proven runtime path without applying the recovery Gates 3–8 schema directly to Production.
 
-The immediate target is a disposable end-to-end proof:
+The reconciled target is:
 
-`account -> request -> analysis -> scope approval -> quote -> acceptance -> verified payment evidence -> build queue -> human fulfillment authorization -> branch/PR/test -> Vercel Preview -> phone review -> revision decision -> delivery package -> customer acceptance`
+`account -> request -> analysis -> scope approval -> immutable quote version -> quote acceptance -> contract draft -> explicit review evidence -> reviewed contract acceptance -> test Checkout -> signed provider verification -> payment paid while build remains pending_payment -> human fulfillment authorization -> build queue -> branch/PR/test -> Vercel Preview -> phone review -> revision decision -> delivery package -> customer acceptance`
 
 Production release authority remains a separate owner-only gate.
 
@@ -28,13 +29,9 @@ Current live commercial tables:
 - `project_payments`
 - `project_build_queue`
 
-Current Production migration history is tracked through:
+Production migration history was captured through `20260811213155_fix_evento_payment_event_status_v1` before the isolated branch was created.
 
-- `20260811212913_evento_payment_ledger_foundation_v1`
-- `20260811213124_fix_evento_payment_queue_timestamp_v1`
-- `20260811213155_fix_evento_payment_event_status_v1`
-
-Observed row counts at sprint start:
+Observed Production row counts at sprint start:
 
 - requests: 2
 - analyses: 2
@@ -44,162 +41,150 @@ Observed row counts at sprint start:
 - payments: 0
 - build queue: 0
 
-This means there is no existing live quote/payment/build-queue data requiring financial-data migration in the first reconciliation experiment. Existing request/analysis history must still be preserved.
+No Production reconciliation migration has been applied.
 
-## Why reconciliation is required
+## Reconciled source-of-truth model
 
-The recovery model is deliberately richer than the live mobile/control-plane model.
+The transition deliberately avoids a second writable quote/payment truth.
 
-### Live commercial model
+Compatibility headers retained:
 
-- one `project_quotes` row per request
-- accepted quote state stored on the quote row
-- `project_payments` stores Stripe/provider payment state
-- `project_build_queue` is created at quote acceptance and stays `pending_payment` until verified payment promotes it
+- `project_quotes`
+- `project_payments`
+- `project_build_queue`
 
-### Recovery model
+Additive evidence introduced in the isolated branch:
 
-- `quotes` + immutable `quote_versions` + `quote_items` + `proposal_acceptances`
-- contract/SOW version and acceptance evidence
-- provider-neutral `payment_orders` + `payment_attempts` + append-only `payment_events`
-- controlled fulfillment/workspace/agent records
-- exact Preview versions and feedback
-- revision/change-order/delivery acceptance/release authorization boundaries
+- `project_quote_versions`
+- `project_quote_acceptances`
+- `project_contract_versions`
+- `project_contract_acceptances`
+- `private.project_fulfillment_authorizations`
 
-Applying the recovery migrations directly to Production would create two competing commercial truths. The sprint therefore uses an additive, test-first compatibility path.
+### Commercial invariants
 
-## Source-of-truth decisions for this sprint
+1. Sending a quote freezes an immutable SHA-256-bound quote version.
+2. Customer acceptance binds to that exact version.
+3. A contract draft always starts with `legal_review_status=required`.
+4. Owner/admin review evidence is required before a contract can become `approved_for_use`.
+5. An unreviewed contract cannot be sent.
+6. Payment preparation requires an accepted reviewed contract.
+7. Browser return/success state never proves payment.
+8. Verified payment changes the payment state but leaves build queue `pending_payment`.
+9. Owner/admin/ops fulfillment authorization is separately required before queue state becomes `queued`.
+10. Customer acceptance never grants merge, Production deployment, store submission, domain transfer, secret disclosure, or release authority.
 
-1. `EVENTo0/EVENTo0` remains the canonical company/Revenue Engine source.
-2. `evento-mobile` remains the current live mobile/control-plane implementation and the source of the deployed commercial schema until reconciliation is proven.
-3. `AAA-prompt-empire/apps/evento-web` is a reference/proving implementation, not a second canonical EVENTO product.
-4. Supabase is the operational data/auth/workflow authority.
-5. Stripe verified webhook state is the payment truth. Browser redirects never prove payment.
-6. Vercel Preview is the web review channel. Preview is not Production.
-7. Customer delivery acceptance never grants merge, Production deploy, app-store submission, domain transfer, secret disclosure, or release authority.
+## Source-of-truth decisions
 
-## Reconciliation phases
+1. `EVENTo0/EVENTo0` is canonical company/Revenue Engine source.
+2. `evento-mobile` remains the current mobile/control-plane implementation and compatibility reference until reconciliation promotion is proven.
+3. `AAA-prompt-empire/apps/evento-web` remains a reference/proving implementation rather than a second canonical EVENTO product.
+4. Supabase is operational data/auth/workflow authority.
+5. Stripe signed server-side provider state is payment truth.
+6. Vercel Preview is a review channel, not Production.
+7. Human approval boundaries remain outside agent authority.
 
-### R0 — Contract capture
+## Phase status
 
-- freeze an evidence snapshot of live tables, columns, RLS, privileged functions, migrations and row counts;
-- maintain `config/runtime-reconciliation.json` as a machine-readable map;
-- keep all Production checks read-only.
+### R0 — Contract capture — COMPLETE
 
-Exit: live/recovery differences are explicit and testable.
+Live tables, migrations, row counts and live-vs-recovery differences are captured in source and machine-readable configuration.
 
-### R1 — Isolated Supabase test environment
+### R1 — Isolated Supabase environment — COMPLETE
 
-Create a Supabase development branch/test environment from the live migration history after explicit cost confirmation.
+Development branch `zgyovnqjmaognsjyylvk` was created from Production migration history with no Production business data.
 
-No Production DDL is part of R1.
+### R2 — Additive commercial bridge — COMPLETE FOR TEST BRANCH
 
-Exit: isolated database exists and has the same migration baseline as Production.
+Applied only to the development branch:
 
-### R2 — Additive commercial bridge
+- `20260811225144_evento_runtime_reconciliation_bridge_v1`
+- `20260811225244_evento_runtime_reconciliation_hardening_v1`
+- `20260811225610_evento_internalize_fulfillment_authorization_v1`
+- `20260811230010_evento_contract_review_evidence_v1`
+- `20260811230510_evento_contract_operator_visibility_v1`
 
-Design additive migrations that preserve the current mobile RPC/data contracts while introducing immutable evidence needed by the deeper Revenue Engine.
+### R3 — Security / negative tests — IN PROGRESS, CORE FLOW PROVEN
 
-Preferred direction:
+Rollback-only E2E evidence currently proves:
 
-- retain `project_quotes` as the compatibility header during transition;
-- add version/evidence structures without creating a second writable quote truth;
-- retain `project_payments` as the compatibility payment summary while introducing immutable provider-event evidence only if it can be derived safely;
-- retain `project_build_queue` and require an explicit human fulfillment authorization before any agent/build mutation;
-- never infer contract acceptance or payment from UI state.
+- wrong customer quote acceptance is blocked;
+- payment before contract acceptance is blocked;
+- contract draft cannot start already approved for use;
+- unreviewed contract cannot be sent;
+- owner review evidence is recorded before send;
+- payment verification does not start build;
+- human authorization is required before build queue promotion;
+- synthetic data is rolled back.
 
-Exit: both mobile and canonical web can read the same test data without duplicate commercial authority.
+Legacy authenticated execution of `start_project_workflow` and `approve_project_scope` is revoked in the development branch because the active mobile design uses the authenticated `workflow-transition` Edge Function.
 
-### R3 — Security and negative tests
+Still required before R3 closes:
 
-Required tests:
+- authenticated cross-user SELECT tests using real user JWT contexts;
+- anonymous commercial-transition tests through Edge Functions;
+- amount/currency mismatch provider tests;
+- final Security + Performance Advisor review with no unresolved high-risk blocker.
 
-- customer A cannot read customer B request/quote/payment/build state;
-- anonymous users cannot perform commercial transitions;
-- permanent customer cannot create/edit price fields;
-- customer cannot mark payment paid;
-- unverified provider event cannot promote build queue;
-- verified amount/currency mismatch cannot promote build queue;
-- agent cannot self-authorize fulfillment or release;
-- customer delivery acceptance cannot trigger Production release.
+### R4 — Stripe test payment/build proof — NEXT
 
-Re-run Supabase security and performance advisors after every DDL change.
+Required proof:
 
-Exit: no unresolved high-risk authorization blocker for the tested flow.
+`accepted reviewed contract -> Stripe test Checkout -> signed test webhook -> project_payments=paid -> project_build_queue remains pending_payment -> owner fulfillment authorization -> project_build_queue=queued`
 
-### R4 — Payment/build proof
+No live Stripe charging is part of R4.
 
-Use Stripe test mode or another explicitly non-live test context first.
+### R5 — Real Vercel branch Preview — PENDING
 
-Proof:
+Establish trusted Git linkage for the canonical EVENTO source and produce a real branch Preview from a known commit.
 
-`accepted quote -> Checkout -> signed webhook -> project_payments=paid -> project_build_queue=queued`
+Phone verification must cover Arabic/English rendering, account session, own-project isolation, commercial status, Preview URL opening, and no Production mutation.
 
-Then require separate owner/operator fulfillment authorization.
+### R6 — Preview / revision / delivery proof — PENDING
 
-Exit: payment truth and build authorization are demonstrably separate.
+Tie one exact build and Preview identity to customer feedback, revision classification, included-revision accounting, change-order boundary, delivery package, customer acceptance and separate owner release authorization.
 
-### R5 — Real Vercel branch Preview
+## Mobile reconciliation
 
-Establish trusted Git linkage for the canonical EVENTO source and produce a real branch Preview.
+A stacked mobile branch/PR is used so EVENTO Control Plane V1 remains isolated.
 
-Verify from a physical phone:
+Mobile target flow:
 
-- Arabic/English rendering;
-- account session;
-- own project only;
-- quote/payment status;
-- Preview URL opens on phone;
-- no Production mutation from Preview.
+`Quote Center -> customer quote acceptance -> Contract Center draft/review/send -> customer contract acceptance -> payment -> verified payment -> human fulfillment authorization`
 
-Exit: one exact commit/build has a real phone-viewable Preview URL.
+The isolated mobile build points to the Supabase development branch, not Production.
 
-### R6 — Preview, revision and delivery proof
-
-Connect one exact build/Preview identity to:
-
-- customer feedback;
-- operator revision classification;
-- included revision entitlement accounting;
-- change-order boundary;
-- delivery package;
-- customer acceptance;
-- separate owner release authorization.
-
-Exit: one disposable project completes the flow without bypassing any gate.
-
-## Current blockers / deferred production actions
+## Deferred Production actions
 
 Do not perform these yet:
 
+- merge the Supabase development branch into Production;
 - apply recovery Gates 3–8 directly to Production;
 - enable live Stripe charging;
 - auto-start agents after payment;
 - auto-merge/deploy/release;
 - merge the Claude EVENTO web surface as a second canonical product;
-- enable broad authenticated execution of legacy privileged workflow RPCs without explicit review;
-- treat anonymous access warnings as harmless without deciding the final demo/auth model.
+- treat remaining anonymous warnings as harmless without a final demo/auth policy.
 
-## Production-hardening backlog already observed
+## Production-hardening backlog
 
 - enable leaked-password protection before password-based Production launch;
 - decide anonymous demo policy; if retained, add CAPTCHA/Turnstile and abuse controls;
-- review/revoke legacy authenticated `SECURITY DEFINER` RPC execution where superseded by server-only transitions;
-- add covering index for `project_build_queue.quote_id`;
-- optimize remaining RLS auth/JWT calls using initialization-plan-safe patterns;
+- keep legacy privileged RPCs revoked when superseded by server-only transitions;
+- maintain FK/RLS performance fixes found by advisors;
 - add refund/support ledger and owner approval controls before commercial scale.
 
 ## Sprint completion criteria
 
-This sprint is complete only when all of the following are evidenced:
+This sprint closes only after:
 
-- one reconciled schema path in an isolated environment;
-- negative auth/RLS suite green;
-- one test quote accepted by the correct permanent customer;
-- one signed test payment event produces the correct paid state;
-- build queue promotion occurs only from verified payment logic;
-- human fulfillment authorization remains separate;
-- a real Vercel Preview is generated from a known EVENTO commit;
-- the Preview is reviewed from a physical phone;
-- revision/delivery acceptance is tied to the exact Preview/build identity;
+- one reconciled schema path is reproducible from source;
+- negative authorization/RLS suite is green;
+- one test quote and reviewed contract are accepted by the correct permanent customer;
+- one signed Stripe test event produces correct paid state;
+- paid state does not start build;
+- human fulfillment authorization promotes the queue;
+- one real Vercel Preview is generated from a known EVENTO commit;
+- Preview is reviewed on a physical phone;
+- revision/delivery acceptance is tied to exact Preview/build identity;
 - no Production schema/payment/release mutation occurred without owner review.
