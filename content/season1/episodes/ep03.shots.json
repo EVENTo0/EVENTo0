@@ -1,0 +1,398 @@
+{
+  "episode": 3,
+  "title_ar": "المائدة",
+  "title_en": "The Table",
+  "logline_ar": "مساء خميس 1993: حمد يكرم ضيفاً جاء به سالم، وبعد العشاء يعرض الضيف شراء الأرض. رفض حمد لا يرتفع فيه صوت. سالم يغادر غاضباً، ويوسف يفتح فمه ثم يصمت.",
+  "anchor": "S03",
+  "runtime_min": 28,
+  "subscenes": [
+    {
+      "id": "E03-01",
+      "year": 1993,
+      "location": "مزرعة حمد: النخيل والبئر القديم",
+      "time_of_day": "فجر الخميس",
+      "cast": [
+        "youssef",
+        "hamad"
+      ],
+      "dur_sec": 170,
+      "setting": "desert_dawn",
+      "camera": "Slow tracking behind Hamad",
+      "beat_ar": "حمد يمرّ على نخيله وبئره قبل الفجر ويوسف يمشي خلفه بالدلو. حمد يأمر بذبيحة: عندنا ضيف الليلة.",
+      "caption_ar": "«الضيف ما نسأله شنو يبي إلا بعد ما ياكل.»",
+      "shots": [
+        {
+          "id": "E03-01-A",
+          "dur_sec": 10,
+          "camera": "Slow tracking behind Hamad",
+          "midjourney": "At the edge of an old stone well among date palms, a commanding Gulf Arab patriarch of 55, greying beard, dark bisht, heavy hands, seated like a king stands with his back to camera, thin cane in hand, a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture following one step behind with an empty bucket. 1993 farm at first light: pale amber and grey, 16mm grain, dust in the air, long soft shadows. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "The camera tracks slowly behind Hamad as he walks the palm rows at dawn, his back never turning, Youssef trailing a step behind carrying an empty bucket, mist lifting from the ground. Single continuous shot, 10 seconds. Naturalistic 16mm look, warm tungsten light, no dialogue on screen, no text.",
+          "sound": "ElevenLabs: صوت حمد منخفض وجاف، كلمات قصيرة بلا التفات. Suno: sparse oud, distant wind, dawn stillness"
+        },
+        {
+          "id": "E03-01-B",
+          "dur_sec": 8,
+          "camera": "Locked-off close on a palm trunk",
+          "midjourney": "Close on a heavy weathered hand of a commanding Gulf Arab patriarch of 55, greying beard, dark bisht, heavy hands, seated like a king resting flat on the trunk of the oldest date palm, dust on the knuckles, while a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture watches from the soft-focus background, bucket hanging from his hand. 1993 farm at first light: pale amber and grey, 16mm grain, dust in the air, long soft shadows. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Locked-off close shot of Hamad's hand resting on the ancient palm trunk, his thumb moving once across the bark, Youssef blurred behind, morning light rising slowly. Single continuous shot, 8 seconds. Naturalistic 16mm look, warm tungsten light, no dialogue on screen, no text.",
+          "sound": "ElevenLabs: همسٌ خافت، أنفاس يوسف وصوت الدلو في البئر. Suno: low drone, single plucked string, patient dawn"
+        },
+        {
+          "id": "E03-01-C",
+          "dur_sec": 9,
+          "camera": "Slow pull-back to wide",
+          "midjourney": "Wide low shot of two long shadows stretching across the sand, the longer shadow of a commanding Gulf Arab patriarch of 55, greying beard, dark bisht, heavy hands, seated like a king reaching ahead of the shorter shadow of a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture, palm silhouettes behind, sun breaking the horizon. 1993 farm at first light: pale amber and grey, 16mm grain, dust in the air, long soft shadows. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Slow pull-back from the two shadows on the sand as the sun breaks the horizon, the longer shadow leading, the shorter one following, dust drifting through the light. Single continuous shot, 9 seconds. Naturalistic 16mm look, warm tungsten light, no dialogue on screen, no text.",
+          "sound": "ElevenLabs: يوسف: إن شاء الله، بصوت مطيع منخفض. Suno: warm strings rising gently, first light"
+        }
+      ]
+    },
+    {
+      "id": "E03-02",
+      "year": 1993,
+      "location": "بيت حمد: المطبخ والحوش الداخلي",
+      "time_of_day": "ضحى وعصر الخميس",
+      "cast": [
+        "noura",
+        "youssef",
+        "mariam",
+        "hamad"
+      ],
+      "dur_sec": 200,
+      "setting": "kitchen",
+      "camera": "Handheld low, near the floor",
+      "beat_ar": "تحضيرات العشاء: نورة وأمّ سعيد في المطبخ، نورة تسأل عن الضيف، مريم تصفّ الملاعق. نورة تطلب من يوسف أن يكلّم أباه. حمد يحمل مريم لحظة.",
+      "caption_ar": "«لو عرفت وما قلت، عاد ما أدري وش أسوي.»",
+      "shots": [
+        {
+          "id": "E03-02-A",
+          "dur_sec": 10,
+          "camera": "Handheld medium at counter height",
+          "midjourney": "Steam over huge copper pots in a low-ceilinged kitchen, a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait chopping onions and wiping her eye with the back of her wrist, an old cook sorting rice beside her, Mariam, a three-year-old girl in a small pink dress with dark braided hair lining up wooden spoons on the floor. 1993 interiors: warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, heavy fabric, low ceilings. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Handheld camera drifts around the busy kitchen, Noura chopping onions, the old cook sorting rice, little Mariam aligning wooden spoons on the floor, steam rising through lamplight. Single continuous shot, 10 seconds. Naturalistic 16mm look, warm tungsten light, no dialogue on screen, no text.",
+          "sound": "ElevenLabs: نورة بنبرة هادئة: ليش يجيب صاحب يوم خميس؟ Suno: soft frame drum, domestic warmth, restrained tension"
+        },
+        {
+          "id": "E03-02-B",
+          "dur_sec": 8,
+          "camera": "Static two-shot at the doorway",
+          "midjourney": "In a kitchen doorway, a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture stands in a dusty thobe with his back half turned, while a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait holds a knife still on the cutting board, looking at him, a long unspoken pause between them. 1993 interiors: warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, heavy fabric, low ceilings. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Static two-shot at the kitchen doorway, Noura setting down her knife and watching Youssef, who hesitates then turns away and leaves, a held silence. Single continuous shot, 8 seconds. Naturalistic 16mm look, warm tungsten light, no dialogue on screen, no text.",
+          "sound": "ElevenLabs: نورة تهمس: تكلّم مع أبوك، أي شي. Suno: single low cello note, held silence"
+        },
+        {
+          "id": "E03-02-C",
+          "dur_sec": 9,
+          "camera": "Slow push-in on the courtyard",
+          "midjourney": "Inner courtyard in late afternoon, Mariam, a three-year-old girl in a small pink dress with dark braided hair sits by a pair of oversized men's sandals, her small foot inside one, as a commanding Gulf Arab patriarch of 55, greying beard, dark bisht, heavy hands, seated like a king stands in the doorway above her, his face softening for one second. 1993 interiors: warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, heavy fabric, low ceilings. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Slow push-in on Mariam struggling to fit her foot in her grandfather's sandal, Hamad in the doorway looking down, then bending to lift her in one hand. Single continuous shot, 9 seconds. Naturalistic 16mm look, warm tungsten light, no dialogue on screen, no text.",
+          "sound": "ElevenLabs: مريم بصوت طفلة: جدّو، أنا كبرت. Suno: gentle music box motif over low strings"
+        }
+      ]
+    },
+    {
+      "id": "E03-03",
+      "year": 1993,
+      "location": "حوش البيت وباب المجلس",
+      "time_of_day": "قبيل المغرب",
+      "cast": [
+        "youssef",
+        "salem",
+        "hamad"
+      ],
+      "dur_sec": 190,
+      "setting": "majlis",
+      "camera": "Static wide, then slow push-in",
+      "beat_ar": "سالم يصل قبل ضيفه ويعطي يوسف دمية لمريم ويقول له: إذا قلت شي لا تسكت. حمد يظهر ويسأل سالم: ما تغدّيت؟",
+      "caption_ar": "«نحيف. يوسف، الدلّة.»",
+      "shots": [
+        {
+          "id": "E03-03-A",
+          "dur_sec": 10,
+          "camera": "Static wide in the courtyard",
+          "midjourney": "Courtyard at sunset with orange light on a mud wall, Salem, a Gulf Arab man of 25, lighter build than his brother, short trimmed beard, restless posture, modern shirt holding a paper bag facing a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture who is hanging a lantern by the majlis door, a small distance of years between the two brothers. 1993 dusk courtyard: orange light on mud walls, 16mm texture, deep shadow, muted browns. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Static wide shot of the two brothers meeting in the sunset courtyard, an awkward half embrace, Salem handing over a paper bag, Youssef hanging a lantern. Single continuous shot, 10 seconds. Naturalistic 16mm look, warm tungsten light, no dialogue on screen, no text.",
+          "sound": "ElevenLabs: سالم: اسمعه بس. وإذا قلت شي لا تسكت. Suno: sparse guitar, dusk, unresolved brotherhood"
+        },
+        {
+          "id": "E03-03-B",
+          "dur_sec": 8,
+          "camera": "Slow push-in on Youssef",
+          "midjourney": "Close on a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture holding a small cloth doll in a pink dress, looking at the dark majlis entrance, lantern light on his face, Salem, a Gulf Arab man of 25, lighter build than his brother, short trimmed beard, restless posture, modern shirt soft-focus at frame edge. 1993 dusk courtyard: orange light on mud walls, 16mm texture, deep shadow, muted browns. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Slow push-in on Youssef holding the small pink doll, his eyes moving from the doll to the dark majlis doorway, Salem blurred at the edge of frame. Single continuous shot, 8 seconds. Naturalistic 16mm look, warm tungsten light, no dialogue on screen, no text.",
+          "sound": "ElevenLabs: يوسف: أبوي ما يسمع. صوت خافت متردد. Suno: soft strings, held breath, tension underneath"
+        },
+        {
+          "id": "E03-03-C",
+          "dur_sec": 10,
+          "camera": "Slow dolly toward the doorway",
+          "midjourney": "At the majlis threshold, a commanding Gulf Arab patriarch of 55, greying beard, dark bisht, heavy hands, seated like a king with a cane and dark bisht stands looking at Salem, a Gulf Arab man of 25, lighter build than his brother, short trimmed beard, restless posture, modern shirt in his ironed modern shirt, then lays a heavy hand on the back of Salem's neck a second longer than a greeting needs. 1993 dusk courtyard: orange light on mud walls, 16mm texture, deep shadow, muted browns. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Slow dolly toward the majlis doorway as Salem bends to kiss his father's nose, Hamad's heavy hand resting on the back of Salem's neck one second too long. Single continuous shot, 10 seconds. Naturalistic 16mm look, warm tungsten light, no dialogue on screen, no text.",
+          "sound": "ElevenLabs: حمد: ما تغدّيت؟ نحيف. بنبرة جافة فيها حنان مخفي. Suno: warm low oud, restrained tenderness, dusk"
+        }
+      ]
+    },
+    {
+      "id": "E03-04",
+      "year": 1993,
+      "location": "المجلس",
+      "time_of_day": "غروب الخميس",
+      "cast": [
+        "hamad",
+        "youssef",
+        "salem"
+      ],
+      "dur_sec": 190,
+      "setting": "majlis",
+      "camera": "Slow push-in on the head of the majlis",
+      "beat_ar": "وصول المستثمر راشد الظاهري. طقوس القهوة والدلّة وترتيب الجلوس: حمد في الصدر، الضيف عن يمينه، ويوسف عند الباب حيث يجلس الخادم.",
+      "caption_ar": "«يوسف يسويها. هو اللي يعرف حقها.»",
+      "shots": [
+        {
+          "id": "E03-04-A",
+          "dur_sec": 10,
+          "camera": "Slow push-in on the head of the majlis",
+          "midjourney": "Long red-carpeted majlis lit by one tungsten lamp, a commanding Gulf Arab patriarch of 55, greying beard, dark bisht, heavy hands, seated like a king on the raised cushion with amber prayer beads, a Gulf Arab businessman of about 50 in a spotless white thobe and ironed ghutra, thin gold watch, rehearsed smile seated at his right, Salem, a Gulf Arab man of 25, lighter build than his brother, short trimmed beard, restless posture, modern shirt opposite, a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture pouring coffee from a brass dallah by the embers. 1993 interiors: warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, heavy fabric, low ceilings. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Slow push-in from the doorway down the long majlis to Hamad at the head, guests seated in order, Youssef pouring from the brass dallah, embers glowing. Single continuous shot, 10 seconds. Naturalistic 16mm look, warm tungsten light, no dialogue on screen, no text.",
+          "sound": "ElevenLabs: قهوة تُصبّ، حمد: يوسف يسويها، هو اللي يعرف حقها. Suno: intimate oud, slow, ritual dignity"
+        },
+        {
+          "id": "E03-04-B",
+          "dur_sec": 7,
+          "camera": "Macro close on hands",
+          "midjourney": "Extreme close on a small handleless cup held between finger and thumb, coffee poured to a third, a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture hand steady on a brass dallah, white cuff of his thobe visible, amber embers reflecting. 1993 interiors: warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, heavy fabric, low ceilings. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Macro locked-off shot of coffee poured into a small handleless cup from the brass dallah, steam curling, the cup then given to the guest's right hand. Single continuous shot, 7 seconds. Naturalistic 16mm look, warm tungsten light, no dialogue on screen, no text.",
+          "sound": "ElevenLabs: صوت السكب الهادئ، ورشفة الضيف بصوت خفيض. Suno: near silence, soft ember crackle, faint drone"
+        },
+        {
+          "id": "E03-04-C",
+          "dur_sec": 8,
+          "camera": "Slow rack focus to the door",
+          "midjourney": "Low angle from the guest cushion showing a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture seated on the cushion nearest the door where servants sit, the raised empty-looking hierarchy of the room behind him, a commanding Gulf Arab patriarch of 55, greying beard, dark bisht, heavy hands, seated like a king watching from the head, prayer beads still. 1993 interiors: warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, heavy fabric, low ceilings. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Slow rack focus from Youssef seated at the lowest place near the door to Hamad at the head of the majlis, silently reading the room's hierarchy. Single continuous shot, 8 seconds. Naturalistic 16mm look, warm tungsten light, no dialogue on screen, no text.",
+          "sound": "ElevenLabs: حمد: اجلس يا يوسف. نبرة أمر هادئة. Suno: low strings, subdued, social tension"
+        }
+      ]
+    },
+    {
+      "id": "E03-05",
+      "year": 1993,
+      "location": "المجلس والمطبخ الخلفي",
+      "time_of_day": "بعد المغرب",
+      "cast": [
+        "hamad",
+        "salem",
+        "youssef",
+        "noura",
+        "mariam"
+      ],
+      "dur_sec": 170,
+      "setting": "majlis",
+      "camera": "Static medium two-shot",
+      "beat_ar": "حديث عن الأرض والنخلة والبير، والمستثمر يكاد يدخل في الموضوع فيقطعه حمد: الضيف ياكل أولاً. يوسف يلتقي نورة عند باب المطبخ.",
+      "caption_ar": "«ما نتكلم قبل العشا. كلام الرجال يجي بعد ما تنزل اللقمة.»",
+      "shots": [
+        {
+          "id": "E03-05-A",
+          "dur_sec": 9,
+          "camera": "Static medium on Hamad",
+          "midjourney": "Close on a commanding Gulf Arab patriarch of 55, greying beard, dark bisht, heavy hands, seated like a king holding out a single date to the guest with two fingers, amber prayer beads in the other hand, lamp light carving his greying beard, a Gulf Arab businessman of about 50 in a spotless white thobe and ironed ghutra, thin gold watch, rehearsed smile reaching for it. 1993 interiors: warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, heavy fabric, low ceilings. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Static medium shot of Hamad offering a date from the old palm to the guest, his other hand still, the guest tasting and smiling politely. Single continuous shot, 9 seconds. Naturalistic 16mm look, warm tungsten light, no dialogue on screen, no text.",
+          "sound": "ElevenLabs: حمد: فيها ميّة سنة. بثقل هادئ. Suno: warm oud, patient rhythm, quiet weight"
+        },
+        {
+          "id": "E03-05-B",
+          "dur_sec": 8,
+          "camera": "Locked-off on Hamad's hand",
+          "midjourney": "Tight on the heavy hand of a commanding Gulf Arab patriarch of 55, greying beard, dark bisht, heavy hands, seated like a king as the amber beads stop mid-turn between his fingers, a Gulf Arab businessman of about 50 in a spotless white thobe and ironed ghutra, thin gold watch, rehearsed smile leaning forward blurred in the foreground, Salem, a Gulf Arab man of 25, lighter build than his brother, short trimmed beard, restless posture, modern shirt watching from the side. 1993 interiors: warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, heavy fabric, low ceilings. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Locked-off close on Hamad's beads stopping mid-turn as he refuses to talk business before the meal, the guest's smile faltering in the foreground. Single continuous shot, 8 seconds. Naturalistic 16mm look, warm tungsten light, no dialogue on screen, no text.",
+          "sound": "ElevenLabs: حمد: ما نتكلم قبل العشا. جملة قاطعة بلا رفع صوت. Suno: single sustained note, held tension"
+        },
+        {
+          "id": "E03-05-C",
+          "dur_sec": 10,
+          "camera": "Handheld at the kitchen door",
+          "midjourney": "At the back kitchen door under a bare bulb, a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait hands a heavy tray to a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture while Mariam, a three-year-old girl in a small pink dress with dark braided hair tugs at her dress, steam and shadow behind them. 1993 interiors: warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, heavy fabric, low ceilings. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Handheld shot at the kitchen door as Noura hands Youssef the first trays, Mariam tugging her skirt, Noura's eyes reading his face. Single continuous shot, 10 seconds. Naturalistic 16mm look, warm tungsten light, no dialogue on screen, no text.",
+          "sound": "ElevenLabs: نورة: سالم وجهه وجه واحد يبي يقول شي. Suno: soft frame drum, domestic unease"
+        }
+      ]
+    },
+    {
+      "id": "E03-06",
+      "year": 1993,
+      "location": "المجلس",
+      "time_of_day": "ليلاً",
+      "cast": [
+        "hamad",
+        "youssef",
+        "salem",
+        "mariam"
+      ],
+      "dur_sec": 200,
+      "setting": "majlis",
+      "camera": "Overhead then slow push-in",
+      "beat_ar": "العشاء على الصينية: حمد يضع نصيب الضيف بيده، ويرفض حديث الوالدة على الأكل، مريم تتسلل إلى المجلس ويطعمها حمد. يقول عنها: مريم، أول أحفادي.",
+      "caption_ar": "«ما نتكلم عن أمك على الأكل.»",
+      "shots": [
+        {
+          "id": "E03-06-A",
+          "dur_sec": 10,
+          "camera": "Overhead locked-off",
+          "midjourney": "Overhead view of a giant brass tray of yellow rice and lamb on a red rug, four men seated around it, a commanding Gulf Arab patriarch of 55, greying beard, dark bisht, heavy hands, seated like a king tearing meat with heavy hands and placing it before the guest, steam rising into lamplight. 1993 interiors: warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, heavy fabric, low ceilings. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Overhead locked-off shot of the men eating around the huge tray, Hamad tearing a piece of lamb and placing it in front of the guest, steam rising. Single continuous shot, 10 seconds. Naturalistic 16mm look, warm tungsten light, no dialogue on screen, no text.",
+          "sound": "ElevenLabs: صوت الأكل الهادئ، حمد: كل. هذا نصيبك. Suno: minimal percussion, warm low drone, ceremony"
+        },
+        {
+          "id": "E03-06-B",
+          "dur_sec": 8,
+          "camera": "Static close on Salem",
+          "midjourney": "Close on Salem, a Gulf Arab man of 25, lighter build than his brother, short trimmed beard, restless posture, modern shirt holding an uneaten mouthful of rice, eyes lowered, while a commanding Gulf Arab patriarch of 55, greying beard, dark bisht, heavy hands, seated like a king out of focus in the foreground snaps a sharp word. 1993 interiors: warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, heavy fabric, low ceilings. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Static close shot of Salem holding his untouched mouthful, his jaw tightening as his father cuts off any mention of their mother. Single continuous shot, 8 seconds. Naturalistic 16mm look, warm tungsten light, no dialogue on screen, no text.",
+          "sound": "ElevenLabs: حمد بحدة خافتة: ما نتكلم عن أمك على الأكل. Suno: low strings, sudden stillness"
+        },
+        {
+          "id": "E03-06-C",
+          "dur_sec": 10,
+          "camera": "Slow push-in on Mariam",
+          "midjourney": "At the majlis door Mariam, a three-year-old girl in a small pink dress with dark braided hair stands with one braid undone in the lamplight, then walks unsteadily to a commanding Gulf Arab patriarch of 55, greying beard, dark bisht, heavy hands, seated like a king who holds out a small ball of rice in his open palm, feeding her like a bird. 1993 interiors: warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, heavy fabric, low ceilings. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Slow push-in on little Mariam wandering to her grandfather, Hamad feeding her rice from his open palm, the men watching in silence. Single continuous shot, 10 seconds. Naturalistic 16mm look, warm tungsten light, no dialogue on screen, no text.",
+          "sound": "ElevenLabs: مريم: حار. حمد: اشربي. طفلة وجدّ. Suno: soft music box over warm strings, tenderness"
+        }
+      ]
+    },
+    {
+      "id": "E03-07",
+      "year": 1993,
+      "location": "المجلس",
+      "time_of_day": "بعد العشاء",
+      "cast": [
+        "hamad",
+        "salem",
+        "youssef"
+      ],
+      "dur_sec": 220,
+      "setting": "majlis",
+      "camera": "Slow push-in, locked-off close-ups",
+      "beat_ar": "الضيف يعرض ثمانية ملايين على الأرض. حمد يرفض بلا رفع صوت، ويسأل الضيف: وين قبر أبوك؟ سالم ينفجر ويغادر بعد أن يقول لأبيه ما لا يُقال.",
+      "caption_ar": "«الأرض ما تنباع.»",
+      "shots": [
+        {
+          "id": "E03-07-A",
+          "dur_sec": 10,
+          "camera": "Static wide over the guest's shoulder",
+          "midjourney": "Over the shoulder of a Gulf Arab businessman of about 50 in a spotless white thobe and ironed ghutra, thin gold watch, rehearsed smile unfolding a large map on the carpet, a small blue-inked square in its centre, a commanding Gulf Arab patriarch of 55, greying beard, dark bisht, heavy hands, seated like a king seated opposite unmoving, not looking at the paper, a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture frozen by the dallah. 1993 interiors: warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, heavy fabric, low ceilings. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Static over-the-shoulder shot as the guest unfolds a map on the carpet, Hamad not looking down, Youssef frozen beside the dallah. Single continuous shot, 10 seconds. Naturalistic 16mm look, warm tungsten light, no dialogue on screen, no text.",
+          "sound": "ElevenLabs: الضيف: ثمانية ملايين، نقداً. صمت ثقيل. Suno: low pulse, dread, ember crackle"
+        },
+        {
+          "id": "E03-07-B",
+          "dur_sec": 9,
+          "camera": "Slow push-in on Hamad's face",
+          "midjourney": "Tight close on a commanding Gulf Arab patriarch of 55, greying beard, dark bisht, heavy hands, seated like a king face lit from one side, an unblinking gaze, prayer beads motionless in his heavy hand, calm and terrifying, no anger visible. 1993 interiors: warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, heavy fabric, low ceilings. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Slow push-in on Hamad's calm unblinking face as he speaks the refusal without raising his voice, beads motionless in his hand. Single continuous shot, 9 seconds. Naturalistic 16mm look, warm tungsten light, no dialogue on screen, no text.",
+          "sound": "ElevenLabs: حمد بهدوء مخيف: الأرض ما تنباع. Suno: sub-bass drone, no melody, terrifying stillness"
+        },
+        {
+          "id": "E03-07-C",
+          "dur_sec": 9,
+          "camera": "Handheld on Salem standing",
+          "midjourney": "Low angle on Salem, a Gulf Arab man of 25, lighter build than his brother, short trimmed beard, restless posture, modern shirt standing suddenly among seated men, breathing hard, fists at his sides, a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture with one hand half-raised toward him, a commanding Gulf Arab patriarch of 55, greying beard, dark bisht, heavy hands, seated like a king seated in the blurred centre. 1993 interiors: warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, heavy fabric, low ceilings. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Handheld camera swings to Salem rising to his feet, breathing hard, Youssef's hand half-raised and dropping, Hamad motionless in the centre. Single continuous shot, 9 seconds. Naturalistic 16mm look, warm tungsten light, no dialogue on screen, no text.",
+          "sound": "ElevenLabs: سالم بصوت يرتجف: أمي ماتت وأنت ما بكيت. Suno: strings tighten then break, sudden hush"
+        },
+        {
+          "id": "E03-07-D",
+          "dur_sec": 8,
+          "camera": "Locked-off wide on the doorway",
+          "midjourney": "Wide locked-off view down the majlis toward the open door, Salem, a Gulf Arab man of 25, lighter build than his brother, short trimmed beard, restless posture, modern shirt a dark silhouette leaving into the night, a commanding Gulf Arab patriarch of 55, greying beard, dark bisht, heavy hands, seated like a king foreground seated unmoving, a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture small beside the dallah, headlights sweeping the wall. 1993 interiors: warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, heavy fabric, low ceilings. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Locked-off wide shot as Salem exits through the doorway into the night, headlights sweeping the wall, Hamad and Youssef unmoving. Single continuous shot, 8 seconds. Naturalistic 16mm look, warm tungsten light, no dialogue on screen, no text.",
+          "sound": "ElevenLabs: باب يُغلق، محرك سيارة، ثم صمت. Suno: single low piano note fading"
+        }
+      ]
+    },
+    {
+      "id": "E03-08",
+      "year": 1993,
+      "location": "المجلس والحوش",
+      "time_of_day": "ليلاً",
+      "cast": [
+        "hamad",
+        "youssef"
+      ],
+      "dur_sec": 200,
+      "setting": "majlis",
+      "camera": "Slow push-in on Hamad at the head",
+      "beat_ar": "الضيف يغادر. حمد وحده في صدر المجلس كالملك، ويوسف يحاول الاعتراض ثم يصمت. ارتجاف خفيف في يد حمد حين يخرج ابنه.",
+      "caption_ar": "«الأرض ما تستنّى أحد يا يوسف.»",
+      "shots": [
+        {
+          "id": "E03-08-A",
+          "dur_sec": 10,
+          "camera": "Locked-off wide in the empty majlis",
+          "midjourney": "Wide symmetrical view of the empty majlis, a commanding Gulf Arab patriarch of 55, greying beard, dark bisht, heavy hands, seated like a king alone at the head on the raised cushion like a king, an empty crumpled cushion to his right, a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture standing small at the door with a tray of cups. 1993 interiors: warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, heavy fabric, low ceilings. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Locked-off symmetrical wide shot of the majlis, Hamad enthroned at the head, the crumpled empty cushion beside him, Youssef small at the door with the cups. Single continuous shot, 10 seconds. Naturalistic 16mm look, warm tungsten light, no dialogue on screen, no text.",
+          "sound": "ElevenLabs: حمد: الأرض ما تستنّى أحد يا يوسف. هدوء قاطع. Suno: sparse oud, cold lament, restraint"
+        },
+        {
+          "id": "E03-08-B",
+          "dur_sec": 9,
+          "camera": "Slow push-in on Youssef",
+          "midjourney": "Close on a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture lips parting to speak then closing, cups trembling faintly on the tray in his hands, brass ringing thinly, eyes lowered. 1993 interiors: warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, heavy fabric, low ceilings. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Slow push-in on Youssef's face as he opens his mouth to object and then closes it, the cups trembling faintly on the tray. Single continuous shot, 9 seconds. Naturalistic 16mm look, warm tungsten light, no dialogue on screen, no text.",
+          "sound": "ElevenLabs: يوسف: يبه... ثم صمت. رنين نحاسي رفيع. Suno: strings thin out, held breath, silence"
+        },
+        {
+          "id": "E03-08-C",
+          "dur_sec": 8,
+          "camera": "Locked-off close on the hand",
+          "midjourney": "Tight on the right hand of a commanding Gulf Arab patriarch of 55, greying beard, dark bisht, heavy hands, seated like a king trembling on amber prayer beads, the left hand closing over it like catching a bird, lamplight on grey knuckles, background dark. 1993 interiors: warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, heavy fabric, low ceilings. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Locked-off close on Hamad's trembling hand on the beads, his left hand covering it, then stillness returning. Single continuous shot, 8 seconds. Naturalistic 16mm look, warm tungsten light, no dialogue on screen, no text.",
+          "sound": "ElevenLabs: أنفاس ثقيلة، خشخشة خرز المسبحة. Suno: single held note, barely audible warmth"
+        }
+      ]
+    },
+    {
+      "id": "E03-09",
+      "year": 1993,
+      "location": "المجلس والحوش وباب المطبخ",
+      "time_of_day": "قرب منتصف الليل",
+      "cast": [
+        "youssef",
+        "noura",
+        "hamad"
+      ],
+      "dur_sec": 190,
+      "setting": "kitchen",
+      "camera": "Slow pull-back through the courtyard",
+      "beat_ar": "المجلس ينطفئ. حمد يعبر الحوش إلى غرفته ولا يلتفت. نورة عند باب المطبخ: سمعت كل شي. مو الليلة، بكرة أنا أنتظرك هنا. يوسف وحده في الحوش.",
+      "caption_ar": "«بكرة، أنا أنتظرك هنا.»",
+      "shots": [
+        {
+          "id": "E03-09-A",
+          "dur_sec": 10,
+          "camera": "Tracking behind Hamad",
+          "midjourney": "Dim courtyard at night, a commanding Gulf Arab patriarch of 55, greying beard, dark bisht, heavy hands, seated like a king crossing toward his door with his cane, back to camera, not turning, a single lit doorway far ahead. 1993 interiors: warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, heavy fabric, low ceilings. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Slow tracking shot behind Hamad crossing the dark courtyard toward his room, his back never turning, hand on the door before he enters. Single continuous shot, 10 seconds. Naturalistic 16mm look, warm tungsten light, no dialogue on screen, no text.",
+          "sound": "ElevenLabs: خطوات بطيئة على الرمل، باب خشبي يُغلق. Suno: cold low strings, empty house at night"
+        },
+        {
+          "id": "E03-09-B",
+          "dur_sec": 10,
+          "camera": "Static medium two-shot",
+          "midjourney": "At the kitchen door, a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait arms crossed in the warm light of low flames, facing a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture three paces away in shadow, neither moving, night wind in the palm fronds. 1993 interiors: warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, heavy fabric, low ceilings. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Static two-shot at the kitchen door, Noura arms crossed in warm light, Youssef in shadow three steps away, neither moving, palm fronds stirring. Single continuous shot, 10 seconds. Naturalistic 16mm look, warm tungsten light, no dialogue on screen, no text.",
+          "sound": "ElevenLabs: نورة: سمعت اللي قلته، واللي ما قلته. Suno: single cello line, sorrowful, restrained"
+        },
+        {
+          "id": "E03-09-C",
+          "dur_sec": 10,
+          "camera": "Slow pull-back to wide",
+          "midjourney": "Wide night courtyard, a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture alone in the middle, tiny under a tall palm, the kitchen doorway glowing behind him, orange city glow faint on the far horizon. 1993 interiors: warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, heavy fabric, low ceilings. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Slow pull-back from Youssef standing alone in the courtyard, the kitchen light behind him, the faint orange glow of the city on the horizon. Single continuous shot, 10 seconds. Naturalistic 16mm look, warm tungsten light, no dialogue on screen, no text.",
+          "sound": "ElevenLabs: ريح في السعف، كلب بعيد، ثم صمت تام. Suno: distant oud fading into silence, unresolved"
+        }
+      ]
+    }
+  ]
+}
