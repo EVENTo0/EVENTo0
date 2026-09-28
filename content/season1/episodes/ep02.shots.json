@@ -1,0 +1,363 @@
+{
+  "episode": 2,
+  "title_ar": "الصحراء",
+  "title_en": "The Desert",
+  "logline_ar": "في فجر لم يطلع بعد يوقظ حمد ابنه يوسف ذا العشر سنوات ويمشي به يوماً كاملاً في الرمل إلى بئر العائلة القديم، يمشي ولا يلتفت، وبين ما يُقال وما لا يُقال تتشكل قسوة هي كل ما يعرفه من الحب.",
+  "anchor": "S02",
+  "runtime_min": 28,
+  "subscenes": [
+    {
+      "id": "E02-01",
+      "year": 1973,
+      "location": "بيت الطين الكبير: غرفة الأولاد والفناء",
+      "time_of_day": "قبل الفجر",
+      "cast": [
+        "youssef",
+        "hamad"
+      ],
+      "dur_sec": 200,
+      "setting": "night_room",
+      "camera": "Slow push-in",
+      "beat_ar": "حمد يوقظ يوسف بتنحنحة واحدة. الوالدة تسلّم الصرّة ليوسف وتهمس «هو صغير» فيقول حمد «كنت أصغر منه». سالم الصغير يتعلق بأخيه.",
+      "caption_ar": "«هو صغير.» — «كنت أصغر منه.»",
+      "shots": [
+        {
+          "id": "E02-01-A",
+          "dur_sec": 10,
+          "camera": "Slow push-in",
+          "midjourney": "Doorway of a mud-brick children's room before dawn, one hanging oil lantern, Hamad, a tall, hard-jawed Gulf Arab man of 35, black beard, dark bisht over white thobe, an unbending gaze that never turns back, standing as a silhouette in the door, Youssef, a thin ten-year-old Gulf Arab boy in a faded white thobe, sun-darkened skin, tired serious eyes, asleep on a thin mattress, a small brother asleep beside him with one arm stretched out, cool blue dark with a single warm flame 1973 amber-bleached palette, 35mm film grain, anamorphic, shallow depth of field, no text, --ar 21:9 --style raw --v 7",
+          "runway": "Slow push-in from the room toward the doorway for 10 seconds. A tall man's silhouette stands motionless in the door while a boy sleeps on a thin mattress; the lantern flame trembles, dust floats. The man clears his throat once, the boy's eyes open instantly.",
+          "sound": "ElevenLabs: تنحنحة رجل واحدة جافة في الظلام، ثم نفَس طفل. Suno: sparse solo oud, distant, hushed dawn tension"
+        },
+        {
+          "id": "E02-01-B",
+          "dur_sec": 9,
+          "camera": "Static",
+          "midjourney": "Courtyard of a mud house before dawn, glowing embers in a clay oven, Youssef, a thin ten-year-old Gulf Arab boy in a faded white thobe, sun-darkened skin, tired serious eyes, pouring cold water over his hands and shivering, behind him Hamad, a tall, hard-jawed Gulf Arab man of 35, black beard, dark bisht over white thobe, an unbending gaze that never turns back, standing at the outer door with his back turned tightening his belt, blue shadows and orange ember light 1973 amber-bleached palette, 35mm film grain, anamorphic, shallow depth of field, no text, --ar 21:9 --style raw --v 7",
+          "runway": "Static locked-off wide shot for 9 seconds. In a dark courtyard a boy splashes cold water on his face and shivers while a tall man waits at the far door with his back turned, unmoving like a tree. Ember glow flickers on the clay oven.",
+          "sound": "ElevenLabs: ماء يُسكب على يدين صغيرتين، أنفاس باردة، صمت. Suno: single low drone, faint oud harmonic, patient"
+        },
+        {
+          "id": "E02-01-C",
+          "dur_sec": 12,
+          "camera": "Slow dolly",
+          "midjourney": "At a wooden gate before dawn, Um Hamad, a Gulf Arab woman of 31, dark abaya, gentle tired face, pressing a knotted cloth bundle into the hands of Youssef, a thin ten-year-old Gulf Arab boy in a faded white thobe, sun-darkened skin, tired serious eyes, her fingers brushing his hair, Hamad, a tall, hard-jawed Gulf Arab man of 35, black beard, dark bisht over white thobe, an unbending gaze that never turns back, half-turned away in profile only from behind, grey-blue light, tender and restrained 1973 amber-bleached palette, 35mm film grain, anamorphic, shallow depth of field, no text, --ar 21:9 --style raw --v 7",
+          "runway": "Slow dolly-in for 12 seconds on a mother passing a heavy cloth bundle to a small boy at a wooden gate, her hand touching his hair quickly as if stealing the gesture, while the father stands framed from behind, still, the gate creaking open to blue desert light.",
+          "sound": "ElevenLabs: امرأة تهمس «هو صغير»، ورجل يجيب بخفوت. Suno: tender oud, small strings, held breath, sorrow"
+        }
+      ]
+    },
+    {
+      "id": "E02-02",
+      "year": 1973,
+      "location": "حظيرة البيت وحافة القرية",
+      "time_of_day": "الفجر الأول",
+      "cast": [
+        "youssef",
+        "hamad"
+      ],
+      "dur_sec": 200,
+      "setting": "desert_dawn",
+      "camera": "Tracking behind",
+      "beat_ar": "صلاة الفجر، العصا الصغيرة التي قُطعت ليوسف، جار عجوز يفهم الرحلة، ثم عتبة الرمل: خطوة حمد الأولى وتردد يوسف.",
+      "caption_ar": "«غلطت في الفاتحة. مرة ثانية أحسن.»",
+      "shots": [
+        {
+          "id": "E02-02-A",
+          "dur_sec": 8,
+          "camera": "Static",
+          "midjourney": "Edge of a courtyard at first blue light, Hamad, a tall, hard-jawed Gulf Arab man of 35, black beard, dark bisht over white thobe, an unbending gaze that never turns back, praying on a woven mat, and half a step behind him Youssef, a thin ten-year-old Gulf Arab boy in a faded white thobe, sun-darkened skin, tired serious eyes, praying with a small stumbling posture, dark bisht, calm and severe, soft dust in the air 1973 amber-bleached palette, 35mm film grain, anamorphic, shallow depth of field, no text, --ar 21:9 --style raw --v 7",
+          "runway": "Static side-on shot for 8 seconds. A tall man and a small boy pray in a dark courtyard at first blue light, the boy half a step behind and slightly out of rhythm; the man finishes and rises without looking at him, folding the mat.",
+          "sound": "ElevenLabs: تلاوة رجل غليظة رصينة وصوت طفل رفيع يتعثر. Suno: minimal dawn ambience, low pad, a distant call"
+        },
+        {
+          "id": "E02-02-B",
+          "dur_sec": 10,
+          "camera": "Handheld",
+          "midjourney": "Close on a hand offering a freshly cut wooden desert staff, sap-green bark still fresh, Hamad, a tall, hard-jawed Gulf Arab man of 35, black beard, dark bisht over white thobe, an unbending gaze that never turns back, holding it out sideways without looking, Youssef, a thin ten-year-old Gulf Arab boy in a faded white thobe, sun-darkened skin, tired serious eyes, receiving it wide-eyed, rough sunrise glow behind the stable 1973 amber-bleached palette, 35mm film grain, anamorphic, shallow depth of field, no text, --ar 21:9 --style raw --v 7",
+          "runway": "Handheld close shot for 10 seconds. A man holds out a freshly cut staff sideways without looking; a small boy takes it, turns it over, sees the carefully polished head, and hides a small smile before the man could turn, though the man never does.",
+          "sound": "ElevenLabs: عصا تُسلَّم، نفَس طفل مندهش، صمت. Suno: warm plucked oud, hopeful but restrained"
+        },
+        {
+          "id": "E02-02-C",
+          "dur_sec": 13,
+          "camera": "Wide static",
+          "midjourney": "Last mud walls of a village at dawn, a single last palm, Hamad, a tall, hard-jawed Gulf Arab man of 35, black beard, dark bisht over white thobe, an unbending gaze that never turns back, placing his palm on the wall as if asking permission, then stepping onto sand, Youssef, a thin ten-year-old Gulf Arab boy in a faded white thobe, sun-darkened skin, tired serious eyes, pausing at the line between clay and sand looking back, vast pale desert ahead 1973 amber-bleached palette, 35mm film grain, anamorphic, shallow depth of field, no text, --ar 21:9 --style raw --v 7",
+          "runway": "Wide static shot for 13 seconds. At the last mud wall a man rests his palm on it, steps onto the sand and walks on; a small boy pauses at the boundary, glances back at the sleeping village, then steps out. A faint call to prayer fades into the emptiness.",
+          "sound": "ElevenLabs: أذان بعيد يتلاشى في الفراغ، خطوات على رمل. Suno: long drone, single oud note, vast horizon"
+        }
+      ]
+    },
+    {
+      "id": "E02-03",
+      "year": 1973,
+      "location": "صحراء مفتوحة، كثبان منخفضة",
+      "time_of_day": "شروق الشمس إلى الضحى",
+      "cast": [
+        "youssef",
+        "hamad"
+      ],
+      "dur_sec": 270,
+      "setting": "desert_dawn",
+      "camera": "Tracking behind",
+      "beat_ar": "قلب الحلقة: المشي شبه الصامت. كل خطوة لحمد تساوي خطوتين ليوسف. حمد يمشي دون أن يلتفت. القربة التي لا يُطلب منها.",
+      "caption_ar": "«يوسف عشر سنوات يمشي خلف أبيه في رمال الصحراء. كل خطوة لحمد تساوي خطوتين ليوسف.»",
+      "shots": [
+        {
+          "id": "E02-03-A",
+          "dur_sec": 15,
+          "camera": "Extreme wide crane",
+          "midjourney": "Extreme wide aerial view of pale desert dunes at sunrise, two tiny figures, Hamad, a tall, hard-jawed Gulf Arab man of 35, black beard, dark bisht over white thobe, an unbending gaze that never turns back, walking ahead, and far behind him Youssef, a thin ten-year-old Gulf Arab boy in a faded white thobe, sun-darkened skin, tired serious eyes, walking alone in his footprints, long shadows stretching back toward home, gold and grey light, immense emptiness 1973 amber-bleached palette, 35mm film grain, anamorphic, shallow depth of field, no text, --ar 21:9 --style raw --v 7",
+          "runway": "Slow crane up and back for 15 seconds. Two tiny figures cross a dune ridge at sunrise, the taller ahead, the small one keeping a fixed distance behind; their long shadows stretch toward home and the wind begins to erase the smaller footprints first.",
+          "sound": "ElevenLabs: رمل تحت قدمين، ريح، لا كلام. Suno: solo oud sparse, wind pad, slow sunrise swell"
+        },
+        {
+          "id": "E02-03-B",
+          "dur_sec": 12,
+          "camera": "Low tracking",
+          "midjourney": "Ground-level close view of sand, a large weathered man's sandal pressing a deep footprint, and beside it a small bare child's foot stretching to reach inside the print and failing, Youssef, a thin ten-year-old Gulf Arab boy in a faded white thobe, sun-darkened skin, tired serious eyes, the leaping boy partly visible, Hamad, a tall, hard-jawed Gulf Arab man of 35, black beard, dark bisht over white thobe, an unbending gaze that never turns back, only his legs and bisht hem, warm side light 1973 amber-bleached palette, 35mm film grain, anamorphic, shallow depth of field, no text, --ar 21:9 --style raw --v 7",
+          "runway": "Low tracking shot for 12 seconds at ground level. A man's big steady stride leaves deep prints; a small bare foot jumps to land inside one, cannot reach, stumbles, tries again. The man's legs never slow and never turn, the camera staying behind at the boy's knee.",
+          "sound": "ElevenLabs: قدمان ثقيلتان وقدمان خفيفتان تتعثران على الرمل. Suno: minimal pulse of a single string, patient"
+        },
+        {
+          "id": "E02-03-C",
+          "dur_sec": 14,
+          "camera": "Tracking behind",
+          "midjourney": "Behind the shoulders of Hamad, a tall, hard-jawed Gulf Arab man of 35, black beard, dark bisht over white thobe, an unbending gaze that never turns back, walking on a dune crest with his dark bisht swaying, unbending, never turning, and in the soft-focus distance Youssef, a thin ten-year-old Gulf Arab boy in a faded white thobe, sun-darkened skin, tired serious eyes, panting, lifting his chin, the gap between them widening and narrowing like a breath, hot amber haze 1973 amber-bleached palette, 35mm film grain, anamorphic, shallow depth of field, no text, --ar 21:9 --style raw --v 7",
+          "runway": "Tracking shot from behind for 14 seconds, following a man's broad back and swaying bisht along a dune crest as a small out-of-focus boy struggles behind; the gap widens and narrows like breathing, heat shimmer rising, the man's head never turning.",
+          "sound": "ElevenLabs: أنفاس طفل متقطعة وصوت «يبه» بلا رد. Suno: lonely oud, low strings creeping in"
+        },
+        {
+          "id": "E02-03-D",
+          "dur_sec": 9,
+          "camera": "Static",
+          "midjourney": "Medium close on Hamad, a tall, hard-jawed Gulf Arab man of 35, black beard, dark bisht over white thobe, an unbending gaze that never turns back, holding a leather water skin at a dune crest, drinking one short sip, from behind and side, Youssef, a thin ten-year-old Gulf Arab boy in a faded white thobe, sun-darkened skin, tired serious eyes, in foreground beside him swallowing hard and not asking, cracked lips, mid-morning white light 1973 amber-bleached palette, 35mm film grain, anamorphic, shallow depth of field, no text, --ar 21:9 --style raw --v 7",
+          "runway": "Static shot for 9 seconds. A man drinks one short sip from a water skin and hangs it back on his shoulder, while a small boy beside him swallows hard, cracked lips, and chooses not to ask; then the man walks on and the boy lifts his chin and follows.",
+          "sound": "ElevenLabs: قربة تُغلق، ريق يُبتلع، لا طلب. Suno: hush, distant oud, dry hot air"
+        }
+      ]
+    },
+    {
+      "id": "E02-04",
+      "year": 1973,
+      "location": "وادٍ جاف تحت صخرة مائلة",
+      "time_of_day": "الظهيرة",
+      "cast": [
+        "youssef",
+        "hamad"
+      ],
+      "dur_sec": 210,
+      "setting": "desert_lone",
+      "camera": "Slow push-in",
+      "beat_ar": "استراحة الظهيرة: الخبز نصفين، السؤال «ليش نروح البير؟» والجواب «تشوف». يوسف يغرس نواة تمر ويمدّ لأبيه نصف الحلوى فيأخذها حمد.",
+      "caption_ar": "«يمكن تصير نخلة.» — «ما تصير. ما فيها ماي.»",
+      "shots": [
+        {
+          "id": "E02-04-A",
+          "dur_sec": 10,
+          "camera": "Static",
+          "midjourney": "Under a leaning boulder in a dry riverbed at noon, Hamad, a tall, hard-jawed Gulf Arab man of 35, black beard, dark bisht over white thobe, an unbending gaze that never turns back, sitting on a stone breaking flatbread in half and holding one half out sideways without looking, Youssef, a thin ten-year-old Gulf Arab boy in a faded white thobe, sun-darkened skin, tired serious eyes, seated a metre and a half away taking it, hard white noon light, deep cool shade 1973 amber-bleached palette, 35mm film grain, anamorphic, shallow depth of field, no text, --ar 21:9 --style raw --v 7",
+          "runway": "Static shot for 10 seconds. In shade under a leaning rock a man breaks flatbread and holds half out sideways without looking; a small boy takes it, and they eat in silence a metre and a half apart while heat shimmers on the sand beyond the shade.",
+          "sound": "ElevenLabs: خبز يُكسر، مضغ بطيء، حشرات الظهيرة. Suno: sparse oud, warm quiet tension"
+        },
+        {
+          "id": "E02-04-B",
+          "dur_sec": 8,
+          "camera": "Macro push-in",
+          "midjourney": "Extreme close on a small sunburnt hand pressing a date stone into sand with one finger, Youssef, a thin ten-year-old Gulf Arab boy in a faded white thobe, sun-darkened skin, tired serious eyes, only hands and downcast face, Hamad, a tall, hard-jawed Gulf Arab man of 35, black beard, dark bisht over white thobe, an unbending gaze that never turns back, faintly visible at the frame edge watching from the corner of his eye, warm dust light 1973 amber-bleached palette, 35mm film grain, anamorphic, shallow depth of field, no text, --ar 21:9 --style raw --v 7",
+          "runway": "Macro slow push-in for 8 seconds on a boy's small hand pushing a date stone into the sand with one finger. At the frame edge a man's dark eye sees it from the corner and says nothing. Dust drifts.",
+          "sound": "ElevenLabs: «يمكن تصير نخلة» همساً، ثم «ما فيها ماي». Suno: fragile solo oud, one hopeful note"
+        },
+        {
+          "id": "E02-04-C",
+          "dur_sec": 12,
+          "camera": "Slow push-in",
+          "midjourney": "Close medium of Youssef, a thin ten-year-old Gulf Arab boy in a faded white thobe, sun-darkened skin, tired serious eyes, holding out half of a small date-molasses sweet on his open palm sideways to his father without looking, and Hamad, a tall, hard-jawed Gulf Arab man of 35, black beard, dark bisht over white thobe, an unbending gaze that never turns back, looking at the small hand for a long moment, then taking it and closing his eyes briefly, shade and glare, intimate and restrained 1973 amber-bleached palette, 35mm film grain, anamorphic, shallow depth of field, no text, --ar 21:9 --style raw --v 7",
+          "runway": "Slow push-in for 12 seconds. A small hand extends half a sweet sideways, mirroring the man's earlier gesture. The father stares at it, motionless. He takes it, chews, and as he turns away his eyes close for one brief second.",
+          "sound": "ElevenLabs: صمت طويل ثم مضغ رجل وتنهيدة خافتة. Suno: gentle oud, held breath, quiet warmth"
+        }
+      ]
+    },
+    {
+      "id": "E02-05",
+      "year": 1973,
+      "location": "هضبة حجرية سوداء ثم منحدر رملي",
+      "time_of_day": "العصر",
+      "cast": [
+        "youssef",
+        "hamad"
+      ],
+      "dur_sec": 220,
+      "setting": "desert_lone",
+      "camera": "Tracking behind",
+      "beat_ar": "الحجارة السوداء الساخنة تحرق قدم يوسف. الفجوة تتسع، حمد يعدّ الخطى دون التفات، يفتعل توقفاً ثم يمدّ يده خلفه فيسحب يوسف يده، ويبطئ ربع خطوة.",
+      "caption_ar": "«الأرض حارّة. لا تحط رجلك على الأسود.»",
+      "shots": [
+        {
+          "id": "E02-05-A",
+          "dur_sec": 11,
+          "camera": "Handheld",
+          "midjourney": "Black scorched rocks between sand under late afternoon sun, Youssef, a thin ten-year-old Gulf Arab boy in a faded white thobe, sun-darkened skin, tired serious eyes, sitting on the ground holding a burned bare foot and blowing on it, his staff fallen, far ahead Hamad, a tall, hard-jawed Gulf Arab man of 35, black beard, dark bisht over white thobe, an unbending gaze that never turns back, walking on with his back turned, thirty metres of empty ground between them 1973 amber-bleached palette, 35mm film grain, anamorphic, shallow depth of field, no text, --ar 21:9 --style raw --v 7",
+          "runway": "Handheld shot for 11 seconds. A boy sits on black stones holding his blistered foot, blowing on it, tears gathering but not falling; he stands, limps, falls to one knee, rises; far ahead a man's back keeps walking and never turns.",
+          "sound": "ElevenLabs: شهقة مكتومة، أنفاس، ثم خطوات عرجاء على حجر. Suno: strained oud, slow low string, ache"
+        },
+        {
+          "id": "E02-05-B",
+          "dur_sec": 10,
+          "camera": "Crane",
+          "midjourney": "Seen from the front and above, Hamad, a tall, hard-jawed Gulf Arab man of 35, black beard, dark bisht over white thobe, an unbending gaze that never turns back, walking across a rocky plateau with his eyes half closed as if listening with his whole body to something behind him, a rare glimpse of his face, harsh late sun, restrained fear behind an unbending face 1973 amber-bleached palette, 35mm film grain, anamorphic, shallow depth of field, no text, --ar 21:9 --style raw --v 7",
+          "runway": "Slow crane down from above for 10 seconds, showing a man walking forward with his eyes half closed, jaw set, listening to the faint unsteady footsteps behind him, counting them like a frightened man pretending not to be. A single held moment of vulnerability.",
+          "sound": "ElevenLabs: خطى متعثرة بعيدة خلف رجل صامت. Suno: single sustained string, tender, almost inaudible"
+        },
+        {
+          "id": "E02-05-C",
+          "dur_sec": 12,
+          "camera": "Static",
+          "midjourney": "Low view of Hamad, a tall, hard-jawed Gulf Arab man of 35, black beard, dark bisht over white thobe, an unbending gaze that never turns back, standing beside a tall black rock, extending an open hand backward toward the boy without looking, and Youssef, a thin ten-year-old Gulf Arab boy in a faded white thobe, sun-darkened skin, tired serious eyes, reaching his small hand almost to it, then withdrawing it at the last instant and picking up his staff instead, late gold light 1973 amber-bleached palette, 35mm film grain, anamorphic, shallow depth of field, no text, --ar 21:9 --style raw --v 7",
+          "runway": "Static low shot for 12 seconds. A man's open hand is held out behind him to the side, not looking. A small hand rises toward it, hesitates, and withdraws at the last moment to grip a staff instead. The hand closes slowly, and the man walks on.",
+          "sound": "ElevenLabs: صمت، ثم «الأرض حارّة» بصوت خافت. Suno: sparse oud, one unresolved note, silence"
+        }
+      ]
+    },
+    {
+      "id": "E02-06",
+      "year": 1973,
+      "location": "البئر الحجرية القديمة بين نخلات ميتة",
+      "time_of_day": "قبيل الغروب",
+      "cast": [
+        "youssef",
+        "hamad"
+      ],
+      "dur_sec": 250,
+      "setting": "desert_dawn",
+      "camera": "Wide static",
+      "beat_ar": "الوصول: البئر الحجرية وخطوط العدّ التي حفرها الجدّ والأب، وخط أملس ينتظر. الدلو يعود طيناً. حمد يطلب من يوسف أن ينزل ويجرف. يوسف يخاف، ينزل، ويجد الماء يتسرّب.",
+      "caption_ar": "«كل شي مظلم أول مرة.»",
+      "shots": [
+        {
+          "id": "E02-06-A",
+          "dur_sec": 12,
+          "camera": "Wide static",
+          "midjourney": "Sand hollow with an ancient round stone-lined well, three dead beheaded palm trunks and low broken mud walls, at sunset, Hamad, a tall, hard-jawed Gulf Arab man of 35, black beard, dark bisht over white thobe, an unbending gaze that never turns back, and Youssef, a thin ten-year-old Gulf Arab boy in a faded white thobe, sun-darkened skin, tired serious eyes, standing side by side on the last dune looking down, long shadow pointing toward the well, red horizon 1973 amber-bleached palette, 35mm film grain, anamorphic, shallow depth of field, no text, --ar 21:9 --style raw --v 7",
+          "runway": "Wide static shot for 12 seconds. Two figures stand at the crest of the last dune looking down at an ancient stone well in a hollow among dead palm trunks, the red sun behind them, the man's long shadow reaching toward the well like a pointing arm.",
+          "sound": "ElevenLabs: ريح غروب باردة وصمت مكان يُوقَّر. Suno: awe, solo oud, low sustained drone"
+        },
+        {
+          "id": "E02-06-B",
+          "dur_sec": 10,
+          "camera": "Macro slow dolly",
+          "midjourney": "Extreme close on the black stone rim of a well carved with rows of tally marks, Hamad, a tall, hard-jawed Gulf Arab man of 35, black beard, dark bisht over white thobe, an unbending gaze that never turns back, running his rough finger over the scratches, and Youssef, a thin ten-year-old Gulf Arab boy in a faded white thobe, sun-darkened skin, tired serious eyes, touching the neighbouring smooth stone where no mark exists yet, dusk light raking across the carvings 1973 amber-bleached palette, 35mm film grain, anamorphic, shallow depth of field, no text, --ar 21:9 --style raw --v 7",
+          "runway": "Macro slow dolly along the stone rim for 10 seconds. A man's rough finger traces rows of worn tally marks; a small finger follows, then touches an adjacent smooth patch where no mark exists yet. The man does not answer the question in the boy's eyes.",
+          "sound": "ElevenLabs: إصبع على حجر منقوش، «جدي حفرها». Suno: ancient sparse oud, reverent hush"
+        },
+        {
+          "id": "E02-06-C",
+          "dur_sec": 13,
+          "camera": "Tilt down",
+          "midjourney": "Looking straight down a dark well shaft from above, a small boy face lit by faint violet sky, Youssef, a thin ten-year-old Gulf Arab boy in a faded white thobe, sun-darkened skin, tired serious eyes, climbing down a rope ladder into blackness with a small axe on his back, above him the silhouette of Hamad, a tall, hard-jawed Gulf Arab man of 35, black beard, dark bisht over white thobe, an unbending gaze that never turns back, gripping the rope, circle of dusk sky 1973 amber-bleached palette, 35mm film grain, anamorphic, shallow depth of field, no text, --ar 21:9 --style raw --v 7",
+          "runway": "Slow tilt down for 13 seconds from the rim into the well's blackness. A small boy descends a rope into darkness, fear held in silence, while above him a dark silhouette grips the rope and does not speak; the sky circle shrinks and turns deep blue.",
+          "sound": "ElevenLabs: حبل يخشخش وأنفاس طفل، «أنا هنا». Suno: dread, low drone, faint heartbeat pulse"
+        },
+        {
+          "id": "E02-06-D",
+          "dur_sec": 9,
+          "camera": "Macro static",
+          "midjourney": "Inside the well in near darkness, a small muddy hand held up in front of a boy's face, Youssef, a thin ten-year-old Gulf Arab boy in a faded white thobe, sun-darkened skin, tired serious eyes, eyes wide, a single drop of water shining on his palm, far above at the rim Hamad, a tall, hard-jawed Gulf Arab man of 35, black beard, dark bisht over white thobe, an unbending gaze that never turns back, a dark silhouette, glistening stone walls 1973 amber-bleached palette, 35mm film grain, anamorphic, shallow depth of field, no text, --ar 21:9 --style raw --v 7",
+          "runway": "Macro static shot for 9 seconds. In darkness a boy's small muddy hand rises to his face, a single drop of water glints on his palm; his eyes widen, and his breath catches as he whispers that there is water.",
+          "sound": "ElevenLabs: «يبه فيه ماي» بصوت مبحوح يرتد في الحجر. Suno: breath of relief, one warm oud note"
+        }
+      ]
+    },
+    {
+      "id": "E02-07",
+      "year": 1973,
+      "location": "حول البئر تحت النجوم",
+      "time_of_day": "ليل",
+      "cast": [
+        "youssef",
+        "hamad"
+      ],
+      "dur_sec": 220,
+      "setting": "desert_lone",
+      "camera": "Slow push-in",
+      "beat_ar": "الليل عند نار صغيرة. أول ماء من البئر: يوسف يشرب قبل أبيه ويبكي بلا صوت. حمد يعترف أنه بكى في بئر أبيه. يضمّد يد يوسف ويقول «أمك تقول إني قاسي… وعندها حق».",
+      "caption_ar": "«أمك تقول إني قاسي… وعندها حق.» — «بس الماي حلو.»",
+      "shots": [
+        {
+          "id": "E02-07-A",
+          "dur_sec": 12,
+          "camera": "Slow push-in",
+          "midjourney": "Night desert, a small fire of dead palm wood, Youssef, a thin ten-year-old Gulf Arab boy in a faded white thobe, sun-darkened skin, tired serious eyes, wrapped in half a bisht, drinking from a small copper cup with both hands as two tears run down, Hamad, a tall, hard-jawed Gulf Arab man of 35, black beard, dark bisht over white thobe, an unbending gaze that never turns back, watching him across the flames, firelight on both faces, stars overhead 1973 amber-bleached palette, 35mm film grain, anamorphic, shallow depth of field, no text, --ar 21:9 --style raw --v 7",
+          "runway": "Slow push-in for 12 seconds. By a small fire a boy drinks from a copper cup with both hands, two tears rolling down silently; across the flames his father watches, a hard face softened by firelight, saying nothing.",
+          "sound": "ElevenLabs: ماء يُشرب ببطء، «حلو»، نار تتقطع. Suno: warm intimate oud, glow, hushed strings"
+        },
+        {
+          "id": "E02-07-B",
+          "dur_sec": 14,
+          "camera": "Static close",
+          "midjourney": "Close on two faces by firelight, Hamad, a tall, hard-jawed Gulf Arab man of 35, black beard, dark bisht over white thobe, an unbending gaze that never turns back, telling something in a low voice and staring into the embers, Youssef, a thin ten-year-old Gulf Arab boy in a faded white thobe, sun-darkened skin, tired serious eyes, listening in disbelief that his father ever cried, orange fire glow, deep black night, stars 1973 amber-bleached palette, 35mm film grain, anamorphic, shallow depth of field, no text, --ar 21:9 --style raw --v 7",
+          "runway": "Static close shot for 14 seconds. A man speaks quietly to the fire, admitting he cried in this same well at a younger age; a boy listens, astonished, unable to imagine it. The embers crackle and the man ends his sentence without finishing it.",
+          "sound": "ElevenLabs: «بكيت» بصوت منخفض جداً، وطفل يسأل. Suno: solitary oud, soft strings, confession, restrained"
+        },
+        {
+          "id": "E02-07-C",
+          "dur_sec": 11,
+          "camera": "Macro push-in",
+          "midjourney": "Macro of Hamad, a tall, hard-jawed Gulf Arab man of 35, black beard, dark bisht over white thobe, an unbending gaze that never turns back, tying a wet cloth around a small scraped palm with a tight strong knot, still gripping the wrist a moment longer, Youssef, a thin ten-year-old Gulf Arab boy in a faded white thobe, sun-darkened skin, tired serious eyes, wincing, firelight warm on hands, blood and rope-fibre scratches, intimate 1973 amber-bleached palette, 35mm film grain, anamorphic, shallow depth of field, no text, --ar 21:9 --style raw --v 7",
+          "runway": "Macro slow push-in for 11 seconds. A man's rough hands bind a small scraped palm with a wet cloth in a tight knot and keep hold of the wrist a moment too long; the boy winces then goes still, and the fire reflects in both their eyes.",
+          "sound": "ElevenLabs: «ما يوجع»، «يوجع»، «شوي». Suno: tender oud, low pulse"
+        },
+        {
+          "id": "E02-07-D",
+          "dur_sec": 15,
+          "camera": "Crane up",
+          "midjourney": "Wide night view of the desert, a tiny fire, Hamad, a tall, hard-jawed Gulf Arab man of 35, black beard, dark bisht over white thobe, an unbending gaze that never turns back, sitting with his back to a sleeping child, facing the dark, and Youssef, a thin ten-year-old Gulf Arab boy in a faded white thobe, sun-darkened skin, tired serious eyes, asleep beneath a spread bisht, Milky Way blazing overhead, immense silence, guarding 1973 amber-bleached palette, 35mm film grain, anamorphic, shallow depth of field, no text, --ar 21:9 --style raw --v 7",
+          "runway": "Slow crane up for 15 seconds from the tiny fire to reveal the immense starry desert. A man sits with his back to a sleeping boy, facing the dark like a guard, one arm stretched backward to spread a bisht over the child without turning.",
+          "sound": "ElevenLabs: «لا تروح» همساً، نفَس عميق واحد. Suno: vast sparse strings, tender drone, ends in silence"
+        }
+      ]
+    },
+    {
+      "id": "E02-08",
+      "year": 1973,
+      "location": "الكثبان ثم بوابة البيت",
+      "time_of_day": "قبل الفجر إلى الشروق",
+      "cast": [
+        "youssef",
+        "hamad",
+        "salem"
+      ],
+      "dur_sec": 220,
+      "setting": "desert_dawn",
+      "camera": "Tracking behind",
+      "beat_ar": "العودة قبل الفجر، الفجوة أضيق. يوسف ينهار ركبتيه نائماً، حمد يتوقف ثم يعود ويحمله. عند الباب تسأل الوالدة «التفتّ؟» فيجيب «لا».",
+      "caption_ar": "«التفتّ؟» — «لا.»",
+      "shots": [
+        {
+          "id": "E02-08-A",
+          "dur_sec": 12,
+          "camera": "Tracking behind",
+          "midjourney": "Grey dawn dunes, Hamad, a tall, hard-jawed Gulf Arab man of 35, black beard, dark bisht over white thobe, an unbending gaze that never turns back, walking ahead with his bisht, and Youssef, a thin ten-year-old Gulf Arab boy in a faded white thobe, sun-darkened skin, tired serious eyes, close behind him now, only a metre away, stepping almost inside his footprints, jumping to match his stride, pale blue light, thin mist 1973 amber-bleached palette, 35mm film grain, anamorphic, shallow depth of field, no text, --ar 21:9 --style raw --v 7",
+          "runway": "Tracking shot from behind for 12 seconds. At blue dawn a small boy walks only a metre behind a man's broad back, hopping to land inside the man's footprints and sometimes succeeding; the man never turns and quietly slows by a fraction.",
+          "sound": "ElevenLabs: خطوات متناغمة على رمل بارد، لا كلام. Suno: quiet resolving oud, gentle dawn warmth"
+        },
+        {
+          "id": "E02-08-B",
+          "dur_sec": 14,
+          "camera": "Slow push-in",
+          "midjourney": "Kneeling small boy asleep on a dune at first light, Youssef, a thin ten-year-old Gulf Arab boy in a faded white thobe, sun-darkened skin, tired serious eyes, head drooped, and Hamad, a tall, hard-jawed Gulf Arab man of 35, black beard, dark bisht over white thobe, an unbending gaze that never turns back, walking back to him and lifting him onto his shoulder, cloth-bandaged palm dangling, the man's face seen clearly for the first time, tired and tender, soft pink dawn 1973 amber-bleached palette, 35mm film grain, anamorphic, shallow depth of field, no text, --ar 21:9 --style raw --v 7",
+          "runway": "Slow push-in for 14 seconds. A boy has fallen asleep on his knees in the sand. A man stops, stands very still, then turns, walks back, kneels and lifts him onto his shoulder like something precious, looking around once to check no one is watching.",
+          "sound": "ElevenLabs: رمل، تنهيدة رجل، طفل نائم يتنفس. Suno: tender oud and strings, emotional release, hushed"
+        },
+        {
+          "id": "E02-08-C",
+          "dur_sec": 13,
+          "camera": "Static",
+          "midjourney": "Wooden gate of a mud house at sunrise, Um Hamad, a Gulf Arab woman of 31, dark abaya, gentle tired face, waiting since dawn, taking a sleeping child from the arms of Hamad, a tall, hard-jawed Gulf Arab man of 35, black beard, dark bisht over white thobe, an unbending gaze that never turns back, his back to the camera, Youssef, a thin ten-year-old Gulf Arab boy in a faded white thobe, sun-darkened skin, tired serious eyes, limp on her shoulder with one dusty bare foot hanging, warm gold light 1973 amber-bleached palette, 35mm film grain, anamorphic, shallow depth of field, no text, --ar 21:9 --style raw --v 7",
+          "runway": "Static shot for 13 seconds. A woman takes her sleeping son from her husband's arms at the gate as gold sunlight enters the courtyard; he answers her whispered question with one word and walks in, and she watches his back, smiling sadly, dust on the boy's dangling foot.",
+          "sound": "ElevenLabs: «التفتّ؟» همساً، وجواب «لا» بصوت رجل متعب. Suno: soft warm oud, resolution, sunrise, bittersweet"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "episode": 6,
+  "title_ar": "العيادة",
+  "title_en": "The Clinic",
+  "logline_ar": "في يوم فحوص وانتظار في المستشفى، يرفض حمد (72) أن يكون مريضاً ويقود يوسف (47) ويرتب ويتحدث مع الأطباء، وفي غرفة د. فيصل يدرك الأب لأول مرة أنه صار يُتحدَّث عنه لا معه.",
+  "anchor": "S06",
+  "runtime_min": 31,
+  "subscenes": [
+    {
+      "id": "E06-01",
+      "year": 2010,
+      "location": "مجلس البيت الكبير",
+      "time_of_day": "فجر",
+      "cast": [
+        "youssef",
+        "hamad",
+        "mariam",
+        "khalid"
+      ],
+      "dur_sec": 180,
+      "setting": "majlis",
+      "camera": "Slow push-in",
+      "beat_ar": "حمد يجلس في مجلسه بثوب الزيارة ويرفض أن يكون مريضاً، ويوسف يصرّ أن يسوق هو.",
+      "caption_ar": "أنا وعدت. أنا ما وعدت أحد.",
+      "shots": [
+        {
+          "id": "E06-01-A",
+          "dur_sec": 10,
+          "camera": "Slow push-in",
+          "midjourney": "Dawn light through a high window in a large traditional majlis, an old man seated at the head in his formal bisht refusing to rise, his son standing at the door holding car keys and a blue plastic folder. Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. clean natural daylight, 2010, anamorphic 21:9 cinematic still, shallow depth of field, muted restrained palette, no text in frame, emotion in small physical detail --ar 21:9 --style raw --v 7",
+          "runway": "Slow push-in, 10 seconds, on an elderly man seated upright at the head of a dawn-lit majlis, coffee untouched beside him; his son stands at the door holding car keys and a blue folder, silent, unmoving. Soft window light, shallow focus, deliberate quiet pace.",
+          "sound": "ElevenLabs: صوت حمد جاف وهادئ، يرفض دون رفع صوته أبداً. Suno: sparse oud, distant dawn drone, restrained tension"
+        },
+        {
+          "id": "E06-01-B",
+          "dur_sec": 8,
+          "camera": "Static locked-off",
+          "midjourney": "A teenage boy carrying a small tray with a glass of water and two white pills, offering it to his grandfather in a dim majlis, the old man looking at the boy rather than at the pills. Khalid, a Gulf Arab teenage boy of 16, school shirt, quiet watchful eyes. Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. clean natural daylight, 2010, anamorphic 21:9 cinematic still, shallow depth of field, muted restrained palette, no text in frame, emotion in small physical detail --ar 21:9 --style raw --v 7",
+          "runway": "Locked-off static shot, 8 seconds, of a boy holding out a small tray with a water glass and two pills; the old man takes the pills without water, a stubborn small gesture, then looks away. Warm dawn side light, very shallow depth of field.",
+          "sound": "ElevenLabs: صوت خالد خجول وحنون، وحمد أخفض نبرة معه. Suno: soft oud single notes, warm and tender"
+        },
+        {
+          "id": "E06-01-C",
+          "dur_sec": 8,
+          "camera": "Slow tracking shot",
+          "midjourney": "A young woman with a university bag standing behind her father in a doorway as an old man walks past them without turning, his walking stick held but never leaned on. Mariam, a Gulf Arab young woman of 20, dark abaya, loose scarf, direct steady gaze. Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. clean natural daylight, 2010, anamorphic 21:9 cinematic still, shallow depth of field, muted restrained palette, no text in frame, emotion in small physical detail --ar 21:9 --style raw --v 7",
+          "runway": "Slow tracking shot, 8 seconds, following the old man's back as he walks out of the majlis past his son and granddaughter without turning his head; the son lowers his eyes. Dawn haze at the door, shallow focus.",
+          "sound": "ElevenLabs: خطوات بطيئة على السجاد، ونفس مكتوم ليوسف. Suno: minimal low strings, restrained, unresolved"
+        }
+      ]
+    },
+    {
+      "id": "E06-02",
+      "year": 2010,
+      "location": "سيارة على الطريق السريع",
+      "time_of_day": "صباح",
+      "cast": [
+        "youssef",
+        "hamad",
+        "mariam"
+      ],
+      "dur_sec": 190,
+      "setting": "car",
+      "camera": "Locked-off through windshield",
+      "beat_ar": "يقود يوسف بهدوء، وحمد يراقب الطريق، ثم يصل اتصال من سالم لا يُرَدّ عليه.",
+      "caption_ar": "رقمه ما تغيّر.",
+      "shots": [
+        {
+          "id": "E06-02-A",
+          "dur_sec": 10,
+          "camera": "Static locked-off",
+          "midjourney": "Interior of an old sedan on a highway between palms and sand, the son driving with both hands on the wheel, his aged father in the passenger seat sitting too straight, morning sun on the windshield. Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. clean natural daylight, 2010, anamorphic 21:9 cinematic still, shallow depth of field, muted restrained palette, no text in frame, emotion in small physical detail --ar 21:9 --style raw --v 7",
+          "runway": "Locked-off static shot from the dashboard, 10 seconds, of a son driving carefully and his elderly father sitting rigidly beside him, the father's palm pressing his knee as a truck passes. Morning sun through the windshield, palms sliding by, shallow focus.",
+          "sound": "ElevenLabs: محرك سيارة هادئ، وحمد يعلّق بجفاف عن السرعة. Suno: slow ambient road piano, gentle, waiting"
+        },
+        {
+          "id": "E06-02-B",
+          "dur_sec": 8,
+          "camera": "Slow push-in",
+          "midjourney": "Close view of a phone in a car dashboard holder lit with a caller name, a man's thumb turning it face down while his father stares straight ahead and a young woman leans forward from the back seat. Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. Mariam, a Gulf Arab young woman of 20, dark abaya, loose scarf, direct steady gaze. clean natural daylight, 2010, anamorphic 21:9 cinematic still, shallow depth of field, muted restrained palette, no text in frame, emotion in small physical detail --ar 21:9 --style raw --v 7",
+          "runway": "Slow push-in, 8 seconds, on a phone glowing in a dashboard holder; the driver's hand flips it face down and the light dies, while the vibration continues faintly. Behind him a young woman leans forward, watching. Soft daylight, tight framing.",
+          "sound": "ElevenLabs: اهتزاز الهاتف ثم صمت، ويوسف يقول أسوق بهدوء. Suno: single low cello note, unresolved tension"
+        },
+        {
+          "id": "E06-02-C",
+          "dur_sec": 8,
+          "camera": "Slow pan",
+          "midjourney": "A man lowering his father's sun visor after his own, the old man noticing this small gesture without saying a word, sunlight across both faces. Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. clean natural daylight, 2010, anamorphic 21:9 cinematic still, shallow depth of field, muted restrained palette, no text in frame, emotion in small physical detail --ar 21:9 --style raw --v 7",
+          "runway": "Slow pan, 8 seconds, from the son's hand lowering the passenger sun visor to the father's face as he notices and says nothing; warm sunlight sweeps across both men, palm shadows passing. Intimate profile framing, shallow depth.",
+          "sound": "ElevenLabs: ثوانٍ من الصمت وحمد يهمس رقمه ما تغيّر. Suno: warm sparse strings, quiet ache"
+        }
+      ]
+    },
+    {
+      "id": "E06-03",
+      "year": 2010,
+      "location": "استقبال المستشفى وغرفة الانتظار",
+      "time_of_day": "صباح",
+      "cast": [
+        "youssef",
+        "hamad",
+        "mariam"
+      ],
+      "dur_sec": 200,
+      "setting": "clinic",
+      "camera": "Slow dolly along waiting row",
+      "beat_ar": "موظفة الاستقبال تخاطب يوسف لا حمد، وحمد يجلس بعيداً عن الجميع وسط بياض الردهة.",
+      "caption_ar": "أنا اسمي حمد.",
+      "shots": [
+        {
+          "id": "E06-03-A",
+          "dur_sec": 10,
+          "camera": "Slow dolly",
+          "midjourney": "Bright hospital reception hall with a glass counter, a receptionist looking at the son while the old father stands at his shoulder like a shadow, glossy floor reflecting figures. Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. clean natural daylight, 2010, anamorphic 21:9 cinematic still, shallow depth of field, muted restrained palette, no text in frame, emotion in small physical detail --ar 21:9 --style raw --v 7",
+          "runway": "Slow dolly-in, 10 seconds, toward a reception desk where the clerk addresses the son while the old father stands half a step behind, mouth closed, holding his stick. Cold white hospital light, glossy floor reflections, shallow focus.",
+          "sound": "ElevenLabs: موظفة تسأل يوسف، وحمد يقول أنا اسمي حمد. Suno: cold ambient hum, sparse piano, clinical stillness"
+        },
+        {
+          "id": "E06-03-B",
+          "dur_sec": 8,
+          "camera": "Static locked-off",
+          "midjourney": "A row of plastic waiting chairs in a hospital lobby, an old man sitting at the very end seat, a young woman with a marketing textbook beside him, an old man in a wheelchair opposite. Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. Mariam, a Gulf Arab young woman of 20, dark abaya, loose scarf, direct steady gaze. clean natural daylight, 2010, anamorphic 21:9 cinematic still, shallow depth of field, muted restrained palette, no text in frame, emotion in small physical detail --ar 21:9 --style raw --v 7",
+          "runway": "Static locked-off shot, 8 seconds, of an old man sitting rigidly at the end of a waiting row, glancing at a wheelchair opposite then away, his granddaughter beside him with a thick book. Hard white light, wide negative space.",
+          "sound": "ElevenLabs: مريم تمزح مع جدها، وضحكة خافتة منه. Suno: light gentle piano, small warmth in cold room"
+        },
+        {
+          "id": "E06-03-C",
+          "dur_sec": 8,
+          "camera": "Slow push-in",
+          "midjourney": "A nurse calling a number as the old man rises first and straightens his bisht, his son half rising then sitting slowly back as the old man walks alone toward a long corridor. Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. clean natural daylight, 2010, anamorphic 21:9 cinematic still, shallow depth of field, muted restrained palette, no text in frame, emotion in small physical detail --ar 21:9 --style raw --v 7",
+          "runway": "Slow push-in, 8 seconds, on the old man rising and pulling his bisht straight, walking alone toward a long bright corridor while his son slowly sits back down. The granddaughter watches him disappear. Clean light, shallow focus.",
+          "sound": "ElevenLabs: الممرضة تنادي، وحمد يقول أنا أعرف أمشي. Suno: single sustained note, dignity and distance"
+        }
+      ]
+    },
+    {
+      "id": "E06-04",
+      "year": 2010,
+      "location": "غرفة الفحوص والأجهزة",
+      "time_of_day": "قبل الظهر",
+      "cast": [
+        "hamad",
+        "faisal"
+      ],
+      "dur_sec": 220,
+      "setting": "clinic",
+      "camera": "Slow dolly-in on face",
+      "beat_ar": "يضطر حمد لخلع ثوبه أمام الفنّي، ويرى قلبه على الشاشة لأول مرة، ويطلب أن يبقى ابنه بالخارج.",
+      "caption_ar": "سبعين سنة وما حد شاف قلبي.",
+      "shots": [
+        {
+          "id": "E06-04-A",
+          "dur_sec": 10,
+          "camera": "Slow push-in",
+          "midjourney": "A narrow examination room with a blue curtain and paper-covered bed, an old man sitting on its edge holding a pale blue hospital gown like an enemy flag, technician arranging sticky leads on a tray. Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. clean natural daylight, 2010, anamorphic 21:9 cinematic still, shallow depth of field, muted restrained palette, no text in frame, emotion in small physical detail --ar 21:9 --style raw --v 7",
+          "runway": "Slow push-in, 10 seconds, on an old man sitting on the edge of an exam bed, holding a blue gown in both hands as though it were a flag, unbuttoning his white thobe with unsteady fingers while a technician looks politely away. Cool clinic light.",
+          "sound": "ElevenLabs: حمد يقول أنا ما قلعت ثوبي قدام ولدي. Suno: sparse low piano, awkward dignity, quiet"
+        },
+        {
+          "id": "E06-04-B",
+          "dur_sec": 8,
+          "camera": "Static locked-off",
+          "midjourney": "A green ECG line on a monitor with an old man's chest and cold electrodes in foreground, technician glancing twice at the screen, the old man staring at the ceiling. Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. clean natural daylight, 2010, anamorphic 21:9 cinematic still, shallow depth of field, muted restrained palette, no text in frame, emotion in small physical detail --ar 21:9 --style raw --v 7",
+          "runway": "Locked-off static shot, 8 seconds, of a green heartbeat line on a monitor while the old man lies staring at the ceiling, one finger scratching the paper sheet. The technician's second look at the screen changes his face. Cold soft light.",
+          "sound": "ElevenLabs: الفنّي يلتزم الصمت، وحمد يقول أنت ما تكذب بالطريقة الصح. Suno: sterile pulse, faint low drone"
+        },
+        {
+          "id": "E06-04-C",
+          "dur_sec": 10,
+          "camera": "Slow push-in",
+          "midjourney": "Dim echocardiography room, grey pulsing image of a heart valve on a screen reflected in an old man's watching eyes, a gel-covered chest, a woman doctor's gloved hand moving the probe. Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. clean natural daylight, 2010, anamorphic 21:9 cinematic still, shallow depth of field, muted restrained palette, no text in frame, emotion in small physical detail --ar 21:9 --style raw --v 7",
+          "runway": "Slow push-in, 10 seconds, on the old man's face lit by a grey pulsing image of his own heart valve on screen, his eyes wide and still while the gloved hand moves the probe. He asks where his son is, then asks him to stay outside. Dim room.",
+          "sound": "ElevenLabs: أنفاس حمد بطيئة، وهمسة خلّه برا. Suno: heartbeat pulse, soft strings swelling, intimate and afraid"
+        }
+      ]
+    },
+    {
+      "id": "E06-05",
+      "year": 2010,
+      "location": "ممر جهاز الجهد والمصلّى",
+      "time_of_day": "ظهر",
+      "cast": [
+        "youssef",
+        "hamad",
+        "mariam"
+      ],
+      "dur_sec": 200,
+      "setting": "clinic",
+      "camera": "Slow track along glass wall",
+      "beat_ar": "يتحدث يوسف مع المقيم عن الأدوية بينما يمشي حمد على السير، ثم تكشف الصلاة ضعف ركبة حمد فيسنده يوسف بلا كلام.",
+      "caption_ar": "لا تقل لأحد.",
+      "shots": [
+        {
+          "id": "E06-05-A",
+          "dur_sec": 10,
+          "camera": "Slow tracking shot",
+          "midjourney": "Through a wide glass wall an old man in an undershirt walks on a treadmill with wires on his chest, proud chin raised, while in the hospital corridor his son speaks with a young resident holding a clipboard. Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. clean natural daylight, 2010, anamorphic 21:9 cinematic still, shallow depth of field, muted restrained palette, no text in frame, emotion in small physical detail --ar 21:9 --style raw --v 7",
+          "runway": "Slow tracking shot, 10 seconds, along a glass wall: an old man walks proudly on a treadmill with wires on his chest while, in the foreground, his son listens to a young resident with a clipboard. Sharp reflections, cool light.",
+          "sound": "ElevenLabs: المقيم يخبر يوسف صدّقه إذا قال تعبان. Suno: low pulsing strings, quiet anxiety"
+        },
+        {
+          "id": "E06-05-B",
+          "dur_sec": 8,
+          "camera": "Static locked-off",
+          "midjourney": "A small prayer room with green carpet and a shelf of Quran copies, an old man wiping his forearms at a basin while his son stands by with a towel, noon light through a narrow window. Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. clean natural daylight, 2010, anamorphic 21:9 cinematic still, shallow depth of field, muted restrained palette, no text in frame, emotion in small physical detail --ar 21:9 --style raw --v 7",
+          "runway": "Locked-off static shot, 8 seconds, in a small hospital prayer room: the old man washes his forearms at the basin, his son holding a towel and keeping a careful distance. Soft noon light from a narrow window, quiet green carpet, shallow focus.",
+          "sound": "ElevenLabs: صوت ماء وأذان بعيد مكتوم. Suno: soft hushed drone, reverent, sparse"
+        },
+        {
+          "id": "E06-05-C",
+          "dur_sec": 10,
+          "camera": "Slow push-in",
+          "midjourney": "An old man losing his balance rising from prostration, grabbing a shelf edge, his son's hand quietly slipping beneath his elbow, neither man looking at the other. Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. clean natural daylight, 2010, anamorphic 21:9 cinematic still, shallow depth of field, muted restrained palette, no text in frame, emotion in small physical detail --ar 21:9 --style raw --v 7",
+          "runway": "Slow push-in, 10 seconds, on the old man's knee buckling as he rises from prayer, his hand seizing a shelf edge; his son's hand slips silently beneath his elbow, and the old man lets his weight rest. Neither looks at the other. Soft light.",
+          "sound": "ElevenLabs: أمك كانت تحب الصلاة هنا وقوفاً، بصوت حمد الخافت. Suno: single oud note, tender, breath-like"
+        }
+      ]
+    },
+    {
+      "id": "E06-06",
+      "year": 2010,
+      "location": "ممر الانتظار خارج غرف الفحوص",
+      "time_of_day": "ظهر",
+      "cast": [
+        "youssef",
+        "mariam",
+        "khalid",
+        "hamad"
+      ],
+      "dur_sec": 180,
+      "setting": "clinic",
+      "camera": "Slow push-in on siblings",
+      "beat_ar": "يصل خالد بمسبحة جده وقهوته، ويتبادل مع مريم ملاحظة أن أحداً لا يسأل أباهما كيف حاله.",
+      "caption_ar": "ولا أنا.",
+      "shots": [
+        {
+          "id": "E06-06-A",
+          "dur_sec": 10,
+          "camera": "Static locked-off",
+          "midjourney": "A long hospital corridor with a glass window onto a small garden, a father standing by the glass turning pages of a blue folder without reading, his daughter and teenage son seated behind him with a thermos. Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. Mariam, a Gulf Arab young woman of 20, dark abaya, loose scarf, direct steady gaze. Khalid, a Gulf Arab teenage boy of 16, school shirt, quiet watchful eyes. clean natural daylight, 2010, anamorphic 21:9 cinematic still, shallow depth of field, muted restrained palette, no text in frame, emotion in small physical detail --ar 21:9 --style raw --v 7",
+          "runway": "Locked-off static shot, 10 seconds, of a father standing at a corridor window, leafing through a blue folder without reading, while his daughter and teenage son sit behind with a thermos, talking quietly about him. Soft garden light.",
+          "sound": "ElevenLabs: همس أخوين عن أبيهما، وسؤال لا أحد سأله. Suno: light tender piano, family ache, quiet"
+        },
+        {
+          "id": "E06-06-B",
+          "dur_sec": 8,
+          "camera": "Slow push-in",
+          "midjourney": "A young woman handing a paper cup of coffee to her tired father at a hospital window, cardamom steam rising, his eyes closing for a moment as he drinks. Mariam, a Gulf Arab young woman of 20, dark abaya, loose scarf, direct steady gaze. Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. clean natural daylight, 2010, anamorphic 21:9 cinematic still, shallow depth of field, muted restrained palette, no text in frame, emotion in small physical detail --ar 21:9 --style raw --v 7",
+          "runway": "Slow push-in, 8 seconds, on a young woman offering a paper coffee cup to her exhausted father, steam curling up; he takes a sip and closes his eyes for a moment. Soft window light, warm tones against cool corridor.",
+          "sound": "ElevenLabs: مريم تقول قهوة يا بابا، ويوسف يضحك بتعب. Suno: warm gentle oud, small kindness, hopeful"
+        },
+        {
+          "id": "E06-06-C",
+          "dur_sec": 8,
+          "camera": "Slow dolly",
+          "midjourney": "An old man emerging from an exam room with unbuttoned thobe and no bisht, a teenage boy hurrying to hand him a dark wooden prayer-bead string, the old man straightening the boy's collar. Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. Khalid, a Gulf Arab teenage boy of 16, school shirt, quiet watchful eyes. clean natural daylight, 2010, anamorphic 21:9 cinematic still, shallow depth of field, muted restrained palette, no text in frame, emotion in small physical detail --ar 21:9 --style raw --v 7",
+          "runway": "Slow dolly-in, 8 seconds, on an old man stepping out with his thobe half buttoned as his grandson presses a wooden prayer-bead string into his palm; he tugs the boy's collar straight, then buttons himself, refusing help. Soft corridor light.",
+          "sound": "ElevenLabs: خالد يقول جبت مسبحتك، وحمد يخفض صوته حنوناً. Suno: warm sparse strings, quiet affection"
+        }
+      ]
+    },
+    {
+      "id": "E06-07",
+      "year": 2010,
+      "location": "ممر أمام عيادة د. فيصل",
+      "time_of_day": "ظهر",
+      "cast": [
+        "youssef",
+        "hamad"
+      ],
+      "dur_sec": 160,
+      "setting": "clinic",
+      "camera": "Slow push-in on two chairs",
+      "beat_ar": "قبل الدخول: أب وابن على كرسيين معدنيين، حمد يرى ابنه يمسك الملف كأنه يهرب، ويدخل لأول مرة بعده.",
+      "caption_ar": "وأنت كبرت متى؟",
+      "shots": [
+        {
+          "id": "E06-07-A",
+          "dur_sec": 10,
+          "camera": "Static locked-off",
+          "midjourney": "Narrow corridor outside a cardiology clinic door, two metal chairs, an old man and his son sitting side by side, the son gripping a blue folder, the old man watching a wheelchair pair pass. Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. clean natural daylight, 2010, anamorphic 21:9 cinematic still, shallow depth of field, muted restrained palette, no text in frame, emotion in small physical detail --ar 21:9 --style raw --v 7",
+          "runway": "Locked-off static shot, 10 seconds, of two metal chairs outside a clinic door, father and son side by side; the son's fingers grip a blue folder tightly while the old man watches another father pass in a wheelchair. Pale daylight, stillness.",
+          "sound": "ElevenLabs: حمد يسأل كم عمره، ويوسف يجيب ما أدري. Suno: single low note, restraint, dry room tone"
+        },
+        {
+          "id": "E06-07-B",
+          "dur_sec": 8,
+          "camera": "Slow push-in",
+          "midjourney": "Close on a man's hand pressing a clinic door handle as an old man's stopped hand hovers behind him, both entering the room, the son a half-step ahead of his father. Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. clean natural daylight, 2010, anamorphic 21:9 cinematic still, shallow depth of field, muted restrained palette, no text in frame, emotion in small physical detail --ar 21:9 --style raw --v 7",
+          "runway": "Slow push-in, 8 seconds, on a son's hand opening a clinic door while his father's hand stops in the air behind it; the father steps in after him, half a pace behind, for the first time in his life. Pale daylight, shallow focus.",
+          "sound": "ElevenLabs: أنا أفتح، همسة حمد بعد أن فُتح الباب. Suno: soft strings, quiet unease, held breath"
+        }
+      ]
+    },
+    {
+      "id": "E06-08",
+      "year": 2010,
+      "location": "عيادة د. فيصل",
+      "time_of_day": "ظهر",
+      "cast": [
+        "youssef",
+        "hamad",
+        "faisal"
+      ],
+      "dur_sec": 240,
+      "setting": "clinic",
+      "camera": "Slow push-in on Hamad",
+      "beat_ar": "الطبيب يشرح لأب ابنه بنظرته وعنقه، ويقول القرار يرجع لكم، فيدرك حمد أنه يُتحدَّث عنه لا معه.",
+      "caption_ar": "القرار يرجع لكم.",
+      "shots": [
+        {
+          "id": "E06-08-A",
+          "dur_sec": 10,
+          "camera": "Static locked-off",
+          "midjourney": "A cardiologist at a wooden desk speaking to the son, his eyes turned toward him, the old man seated slightly out of focus between them, a heart model on the wall, clean daylight. Dr Faisal, a Gulf Arab man of 35, white coat, neat short beard, kind but hurried. Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. clean natural daylight, 2010, anamorphic 21:9 cinematic still, shallow depth of field, muted restrained palette, no text in frame, emotion in small physical detail --ar 21:9 --style raw --v 7",
+          "runway": "Locked-off static shot, 10 seconds, over an old man's shoulder: the doctor at his desk speaks earnestly to the son, eyes turned only toward him, while the old man sits slightly out of focus between them. Heart model on the wall, clean neutral daylight.",
+          "sound": "ElevenLabs: فيصل يشرح بهدوء ومصطلحات طبية، لا يلتفت لحمد. Suno: minimal, dry piano, emotionally quiet"
+        },
+        {
+          "id": "E06-08-B",
+          "dur_sec": 8,
+          "camera": "Slow push-in",
+          "midjourney": "Close on an old man's face as the doctor's voice continues off-screen, his eyes moving from the doctor's mouth to his son's bowed head to a model of a heart on the wall. Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. clean natural daylight, 2010, anamorphic 21:9 cinematic still, shallow depth of field, muted restrained palette, no text in frame, emotion in small physical detail --ar 21:9 --style raw --v 7",
+          "runway": "Slow push-in, 8 seconds, on the old man's face, eyes drifting from the doctor's mouth to his son's nodding head and then to a plastic heart model on the wall. His lips part, then close. Nothing moves except his eyes. Clean daylight, shallow focus.",
+          "sound": "ElevenLabs: أنا هنا يا دكتور، هادئ جداً ومكسور. Suno: near-silence, faint hum, sustained string"
+        },
+        {
+          "id": "E06-08-C",
+          "dur_sec": 10,
+          "camera": "Static locked-off",
+          "midjourney": "Over the old man's shoulder, the doctor looking finally at him, mouth half open, the old man's prayer beads resting silent on his knee, the son in soft focus reaching for the folder. Dr Faisal, a Gulf Arab man of 35, white coat, neat short beard, kind but hurried. Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. clean natural daylight, 2010, anamorphic 21:9 cinematic still, shallow depth of field, muted restrained palette, no text in frame, emotion in small physical detail --ar 21:9 --style raw --v 7",
+          "runway": "Locked-off static shot, 10 seconds, of the old man's hand and prayer beads resting silent on his knee in the foreground, the doctor's kind late glance rising toward him, the son reaching for the folder in soft focus. Neutral daylight, absolute stillness.",
+          "sound": "ElevenLabs: القرار يرجع لكم، ثم صمت كامل. Suno: single held note fading to silence, intimate"
+        }
+      ]
+    },
+    {
+      "id": "E06-09",
+      "year": 2010,
+      "location": "ممر المستشفى والموقف",
+      "time_of_day": "عصراً",
+      "cast": [
+        "youssef",
+        "hamad",
+        "mariam",
+        "khalid"
+      ],
+      "dur_sec": 190,
+      "setting": "car",
+      "camera": "Slow tracking behind Hamad",
+      "beat_ar": "حمد يمشي أولاً بلا التفات، يقول ليوسف الدكتور كان يكلمك، ثم يشد الحزام بنفسه ويرفض المساعدة.",
+      "caption_ar": "كان يكلمك أنت.",
+      "shots": [
+        {
+          "id": "E06-09-A",
+          "dur_sec": 10,
+          "camera": "Slow tracking shot",
+          "midjourney": "Long hospital corridor in low afternoon light, an old man walking ahead with his stick tapping audibly, his son close behind holding the folder, two young people following in silence, long shadows on the floor. Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. Mariam, a Gulf Arab young woman of 20, dark abaya, loose scarf, direct steady gaze. Khalid, a Gulf Arab teenage boy of 16, school shirt, quiet watchful eyes. clean natural daylight, 2010, anamorphic 21:9 cinematic still, shallow depth of field, muted restrained palette, no text in frame, emotion in small physical detail --ar 21:9 --style raw --v 7",
+          "runway": "Slow tracking shot, 10 seconds, following an old man's back down a corridor of low amber light, his stick tapping, his son a few steps behind with a folder, two young people trailing in silence. Long shadows, shallow focus.",
+          "sound": "ElevenLabs: عصا حمد تدق الأرض، وخطوات خلفه خفيفة. Suno: slow strings, low sun warmth, quiet grief"
+        },
+        {
+          "id": "E06-09-B",
+          "dur_sec": 8,
+          "camera": "Static locked-off",
+          "midjourney": "Parking lot under afternoon sun, an old man beside a sedan turning slowly toward his son to speak, no anger, only measuring, the son holding the folder against his chest. Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. clean natural daylight, 2010, anamorphic 21:9 cinematic still, shallow depth of field, muted restrained palette, no text in frame, emotion in small physical detail --ar 21:9 --style raw --v 7",
+          "runway": "Locked-off static shot, 8 seconds, in a sunlit car park: the old man turns to his son beside the sedan, no anger in his face, only a quiet measuring look, while the son holds the folder against his chest. Hard afternoon light, shallow focus.",
+          "sound": "ElevenLabs: حمد يقول الدكتور كان يكلمك أنت، بلا غضب. Suno: sparse guitar harmonics, empty hollow calm"
+        },
+        {
+          "id": "E06-09-C",
+          "dur_sec": 10,
+          "camera": "Slow push-in",
+          "midjourney": "Through the rear windscreen and rear-view mirror an old man in the passenger seat looking not at the road but at his son, the son avoiding the mirror, a phone lighting up with a missed call in the holder. Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. clean natural daylight, 2010, anamorphic 21:9 cinematic still, shallow depth of field, muted restrained palette, no text in frame, emotion in small physical detail --ar 21:9 --style raw --v 7",
+          "runway": "Slow push-in, 10 seconds, on the rear-view mirror showing the old man's eyes fixed on his son, not the road, while the son avoids his gaze; the phone glows with a missed call and he presses it dark. Amber light, shallow focus.",
+          "sound": "ElevenLabs: شغّل، بصوت حمد خافت، ثم صمت ثقيل. Suno: slow strings fading, unresolved ache, fade to black"
+        }
+      ]
+    }
+  ]
+}
