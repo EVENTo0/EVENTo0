@@ -1,0 +1,52 @@
+<div class="wrap">
+  <header>
+    <div>
+      <div class="eyebrow">EVENTO · Season 1 pre-production environment</div>
+      <h1>الجذر <small>THE ROOT — SEASON ANIMATIC</small></h1>
+    </div>
+    <p class="note">معاينة مجانية للموسم الأول <b>مبنية من ملفات الحلقات الفعلية</b> (السيناريو وقوائم اللقطات). كل مشهد فرعي يُرسم في إعداد بيئي مناسب ويُقلَّص زمنه للمراجعة السريعة. الشخصيات ظلال عامة؛ هذه معاينة إيقاع وتكوين واستمرارية، <b>وليست فيديو ذكاء اصطناعي واقعياً</b>.</p>
+  </header>
+
+  <nav class="eps" id="eps" aria-label="Episodes"></nav>
+
+  <section aria-label="Episode player">
+    <div class="screen">
+      <canvas id="cv" width="1680" height="720"></canvas>
+      <div class="hud" id="hud"></div>
+      <div class="rec"><i></i>PREVIZ · 21:9</div>
+      <div class="caption" id="cap"></div>
+      <button class="bigplay" id="big" aria-label="Play episode">▶</button>
+    </div>
+    <div class="ctl">
+      <button class="b" id="play">▶ Play</button>
+      <button class="b" id="prev">◀ Scene</button>
+      <button class="b" id="next">Scene ▶</button>
+      <button class="b" id="snd" aria-pressed="false">Sound off</button>
+      <button class="b" id="spd" aria-label="Playback speed">1×</button>
+      <div class="time" id="time"></div>
+    </div>
+    <div class="tl" id="tl" role="group" aria-label="Timeline"></div>
+  </section>
+
+  <section aria-label="Key frames">
+    <h2>Key frames — <span id="epTitle"></span></h2>
+    <div class="strip" id="strip"></div>
+  </section>
+
+  <div class="cols">
+    <section class="card" aria-label="Scene card">
+      <h2>Scene card</h2>
+      <div id="shot"></div>
+    </section>
+    <section class="card" aria-label="Shots and prompts">
+      <h2>Shots &amp; generation prompts</h2>
+      <div id="prompts"></div>
+    </section>
+  </div>
+
+  <section class="card" aria-label="Automated tests">
+    <h2>Automated pre-production tests — whole season</h2>
+    <div class="sum" id="sum"></div>
+    <div class="scroll"><table id="qa"></table></div>
+  </section>
+</div>
