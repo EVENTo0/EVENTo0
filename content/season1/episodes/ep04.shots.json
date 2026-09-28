@@ -1,0 +1,397 @@
+{
+  "episode": 4,
+  "title_ar": "مطبخ نورة",
+  "title_en": "Noura's Kitchen",
+  "logline_ar": "يوم الخميس نفسه الذي يزور فيه المستثمر بيت حمد، لكن من الجهة الخلفية: نورة تُبقي البيت الكبير حياً بيديها في مكانٍ تركته الوالدة فارغاً، وحين ينتهي العشاء الذي كسر العائلة تطلب من زوجها أن يختار.",
+  "anchor": "S04",
+  "runtime_min": 27,
+  "subscenes": [
+    {
+      "id": "E04-01",
+      "year": 1993,
+      "location": "مطبخ البيت الكبير",
+      "time_of_day": "قبل الفجر",
+      "cast": [
+        "noura",
+        "mariam"
+      ],
+      "dur_sec": 180,
+      "setting": "kitchen",
+      "camera": "Slow push-in",
+      "beat_ar": "نورة تصحو قبل الجميع وتحضّر الشاي والعجين. مريم تجلس على كرسي الوالدة الفارغ وتقول: أنا أقعد مكانها.",
+      "caption_ar": "طيب. أنا أقعد مكانها.",
+      "shots": [
+        {
+          "id": "E04-01-A",
+          "dur_sec": 10,
+          "camera": "Slow push-in",
+          "midjourney": "Pre-dawn kitchen lit by a single small lamp over the stove, blue darkness behind, cardamom being crushed on a wooden board under the knife handle, steam rising from a copper kettle, hands in tight close-up, a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait. Anamorphic 21:9, shallow depth of field, warm tungsten 1993 palette, 16mm film grain, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Static-then-slow push-in on Noura's hands crushing cardamom at a stove lamp, steam drifting across frame, blue pre-dawn window behind, 10 seconds, restrained realistic movement, shallow focus. Photorealistic natural motion, one continuous take, no cuts, warm tungsten 1993 film look, shallow depth of field, no text or subtitles in frame.",
+          "sound": "ElevenLabs: نورة تهمس لنفسها بحدّة خفيفة: ثلاث حبات، مب أربع. Suno: sparse warm oud, low drone, patient dawn"
+        },
+        {
+          "id": "E04-01-B",
+          "dur_sec": 12,
+          "camera": "Handheld",
+          "midjourney": "Noura standing at the stove in the dark as heavy footsteps fade outside, half her face lit by the stove lamp, she listens motionless, a wall clock behind her, a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait. Anamorphic 21:9, shallow depth of field, warm tungsten 1993 palette, 16mm film grain, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Handheld, close medium on Noura freezing at the stove as distant footsteps recede, she switches off the lamp and stands in darkness, 12 seconds, subtle breathing movement, low light. Photorealistic natural motion, one continuous take, no cuts, warm tungsten 1993 film look, shallow depth of field, no text or subtitles in frame.",
+          "sound": "ElevenLabs: نورة تهمس: صباح الخير يا زوجي، ما شفتني. Suno: soft room tone, distant footsteps, muted strings"
+        },
+        {
+          "id": "E04-01-C",
+          "dur_sec": 12,
+          "camera": "Slow pull-back",
+          "midjourney": "A small child in a pink dress sitting on a low wooden chair with a small cushion in the corner of a kitchen, legs dangling, her mother standing over her with a tea glass, empty seat memory, a three-year-old girl in a small pink dress with dark braided hair; a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait. Anamorphic 21:9, shallow depth of field, warm tungsten 1993 palette, 16mm film grain, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Slow pull-back from Mariam sitting on the low chair with legs dangling while Noura watches silently, then Noura reaches to correct the wall clock, 12 seconds, soft dawn light rising. Photorealistic natural motion, one continuous take, no cuts, warm tungsten 1993 film look, shallow depth of field, no text or subtitles in frame.",
+          "sound": "ElevenLabs: طفلة بصوت صغير: طيب، أنا أقعد مكانها. Suno: single piano note, tender, fragile morning"
+        }
+      ]
+    },
+    {
+      "id": "E04-02",
+      "year": 1993,
+      "location": "صالة الطعام الصغيرة",
+      "time_of_day": "الصباح",
+      "cast": [
+        "noura",
+        "hamad",
+        "youssef",
+        "mariam"
+      ],
+      "dur_sec": 170,
+      "setting": "majlis",
+      "camera": "Locked-off",
+      "beat_ar": "نورة تقدم الشاي لحمد فيشربه بارداً بلا كلمة. مريم تأخذ تمرة من يده. يوسف يلاحظ ولا يقول.",
+      "caption_ar": "بارد.",
+      "shots": [
+        {
+          "id": "E04-02-A",
+          "dur_sec": 10,
+          "camera": "Locked-off",
+          "midjourney": "A small breakfast table in grey morning light, an old man's heavy hand around a tiny tea glass, a woman standing three steps behind him with clasped hands, faint steam none, a commanding Gulf Arab patriarch of 55, greying beard, dark bisht, heavy hands, seated like a king; a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait. Anamorphic 21:9, shallow depth of field, warm tungsten 1993 palette, 16mm film grain, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Locked-off wide shot of Hamad at a small table drinking cold tea while Noura stands behind him with clasped hands, no one speaks, 10 seconds, only steam-less glass and slight breathing. Photorealistic natural motion, one continuous take, no cuts, warm tungsten 1993 film look, shallow depth of field, no text or subtitles in frame.",
+          "sound": "ElevenLabs: حمد بصوت ثقيل ومقتضب: بارد. Suno: near silence, low cello, restrained"
+        },
+        {
+          "id": "E04-02-B",
+          "dur_sec": 10,
+          "camera": "Slow push-in",
+          "midjourney": "A small girl in pink holding a date with both hands in front of a seated patriarch who offers it from a huge palm, breakfast table, soft grey morning light, a three-year-old girl in a small pink dress with dark braided hair; a commanding Gulf Arab patriarch of 55, greying beard, dark bisht, heavy hands, seated like a king. Anamorphic 21:9, shallow depth of field, warm tungsten 1993 palette, 16mm film grain, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Slow push-in on Hamad's large hand offering a date to Mariam, she takes it with both hands, a ghost of a smile crosses his face and vanishes, 10 seconds. Photorealistic natural motion, one continuous take, no cuts, warm tungsten 1993 film look, shallow depth of field, no text or subtitles in frame.",
+          "sound": "ElevenLabs: حمد: النخلة ما تحب أحد. تعطي. Suno: gentle plucked oud, a little warmth"
+        },
+        {
+          "id": "E04-02-C",
+          "dur_sec": 10,
+          "camera": "Slow tilt",
+          "midjourney": "A back corridor doorway, a woman crouching to wipe date from a child's mouth while her husband stands close behind in the doorway, wanting to speak, the patriarch's dark figure at the far end of the corridor, cool morning light, a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait; a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture; a three-year-old girl in a small pink dress with dark braided hair; a commanding Gulf Arab patriarch of 55, greying beard, dark bisht, heavy hands, seated like a king. Anamorphic 21:9, shallow depth of field, warm tungsten 1993 palette, 16mm film grain, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Slow tilt from Noura crouching to wipe Mariam's mouth up to Youssef standing awkwardly in the doorway, he touches Mariam's head and hurries away, 10 seconds. Photorealistic natural motion, one continuous take, no cuts, warm tungsten 1993 film look, shallow depth of field, no text or subtitles in frame.",
+          "sound": "ElevenLabs: نورة بمرارة خفيفة: كل شي عنده كبير. Suno: soft strings, small ache"
+        }
+      ]
+    },
+    {
+      "id": "E04-03",
+      "year": 1993,
+      "location": "سطح البيت الكبير",
+      "time_of_day": "ضحى",
+      "cast": [
+        "noura",
+        "mariam"
+      ],
+      "dur_sec": 150,
+      "setting": "kitchen",
+      "camera": "Steadicam",
+      "beat_ar": "على السطح بين الغسيل: مريم تصف مشابك الغسيل كأنها عائلة، وجارتهم تفشي خبر الضيف والأرض قبل أن يقوله أحد لنورة.",
+      "caption_ar": "هذا ما له اسم... لأنه واقف ورا.",
+      "shots": [
+        {
+          "id": "E04-03-A",
+          "dur_sec": 10,
+          "camera": "Steadicam",
+          "midjourney": "A flat rooftop in bright mid-morning sun, white men's thobes on a clothesline moving in the wind like ghosts, palm trees and open land beyond, a woman hanging laundry among them, a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait. Anamorphic 21:9, shallow depth of field, warm tungsten 1993 palette, 16mm film grain, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Steadicam glide between hanging white thobes toward Noura pinning one to the line, wind moving the cloth, palms and distant land beyond, 10 seconds, bright clean daylight. Photorealistic natural motion, one continuous take, no cuts, warm tungsten 1993 film look, shallow depth of field, no text or subtitles in frame.",
+          "sound": "ElevenLabs: نورة تدندن بلا كلمات وهي تعلّق الغسيل. Suno: light wind, airy oud, morning clarity"
+        },
+        {
+          "id": "E04-03-B",
+          "dur_sec": 8,
+          "camera": "Static",
+          "midjourney": "A small child sitting in shade on the rooftop stairs lining up wooden clothespins in a row as pretend guests, one pin standing apart at the end, her mother watching from behind hanging cloth, a three-year-old girl in a small pink dress with dark braided hair; a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait. Anamorphic 21:9, shallow depth of field, warm tungsten 1993 palette, 16mm film grain, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Static close view of Mariam's small hands placing a clothespin at the end of a row, Noura's eyes watching through hanging laundry, 8 seconds. Photorealistic natural motion, one continuous take, no cuts, warm tungsten 1993 film look, shallow depth of field, no text or subtitles in frame.",
+          "sound": "ElevenLabs: مريم بجدية: هذا ما له اسم، لأنه واقف ورا. Suno: tiny music box, bittersweet"
+        },
+        {
+          "id": "E04-03-C",
+          "dur_sec": 10,
+          "camera": "Slow push-in",
+          "midjourney": "Two women across a low shared rooftop wall, one leaning over it with a knowing smile and a towel in her hand, the other stiff and polite with a laundry basket, harsh noon shadow, a Gulf Arab woman of 50 with a warm broad face, printed scarf; a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait. Anamorphic 21:9, shallow depth of field, warm tungsten 1993 palette, 16mm film grain, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Slow push-in on Noura's face as the neighbor over the wall whispers gossip, Noura's polite smile hardens, laundry moving in wind, 10 seconds. Photorealistic natural motion, one continuous take, no cuts, warm tungsten 1993 film look, shallow depth of field, no text or subtitles in frame.",
+          "sound": "ElevenLabs: الجارة بهمس فضولي: سيارة حمراء وساعة ذهب. Suno: dry wind, uneasy low strings"
+        }
+      ]
+    },
+    {
+      "id": "E04-04",
+      "year": 1993,
+      "location": "المطبخ والممر",
+      "time_of_day": "قرب الظهر",
+      "cast": [
+        "noura",
+        "mariam"
+      ],
+      "dur_sec": 170,
+      "setting": "kitchen",
+      "camera": "Handheld",
+      "beat_ar": "مكالمة أمها تقول لها تعالي يومين، وهي غارقة بالدقيق. ثم تصرخ على مريم حين تلمس صندوق حماتها المقفل وتندم فوراً.",
+      "caption_ar": "يوسف يساعد أبوه.",
+      "shots": [
+        {
+          "id": "E04-04-A",
+          "dur_sec": 10,
+          "camera": "Handheld",
+          "midjourney": "A woman with flour-covered hands holding a corded wall telephone receiver against her shoulder in a narrow hallway, harsh noon light through a lattice window, floury streak on her cheek, a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait. Anamorphic 21:9, shallow depth of field, warm tungsten 1993 palette, 16mm film grain, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Handheld medium close-up of Noura holding a corded telephone with her elbow, flour on her hands and cheek, listening to her mother, her face softening then tightening, 10 seconds. Photorealistic natural motion, one continuous take, no cuts, warm tungsten 1993 film look, shallow depth of field, no text or subtitles in frame.",
+          "sound": "ElevenLabs: نورة بصوت مبحوح ضاحك: ما أبا أبكي والدقيق على إيدي. Suno: warm quiet piano, wistful"
+        },
+        {
+          "id": "E04-04-B",
+          "dur_sec": 8,
+          "camera": "Rack focus",
+          "midjourney": "A small child in a pink dress standing on a stool on tiptoe reaching for a locked brass spice box on a high kitchen shelf, dust on its rim, her mother rushing into frame, a three-year-old girl in a small pink dress with dark braided hair; a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait. Anamorphic 21:9, shallow depth of field, warm tungsten 1993 palette, 16mm film grain, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Rack focus from Mariam's reaching fingers on the locked brass box to Noura entering the doorway with alarm, 8 seconds, sudden tension. Photorealistic natural motion, one continuous take, no cuts, warm tungsten 1993 film look, shallow depth of field, no text or subtitles in frame.",
+          "sound": "ElevenLabs: نورة بحدة مفاجئة: لا! لا تلمسينه! Suno: sharp string sting, then silence"
+        },
+        {
+          "id": "E04-04-C",
+          "dur_sec": 12,
+          "camera": "Slow push-in",
+          "midjourney": "A woman kneeling on the kitchen floor holding a crying child in a pink dress, wiping her tears, the child touching the flour on her mother's cheek, gold noon light, a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait; a three-year-old girl in a small pink dress with dark braided hair. Anamorphic 21:9, shallow depth of field, warm tungsten 1993 palette, 16mm film grain, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Slow push-in on Noura kneeling and holding Mariam as the child touches the flour on her cheek and calls it snow, Noura laughs with wet eyes, 12 seconds. Photorealistic natural motion, one continuous take, no cuts, warm tungsten 1993 film look, shallow depth of field, no text or subtitles in frame.",
+          "sound": "ElevenLabs: مريم بصوت صغير: ماما، عليك ثلج. Suno: tender solo oud, gentle resolve"
+        }
+      ]
+    },
+    {
+      "id": "E04-05",
+      "year": 1993,
+      "location": "المطبخ ونافذته على الحوش",
+      "time_of_day": "العصر",
+      "cast": [
+        "noura",
+        "youssef",
+        "mariam"
+      ],
+      "dur_sec": 180,
+      "setting": "kitchen",
+      "camera": "Slow push-in",
+      "beat_ar": "نورة تتذوق وتضيف من عندها فتخرج نكهة تشبهها. حمد يحمل مريم في الحوش. يوسف يقول دون قصد: مب مثل الوالدة.",
+      "caption_ar": "مب مثل الوالدة.",
+      "shots": [
+        {
+          "id": "E04-05-A",
+          "dur_sec": 10,
+          "camera": "Slow push-in",
+          "midjourney": "Three steaming pots on a stove in golden late-afternoon light, a woman's hand dropping a dried lime and saffron into the broth, steam thick across the frame, close on her hand and eyes, a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait. Anamorphic 21:9, shallow depth of field, warm tungsten 1993 palette, 16mm film grain, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Slow push-in on Noura tasting broth from a ladle, frowning, adding a dried lime and saffron, tasting again and closing her eyes in quiet discovery, 10 seconds, steam and golden light. Photorealistic natural motion, one continuous take, no cuts, warm tungsten 1993 film look, shallow depth of field, no text or subtitles in frame.",
+          "sound": "ElevenLabs: نورة همساً: ما هو هو، بس هو أنا. Suno: warm bubbling ambience, soft awakening strings"
+        },
+        {
+          "id": "E04-05-B",
+          "dur_sec": 10,
+          "camera": "Slow pan",
+          "midjourney": "Through a wooden lattice window, a courtyard where an old patriarch lifts a small girl in pink with one huge hand, a woman watching from behind the lattice with steam behind her, a commanding Gulf Arab patriarch of 55, greying beard, dark bisht, heavy hands, seated like a king; a three-year-old girl in a small pink dress with dark braided hair; a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait. Anamorphic 21:9, shallow depth of field, warm tungsten 1993 palette, 16mm film grain, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Slow pan across the lattice window from Hamad lifting Mariam in the courtyard to Noura watching through the wooden screen, steam behind her, 10 seconds. Photorealistic natural motion, one continuous take, no cuts, warm tungsten 1993 film look, shallow depth of field, no text or subtitles in frame.",
+          "sound": "ElevenLabs: نورة تهمس بغيرة وشكر معاً: معي تنام، معه تلين. Suno: faint courtyard birds, delicate oud"
+        },
+        {
+          "id": "E04-05-C",
+          "dur_sec": 12,
+          "camera": "Static",
+          "midjourney": "A husband in a dusty white thobe standing at the edge of a marble kitchen counter, a wife with a ladle stopping mid-motion after his careless sentence, stove steam between them, awkward stillness, a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture; a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait. Anamorphic 21:9, shallow depth of field, warm tungsten 1993 palette, 16mm film grain, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Static two-shot as Youssef tastes from the ladle and speaks carelessly, Noura's hand freezing, he tries to take it back, 12 seconds, tense domestic stillness. Photorealistic natural motion, one continuous take, no cuts, warm tungsten 1993 film look, shallow depth of field, no text or subtitles in frame.",
+          "sound": "ElevenLabs: يوسف بحرج: مب مثل الوالدة. أقصد أحسن. Suno: held single low note, brittle"
+        }
+      ]
+    },
+    {
+      "id": "E04-06",
+      "year": 1993,
+      "location": "المطبخ",
+      "time_of_day": "المغرب",
+      "cast": [
+        "noura",
+        "mariam"
+      ],
+      "dur_sec": 200,
+      "setting": "kitchen",
+      "camera": "Locked-off",
+      "beat_ar": "نورة وأمّ سعيد خلف الطاقة تسمعان العشاء وقرار حمد وغضب سالم. تنتظر نورة صوت يوسف فلا تسمع إلا: إن شاء الله.",
+      "caption_ar": "إن شاء الله.",
+      "shots": [
+        {
+          "id": "E04-06-A",
+          "dur_sec": 10,
+          "camera": "Locked-off",
+          "midjourney": "A small kitchen at night, a wooden latticed hatch in the wall left open the width of a hand with incense smoke and warm light leaking through, two women near it, one seated with bread in her lap, one standing motionless listening, a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait; a Gulf Arab woman of 60, black abaya, thin strong hands. Anamorphic 21:9, shallow depth of field, warm tungsten 1993 palette, 16mm film grain, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Locked-off shot of the lattice hatch with light and incense smoke seeping through as Noura and Umm Saeed listen in stillness, faint men's voices beyond, 10 seconds. Photorealistic natural motion, one continuous take, no cuts, warm tungsten 1993 film look, shallow depth of field, no text or subtitles in frame.",
+          "sound": "ElevenLabs: أصوات رجال مكتومة من وراء الجدار وأرقام. Suno: muffled room, low tense drone"
+        },
+        {
+          "id": "E04-06-B",
+          "dur_sec": 8,
+          "camera": "Slow push-in",
+          "midjourney": "Extreme close-up of a woman's hand frozen in the air above a table in a night kitchen, a wall lamp yellow, her eyes closed as she hears her dead mother-in-law mentioned through a wall, a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait. Anamorphic 21:9, shallow depth of field, warm tungsten 1993 palette, 16mm film grain, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Slow push-in on Noura's frozen hand and closed eyes as a muffled man's voice through the wall mentions his mother, 8 seconds, warm lamp, tears held back. Photorealistic natural motion, one continuous take, no cuts, warm tungsten 1993 film look, shallow depth of field, no text or subtitles in frame.",
+          "sound": "ElevenLabs: صوت سالم مكتوم: أمي كانت تحط. Suno: hollow strings, held breath"
+        },
+        {
+          "id": "E04-06-C",
+          "dur_sec": 12,
+          "camera": "Handheld",
+          "midjourney": "A woman kneeling beside a small sleeping child on a floor mattress in a kitchen corner as a car engine roars and fades outside, the child opening her eyes, the woman looking up toward the wall, a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait; a three-year-old girl in a small pink dress with dark braided hair. Anamorphic 21:9, shallow depth of field, warm tungsten 1993 palette, 16mm film grain, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Handheld low angle on Noura kneeling by Mariam as a car engine roars outside and fades, Noura looks toward the wall waiting for one voice, 12 seconds. Photorealistic natural motion, one continuous take, no cuts, warm tungsten 1993 film look, shallow depth of field, no text or subtitles in frame.",
+          "sound": "ElevenLabs: نورة تهمس: شششش نامي. Suno: engine fading, sparse piano, ache"
+        },
+        {
+          "id": "E04-06-D",
+          "dur_sec": 10,
+          "camera": "Static",
+          "midjourney": "A woman washing her face at a kitchen sink, water dripping from her chin, looking at her own wet face in a small wall mirror, calm and unsettled, warm lamp light, a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait. Anamorphic 21:9, shallow depth of field, warm tungsten 1993 palette, 16mm film grain, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Static close-up of Noura's wet face in a small wall mirror after washing it, steady eyes, her hands not trembling, 10 seconds, single warm lamp. Photorealistic natural motion, one continuous take, no cuts, warm tungsten 1993 film look, shallow depth of field, no text or subtitles in frame.",
+          "sound": "ElevenLabs: نورة بهدوء مخيف: مب اليوم، مب اليوم بعد. Suno: still room tone, quiet cello"
+        }
+      ]
+    },
+    {
+      "id": "E04-07",
+      "year": 1993,
+      "location": "المطبخ والباب الخلفي",
+      "time_of_day": "بعد العشاء",
+      "cast": [
+        "noura"
+      ],
+      "dur_sec": 170,
+      "setting": "kitchen",
+      "camera": "Slow push-in",
+      "beat_ar": "أمّ سعيد تكشف لنورة ما قالته الوالدة عنها: هذي تعرف تسمع. تربّت على كتفها وتذهب، وتبقى نورة مع الحوض.",
+      "caption_ar": "هذي تعرف تسمع.",
+      "shots": [
+        {
+          "id": "E04-07-A",
+          "dur_sec": 10,
+          "camera": "Slow push-in",
+          "midjourney": "A kitchen late at night with piles of copper trays and dishes, an old woman in a black abaya putting her hand on a younger woman's shoulder, the younger seated on a low stool, yellow lamp light, a Gulf Arab woman of 60, black abaya, thin strong hands; a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait. Anamorphic 21:9, shallow depth of field, warm tungsten 1993 palette, 16mm film grain, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Slow push-in on Umm Saeed speaking softly to Noura seated on a low stool, then placing a hand on her shoulder, 10 seconds, quiet warmth. Photorealistic natural motion, one continuous take, no cuts, warm tungsten 1993 film look, shallow depth of field, no text or subtitles in frame.",
+          "sound": "ElevenLabs: أمّ سعيد بحنان: كانت تقول عنك، هذي تعرف تسمع. Suno: soft oud, consoling, small light"
+        },
+        {
+          "id": "E04-07-B",
+          "dur_sec": 8,
+          "camera": "Static",
+          "midjourney": "A young woman wiping one eye with the back of her hand like someone chopping onions, sitting beside an empty low wooden chair with a small cushion, a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait. Anamorphic 21:9, shallow depth of field, warm tungsten 1993 palette, 16mm film grain, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Static medium shot of Noura wiping her eye with the back of her hand beside the empty low chair, a small breath escaping, 8 seconds. Photorealistic natural motion, one continuous take, no cuts, warm tungsten 1993 film look, shallow depth of field, no text or subtitles in frame.",
+          "sound": "ElevenLabs: نورة بصوت خافت: الله يرحمها. Suno: single held note, restrained sorrow"
+        },
+        {
+          "id": "E04-07-C",
+          "dur_sec": 10,
+          "camera": "Slow pull-back",
+          "midjourney": "A woman standing alone in a big empty kitchen facing an overflowing sink of copper trays, dishes and small cups, lamp light, the back door closing behind a departing figure, a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait. Anamorphic 21:9, shallow depth of field, warm tungsten 1993 palette, 16mm film grain, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Slow pull-back from Noura at the door turning to the enormous stack of dishes in the sink, then she opens the tap, 10 seconds, solitary and resolute. Photorealistic natural motion, one continuous take, no cuts, warm tungsten 1993 film look, shallow depth of field, no text or subtitles in frame.",
+          "sound": "ElevenLabs: نورة همساً: الكل يروح وأنا أغسل. Suno: tap water, soft strings, solitude"
+        }
+      ]
+    },
+    {
+      "id": "E04-08",
+      "year": 1993,
+      "location": "المطبخ وباب المطبخ على الحوش",
+      "time_of_day": "قرب منتصف الليل",
+      "cast": [
+        "noura",
+        "youssef"
+      ],
+      "dur_sec": 150,
+      "setting": "kitchen",
+      "camera": "Static",
+      "beat_ar": "نورة تغسل الصحون في الليل. يوسف يعبر الحوش ويقف. تقول: بكرة أنا أنتظرك هنا، ثم تعدّ دقات الساعة وتقول: بكرة صار.",
+      "caption_ar": "بكرة صار.",
+      "shots": [
+        {
+          "id": "E04-08-A",
+          "dur_sec": 10,
+          "camera": "Locked-off",
+          "midjourney": "A husband in a white thobe standing in a dark courtyard at night in front of a lit kitchen door, his wife framed in the doorway with folded arms and warm backlight, the wide silence between them, a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture; a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait. Anamorphic 21:9, shallow depth of field, warm tungsten 1993 palette, 16mm film grain, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Locked-off wide shot of Youssef in the dark courtyard and Noura framed in the lit kitchen doorway with folded arms, few words, she turns and goes in, 10 seconds. Photorealistic natural motion, one continuous take, no cuts, warm tungsten 1993 film look, shallow depth of field, no text or subtitles in frame.",
+          "sound": "ElevenLabs: نورة بهدوء: لا. مو الليلة. بكرة أنا أنتظرك هنا. Suno: night crickets, low slow strings"
+        },
+        {
+          "id": "E04-08-B",
+          "dur_sec": 8,
+          "camera": "Slow tilt",
+          "midjourney": "Rows of clean copper trays and dishes stacked in perfect straight lines on a marble counter at night, a wall clock above them at midnight, a woman's wet hands drying on a towel, a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait. Anamorphic 21:9, shallow depth of field, warm tungsten 1993 palette, 16mm film grain, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Slow tilt from Noura's hands drying on a towel up to the wall clock at midnight as she counts the strikes, 8 seconds, warm lamp. Photorealistic natural motion, one continuous take, no cuts, warm tungsten 1993 film look, shallow depth of field, no text or subtitles in frame.",
+          "sound": "ElevenLabs: نورة تعدّ الدقات ثم: بكرة صار. Suno: clock chimes, soft held strings"
+        },
+        {
+          "id": "E04-08-C",
+          "dur_sec": 10,
+          "camera": "Static",
+          "midjourney": "A lit kitchen glowing alone at the end of a dark house at night seen from the courtyard, one window of warm light and palm silhouettes above, no people, a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait. Anamorphic 21:9, shallow depth of field, warm tungsten 1993 palette, 16mm film grain, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Static wide shot of the lone lit kitchen window at the end of a dark courtyard, the last other lights going out one by one, 10 seconds. Photorealistic natural motion, one continuous take, no cuts, warm tungsten 1993 film look, shallow depth of field, no text or subtitles in frame.",
+          "sound": "ElevenLabs: صمت ليل وقطرة ماء بعيدة. Suno: low drone, lantern warmth"
+        }
+      ]
+    },
+    {
+      "id": "E04-09",
+      "year": 1993,
+      "location": "المطبخ",
+      "time_of_day": "بعد منتصف الليل",
+      "cast": [
+        "noura",
+        "youssef"
+      ],
+      "dur_sec": 250,
+      "setting": "kitchen",
+      "camera": "Slow push-in",
+      "beat_ar": "المواجهة: نورة تغسل من الخلف، يوسف يدخل، وتقول: أنا زوجتك. بس أنت دايماً تختار. يعجز عن الجواب ويخرج إلى أبيه، وتجلس نورة على كرسي الوالدة.",
+      "caption_ar": "أنا زوجتك. بس أنت دايماً تختار.",
+      "shots": [
+        {
+          "id": "E04-09-A",
+          "dur_sec": 12,
+          "camera": "Slow push-in",
+          "midjourney": "A woman washing dishes at a sink seen from behind, her shoulders tired but straight, a man in a white thobe entering the kitchen doorway behind her and stopping, one lamp, warm tungsten, a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait; a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture. Anamorphic 21:9, shallow depth of field, warm tungsten 1993 palette, 16mm film grain, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Slow push-in from behind Noura washing dishes as Youssef appears in the doorway and stops, she does not turn, tap water running, 12 seconds, tense stillness. Photorealistic natural motion, one continuous take, no cuts, warm tungsten 1993 film look, shallow depth of field, no text or subtitles in frame.",
+          "sound": "ElevenLabs: يوسف بصوت منخفض: قلتِ بكرة. نورة: بكرة صار. Suno: single held cello note, quiet dread"
+        },
+        {
+          "id": "E04-09-B",
+          "dur_sec": 12,
+          "camera": "Static",
+          "midjourney": "A wife in a dark abaya turning fully to face her husband across a counter of clean plates for the first time, dry calm eyes, the husband with hands behind his back like a boy, kitchen lamp light, a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait; a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture. Anamorphic 21:9, shallow depth of field, warm tungsten 1993 palette, 16mm film grain, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Static two-shot as Noura turns to face Youssef across the clean plates and speaks quietly, no shouting, he opens his mouth and cannot answer, 12 seconds. Photorealistic natural motion, one continuous take, no cuts, warm tungsten 1993 film look, shallow depth of field, no text or subtitles in frame.",
+          "sound": "ElevenLabs: نورة بلا نبرة: أنا زوجتك. بس أنت دايماً تختار. Suno: near silence, faint clock ticking, weight"
+        },
+        {
+          "id": "E04-09-C",
+          "dur_sec": 10,
+          "camera": "Handheld",
+          "midjourney": "A man in a white thobe walking slowly out of a lit kitchen door into a dark courtyard as if walking through water, his wife's blurred silhouette behind him, a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture; a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait. Anamorphic 21:9, shallow depth of field, warm tungsten 1993 palette, 16mm film grain, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Handheld follow behind Youssef leaving the kitchen door into the dark courtyard slowly, Noura blurred in the doorway, 10 seconds. Photorealistic natural motion, one continuous take, no cuts, warm tungsten 1993 film look, shallow depth of field, no text or subtitles in frame.",
+          "sound": "ElevenLabs: نورة: روح يا يوسف، قبل لا أغير رأيي. Suno: receding footsteps, low strings"
+        },
+        {
+          "id": "E04-09-D",
+          "dur_sec": 12,
+          "camera": "Slow pull-back",
+          "midjourney": "A young woman sitting alone on a low wooden kitchen chair with a small cushion, feet not quite touching the floor, a damp towel dripping from the sink edge, pull back through the open door to the dark courtyard, a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait. Anamorphic 21:9, shallow depth of field, warm tungsten 1993 palette, 16mm film grain, no text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "Slow pull-back from Noura sitting on the Mother-in-law's low chair, feet not reaching the floor, past the dripping towel through the open door to the dark courtyard, 12 seconds. Photorealistic natural motion, one continuous take, no cuts, warm tungsten 1993 film look, shallow depth of field, no text or subtitles in frame.",
+          "sound": "ElevenLabs: نورة همساً: الحمد لله. Suno: quiet piano, resigned peace, fade to black"
+        }
+      ]
+    }
+  ]
+}
