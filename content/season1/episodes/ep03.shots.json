@@ -68,7 +68,7 @@
           "id": "E03-02-A",
           "dur_sec": 10,
           "camera": "Handheld medium at counter height",
-          "midjourney": "Steam over huge copper pots in a low-ceilinged kitchen, a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait chopping onions and wiping her eye with the back of her wrist, an old cook sorting rice beside her, Mariam, a three-year-old girl in a small pink dress with dark braided hair lining up wooden spoons on the floor. 1993 interiors: warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, heavy fabric, low ceilings. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
+          "midjourney": "Steam over huge copper pots in a low-ceilinged kitchen, a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait chopping onions and wiping her eye with the back of her wrist, an old cook sorting rice beside her, Mariam, a three-year-old girl in a small pink dress with dark braided hair lining up wooden spoons on the floor, the patriarch Hamad silhouette faint in the background. 1993 interiors: warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, heavy fabric, low ceilings. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
           "runway": "Handheld camera drifts around the busy kitchen, Noura chopping onions, the old cook sorting rice, little Mariam aligning wooden spoons on the floor, steam rising through lamplight. Single continuous shot, 10 seconds. Naturalistic 16mm look, warm tungsten light, no dialogue on screen, no text.",
           "sound": "ElevenLabs: نورة بنبرة هادئة: ليش يجيب صاحب يوم خميس؟ Suno: soft frame drum, domestic warmth, restrained tension"
         },
@@ -76,7 +76,7 @@
           "id": "E03-02-B",
           "dur_sec": 8,
           "camera": "Static two-shot at the doorway",
-          "midjourney": "In a kitchen doorway, a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture stands in a dusty thobe with his back half turned, while a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait holds a knife still on the cutting board, looking at him, a long unspoken pause between them. 1993 interiors: warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, heavy fabric, low ceilings. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
+          "midjourney": "In a kitchen doorway, a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture stands in a dusty thobe with his back half turned, while a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait holds a knife still on the cutting board, looking at him, a long unspoken pause between them, the patriarch Hamad silhouette faint in the background. 1993 interiors: warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, heavy fabric, low ceilings. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
           "runway": "Static two-shot at the kitchen doorway, Noura setting down her knife and watching Youssef, who hesitates then turns away and leaves, a held silence. Single continuous shot, 8 seconds. Naturalistic 16mm look, warm tungsten light, no dialogue on screen, no text.",
           "sound": "ElevenLabs: نورة تهمس: تكلّم مع أبوك، أي شي. Suno: single low cello note, held silence"
         },
@@ -110,7 +110,7 @@
           "id": "E03-03-A",
           "dur_sec": 10,
           "camera": "Static wide in the courtyard",
-          "midjourney": "Courtyard at sunset with orange light on a mud wall, Salem, a Gulf Arab man of 25, lighter build than his brother, short trimmed beard, restless posture, modern shirt holding a paper bag facing a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture who is hanging a lantern by the majlis door, a small distance of years between the two brothers. 1993 dusk courtyard: orange light on mud walls, 16mm texture, deep shadow, muted browns. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
+          "midjourney": "Courtyard at sunset with orange light on a mud wall, Salem, a Gulf Arab man of 25, lighter build than his brother, short trimmed beard, restless posture, modern shirt holding a paper bag facing a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture who is hanging a lantern by the majlis door, a small distance of years between the two brothers, the patriarch Hamad silhouette faint in the background. 1993 dusk courtyard: orange light on mud walls, 16mm texture, deep shadow, muted browns. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
           "runway": "Static wide shot of the two brothers meeting in the sunset courtyard, an awkward half embrace, Salem handing over a paper bag, Youssef hanging a lantern. Single continuous shot, 10 seconds. Naturalistic 16mm look, warm tungsten light, no dialogue on screen, no text.",
           "sound": "ElevenLabs: سالم: اسمعه بس. وإذا قلت شي لا تسكت. Suno: sparse guitar, dusk, unresolved brotherhood"
         },
@@ -118,7 +118,7 @@
           "id": "E03-03-B",
           "dur_sec": 8,
           "camera": "Slow push-in on Youssef",
-          "midjourney": "Close on a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture holding a small cloth doll in a pink dress, looking at the dark majlis entrance, lantern light on his face, Salem, a Gulf Arab man of 25, lighter build than his brother, short trimmed beard, restless posture, modern shirt soft-focus at frame edge. 1993 dusk courtyard: orange light on mud walls, 16mm texture, deep shadow, muted browns. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
+          "midjourney": "Close on a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture holding a small cloth doll in a pink dress, looking at the dark majlis entrance, lantern light on his face, Salem, a Gulf Arab man of 25, lighter build than his brother, short trimmed beard, restless posture, modern shirt soft-focus at frame edge, the patriarch Hamad silhouette faint in the background. 1993 dusk courtyard: orange light on mud walls, 16mm texture, deep shadow, muted browns. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
           "runway": "Slow push-in on Youssef holding the small pink doll, his eyes moving from the doll to the dark majlis doorway, Salem blurred at the edge of frame. Single continuous shot, 8 seconds. Naturalistic 16mm look, warm tungsten light, no dialogue on screen, no text.",
           "sound": "ElevenLabs: يوسف: أبوي ما يسمع. صوت خافت متردد. Suno: soft strings, held breath, tension underneath"
         },
@@ -152,7 +152,7 @@
           "id": "E03-04-A",
           "dur_sec": 10,
           "camera": "Slow push-in on the head of the majlis",
-          "midjourney": "Long red-carpeted majlis lit by one tungsten lamp, a commanding Gulf Arab patriarch of 55, greying beard, dark bisht, heavy hands, seated like a king on the raised cushion with amber prayer beads, a Gulf Arab businessman of about 50 in a spotless white thobe and ironed ghutra, thin gold watch, rehearsed smile seated at his right, Salem, a Gulf Arab man of 25, lighter build than his brother, short trimmed beard, restless posture, modern shirt opposite, a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture pouring coffee from a brass dallah by the embers. 1993 interiors: warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, heavy fabric, low ceilings. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
+          "midjourney": "Red-carpeted majlis, a commanding Gulf Arab patriarch of 55, greying beard, dark bisht, heavy hands, seated like a king on the raised cushion with amber prayer beads, a guest in white thobe at his right, a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture pouring coffee from a brass dallah by the embers. 1993 interiors: warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, heavy fabric, low ceilings. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
           "runway": "Slow push-in from the doorway down the long majlis to Hamad at the head, guests seated in order, Youssef pouring from the brass dallah, embers glowing. Single continuous shot, 10 seconds. Naturalistic 16mm look, warm tungsten light, no dialogue on screen, no text.",
           "sound": "ElevenLabs: قهوة تُصبّ، حمد: يوسف يسويها، هو اللي يعرف حقها. Suno: intimate oud, slow, ritual dignity"
         },
@@ -160,7 +160,7 @@
           "id": "E03-04-B",
           "dur_sec": 7,
           "camera": "Macro close on hands",
-          "midjourney": "Extreme close on a small handleless cup held between finger and thumb, coffee poured to a third, a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture hand steady on a brass dallah, white cuff of his thobe visible, amber embers reflecting. 1993 interiors: warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, heavy fabric, low ceilings. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
+          "midjourney": "Extreme close on a small handleless cup held between finger and thumb, coffee poured to a third, a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture hand steady on a brass dallah, white cuff of his thobe visible, amber embers reflecting, the patriarch Hamad silhouette faint in the background. 1993 interiors: warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, heavy fabric, low ceilings. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
           "runway": "Macro locked-off shot of coffee poured into a small handleless cup from the brass dallah, steam curling, the cup then given to the guest's right hand. Single continuous shot, 7 seconds. Naturalistic 16mm look, warm tungsten light, no dialogue on screen, no text.",
           "sound": "ElevenLabs: صوت السكب الهادئ، ورشفة الضيف بصوت خفيض. Suno: near silence, soft ember crackle, faint drone"
         },
@@ -212,7 +212,7 @@
           "id": "E03-05-C",
           "dur_sec": 10,
           "camera": "Handheld at the kitchen door",
-          "midjourney": "At the back kitchen door under a bare bulb, a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait hands a heavy tray to a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture while Mariam, a three-year-old girl in a small pink dress with dark braided hair tugs at her dress, steam and shadow behind them. 1993 interiors: warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, heavy fabric, low ceilings. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
+          "midjourney": "At the back kitchen door under a bare bulb, a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait hands a heavy tray to a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture while Mariam, a three-year-old girl in a small pink dress with dark braided hair tugs at her dress, steam and shadow behind them, the patriarch Hamad silhouette faint in the background. 1993 interiors: warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, heavy fabric, low ceilings. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
           "runway": "Handheld shot at the kitchen door as Noura hands Youssef the first trays, Mariam tugging her skirt, Noura's eyes reading his face. Single continuous shot, 10 seconds. Naturalistic 16mm look, warm tungsten light, no dialogue on screen, no text.",
           "sound": "ElevenLabs: نورة: سالم وجهه وجه واحد يبي يقول شي. Suno: soft frame drum, domestic unease"
         }
@@ -338,7 +338,7 @@
           "id": "E03-08-B",
           "dur_sec": 9,
           "camera": "Slow push-in on Youssef",
-          "midjourney": "Close on a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture lips parting to speak then closing, cups trembling faintly on the tray in his hands, brass ringing thinly, eyes lowered. 1993 interiors: warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, heavy fabric, low ceilings. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
+          "midjourney": "Close on a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture lips parting to speak then closing, cups trembling faintly on the tray in his hands, brass ringing thinly, eyes lowered, the patriarch Hamad silhouette faint in the background. 1993 interiors: warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, heavy fabric, low ceilings. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
           "runway": "Slow push-in on Youssef's face as he opens his mouth to object and then closes it, the cups trembling faintly on the tray. Single continuous shot, 9 seconds. Naturalistic 16mm look, warm tungsten light, no dialogue on screen, no text.",
           "sound": "ElevenLabs: يوسف: يبه... ثم صمت. رنين نحاسي رفيع. Suno: strings thin out, held breath, silence"
         },
@@ -380,7 +380,7 @@
           "id": "E03-09-B",
           "dur_sec": 10,
           "camera": "Static medium two-shot",
-          "midjourney": "At the kitchen door, a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait arms crossed in the warm light of low flames, facing a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture three paces away in shadow, neither moving, night wind in the palm fronds. 1993 interiors: warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, heavy fabric, low ceilings. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
+          "midjourney": "At the kitchen door, a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait arms crossed in the warm light of low flames, facing a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture three paces away in shadow, neither moving, night wind in the palm fronds, the patriarch Hamad silhouette faint in the background. 1993 interiors: warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, heavy fabric, low ceilings. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
           "runway": "Static two-shot at the kitchen door, Noura arms crossed in warm light, Youssef in shadow three steps away, neither moving, palm fronds stirring. Single continuous shot, 10 seconds. Naturalistic 16mm look, warm tungsten light, no dialogue on screen, no text.",
           "sound": "ElevenLabs: نورة: سمعت اللي قلته، واللي ما قلته. Suno: single cello line, sorrowful, restrained"
         },
@@ -388,7 +388,7 @@
           "id": "E03-09-C",
           "dur_sec": 10,
           "camera": "Slow pull-back to wide",
-          "midjourney": "Wide night courtyard, a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture alone in the middle, tiny under a tall palm, the kitchen doorway glowing behind him, orange city glow faint on the far horizon. 1993 interiors: warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, heavy fabric, low ceilings. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
+          "midjourney": "Wide night courtyard, a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture alone in the middle, tiny under a tall palm, the kitchen doorway glowing behind him, orange city glow faint on the far horizon, the patriarch Hamad silhouette faint in the background. 1993 interiors: warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, heavy fabric, low ceilings. Anamorphic cinema, shallow depth of field, no text in frame. --ar 21:9 --style raw --v 7",
           "runway": "Slow pull-back from Youssef standing alone in the courtyard, the kitchen light behind him, the faint orange glow of the city on the horizon. Single continuous shot, 10 seconds. Naturalistic 16mm look, warm tungsten light, no dialogue on screen, no text.",
           "sound": "ElevenLabs: ريح في السعف، كلب بعيد، ثم صمت تام. Suno: distant oud fading into silence, unresolved"
         }
