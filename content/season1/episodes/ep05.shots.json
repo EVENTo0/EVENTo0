@@ -1,0 +1,421 @@
+{
+  "episode": 5,
+  "title_ar": "غرفة الليل",
+  "title_en": "The Night Room",
+  "logline_ar": "في الليلة التي انكسر فيها العشاء وانكسر فيها المطبخ، يجلس حمد وحده في الظلام مع أرقه وأرضه وذكرى امرأة رحلت، ويدخل يوسف بلا كلمة ويجلس بجانبه، مختاراً أباه مرة أخرى وهو يعرف ثمن الاختيار.",
+  "anchor": "S05",
+  "runtime_min": 27.5,
+  "subscenes": [
+    {
+      "id": "E05-01",
+      "year": 1993,
+      "location": "مجلس بيت حمد الكبير",
+      "time_of_day": "قبيل منتصف الليل",
+      "cast": [
+        "hamad"
+      ],
+      "dur_sec": 150,
+      "setting": "majlis",
+      "camera": "Slow push-in",
+      "beat_ar": "بعد رحيل المستثمر وسالم، يبقى حمد وحده في المجلس الفارغ، يمرّ على أماكن الجلوس ويتوقف عند وسادة يوسف التي لم تُمسّ، ثم يطفئ الأنوار إلا واحداً.",
+      "caption_ar": "خلّها.",
+      "shots": [
+        {
+          "id": "E05-01-A",
+          "dur_sec": 9,
+          "camera": "Static wide",
+          "midjourney": "The empty long majlis after dinner, dark red carpet with dents in the cushions, cold coffee pots on a tray, one overturned cup, a commanding Gulf Arab patriarch of 55, greying beard, dark bisht, heavy hands, seated like a king sitting alone at the head with closed prayer beads in his fist, 1993 interior, warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, anamorphic, shallow depth of field, no text --ar 21:9 --style raw --v 7",
+          "runway": "Slow push-in on a wide static shot of the empty majlis, the old patriarch motionless at its head, a faint car engine fading outside. 9 seconds, very slow dolly forward, cushions and cold coffee pots in sharp foreground. Single continuous take, photorealistic cinematic realism, natural film grain, no cuts, no text, subtle organic motion of fabric and breath, consistent lighting.",
+          "sound": "ElevenLabs: صوت خادم عجوز منخفض، مطيع، يعرض إطفاء الأنوار بحذر. Suno: near-silence, one low sustained cello note, distant wind"
+        },
+        {
+          "id": "E05-01-B",
+          "dur_sec": 8,
+          "camera": "Slow push-in",
+          "midjourney": "Extreme close-up of a commanding Gulf Arab patriarch of 55, greying beard, dark bisht, heavy hands, seated like a king, his heavy hand turning an overturned coffee cup in his palm and looking into its empty bottom, warm lamp on his knuckles, background dissolved into shadow, 1993 interior, warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, anamorphic, shallow depth of field, no text, cinematic still, restrained naturalistic performance, quiet emotional weight, fine film grain, painterly shadows --ar 21:9 --style raw --v 7",
+          "runway": "Static close-up on a heavy hand turning an empty coffee cup, thumb tracing the rim, lamplight flickering on grey knuckles. 8 seconds, locked-off, shallow focus, subtle rack focus to the dark cushion beyond. Single continuous take, photorealistic cinematic realism, natural film grain, no cuts, no text, subtle organic motion of fabric and breath, consistent lighting.",
+          "sound": "ElevenLabs: همس حمد الجاف: خلّها، بلا أي انفعال ظاهر. Suno: sparse room tone, faint low drone"
+        },
+        {
+          "id": "E05-01-C",
+          "dur_sec": 8,
+          "camera": "Slow dolly",
+          "midjourney": "Medium shot of a commanding Gulf Arab patriarch of 55, greying beard, dark bisht, heavy hands, seated like a king standing beside an untouched neat cushion in the front row, looking down at it too long, three of four lamps already switched off, 1993 interior, warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, anamorphic, shallow depth of field, no text, cinematic still, restrained naturalistic performance, quiet emotional weight, fine film grain, painterly shadows --ar 21:9 --style raw --v 7",
+          "runway": "Slow dolly around the patriarch as he stares at a neat, unmoved cushion, the last lamp glowing behind his shoulder. 8 seconds, slow track right, shallow depth of field, heavy shadow. Single continuous take, photorealistic cinematic realism, natural film grain, no cuts, no text, subtle organic motion of fabric and breath, consistent lighting.",
+          "sound": "ElevenLabs: خطوات حافية بعيدة وباب صغير يُغلق، همس ريح. Suno: fading cello, single lingering low note"
+        }
+      ]
+    },
+    {
+      "id": "E05-02",
+      "year": 1993,
+      "location": "غرفة نوم يوسف ونورة",
+      "time_of_day": "قبيل منتصف الليل",
+      "cast": [
+        "youssef",
+        "noura"
+      ],
+      "dur_sec": 170,
+      "setting": "kitchen",
+      "camera": "Handheld",
+      "beat_ar": "في الطابق العلوي بعد المطبخ، تواجه نورة الجدار وهو على حافة السرير. تقول إنها لا تريد الفوز بل أن تعرف موقعها. يقرر النزول إلى أبيه.",
+      "caption_ar": "وين أنا منك.",
+      "shots": [
+        {
+          "id": "E05-02-A",
+          "dur_sec": 9,
+          "camera": "Slow dolly",
+          "midjourney": "Bedroom lit by a single yellow bedside lamp, a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture sitting on the edge of a wide bed with his back to the door, hands clasped between his knees, a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait lying on her side facing the wall in the background, a small child's bed in the corner, 1993 interior, warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, anamorphic, shallow depth of field, no text --ar 21:9 --style raw --v 7",
+          "runway": "Slow push-in on the man's back at the edge of the bed, the woman motionless beyond him facing the wall. 9 seconds, slow dolly forward, warm lamp against deep shadow. Single continuous take, photorealistic cinematic realism, natural film grain, no cuts, no text, subtle organic motion of fabric and breath, consistent lighting.",
+          "sound": "ElevenLabs: نورة بصوت متعب لا غاضب: أنا ما طلبت منك تختار عشان أكسب. Suno: fragile solo piano, one slow note, room tone"
+        },
+        {
+          "id": "E05-02-B",
+          "dur_sec": 8,
+          "camera": "Slow push-in",
+          "midjourney": "Close-up of a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait, lying on her side, eyes open and wet in the half-light, cheek against a damp pillow edge, a soft glow from the lamp, 1993 interior, warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, anamorphic, shallow depth of field, no text, cinematic still, restrained naturalistic performance, quiet emotional weight, fine film grain, painterly shadows --ar 21:9 --style raw --v 7",
+          "runway": "Static close-up of the woman's open eyes fixed on the wall, one slow blink, lamplight trembling. 8 seconds, locked-off, very shallow focus, no camera movement. Single continuous take, photorealistic cinematic realism, natural film grain, no cuts, no text, subtle organic motion of fabric and breath, consistent lighting.",
+          "sound": "ElevenLabs: نورة همساً: وين أنا منك؟ بصوت متعب بلا اتهام. Suno: soft held piano chord, quiet"
+        },
+        {
+          "id": "E05-02-C",
+          "dur_sec": 8,
+          "camera": "Slow dolly",
+          "midjourney": "Over-the-shoulder low shot of a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture standing at the bedroom door with his hand on the handle, a thin strip of light under the door, a sleeping three-year-old girl with a cloth bear in the corner, 1993 interior, warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, anamorphic, shallow depth of field, no text --ar 21:9 --style raw --v 7",
+          "runway": "Handheld medium shot follows the man's hand on the door handle as he looks back over his shoulder, face in shadow. 8 seconds, subtle handheld drift, rack focus from handle to sleeping child. Single continuous take, photorealistic cinematic realism, natural film grain, no cuts, no text, subtle organic motion of fabric and breath, consistent lighting.",
+          "sound": "ElevenLabs: يوسف بالكاد يُسمع: أبوي لسا صاحي. Suno: distant low cello, quiet tension"
+        },
+        {
+          "id": "E05-02-D",
+          "dur_sec": 6,
+          "camera": "Slow push-in",
+          "midjourney": "Close-up of the hand of a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait reaching backward without turning, resting on a still-warm empty bedsheet, lamplight on the bracelet, 1993 interior, warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, anamorphic, shallow depth of field, no text, cinematic still, restrained naturalistic performance, quiet emotional weight, fine film grain, painterly shadows --ar 21:9 --style raw --v 7",
+          "runway": "Slow push-in on a woman's hand resting on the empty warm side of the bed sheet, fingers slightly curling. 6 seconds, gentle dolly, shallow focus, soft lamp light. Single continuous take, photorealistic cinematic realism, natural film grain, no cuts, no text, subtle organic motion of fabric and breath, consistent lighting.",
+          "sound": "ElevenLabs: صوت باب يُغلق بحذر شديد، ثم نفس امرأة. Suno: single piano note fading into silence"
+        }
+      ]
+    },
+    {
+      "id": "E05-03",
+      "year": 1993,
+      "location": "غرفة حمد الخاصة",
+      "time_of_day": "بعد منتصف الليل",
+      "cast": [
+        "hamad"
+      ],
+      "dur_sec": 180,
+      "setting": "night_room",
+      "camera": "Locked-off",
+      "beat_ar": "في غرفته الصغيرة يجلس حمد في الظلام بجانب مقعد أم يوسف الفارغ. يحمل صك الأرض وعرض المستثمر، يقلب الفنجان الثاني بلا وعي ثم يعيده.",
+      "caption_ar": "أستغفر الله.",
+      "shots": [
+        {
+          "id": "E05-03-A",
+          "dur_sec": 10,
+          "camera": "Static wide",
+          "midjourney": "A small austere night room lit only by pale moonlight from a large window, two cane-and-leather chairs side by side with a tea flask between them, a commanding Gulf Arab patriarch of 55, greying beard, dark bisht, heavy hands, seated like a king in the left chair, the right chair empty with a folded woman's shawl, palm trees dark beyond the glass, 1993 interior, warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, anamorphic, shallow depth of field, no text --ar 21:9 --style raw --v 7",
+          "runway": "Locked-off wide shot of the moonlit room, two chairs and a flask, the old patriarch still on the left. 10 seconds, static frame, slow subtle push-in only in the last seconds, deep blue shadows. Single continuous take, photorealistic cinematic realism, natural film grain, no cuts, no text, subtle organic motion of fabric and breath, consistent lighting.",
+          "sound": "ElevenLabs: تكّة ساعة خشبية وتنفس ثقيل، بلا كلام. Suno: hushed ambient drone, distant wind through palms"
+        },
+        {
+          "id": "E05-03-B",
+          "dur_sec": 8,
+          "camera": "Slow push-in",
+          "midjourney": "Close-up of the heavy hands of a commanding Gulf Arab patriarch of 55, greying beard, dark bisht, heavy hands, seated like a king holding a folded old land deed, thumb pressing its edge, weighing it, moonlight across his knuckles, 1993 interior, warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, anamorphic, shallow depth of field, no text, cinematic still, restrained naturalistic performance, quiet emotional weight, fine film grain, painterly shadows --ar 21:9 --style raw --v 7",
+          "runway": "Slow push-in on heavy hands weighing a folded deed as if it were much heavier than paper. 8 seconds, slow dolly forward, rack focus from the deed to a cold tea cup. Single continuous take, photorealistic cinematic realism, natural film grain, no cuts, no text, subtle organic motion of fabric and breath, consistent lighting.",
+          "sound": "ElevenLabs: همس حمد لنفسه: أستغفر الله. Suno: low sustained cello, sparse"
+        },
+        {
+          "id": "E05-03-C",
+          "dur_sec": 8,
+          "camera": "Slow push-in",
+          "midjourney": "Close-up of a commanding Gulf Arab patriarch of 55, greying beard, dark bisht, heavy hands, seated like a king his hand flipping an upturned tea cup upright beside the empty chair, then freezing mid-motion, moonlight on the shawl, 1993 interior, warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, anamorphic, shallow depth of field, no text, cinematic still, restrained naturalistic performance, quiet emotional weight, fine film grain, painterly shadows --ar 21:9 --style raw --v 7",
+          "runway": "Locked-off close-up of a large hand turning a tea cup upright, hesitating, and turning it back down. 8 seconds, static camera, shallow focus, moonlight edge. Single continuous take, photorealistic cinematic realism, natural film grain, no cuts, no text, subtle organic motion of fabric and breath, consistent lighting.",
+          "sound": "ElevenLabs: تنهيدة قصيرة مكتومة، همس بلا صوت. Suno: a single low string note, silence"
+        },
+        {
+          "id": "E05-03-D",
+          "dur_sec": 7,
+          "camera": "Slow dolly",
+          "midjourney": "Medium shot of a commanding Gulf Arab patriarch of 55, greying beard, dark bisht, heavy hands, seated like a king in profile leaning his head back with closed eyes, the empty chair with its folded shawl in the foreground, moonlight on the shawl edge, 1993 interior, warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, anamorphic, shallow depth of field, no text, cinematic still, restrained naturalistic performance, quiet emotional weight, fine film grain, painterly shadows --ar 21:9 --style raw --v 7",
+          "runway": "Slow pull-back from the patriarch's closed eyes to reveal the empty chair and shawl in foreground. 7 seconds, gentle pull-back, shallow depth of field. Single continuous take, photorealistic cinematic realism, natural film grain, no cuts, no text, subtle organic motion of fabric and breath, consistent lighting.",
+          "sound": "ElevenLabs: نفس بطيء متقطع، ثم سكون. Suno: soft fading cello, distant wind"
+        }
+      ]
+    },
+    {
+      "id": "E05-04",
+      "year": 1987,
+      "location": "غرفة حمد الخاصة",
+      "time_of_day": "ليل",
+      "cast": [
+        "hamad"
+      ],
+      "dur_sec": 170,
+      "setting": "night_room",
+      "camera": "Slow dolly",
+      "beat_ar": "ذاكرة 1987: أم حمد تخيط قميصاً صغيراً بجانبه. تقول إن الأرض لا تدفّي ظهره بالليل، وإن قلب يوسف يعيش إن وجد من يجلس بجانبه.",
+      "caption_ar": "يعيش. إذا لقى أحد يجلس جنبه.",
+      "shots": [
+        {
+          "id": "E05-04-A",
+          "dur_sec": 9,
+          "camera": "Slow dolly",
+          "midjourney": "A small room glowing with a lantern, a Gulf Arab woman, dark abaya, gentle tired face sitting in the right cane chair sewing a boy's small shirt with thick thread, a commanding Gulf Arab patriarch of 49, greying beard, dark bisht, heavy hands, seated like a king sitting upright in the left chair with prayer beads, a dish of dates on the table, memory, soft warm lantern glow, hazy edges, 16mm grain, amber tones, anamorphic, shallow depth of field, no text --ar 21:9 --style raw --v 7",
+          "runway": "Slow dolly in on the woman's stitching hand and the man's silent profile beside her, lantern light swaying. 9 seconds, slow push-in, hazy soft edges, warm amber tones. Single continuous take, photorealistic cinematic realism, natural film grain, no cuts, no text, subtle organic motion of fabric and breath, consistent lighting.",
+          "sound": "ElevenLabs: امرأة بصوت هادئ حنون: الأرض ما تدفّي ظهرك بالليل. Suno: warm oud, gentle and nostalgic"
+        },
+        {
+          "id": "E05-04-B",
+          "dur_sec": 8,
+          "camera": "Slow push-in",
+          "midjourney": "Close-up of a Gulf Arab woman, dark abaya, gentle tired face biting a thread with a faint hidden smile, lantern light on her tired kind face, blurred behind her a commanding Gulf Arab patriarch of 49, greying beard, dark bisht, heavy hands, seated like a king seated upright with prayer beads, dish of dates on the table, memory, soft warm lantern glow, hazy edges, 16mm grain, amber tones, anamorphic, shallow depth of field, no text --ar 21:9 --style raw --v 7",
+          "runway": "Static close-up on the woman's gentle face as she bites the thread, smile appearing and fading. 8 seconds, locked-off, very shallow depth, soft haze. Single continuous take, photorealistic cinematic realism, natural film grain, no cuts, no text, subtle organic motion of fabric and breath, consistent lighting.",
+          "sound": "ElevenLabs: ابتسامة في الصوت: لأنك تحكي عن الأرض مثل ما يحكي الرجال عن أمهم. Suno: soft nostalgic oud, warm"
+        },
+        {
+          "id": "E05-04-C",
+          "dur_sec": 8,
+          "camera": "Slow push-in",
+          "midjourney": "Close-up of the hands of a Gulf Arab woman, dark abaya, gentle tired face placing a small tea glass into the large hand of a commanding Gulf Arab patriarch of 49, greying beard, dark bisht, heavy hands, seated like a king and closing his fingers over it with hers, lantern glow, memory, soft warm lantern glow, hazy edges, 16mm grain, amber tones, anamorphic, shallow depth of field, no text, cinematic still, restrained naturalistic performance, quiet emotional weight, fine film grain, painterly shadows --ar 21:9 --style raw --v 7",
+          "runway": "Slow push-in on a woman's slim fingers closing a man's heavy fingers around a tea glass. 8 seconds, slow dolly, shallow focus, amber haze. Single continuous take, photorealistic cinematic realism, natural film grain, no cuts, no text, subtle organic motion of fabric and breath, consistent lighting.",
+          "sound": "ElevenLabs: هي: يوسف يشبهك، بس قلبه قلبي. يعيش إذا لقى من يجلس جنبه. Suno: tender oud and soft strings"
+        }
+      ]
+    },
+    {
+      "id": "E05-05",
+      "year": 1993,
+      "location": "غرفة حمد وشرفتها الخلفية",
+      "time_of_day": "بعد منتصف الليل",
+      "cast": [
+        "hamad"
+      ],
+      "dur_sec": 170,
+      "setting": "night_room",
+      "camera": "Steadicam",
+      "beat_ar": "يبحث حمد في المذياع عن صوت فلا يجد، يخرج إلى عتبة الشرفة ويتأمل الأرض المظلمة، يخفي سعالاً على صدره، يفتح صندوق الوالدة ويلمس كشتبانها، ثم يقول لكرسيها إنه لا يحتاج أحداً.",
+      "caption_ar": "أنا ما أحتاج أحد.",
+      "shots": [
+        {
+          "id": "E05-05-A",
+          "dur_sec": 9,
+          "camera": "Slow dolly",
+          "midjourney": "Medium shot of a commanding Gulf Arab patriarch of 55, greying beard, dark bisht, heavy hands, seated like a king turning the brass dial of an old wooden radio in a dark room, static hiss, moonlight on his beard, 1993 interior, warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, anamorphic, shallow depth of field, no text, cinematic still, restrained naturalistic performance, quiet emotional weight, fine film grain, painterly shadows --ar 21:9 --style raw --v 7",
+          "runway": "Slow push-in on the patriarch's thick fingers turning the brass radio dial, face half in moonlight. 9 seconds, gentle dolly forward, shallow focus. Single continuous take, photorealistic cinematic realism, natural film grain, no cuts, no text, subtle organic motion of fabric and breath, consistent lighting.",
+          "sound": "ElevenLabs: تلاوة خافتة تتلاشى في فحيح ثم نشرة أسعار الأسمنت. Suno: low sparse drone, radio static"
+        },
+        {
+          "id": "E05-05-B",
+          "dur_sec": 10,
+          "camera": "Static wide",
+          "midjourney": "Wide shot from behind of a commanding Gulf Arab patriarch of 55, greying beard, dark bisht, heavy hands, seated like a king standing at the threshold of a back porch door, dark palm rows and a faint irrigation channel glinting under the moon, his long shadow on the sand, 1993 interior, warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, anamorphic, shallow depth of field, no text, cinematic still, restrained naturalistic performance, quiet emotional weight, fine film grain, painterly shadows --ar 21:9 --style raw --v 7",
+          "runway": "Slow steadicam drift from behind the patriarch on the threshold, the moonlit farm stretching out. 10 seconds, slow steadicam track forward, cool blue night, dark silhouettes of palms. Single continuous take, photorealistic cinematic realism, natural film grain, no cuts, no text, subtle organic motion of fabric and breath, consistent lighting.",
+          "sound": "ElevenLabs: حمد يهمس للأرض: ما تسوّي شي إلا تبقين. Suno: soft low strings, night wind through palms"
+        },
+        {
+          "id": "E05-05-C",
+          "dur_sec": 8,
+          "camera": "Slow push-in",
+          "midjourney": "Close-up of the large hand of a commanding Gulf Arab patriarch of 55, greying beard, dark bisht, heavy hands, seated like a king pressing his chest just above the heart, a brief dry cough, his jaw set, moonlight on the grey beard, 1993 interior, warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, anamorphic, shallow depth of field, no text, cinematic still, restrained naturalistic performance, quiet emotional weight, fine film grain, painterly shadows --ar 21:9 --style raw --v 7",
+          "runway": "Handheld close-up of a large hand pressing a chest, jaw set, the cough passing. 8 seconds, subtle handheld, shallow depth, moonlit edge light. Single continuous take, photorealistic cinematic realism, natural film grain, no cuts, no text, subtle organic motion of fabric and breath, consistent lighting.",
+          "sound": "ElevenLabs: سعال جاف مكتوم قصير ثم تنفس يتماسك. Suno: one low held note, tension"
+        },
+        {
+          "id": "E05-05-D",
+          "dur_sec": 8,
+          "camera": "Slow push-in",
+          "midjourney": "Close-up of the thick fingers of a commanding Gulf Arab patriarch of 55, greying beard, dark bisht, heavy hands, seated like a king holding a small dented silver thimble taken from an old wooden chest with a green brass lock, his fingertip fitting only halfway, 1993 interior, warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, anamorphic, shallow depth of field, no text, cinematic still, restrained naturalistic performance, quiet emotional weight, fine film grain, painterly shadows --ar 21:9 --style raw --v 7",
+          "runway": "Slow push-in on a heavy fingertip trying to fit into a tiny silver thimble, a faint smile forming. 8 seconds, slow dolly, macro shallow focus. Single continuous take, photorealistic cinematic realism, natural film grain, no cuts, no text, subtle organic motion of fabric and breath, consistent lighting.",
+          "sound": "ElevenLabs: حمد بجفاف لكرسي فارغ: أنا ما أحتاج أحد. Suno: solo muted piano, lonely, sparse"
+        }
+      ]
+    },
+    {
+      "id": "E05-06",
+      "year": 1993,
+      "location": "الدرج والممر الأرضي",
+      "time_of_day": "بعد منتصف الليل",
+      "cast": [
+        "youssef"
+      ],
+      "dur_sec": 140,
+      "setting": "night_room",
+      "camera": "Slow dolly",
+      "beat_ar": "ينزل يوسف الدرج متخطياً الدرجات التي تصرّ، يمرّ بالمطبخ ولا يدخل، ويقف أمام باب أبيه المواربة يتردد، ثم يدفعه بأطراف أصابعه.",
+      "caption_ar": "(بلا حوار)",
+      "shots": [
+        {
+          "id": "E05-06-A",
+          "dur_sec": 9,
+          "camera": "Static wide",
+          "midjourney": "A dim wooden staircase, a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture descending in near darkness with one hand on the banister, stepping over the creaking steps from habit, cold blue light below, 1993 interior, warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, anamorphic, shallow depth of field, no text, cinematic still, restrained naturalistic performance, quiet emotional weight, fine film grain, painterly shadows --ar 21:9 --style raw --v 7",
+          "runway": "Slow tracking shot descending behind the man's shoulder, hand sliding along the banister. 9 seconds, slow track backward, deep shadow, cold blue spill. Single continuous take, photorealistic cinematic realism, natural film grain, no cuts, no text, subtle organic motion of fabric and breath, consistent lighting.",
+          "sound": "ElevenLabs: صرير خشب خفيف وخطوات حافرة بحذر. Suno: soft low drone, uneasy quiet"
+        },
+        {
+          "id": "E05-06-B",
+          "dur_sec": 8,
+          "camera": "Slow dolly",
+          "midjourney": "Medium shot of a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture at the kitchen doorway in cold blue window light, fingers resting on the wall where the confrontation happened, neatly stacked dishes and a dripping towel behind him, 1993 interior, warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, anamorphic, shallow depth of field, no text, cinematic still, restrained naturalistic performance, quiet emotional weight, fine film grain, painterly shadows --ar 21:9 --style raw --v 7",
+          "runway": "Static medium shot as the man touches the wall at the kitchen entrance, a drop falling from a towel in the background. 8 seconds, locked-off, cold blue light, slight rack focus to the dripping towel. Single continuous take, photorealistic cinematic realism, natural film grain, no cuts, no text, subtle organic motion of fabric and breath, consistent lighting.",
+          "sound": "ElevenLabs: قطرة ماء تسقط في الحوض، صمت طويل. Suno: single sustained cello, distant"
+        },
+        {
+          "id": "E05-06-C",
+          "dur_sec": 9,
+          "camera": "Slow push-in",
+          "midjourney": "Close-up of a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture forehead resting against the edge of a slightly open door, eyes closed, a thin line of moonlight through the crack showing a black-clad shoulder inside, 1993 interior, warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, anamorphic, shallow depth of field, no text, cinematic still, restrained naturalistic performance, quiet emotional weight, fine film grain, painterly shadows --ar 21:9 --style raw --v 7",
+          "runway": "Slow push-in on the man's forehead against the doorframe, eyes opening to the crack of moonlight. 9 seconds, slow dolly forward, shallow depth, warm rim light. Single continuous take, photorealistic cinematic realism, natural film grain, no cuts, no text, subtle organic motion of fabric and breath, consistent lighting.",
+          "sound": "ElevenLabs: أنفاس يوسف فقط، ثم صرير مفصل قصير جداً. Suno: minimal, soft string swell, then silence"
+        }
+      ]
+    },
+    {
+      "id": "E05-07",
+      "year": 1991,
+      "location": "غرفة حمد الخاصة",
+      "time_of_day": "ليل شتوي",
+      "cast": [
+        "hamad"
+      ],
+      "dur_sec": 170,
+      "setting": "night_room",
+      "camera": "Static",
+      "beat_ar": "ذاكرة شتاء 1991: أم حمد المريضة تدعوه ليجلس بلا حاجة. يجلس منتصباً، تمسك طرف كمّه وتنام. يخفض رأسه سنتيمتراً واحداً.",
+      "caption_ar": "ما أبي شي يا حمد. اجلس بس.",
+      "shots": [
+        {
+          "id": "E05-07-A",
+          "dur_sec": 9,
+          "camera": "Slow dolly",
+          "midjourney": "A cold blue winter night room, a commanding Gulf Arab patriarch of 53, greying beard, dark bisht, heavy hands, seated like a king standing stiffly at the door with his hands behind his back, a Gulf Arab woman, dark abaya, gentle tired face thin and pale lying on the iron bed beneath a blanket, medicine bottles on the table, memory, cold pale blue winter light, heavy 16mm grain, desaturated, anamorphic, shallow depth of field, no text, quiet stillness --ar 21:9 --style raw --v 7",
+          "runway": "Slow push-in from the doorway toward the frail woman in bed and the stiff man who cannot enter. 9 seconds, slow dolly forward, cold blue grade, rain-streaked window light. Single continuous take, photorealistic cinematic realism, natural film grain, no cuts, no text, subtle organic motion of fabric and breath, consistent lighting.",
+          "sound": "ElevenLabs: صوت امرأة مريضة بالكاد يُسمع: لا تقف عند الباب مثل الضيف. Suno: cold sparse piano, faint winter rain"
+        },
+        {
+          "id": "E05-07-B",
+          "dur_sec": 9,
+          "camera": "Slow dolly",
+          "midjourney": "Medium two-shot of a commanding Gulf Arab patriarch of 53, greying beard, dark bisht, heavy hands, seated like a king sitting rigidly in the cane chair beside the bed staring at the far wall, a Gulf Arab woman, dark abaya, gentle tired face lying beside him asleep, rain on the window glass, memory, cold pale blue winter light, heavy 16mm grain, desaturated, anamorphic, shallow depth of field, no text, quiet stillness, cinematic still, restrained naturalistic performance, quiet emotional weight, fine film grain, painterly shadows --ar 21:9 --style raw --v 7",
+          "runway": "Static medium two-shot of the stiff man seated beside the sleeping woman, rain running down the window. 9 seconds, locked-off, cold blue, extremely slow push-in. Single continuous take, photorealistic cinematic realism, natural film grain, no cuts, no text, subtle organic motion of fabric and breath, consistent lighting.",
+          "sound": "ElevenLabs: مطر خفيف على الزجاج، ساعة حائط، أنفاس امرأة نائمة. Suno: hushed solo cello, distant rain"
+        },
+        {
+          "id": "E05-07-C",
+          "dur_sec": 9,
+          "camera": "Slow push-in",
+          "midjourney": "Extreme close-up of the pale thin fingers of a Gulf Arab woman, dark abaya, gentle tired face holding only the edge of the dark bisht sleeve of a commanding Gulf Arab patriarch of 53, greying beard, dark bisht, heavy hands, seated like a king between thumb and forefinger, blue winter light, memory, cold pale blue winter light, heavy 16mm grain, desaturated, anamorphic, shallow depth of field, no text, quiet stillness, cinematic still, restrained naturalistic performance, quiet emotional weight, fine film grain, painterly shadows --ar 21:9 --style raw --v 7",
+          "runway": "Slow push-in on frail fingers gently pinching the edge of a dark sleeve, the man's hand frozen beside it. 9 seconds, slow dolly, macro shallow focus, cold light. Single continuous take, photorealistic cinematic realism, natural film grain, no cuts, no text, subtle organic motion of fabric and breath, consistent lighting.",
+          "sound": "ElevenLabs: الصمت التام، نفسان فقط. Suno: one long low note, almost silent"
+        },
+        {
+          "id": "E05-07-D",
+          "dur_sec": 7,
+          "camera": "Slow push-in",
+          "midjourney": "Close-up of the eyes of a commanding Gulf Arab patriarch of 53, greying beard, dark bisht, heavy hands, seated like a king fixed on a wall, wet and shining but no tears falling, jaw clenched, cold blue light, memory, cold pale blue winter light, heavy 16mm grain, desaturated, anamorphic, shallow depth of field, no text, quiet stillness, cinematic still, restrained naturalistic performance, quiet emotional weight, fine film grain, painterly shadows --ar 21:9 --style raw --v 7",
+          "runway": "Static close-up on the man's shining eyes and clenched jaw, his head lowering one centimetre. 7 seconds, locked-off, shallow depth, cold blue grade. Single continuous take, photorealistic cinematic realism, natural film grain, no cuts, no text, subtle organic motion of fabric and breath, consistent lighting.",
+          "sound": "ElevenLabs: تنفس مكتوم مشدود، بلا كلام. Suno: fading cello, cold silence"
+        }
+      ]
+    },
+    {
+      "id": "E05-08",
+      "year": 1993,
+      "location": "غرفة حمد الخاصة",
+      "time_of_day": "قرابة الواحدة بعد منتصف الليل",
+      "cast": [
+        "youssef",
+        "hamad"
+      ],
+      "dur_sec": 330,
+      "setting": "night_room",
+      "camera": "Locked-off",
+      "beat_ar": "الخمس دقائق: يجلس يوسف على مقعد الأولاد بجانب أبيه بلا كلمة. الساعة، الريح، نفَسان، غيمة تحجب القمر. ثم يدفع حمد فنجان الشاي شبراً نحو ابنه.",
+      "caption_ar": "(خمس دقائق صمت)",
+      "shots": [
+        {
+          "id": "E05-08-A",
+          "dur_sec": 15,
+          "camera": "Static wide",
+          "midjourney": "Wide view of a moonlit small room, a commanding Gulf Arab patriarch of 55, greying beard, dark bisht, heavy hands, seated like a king in a cane chair by the window and a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture seated on a small low wooden stool one arm's length beside him, both staring at the dark window, their faint reflection in the glass, an empty chair with a folded shawl, 1993 interior, warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, anamorphic, shallow depth of field, no text --ar 21:9 --style raw --v 7",
+          "runway": "Locked-off wide shot of father and son seated side by side facing the dark window, nothing moves but breath. 15 seconds, static frame, imperceptibly slow push-in, moonlight and deep blue shadow. Single continuous take, photorealistic cinematic realism, natural film grain, no cuts, no text, subtle organic motion of fabric and breath, consistent lighting.",
+          "sound": "ElevenLabs: لا حوار: تكّة الساعة وحفيف الريح ونفسان. Suno: absolute near-silence, faint low room tone only"
+        },
+        {
+          "id": "E05-08-B",
+          "dur_sec": 12,
+          "camera": "Slow push-in",
+          "midjourney": "Close-up of the heavy hand of a commanding Gulf Arab patriarch of 55, greying beard, dark bisht, heavy hands, seated like a king on prayer beads, one bead held still between thumb and finger, moonlight on the cracked skin, blurred son's white sleeve beside it, 1993 interior, warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, anamorphic, shallow depth of field, no text, cinematic still, restrained naturalistic performance, quiet emotional weight, fine film grain, painterly shadows --ar 21:9 --style raw --v 7",
+          "runway": "Static close-up on the old hand and stilled prayer beads, the blurred sleeve of the son beside it. 12 seconds, locked-off, shallow rack focus from the beads to the sleeve. Single continuous take, photorealistic cinematic realism, natural film grain, no cuts, no text, subtle organic motion of fabric and breath, consistent lighting.",
+          "sound": "ElevenLabs: تكّات الساعة الخشبية البطيئة فقط. Suno: nothing but faint air, sustained hush"
+        },
+        {
+          "id": "E05-08-C",
+          "dur_sec": 15,
+          "camera": "Slow push-in",
+          "midjourney": "Two profiles in darkness, a commanding Gulf Arab patriarch of 55, greying beard, dark bisht, heavy hands, seated like a king and a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture side by side, a cloud passing over the moon so only their breathing faces remain barely visible in blue dark, 1993 interior, warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, anamorphic, shallow depth of field, no text --ar 21:9 --style raw --v 7",
+          "runway": "Slow push-in on the two dark profiles as moonlight fades to near black then returns. 15 seconds, extremely slow dolly forward, shallow depth, deep shadow. Single continuous take, photorealistic cinematic realism, natural film grain, no cuts, no text, subtle organic motion of fabric and breath, consistent lighting.",
+          "sound": "ElevenLabs: نفسان يتقاربان في العتمة، لا كلام. Suno: silence, a barely audible low hum"
+        },
+        {
+          "id": "E05-08-D",
+          "dur_sec": 12,
+          "camera": "Slow push-in",
+          "midjourney": "Close-up of the hand of a commanding Gulf Arab patriarch of 55, greying beard, dark bisht, heavy hands, seated like a king pushing a small full tea glass one inch across the table toward a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture hand, steam rising in moonlight, the son's fingers about to take it, 1993 interior, warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, anamorphic, shallow depth of field, no text --ar 21:9 --style raw --v 7",
+          "runway": "Slow push-in on a heavy hand nudging a tea glass one inch across a table, the son's hand reaching. 12 seconds, slow dolly, shallow macro focus, rising steam. Single continuous take, photorealistic cinematic realism, natural film grain, no cuts, no text, subtle organic motion of fabric and breath, consistent lighting.",
+          "sound": "ElevenLabs: رنّة ساعة خشبية واحدة عميقة ثم صمت. Suno: one warm low cello note entering very softly"
+        }
+      ]
+    },
+    {
+      "id": "E05-09",
+      "year": 1993,
+      "location": "غرفة نوم يوسف ونورة",
+      "time_of_day": "قبيل الفجر",
+      "cast": [
+        "youssef",
+        "noura"
+      ],
+      "dur_sec": 170,
+      "setting": "kitchen",
+      "camera": "Handheld",
+      "beat_ar": "عند الفجر يعود يوسف. تعرف نورة من رائحة الشاي أين كان. تقول إن أحداً لا يجلس بجانبها، فيقول: أنا جالس. تقول: الحين. يقف عند الباب وهو يعرف أن ثمن اختياره سيُدفع بالأقساط.",
+      "caption_ar": "لا أحد يجلس جنبي أنا.",
+      "shots": [
+        {
+          "id": "E05-09-A",
+          "dur_sec": 9,
+          "camera": "Slow dolly",
+          "midjourney": "Grey pre-dawn bedroom, a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait sitting up against the wall with knees drawn to her chest and eyes fixed on the door, a sleeping little girl beside her, 1993 interior, warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, anamorphic, shallow depth of field, no text, cinematic still, restrained naturalistic performance, quiet emotional weight, fine film grain, painterly shadows --ar 21:9 --style raw --v 7",
+          "runway": "Slow push-in on the woman awake against the wall, eyes on the door, grey light on the curtain. 9 seconds, slow dolly forward, shallow depth, cold dawn tones. Single continuous take, photorealistic cinematic realism, natural film grain, no cuts, no text, subtle organic motion of fabric and breath, consistent lighting.",
+          "sound": "ElevenLabs: ديك بعيد وخطوات كعب أولاً في الممر. Suno: quiet piano, distant rooster, hushed"
+        },
+        {
+          "id": "E05-09-B",
+          "dur_sec": 9,
+          "camera": "Slow dolly",
+          "midjourney": "Medium two-shot in pale grey dawn light, a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture standing in the doorway and a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait looking at him from the bed, distance between them one arm's length, 1993 interior, warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, anamorphic, shallow depth of field, no text --ar 21:9 --style raw --v 7",
+          "runway": "Handheld two-shot, the man in the doorway and the woman seated on the bed, a long unbroken look. 9 seconds, subtle handheld, rack focus between their faces. Single continuous take, photorealistic cinematic realism, natural film grain, no cuts, no text, subtle organic motion of fabric and breath, consistent lighting.",
+          "sound": "ElevenLabs: نورة تهمس: كنت عنده؟ ويوسف: إي. Suno: soft piano, tension unresolved"
+        },
+        {
+          "id": "E05-09-C",
+          "dur_sec": 8,
+          "camera": "Slow push-in",
+          "midjourney": "Close-up of a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait gently removing the slightly tilted ghutra from a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture head and setting it on a chair, pale dawn on her hands, 1993 interior, warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, anamorphic, shallow depth of field, no text --ar 21:9 --style raw --v 7",
+          "runway": "Slow push-in on a woman's hands taking a ghutra off a man's head and placing it on a chair. 8 seconds, slow dolly, shallow focus, cold dawn light. Single continuous take, photorealistic cinematic realism, natural film grain, no cuts, no text, subtle organic motion of fabric and breath, consistent lighting.",
+          "sound": "ElevenLabs: نورة: لا أحد يجلس جنبي أنا. يوسف: أنا جالس. نورة: الحين. Suno: solo piano, bittersweet, fading"
+        },
+        {
+          "id": "E05-09-D",
+          "dur_sec": 8,
+          "camera": "Static wide",
+          "midjourney": "Wide shot of a lean Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture sitting on the edge of the bed with his back to us, a Gulf Arab woman of 27, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait lying facing him for the first time, first thin dawn light on the curtain, sleeping child between, 1993 interior, warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, anamorphic, shallow depth of field, no text --ar 21:9 --style raw --v 7",
+          "runway": "Slow pull-back from the man on the bed edge to the wide dawn room, curtain glowing. 8 seconds, slow dolly back, static composition, cold grey to thin gold. Single continuous take, photorealistic cinematic realism, natural film grain, no cuts, no text, subtle organic motion of fabric and breath, consistent lighting.",
+          "sound": "ElevenLabs: صوت مقعد يُسحب على الأرض تحت البيت، ثم سكون. Suno: soft cello fading to silence"
+        }
+      ]
+    }
+  ]
+}
