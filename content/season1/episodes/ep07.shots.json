@@ -1,0 +1,406 @@
+{
+  "episode": 7,
+  "title_ar": "زين",
+  "title_en": "Zain",
+  "logline_ar": "خرج حمد من العيادة وفي جيب ابنه ورقة، وفي رأس ابنه اسمٌ لا يريد أن يقوله. على طريق الصحراء إلى البيت يتعلّم يوسف كيف يقود أباه، وتقلب الأسابيع الأدوار بهدوء، حتى يقول حمد كلمة واحدة لم يقلها لابنه من قبل.",
+  "anchor": "S07",
+  "runtime_min": 29,
+  "subscenes": [
+    {
+      "id": "E07-01",
+      "year": 2010,
+      "location": "موقف العيادة ثم الطريق السريع",
+      "time_of_day": "ظهراً",
+      "cast": [
+        "youssef",
+        "hamad"
+      ],
+      "dur_sec": 170,
+      "setting": "car",
+      "camera": "Slow push-in",
+      "beat_ar": "يفتح يوسف باب السيارة لأبيه ويخفي الملف تحت المقعد، ثم يخرجان إلى الطريق السريع وسط صمت وحرج، وحمد يطفئ المكيّف.",
+      "caption_ar": "شو تنتظر؟ السيارة ما تمشي بالانتظار.",
+      "shots": [
+        {
+          "id": "E07-01-A",
+          "dur_sec": 10,
+          "camera": "Slow push-in",
+          "midjourney": "Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. Youssef holds open the passenger door of a clean old white Land Cruiser in a hospital car park at noon, Hamad pausing to look at the open door as if at a small insult, harsh midday asphalt glare. 2010 daylight, clean natural light, slightly cooler neutral grade, modern digital clarity, anamorphic cinema, shallow depth of field, naturalistic Gulf Arab setting, restraint over melodrama, no text or subtitles in frame --ar 21:9 --style raw --v 7",
+          "runway": "Hospital car park at noon, Youssef holds a passenger door open while Hamad stands looking at it before slowly climbing in; slow push-in on Hamad's hesitant hand on the door frame. Duration 10 seconds, slow push-in, one continuous take, natural light, no cuts.",
+          "sound": "ElevenLabs: حمد بنبرة جافة: شو تنتظر؟ السيارة ما تمشي بالانتظار. Suno: quiet tense minimal piano, single sustained low note"
+        },
+        {
+          "id": "E07-01-B",
+          "dur_sec": 9,
+          "camera": "Static locked-off",
+          "midjourney": "Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. Close on Youssef's hands gripping the steering wheel at ten and two like a driving test, knuckles slightly white, engine not yet started, father's blurred white sleeve at the edge of frame. 2010 daylight, clean natural light, slightly cooler neutral grade, modern digital clarity, anamorphic cinema, shallow depth of field, naturalistic Gulf Arab setting, restraint over melodrama, no text or subtitles in frame --ar 21:9 --style raw --v 7",
+          "runway": "Extreme close view of a son's hands gripping a steering wheel at ten and two, knuckles paling; static locked-off frame, a father's blurred white sleeve at the edge, a car engine starts and the hands relax slightly. Duration 9 seconds, static locked-off, one continuous take, natural light, no cuts.",
+          "sound": "ElevenLabs: صوت محرك يبدأ وتنفّس ثقيل، دون كلام. Suno: sparse low strings, restrained unease"
+        },
+        {
+          "id": "E07-01-C",
+          "dur_sec": 12,
+          "camera": "Slow tracking shot",
+          "midjourney": "Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. Interior of the car on the edge of the city as buildings thin into sand, Hamad reaching to switch off the air conditioning while Youssef watches him, hot dusty light through the windshield. 2010 daylight, clean natural light, slightly cooler neutral grade, modern digital clarity, anamorphic cinema, shallow depth of field, naturalistic Gulf Arab setting, restraint over melodrama, no text or subtitles in frame --ar 21:9 --style raw --v 7",
+          "runway": "Inside the moving Land Cruiser at the city's edge, Hamad turns off the air conditioning and lowers his window a few centimetres while Youssef watches; slow tracking shot along the dashboard as sand appears outside. Duration 12 seconds, slow tracking shot, one continuous take, natural light, no cuts.",
+          "sound": "ElevenLabs: حمد بهدوء: الدكتور هذا ولد. أنا كنت لابس هالثوب قبل لا يتخرّج. Suno: distant oud single note, dry desert wind"
+        }
+      ]
+    },
+    {
+      "id": "E07-02",
+      "year": 2010,
+      "location": "السيارة على الطريق السريع",
+      "time_of_day": "بعد الظهر",
+      "cast": [
+        "youssef",
+        "hamad"
+      ],
+      "dur_sec": 210,
+      "setting": "car",
+      "camera": "Steadicam tracking",
+      "beat_ar": "حديث متقطع عن الأرض والجزيري وتعليم السواقة وسالم، وسعلة حمد التي يرفض الاعتراف بها، والأرض تمرّ من النافذة.",
+      "caption_ar": "أنا أعرف الحكم لما أسمعه.",
+      "shots": [
+        {
+          "id": "E07-02-A",
+          "dur_sec": 12,
+          "camera": "Slow tracking shot",
+          "midjourney": "Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. Side view through the passenger window of the desert highway, Hamad's profile in the foreground looking at the passing scrubland and a ruined roofless house on a low hill, Youssef blurred at the wheel. 2010 daylight, clean natural light, slightly cooler neutral grade, modern digital clarity, anamorphic cinema, shallow depth of field, naturalistic Gulf Arab setting, restraint over melodrama, no text or subtitles in frame --ar 21:9 --style raw --v 7",
+          "runway": "Through the passenger window, Hamad in profile watches barren fenced land and a roofless ruined house slide by on a low hill; slow tracking shot, Youssef soft-focus at the wheel, wind lifting Hamad's white beard. Duration 12 seconds, slow tracking shot, one continuous take, natural light, no cuts.",
+          "sound": "ElevenLabs: حمد كأنه يكلّم نفسه: هذا كان بيت الجزيري. Suno: low sustained cello, dry desert wind"
+        },
+        {
+          "id": "E07-02-B",
+          "dur_sec": 10,
+          "camera": "Static locked-off",
+          "midjourney": "Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. Hamad in the passenger seat pressing his fist briefly against his chest after a dry cough, then lowering it quickly, dust drifting in the sunlit air of the cabin. 2010 daylight, clean natural light, slightly cooler neutral grade, modern digital clarity, anamorphic cinema, shallow depth of field, naturalistic Gulf Arab setting, restraint over melodrama, no text or subtitles in frame --ar 21:9 --style raw --v 7",
+          "runway": "Close view of Hamad coughing dryly and pressing a fist to his chest for one second before hiding it; static locked-off frame, dust drifting through a sunbeam, his eyes fixed defiantly on the road ahead. Duration 10 seconds, static locked-off, one continuous take, natural light, no cuts.",
+          "sound": "ElevenLabs: سعلة جافة قصيرة، ثم حمد بحدة: قلت خلّها. Suno: single held string tone, heartbeat-like pulse"
+        },
+        {
+          "id": "E07-02-C",
+          "dur_sec": 11,
+          "camera": "Slow push-in",
+          "midjourney": "Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. Two-shot inside the car, Youssef gripping the wheel harder, Hamad turned toward him with a long level look, warm late-afternoon sun catching Hamad's white hair, the highway empty behind them. 2010 daylight, clean natural light, slightly cooler neutral grade, modern digital clarity, anamorphic cinema, shallow depth of field, naturalistic Gulf Arab setting, restraint over melodrama, no text or subtitles in frame --ar 21:9 --style raw --v 7",
+          "runway": "Two-shot in the car, Hamad turns and holds a long level stare at Youssef, who grips the wheel tighter and does not look back; slow push-in, afternoon sun sliding across Hamad's white hair. Duration 11 seconds, slow push-in, one continuous take, natural light, no cuts.",
+          "sound": "ElevenLabs: حمد بهدوء: أنا أعرف الحكم لما أسمعه. Suno: warm restrained piano, quiet tension"
+        }
+      ]
+    },
+    {
+      "id": "E07-03",
+      "year": 2010,
+      "location": "صيدلية على مدخل البلدة",
+      "time_of_day": "العصر",
+      "cast": [
+        "youssef",
+        "hamad"
+      ],
+      "dur_sec": 170,
+      "setting": "car",
+      "camera": "Handheld observational",
+      "beat_ar": "يترك يوسف أباه في السيارة ويدخل الصيدلية، يشرح له أبو ناصر أن الدواء يومي، ويرفض الحساب. حمد يراقب ظهر ابنه من الزجاج.",
+      "caption_ar": "الصيدلية ما فيها ألسنة يا ولدي. فيها بس أرفف.",
+      "shots": [
+        {
+          "id": "E07-03-A",
+          "dur_sec": 10,
+          "camera": "Slow push-in",
+          "midjourney": "Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. Hamad alone in the parked white Land Cruiser under a palm's shade, watching through the windshield the back of his son walking away to a small pharmacy with a faded green sign, thoughtful, unreadable. 2010 daylight, clean natural light, slightly cooler neutral grade, modern digital clarity, anamorphic cinema, shallow depth of field, naturalistic Gulf Arab setting, restraint over melodrama, no text or subtitles in frame --ar 21:9 --style raw --v 7",
+          "runway": "From inside the parked car, Hamad watches through the windshield as his son walks away toward a small green-signed pharmacy; slow push-in on Hamad's face reflected faintly in the glass, palm shade moving. Duration 10 seconds, slow push-in, one continuous take, natural light, no cuts.",
+          "sound": "ElevenLabs: صمت السيارة وطنين حشرة بعيد. Suno: muted single guitar note, distant hush"
+        },
+        {
+          "id": "E07-03-B",
+          "dur_sec": 11,
+          "camera": "Handheld",
+          "midjourney": "Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. Inside a small old pharmacy, Youssef at the counter receiving small medicine boxes from an elderly pharmacist with reading glasses on a cord, fluorescent light, shelves of boxes, quiet dignified exchange. 2010 daylight, clean natural light, slightly cooler neutral grade, modern digital clarity, anamorphic cinema, shallow depth of field, naturalistic Gulf Arab setting, restraint over melodrama, no text or subtitles in frame --ar 21:9 --style raw --v 7",
+          "runway": "Inside a small pharmacy, an elderly pharmacist sorts medicine boxes onto the counter while Youssef listens carefully; gentle handheld observational shot, fluorescent light, Youssef's fingers resting on a weekly pill organiser. Duration 11 seconds, handheld, one continuous take, natural light, no cuts.",
+          "sound": "ElevenLabs: الصيدلاني بلطف: هذي كل يوم، ما تنقطع. Suno: soft ambient tone, humane and restrained"
+        },
+        {
+          "id": "E07-03-C",
+          "dur_sec": 9,
+          "camera": "Slow tracking shot",
+          "midjourney": "Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. Youssef standing on the pharmacy doorstep holding a paper bag with both hands, looking toward the car where his father waits, midday shadow across his thobe, a small bus crossing slowly in the foreground. 2010 daylight, clean natural light, slightly cooler neutral grade, modern digital clarity, anamorphic cinema, shallow depth of field, naturalistic Gulf Arab setting, restraint over melodrama, no text or subtitles in frame --ar 21:9 --style raw --v 7",
+          "runway": "Youssef stands on a pharmacy threshold clutching a small paper bag in both hands and looks toward the car; slow tracking shot as a small bus crosses slowly in the foreground, then he steps forward. Duration 9 seconds, slow tracking shot, one continuous take, natural light, no cuts.",
+          "sound": "ElevenLabs: نفَس عميق، ثم خطوات على الأسفلت. Suno: low warm drone, a held breath"
+        }
+      ]
+    },
+    {
+      "id": "E07-04",
+      "year": 2010,
+      "location": "السيارة، عند البلدة",
+      "time_of_day": "العصر",
+      "cast": [
+        "youssef",
+        "hamad"
+      ],
+      "dur_sec": 200,
+      "setting": "car",
+      "camera": "Static locked-off",
+      "beat_ar": "يفتح يوسف الكيس أمام أبيه. حمد يقرأ اسم الدواء، يرفض، يتحدث عن الوالدة، ويكشف أنه يعرف أن ابنه يراقبه.",
+      "caption_ar": "أنا ما أنام في السيارة. أنا أسمع.",
+      "shots": [
+        {
+          "id": "E07-04-A",
+          "dur_sec": 12,
+          "camera": "Static locked-off",
+          "midjourney": "Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. Inside the parked car, Hamad holding a medicine box between his heavy fingers squinting at foreign letters while Youssef watches quietly, paper bag open on Youssef's lap, warm slanted afternoon light. 2010 daylight, clean natural light, slightly cooler neutral grade, modern digital clarity, anamorphic cinema, shallow depth of field, naturalistic Gulf Arab setting, restraint over melodrama, no text or subtitles in frame --ar 21:9 --style raw --v 7",
+          "runway": "Inside the parked car, Hamad turns a medicine box in his fingers and squints at the foreign lettering as Youssef watches; static locked-off two-shot, warm slanted light, the open paper bag on Youssef's lap. Duration 12 seconds, static locked-off, one continuous take, natural light, no cuts.",
+          "sound": "ElevenLabs: حمد بصوت خافت يهجّي الاسم: اسم دوا يخلّيني أتذكّر إني مريض؟. Suno: dry felt piano, few notes, restrained"
+        },
+        {
+          "id": "E07-04-B",
+          "dur_sec": 10,
+          "camera": "Slow push-in",
+          "midjourney": "Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. Close on Hamad's weathered face turned away toward the window, a flicker of memory in the eyes, a passing village street reflected in the glass, soft late light on his white beard. 2010 daylight, clean natural light, slightly cooler neutral grade, modern digital clarity, anamorphic cinema, shallow depth of field, naturalistic Gulf Arab setting, restraint over melodrama, no text or subtitles in frame --ar 21:9 --style raw --v 7",
+          "runway": "Close on Hamad's face turned toward the window as he speaks of his late wife, eyes glassy but stubborn; slow push-in, the village street reflected faintly in the glass. Duration 10 seconds, slow push-in, one continuous take, natural light, no cuts.",
+          "sound": "ElevenLabs: حمد بنبرة أقل حدّة: الوالدة كانت تبلع كل شي وما تسأل. Suno: gentle oud tremolo, tender and distant"
+        },
+        {
+          "id": "E07-04-C",
+          "dur_sec": 9,
+          "camera": "Static locked-off",
+          "midjourney": "Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. Wide shot through the windshield of the old white Land Cruiser stopped at a broken traffic light on an empty village road, father and son facing forward, neither speaking, the red light steady. 2010 daylight, clean natural light, slightly cooler neutral grade, modern digital clarity, anamorphic cinema, shallow depth of field, naturalistic Gulf Arab setting, restraint over melodrama, no text or subtitles in frame --ar 21:9 --style raw --v 7",
+          "runway": "Through the windshield, the car waits at a dead red traffic light on an empty village road, both men staring forward without speaking; static locked-off wide frame, red light constant, then the car slowly crosses. Duration 9 seconds, static locked-off, one continuous take, natural light, no cuts.",
+          "sound": "ElevenLabs: صوت محرك هادئ وصمت طويل. Suno: single low pad, suspended stillness"
+        }
+      ]
+    },
+    {
+      "id": "E07-05",
+      "year": 2010,
+      "location": "بيت حمد الكبير، المجلس والمطبخ",
+      "time_of_day": "مساءً",
+      "cast": [
+        "youssef",
+        "hamad",
+        "noura"
+      ],
+      "dur_sec": 210,
+      "setting": "majlis",
+      "camera": "Slow push-in",
+      "beat_ar": "يعود حمد إلى كرسيّه، يخبر يوسف نورة بالتشخيص في المطبخ، وعلى مائدة العشاء تتحرك علبة الأسبوع شبراً بين الأب والابن، ثم يقف يوسف عند كرسي الأب الفارغ.",
+      "caption_ar": "البيت اللي فيه علبة على الطاولة مشغول.",
+      "shots": [
+        {
+          "id": "E07-05-A",
+          "dur_sec": 10,
+          "camera": "Slow push-in",
+          "midjourney": "Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. Hamad sitting alone in his high-backed chair at the head of the dim majlis, a single lamp lit, cold coffee tray in front of him, long shadows on the carpets, an exhaled sigh. 2010 daylight, clean natural light, slightly cooler neutral grade, modern digital clarity, anamorphic cinema, shallow depth of field, naturalistic Gulf Arab setting, restraint over melodrama, no text or subtitles in frame --ar 21:9 --style raw --v 7",
+          "runway": "Hamad lowers himself into his chair at the head of a dim majlis lit by one lamp, sighing like a man turning a page; slow push-in, cold coffee tray in the foreground, long shadows on the carpet. Duration 10 seconds, slow push-in, one continuous take, natural light, no cuts.",
+          "sound": "ElevenLabs: تنهيدة طويلة وصوت كرسي وساعة حائط. Suno: warm lamplit oud, slow and hushed"
+        },
+        {
+          "id": "E07-05-B",
+          "dur_sec": 11,
+          "camera": "Static locked-off",
+          "midjourney": "Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. Noura, a Gulf Arab woman of 44, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait. Kitchen under white light, his father waiting in the majlis beyond, Noura holding a medical paper with careful hands while Youssef speaks low, plates of fried fish and cardamom steam on the counter, her patient eyes lifting to his. a single warm lamp against deep shadow, soft intimate close focus, clean digital clarity, anamorphic cinema, shallow depth of field, naturalistic Gulf Arab setting, restraint over melodrama, no text or subtitles in frame --ar 21:9 --style raw --v 7",
+          "runway": "In a bright kitchen Noura reads a doctor's paper twice and sets it down gently while Youssef speaks quietly; static locked-off two-shot, steam from fish and cardamom rising between them. Duration 11 seconds, static locked-off, one continuous take, natural light, no cuts.",
+          "sound": "ElevenLabs: نورة بهمس: وهو موافق؟ ويوسف: ما قال لا. ما قال إيه. Suno: soft strings, private and unspoken sorrow"
+        },
+        {
+          "id": "E07-05-C",
+          "dur_sec": 10,
+          "camera": "Slow push-in",
+          "midjourney": "Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. Dinner table, a transparent weekly pill organiser sitting among dates and fruit, Hamad's dry hand pushing it aside by a hand's breadth, Youssef quietly moving it back, warm tungsten lamplight. 2010 daylight, clean natural light, slightly cooler neutral grade, modern digital clarity, anamorphic cinema, shallow depth of field, naturalistic Gulf Arab setting, restraint over melodrama, no text or subtitles in frame --ar 21:9 --style raw --v 7",
+          "runway": "At a dinner table a weekly pill organiser sits among dates as Hamad's hand nudges it aside and Youssef silently slides it back; slow push-in on the transparent box between two hands. Duration 10 seconds, slow push-in, one continuous take, natural light, no cuts.",
+          "sound": "ElevenLabs: صوت ملاعق وصمت، وحمد بلا غضب: أنا ما قلت خبّها. Suno: warm minimal piano, unresolved tension"
+        },
+        {
+          "id": "E07-05-D",
+          "dur_sec": 9,
+          "camera": "Slow dolly",
+          "midjourney": "Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. Youssef standing, his father's empty chair before him, at the edge of the pool of lamplight around the empty leather chair in the dark majlis, not stepping into the circle, one hand reaching and stopping short of the worn armrest. 2010 daylight, clean natural light, slightly cooler neutral grade, modern digital clarity, anamorphic cinema, shallow depth of field, naturalistic Gulf Arab setting, restraint over melodrama, no text or subtitles in frame --ar 21:9 --style raw --v 7",
+          "runway": "Youssef pauses at the edge of the lamplight around the empty leather chair in the dark majlis and reaches out without touching the armrest; slow dolly around him, the empty chair glowing. Duration 9 seconds, slow dolly, one continuous take, natural light, no cuts.",
+          "sound": "ElevenLabs: خطوات بطيئة ثم صمت المجلس. Suno: single deep drone, quiet dread and grief"
+        }
+      ]
+    },
+    {
+      "id": "E07-06",
+      "year": 2010,
+      "location": "بيت حمد والحوش",
+      "time_of_day": "أسابيع لاحقة",
+      "cast": [
+        "youssef",
+        "hamad",
+        "noura"
+      ],
+      "dur_sec": 210,
+      "setting": "night_room",
+      "camera": "Slow push-in",
+      "beat_ar": "مونتاج أسابيع: الحبّة التي تُترك على الطاولة، الأدوية غير المأخوذة، السلّم في الحوش، الهاتف الذي لا يُطلب فيه سالم، وليلة يقف يوسف عند باب أبيه.",
+      "caption_ar": "وقفتك هذي أشدّ من دخولك.",
+      "shots": [
+        {
+          "id": "E07-06-A",
+          "dur_sec": 10,
+          "camera": "Static locked-off",
+          "midjourney": "Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. Bedroom of the old house at dawn, Hamad seated on the edge of his bed in a sleeping thobe after prayer, a white pill and glass of water untouched on the side table, Youssef a silhouette at the door. a single warm lamp against deep shadow, soft intimate close focus, clean digital clarity, anamorphic cinema, shallow depth of field, naturalistic Gulf Arab setting, restraint over melodrama, no text or subtitles in frame --ar 21:9 --style raw --v 7",
+          "runway": "Dawn in Hamad's bedroom, he sits on the bed edge after prayer, a single white pill untouched on the side table while Youssef waits in silhouette at the door; static locked-off frame, pale blue light. Duration 10 seconds, static locked-off, one continuous take, natural light, no cuts.",
+          "sound": "ElevenLabs: حمد بجفاف: وقفتك هذي أشدّ من دخولك. Suno: cold dawn ambient, soft low piano"
+        },
+        {
+          "id": "E07-06-B",
+          "dur_sec": 11,
+          "camera": "Slow tracking shot",
+          "midjourney": "Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. Sunlit courtyard beside a palm trunk, Hamad releasing a curved sickle into his son's hands at the foot of a wooden ladder, Youssef about to climb, Hamad's shoulders folding as he steps back to the shade. 2010 daylight, clean natural light, slightly cooler neutral grade, modern digital clarity, anamorphic cinema, shallow depth of field, naturalistic Gulf Arab setting, restraint over melodrama, no text or subtitles in frame --ar 21:9 --style raw --v 7",
+          "runway": "In a sunlit courtyard Hamad slowly lets go of a sickle and Youssef takes it at the foot of a wooden ladder against a palm; slow tracking shot as Hamad retreats to sit on a stone in the shade. Duration 11 seconds, slow tracking shot, one continuous take, natural light, no cuts.",
+          "sound": "ElevenLabs: حمد بمرارة: ما أعلّم. من يعلّم يتوقّع الغلط. Suno: sparse dry oud, mournful and dignified"
+        },
+        {
+          "id": "E07-06-C",
+          "dur_sec": 10,
+          "camera": "Slow push-in",
+          "midjourney": "Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. Hamad in the old living room lifting a landline receiver, hand covering the dial, Youssef's soft shape standing in the doorway, warm tungsten light and dark wood furniture, a wall clock. 2010 daylight, clean natural light, slightly cooler neutral grade, modern digital clarity, anamorphic cinema, shallow depth of field, naturalistic Gulf Arab setting, restraint over melodrama, no text or subtitles in frame --ar 21:9 --style raw --v 7",
+          "runway": "Hamad lifts a landline receiver in the living room, one hand shielding the dial as Youssef stands quietly in the doorway; slow push-in, a wall clock ticking, then Hamad puts the receiver down without dialling. Duration 10 seconds, slow push-in, one continuous take, natural light, no cuts.",
+          "sound": "ElevenLabs: حمد بحدة: اطلع. ويوسف بهدوء غريب: بتحضّر العشا. تجي؟. Suno: ticking clock, sparse piano, held emotion"
+        },
+        {
+          "id": "E07-06-D",
+          "dur_sec": 9,
+          "camera": "Slow push-in",
+          "midjourney": "Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. Noura, a Gulf Arab woman of 44, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait. Corridor outside Hamad's room at night, Youssef sitting on the floor with his back to the wall beside a thread of light under a door, Noura's shadow far down the hall, worn and quiet. a single warm lamp against deep shadow, soft intimate close focus, clean digital clarity, anamorphic cinema, shallow depth of field, naturalistic Gulf Arab setting, restraint over melodrama, no text or subtitles in frame --ar 21:9 --style raw --v 7",
+          "runway": "Youssef sits on the corridor floor outside his father's door, back against the wall, a thin line of light under the door fading; slow push-in on his tired face in near darkness. Duration 9 seconds, slow push-in, one continuous take, natural light, no cuts.",
+          "sound": "ElevenLabs: أنفاس خافتة وباب يُغلق ببطء. Suno: low warm drone, watchful stillness"
+        }
+      ]
+    },
+    {
+      "id": "E07-07",
+      "year": 2010,
+      "location": "غرفة يوسف ونورة",
+      "time_of_day": "ليلاً",
+      "cast": [
+        "youssef",
+        "noura"
+      ],
+      "dur_sec": 170,
+      "setting": "night_room",
+      "camera": "Slow push-in",
+      "beat_ar": "ليلة يعترف فيها يوسف لنورة بأنه لا يحب السلطة الجديدة، وتخبره نورة بخوفها من أن يعتادها. يريد أباه على الكرسي يصرخ عليه.",
+      "caption_ar": "أنا ما أبي الكرسي. أبي أبوي يقعد فيه.",
+      "shots": [
+        {
+          "id": "E07-07-A",
+          "dur_sec": 11,
+          "camera": "Slow push-in",
+          "midjourney": "Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. Noura, a Gulf Arab woman of 44, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait. Bedroom at night, Youssef seated on the bed edge with his back half turned turning an empty pill organiser in his hands, Noura propped on the pillows behind him with a closed book, one warm bedside lamp. a single warm lamp against deep shadow, soft intimate close focus, clean digital clarity, anamorphic cinema, shallow depth of field, naturalistic Gulf Arab setting, restraint over melodrama, no text or subtitles in frame --ar 21:9 --style raw --v 7",
+          "runway": "In a lamplit bedroom Youssef sits on the bed edge turning an empty pill organiser in his hands while Noura watches his back from the pillows; slow push-in, warm lamp against deep shadow. Duration 11 seconds, slow push-in, one continuous take, natural light, no cuts.",
+          "sound": "ElevenLabs: يوسف بمرارة خفيفة: كنت أعرف شنو أسوّي. أصمت وأقول حاضر. Suno: soft solo cello, intimate and weary"
+        },
+        {
+          "id": "E07-07-B",
+          "dur_sec": 10,
+          "camera": "Static locked-off",
+          "midjourney": "Noura, a Gulf Arab woman of 44, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait. Close on Noura's face in the lamp glow, patient eyes wet and steady as she speaks the thing she fears, her hand reaching toward his back but stopping short, no touch. a single warm lamp against deep shadow, soft intimate close focus, clean digital clarity, anamorphic cinema, shallow depth of field, naturalistic Gulf Arab setting, restraint over melodrama, no text or subtitles in frame --ar 21:9 --style raw --v 7",
+          "runway": "Close on Noura's face in the lamp glow, eyes steady and wet as she speaks quietly; static locked-off frame, her hand extends toward his back and stops a few centimetres short. Duration 10 seconds, static locked-off, one continuous take, natural light, no cuts.",
+          "sound": "ElevenLabs: نورة بلطف: أقول اللي أخاف منه. بنقعد نحن الاثنين مع الخوف. Suno: warm strings, tender fragile hush"
+        },
+        {
+          "id": "E07-07-C",
+          "dur_sec": 9,
+          "camera": "Slow tracking shot",
+          "midjourney": "Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. Youssef at the bedroom door in near darkness, the transparent organiser gathered in his hand, looking back at the lamp and his wife, half his face swallowed by shadow. a single warm lamp against deep shadow, soft intimate close focus, clean digital clarity, anamorphic cinema, shallow depth of field, naturalistic Gulf Arab setting, restraint over melodrama, no text or subtitles in frame --ar 21:9 --style raw --v 7",
+          "runway": "Youssef stops at the bedroom door with the empty pill organiser in his hand and looks back toward the lamp; slow tracking shot as darkness swallows half the room and Noura stays awake in the light. Duration 9 seconds, slow tracking shot, one continuous take, natural light, no cuts.",
+          "sound": "ElevenLabs: خطوات صامتة وباب يُفتح. Suno: low drone, lonely and dignified"
+        }
+      ]
+    },
+    {
+      "id": "E07-08",
+      "year": 2010,
+      "location": "الطريق السريع نفسه، ثم المفترق الترابي",
+      "time_of_day": "الظهيرة",
+      "cast": [
+        "youssef",
+        "hamad"
+      ],
+      "dur_sec": 270,
+      "setting": "car",
+      "camera": "Slow push-in",
+      "beat_ar": "بعد ستة أسابيع، على الطريق إلى المزرعة، يكشف يوسف أن أباه لم يتناول حبوب أيامه، يقود بحزم ويقول: «راح تاخذ الأدوية». حمد ينظر إليه ثم يقول «زين».",
+      "caption_ar": "راح تاخذ الأدوية. — زين.",
+      "shots": [
+        {
+          "id": "E07-08-A",
+          "dur_sec": 12,
+          "camera": "Slow tracking shot",
+          "midjourney": "Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. Through the passenger window the desert highway in softer midday light, Hamad in profile looking at the roofless house on the low hill, Youssef blurred at the wheel, sand drifting across the empty road. 2010 daylight, clean natural light, slightly cooler neutral grade, modern digital clarity, anamorphic cinema, shallow depth of field, naturalistic Gulf Arab setting, restraint over melodrama, no text or subtitles in frame --ar 21:9 --style raw --v 7",
+          "runway": "Hamad in profile looks out at the roofless house on the low hill as the car passes; slow tracking shot along the window, softer midday light, sand drifting over an empty highway, Youssef soft-focus at the wheel. Duration 12 seconds, slow tracking shot, one continuous take, natural light, no cuts.",
+          "sound": "ElevenLabs: حمد بنبرة عادية: الجزيري ما كان يشرب دواء. Suno: sparse oud, wide desert stillness"
+        },
+        {
+          "id": "E07-08-B",
+          "dur_sec": 12,
+          "camera": "Static locked-off",
+          "midjourney": "Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. Parked on the shoulder at a dirt crossroads under a rusted sign, engine off, Youssef offering the transparent organiser toward his father, Hamad's eyes lowered, fine sand ticking on the windshield. 2010 daylight, clean natural light, slightly cooler neutral grade, modern digital clarity, anamorphic cinema, shallow depth of field, naturalistic Gulf Arab setting, restraint over melodrama, no text or subtitles in frame --ar 21:9 --style raw --v 7",
+          "runway": "Parked at a dirt crossroads under a rusted sign, Youssef holds out the transparent pill organiser while Hamad lowers his eyes; static locked-off two-shot, fine sand ticking on the windshield. Duration 12 seconds, static locked-off, one continuous take, natural light, no cuts.",
+          "sound": "ElevenLabs: يوسف بهدوء: وأنا ما أبي أكون واحد يعدّه. بس راح أعدّها. Suno: held piano note, desert wind, tension"
+        },
+        {
+          "id": "E07-08-C",
+          "dur_sec": 10,
+          "camera": "Slow push-in",
+          "midjourney": "Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. Youssef driving his father firmly along a dirt road between palms, both hands steady on the wheel, eyes on the ground ahead and not turning, warm hard light across the side of his face. 2010 daylight, clean natural light, slightly cooler neutral grade, modern digital clarity, anamorphic cinema, shallow depth of field, naturalistic Gulf Arab setting, restraint over melodrama, no text or subtitles in frame --ar 21:9 --style raw --v 7",
+          "runway": "Youssef drives steadily along a dirt road between date palms, both hands firm on the wheel, eyes never leaving the track; slow push-in on his set jaw as light flickers through the trees. Duration 10 seconds, slow push-in, one continuous take, natural light, no cuts.",
+          "sound": "ElevenLabs: يوسف بحزم دون أن يلتفت: راح تاخذ الأدوية. Suno: low steady strings, resolved and heavy"
+        },
+        {
+          "id": "E07-08-D",
+          "dur_sec": 14,
+          "camera": "Slow push-in",
+          "midjourney": "Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. Extreme close on Hamad's face turned toward his son, a long level look, then the eyes softening and the lips loosening, shafts of sun across his white beard, a single small pill in his open palm. 2010 daylight, clean natural light, slightly cooler neutral grade, modern digital clarity, anamorphic cinema, shallow depth of field, naturalistic Gulf Arab setting, restraint over melodrama, no text or subtitles in frame --ar 21:9 --style raw --v 7",
+          "runway": "Extreme close-up of Hamad turning to look at his son, the proud eyes slowly softening as he says one quiet word; slow push-in, sunlight moving across his white beard, a white pill resting in his open palm. Duration 14 seconds, slow push-in, one continuous take, natural light, no cuts.",
+          "sound": "ElevenLabs: حمد بصوت منخفض جداً، بتسليم كامل: زين. Suno: single piano note, then silence, release"
+        }
+      ]
+    },
+    {
+      "id": "E07-09",
+      "year": 2010,
+      "location": "المزرعة ثم البيت",
+      "time_of_day": "الغروب",
+      "cast": [
+        "youssef",
+        "hamad",
+        "noura"
+      ],
+      "dur_sec": 140,
+      "setting": "desert_dawn",
+      "camera": "Slow crane up",
+      "beat_ar": "خاتمة: غرس الشتلة معاً عند الغروب، يد يوسف تتوقف في الهواء قرب يد أبيه، ثم ليل الممر حيث يقول يوسف لنورة إنه لا يحب المكان الذي صار فيه.",
+      "caption_ar": "ما أحب المكان اللي كان فيه أبوي.",
+      "shots": [
+        {
+          "id": "E07-09-A",
+          "dur_sec": 12,
+          "camera": "Slow push-in",
+          "midjourney": "Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. Palm farm at sunset, Hamad crouching painfully to press soil around a young sapling's root with his palm while Youssef stands over him holding a small spade, long golden light, long shadows. 2010 daylight, clean natural light, slightly cooler neutral grade, modern digital clarity, anamorphic cinema, shallow depth of field, naturalistic Gulf Arab setting, restraint over melodrama, no text or subtitles in frame --ar 21:9 --style raw --v 7",
+          "runway": "At sunset on the farm Hamad bends stiffly to press earth around a young sapling's root while Youssef stands beside him with a spade; slow push-in on the two hands and the small root, golden light. Duration 12 seconds, slow push-in, one continuous take, natural light, no cuts.",
+          "sound": "ElevenLabs: حمد بهدوء: الجذر ما يحبّ اللي يستعجل. ويوسف: وما يحب اللي يتأخر. Suno: warm gentle oud, golden and elegiac"
+        },
+        {
+          "id": "E07-09-B",
+          "dur_sec": 9,
+          "camera": "Static locked-off",
+          "midjourney": "Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. Hamad, an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold. Close on two hands nearly touching in the golden light, Youssef's open hand hovering an inch from his father's elbow as Hamad rises on his cane, then withdrawing to his side, Hamad pretending not to see. 2010 daylight, clean natural light, slightly cooler neutral grade, modern digital clarity, anamorphic cinema, shallow depth of field, naturalistic Gulf Arab setting, restraint over melodrama, no text or subtitles in frame --ar 21:9 --style raw --v 7",
+          "runway": "Close on Youssef's hand hovering an inch from his father's elbow as Hamad rises on a cane; static locked-off frame, the hand withdraws to Youssef's side while Hamad pretends not to notice. Duration 9 seconds, static locked-off, one continuous take, natural light, no cuts.",
+          "sound": "ElevenLabs: صمت وريح خفيفة وصوت عصا على التراب. Suno: held single string, aching tenderness"
+        },
+        {
+          "id": "E07-09-C",
+          "dur_sec": 12,
+          "camera": "Slow push-in",
+          "midjourney": "Youssef, a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions. Noura, a Gulf Arab woman of 44, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait. Long dim house corridor at night, a golden rectangle of light on the floor from Hamad's open door, Youssef standing in the shadow while Noura rests a hand on his back, two shadows on the walls not meeting. a single warm lamp against deep shadow, soft intimate close focus, clean digital clarity, anamorphic cinema, shallow depth of field, naturalistic Gulf Arab setting, restraint over melodrama, no text or subtitles in frame --ar 21:9 --style raw --v 7",
+          "runway": "In a long dim corridor a golden rectangle of light spills from Hamad's open door as Noura places a hand on Youssef's back; slow push-in, two shadows on opposite walls, the gap between them narrowing. Duration 12 seconds, slow push-in, one continuous take, natural light, no cuts.",
+          "sound": "ElevenLabs: نورة همساً: وأنت؟ ويوسف: ما أحب المكان اللي كان فيه أبوي. Suno: gentle piano fading, quiet grief, dawn hope"
+        }
+      ]
+    }
+  ]
+}

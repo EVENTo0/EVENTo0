@@ -1,0 +1,386 @@
+{
+  "episode": 9,
+  "title_ar": "ما فيك شيء إلا أنت",
+  "title_en": "You Have Nothing Wrong With You But You",
+  "logline_ar": "آخر يوم في حياة حمد: العائلة كلها تجتمع في البيت الكبير، وكل واحد يحمل ما لم يقله. وبعد انتظار طويل تنغلق أصابع حمد على يد يوسف وتخرج الجملة الأخيرة، براءةً أو حكماً أو حباً، لا أحد يعرف.",
+  "anchor": "S09",
+  "runtime_min": 28,
+  "subscenes": [
+    {
+      "id": "E09-01",
+      "year": 2019,
+      "location": "غرفة حمد، البيت الكبير",
+      "time_of_day": "عصر",
+      "cast": [
+        "youssef",
+        "hamad",
+        "noura"
+      ],
+      "dur_sec": 190,
+      "setting": "bedside_dawn",
+      "camera": "Slow push-in",
+      "beat_ar": "عصر آخر يوم: يوسف يرطّب شفتي أبيه، نورة تحاول إطعامه، وحمد يطلب أن تبقى الشمس وأن يُترك الباب مفتوحاً. ويطلب أن يُنادى الكل عند الغروب.",
+      "caption_ar": "نادِ الكل. لما تغيب الشمس… أبي أشوفهم.",
+      "shots": [
+        {
+          "id": "E09-01-A",
+          "dur_sec": 9,
+          "camera": "Slow push-in",
+          "midjourney": "Cinematic still, anamorphic 21:9, shallow depth of field. Hamad, a frail Gulf Arab elder of 81, sparse white beard, sunken cheeks, thin papery hands, only the eyes still proud. Extreme close-up of the frail old man lying in a wooden bed, eyes open toward the ceiling, a narrow shaft of amber sun crossing his blanket, oxygen tube coiled on the floor. Late afternoon light, a narrow amber shaft across the bed, muted desaturated grade, quiet and still. No text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "9 seconds. Slow push-in. The shaft of light creeps slowly across the blanket while his chest barely rises. Only his eyes move toward the sun. Very subtle, still, intimate.",
+          "sound": "ElevenLabs: أنفاس حمد قصيرة متقطعة، همس خافت، لا كلام. Suno: barely-there low drone, distant warm strings"
+        },
+        {
+          "id": "E09-01-B",
+          "dur_sec": 8,
+          "camera": "Static locked-off",
+          "midjourney": "Cinematic still, anamorphic 21:9, shallow depth of field. Youssef, a Gulf Arab man of 56 with a full grey-white beard, deep lines around the eyes, plain white thobe, gentle weary hands; Hamad, a frail Gulf Arab elder of 81, sparse white beard, sunken cheeks, thin papery hands, only the eyes still proud. Youssef sits beside the bed gently touching a small wet sponge to the old man's lips, his other hand trembling on his knee. Late afternoon light, a narrow amber shaft across the bed, muted desaturated grade, quiet and still. No text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "8 seconds. Static locked-off. Hand steady while the other trembles on the knee. Nothing else moves except dust in the light.",
+          "sound": "ElevenLabs: يوسف يهمس بس شوي ترطيب بصوت مبحوح. Suno: single sustained cello note, restrained grief"
+        },
+        {
+          "id": "E09-01-C",
+          "dur_sec": 8,
+          "camera": "Slow dolly",
+          "midjourney": "Cinematic still, anamorphic 21:9, shallow depth of field. Noura, a Gulf Arab woman of 53, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait; Hamad, a frail Gulf Arab elder of 81, sparse white beard, sunken cheeks, thin papery hands, only the eyes still proud; Youssef, a Gulf Arab man of 56 with a full grey-white beard, deep lines around the eyes, plain white thobe, gentle weary hands. Noura sits on the far edge of the bed offering a cup of water to the old man, Youssef watching across the bed, the door left open behind them. Late afternoon light, a narrow amber shaft across the bed, muted desaturated grade, quiet and still. No text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "8 seconds. Slow dolly. Noura lifts the cup to his lips. He sips once and falls back on the pillow. Slow lateral movement across the bed.",
+          "sound": "ElevenLabs: نورة تقول عمي بس شوي بصوت دافئ ثابت. Suno: soft ambient piano, hushed, patient"
+        }
+      ]
+    },
+    {
+      "id": "E09-02",
+      "year": 2019,
+      "location": "المجلس الكبير",
+      "time_of_day": "عصر متأخر",
+      "cast": [
+        "salem",
+        "khalid",
+        "mariam"
+      ],
+      "dur_sec": 180,
+      "setting": "majlis",
+      "camera": "Slow track",
+      "beat_ar": "المجلس مليء بالأقارب والمسند الكبير على رأسه فارغ. سالم واقف عند باب الممر لا يقرر، خالد يجلب التمر، ومريم تقول لعمها ألا ينتظر أن يقولها أحد.",
+      "caption_ar": "هو ما راح يقولها لك يا عمي. لا تنتظر أن يقولها.",
+      "shots": [
+        {
+          "id": "E09-02-A",
+          "dur_sec": 9,
+          "camera": "Slow push-in",
+          "midjourney": "Cinematic still, anamorphic 21:9, shallow depth of field. Salem, a Gulf Arab man of 51, lighter build than his brother, short trimmed beard, restless posture, plain white thobe. Salem stands at the doorway of a large majlis holding an untouched cup of coffee, gazing toward an empty large cushion at the head of the room, low red cushions along the walls, neighbours whispering in the background. Dusk interior, warm lamplight against cold blue window, muted desaturated grade, 35mm texture. No text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "9 seconds. Slow push-in. He stares at the empty seat, lifts the cup halfway, lowers it again. Slow push-in, blurred elders murmuring behind him.",
+          "sound": "ElevenLabs: همس رجال المجلس وطقطقة الفناجين من بعيد. Suno: low sparse oud, single plucked notes"
+        },
+        {
+          "id": "E09-02-B",
+          "dur_sec": 8,
+          "camera": "Static",
+          "midjourney": "Cinematic still, anamorphic 21:9, shallow depth of field. Khalid, a Gulf Arab young man of 25, short beard, casual shirt, quiet watchful eyes; Salem, a Gulf Arab man of 51, lighter build than his brother, short trimmed beard, restless posture, plain white thobe. Khalid sets a basket of fresh dates down beside Salem, dust on his shoes, the two men standing shoulder to shoulder without looking at each other. Dusk interior, warm lamplight against cold blue window, muted desaturated grade, 35mm texture. No text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "8 seconds. Static. Khalid puts a hand briefly on his uncle's shoulder, then withdraws it shyly. Static frame, faint breathing.",
+          "sound": "ElevenLabs: خالد بصوت واطي جدي يقول هذا أول ما ينضج. Suno: warm muted oud, gentle, reserved"
+        },
+        {
+          "id": "E09-02-C",
+          "dur_sec": 9,
+          "camera": "Slow dolly",
+          "midjourney": "Cinematic still, anamorphic 21:9, shallow depth of field. Mariam, a Gulf Arab woman of 29, dark abaya, loose scarf, direct steady gaze; Salem, a Gulf Arab man of 51, lighter build than his brother, short trimmed beard, restless posture, plain white thobe. Mariam faces Salem in the shadowed corridor mouth, steady gaze, her hand lightly gripping his sleeve while the empty head seat glows behind them. Dusk interior, warm lamplight against cold blue window, muted desaturated grade, 35mm texture. No text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "9 seconds. Slow dolly. She says something short and firm; he freezes. Slow dolly in on her face then across to his.",
+          "sound": "ElevenLabs: مريم بنبرة حازمة هادئة لا تنتظر أن يقولها. Suno: quiet tension, low strings, held breath"
+        }
+      ]
+    },
+    {
+      "id": "E09-03",
+      "year": 2019,
+      "location": "غرفة حمد",
+      "time_of_day": "غروب قريب",
+      "cast": [
+        "mariam",
+        "khalid",
+        "hamad",
+        "youssef"
+      ],
+      "dur_sec": 200,
+      "setting": "bedside_dawn",
+      "camera": "Slow push-in",
+      "beat_ar": "مريم وخالد عند جدهما. يقول لمريم إن عينيها عيون الوالدة ويطلب منها أن تنظر إلى أبيها، ويسأل خالد عن السقي ويتذوق تمرة.",
+      "caption_ar": "عيونج… عيون الوالدة.",
+      "shots": [
+        {
+          "id": "E09-03-A",
+          "dur_sec": 9,
+          "camera": "Slow push-in",
+          "midjourney": "Cinematic still, anamorphic 21:9, shallow depth of field. Mariam, a Gulf Arab woman of 29, dark abaya, loose scarf, direct steady gaze; Hamad, a frail Gulf Arab elder of 81, sparse white beard, sunken cheeks, thin papery hands, only the eyes still proud. Mariam sits on the edge of the bed wiping the old man's forehead with a handkerchief while he looks into her face, warm orange dusk on their profiles. Dusk interior, warm lamplight against cold blue window, muted desaturated grade, 35mm texture. No text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "9 seconds. Slow push-in. His eyes find her face and hold. Her hand stops mid-wipe. Slow push-in on the two faces.",
+          "sound": "ElevenLabs: حمد بهمس عيونج عيون الوالدة، مريم تتنفس بصعوبة. Suno: tender solo piano, slow, fragile"
+        },
+        {
+          "id": "E09-03-B",
+          "dur_sec": 8,
+          "camera": "Static close-up",
+          "midjourney": "Cinematic still, anamorphic 21:9, shallow depth of field. Khalid, a Gulf Arab young man of 25, short beard, casual shirt, quiet watchful eyes; Hamad, a frail Gulf Arab elder of 81, sparse white beard, sunken cheeks, thin papery hands, only the eyes still proud. Khalid offers a single date to the old man's lips, his other hand at his side trembling slightly. Dusk interior, warm lamplight against cold blue window, muted desaturated grade, 35mm texture. No text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "8 seconds. Static close-up. The old man touches the date with his tongue and a faint glow crosses his face. Static close-up, no movement but breath.",
+          "sound": "ElevenLabs: حمد يهمس حلوة، خالد بصوت مخنوق إي جدي. Suno: soft warm strings, nostalgic"
+        },
+        {
+          "id": "E09-03-C",
+          "dur_sec": 8,
+          "camera": "Slow pull-back",
+          "midjourney": "Cinematic still, anamorphic 21:9, shallow depth of field. Youssef, a Gulf Arab man of 56 with a full grey-white beard, deep lines around the eyes, plain white thobe, gentle weary hands; Mariam, a Gulf Arab woman of 29, dark abaya, loose scarf, direct steady gaze. Youssef stands in shadow behind Mariam, placing a hand on her shoulder; she looks up at him for a second, unspoken reproach and tenderness together. Dusk interior, warm lamplight against cold blue window, muted desaturated grade, 35mm texture. No text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "8 seconds. Slow pull-back. His hand settles on her shoulder and she lets it stay. Slow pull-back revealing the old man in the bed.",
+          "sound": "ElevenLabs: صمت، نفس يوسف فقط، ثم همس مريم. Suno: sparse piano, two notes, aching"
+        }
+      ]
+    },
+    {
+      "id": "E09-04",
+      "year": 2019,
+      "location": "غرفة حمد",
+      "time_of_day": "قبيل المغرب",
+      "cast": [
+        "salem",
+        "hamad"
+      ],
+      "dur_sec": 210,
+      "setting": "bedside_night",
+      "camera": "Slow push-in",
+      "beat_ar": "سالم وحمد وحدهما. يمنعه حمد من الاعتذار، ولا يسامحه بالكلام، لكنه يدفع المسبحة نحو يده ويذكر قهوته بالهيل.",
+      "caption_ar": "الأرض… ما تستنّى أحد. — وأنت ما استنيتني.",
+      "shots": [
+        {
+          "id": "E09-04-A",
+          "dur_sec": 9,
+          "camera": "Slow push-in",
+          "midjourney": "Cinematic still, anamorphic 21:9, shallow depth of field. Salem, a Gulf Arab man of 51, lighter build than his brother, short trimmed beard, restless posture, plain white thobe; Hamad, a frail Gulf Arab elder of 81, sparse white beard, sunken cheeks, thin papery hands, only the eyes still proud. Salem sits hunched beside the old man, unable to reach for his hand, both faces lit by a low amber lamp, a wooden prayer bead string on the side table between them. Deep dusk, one warm bedside lamp against cold blue dark, soft shadows, intimate close focus. No text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "9 seconds. Slow push-in. Salem lowers his head. The old man's eyelids flutter open toward him. Very slow push-in, breathing audible.",
+          "sound": "ElevenLabs: سالم يهمس يبه أنا سالم، حمد يرد تأخرت. Suno: minimal drone, one low oud note"
+        },
+        {
+          "id": "E09-04-B",
+          "dur_sec": 7,
+          "camera": "Extreme close-up",
+          "midjourney": "Cinematic still, anamorphic 21:9, shallow depth of field. Hamad, a frail Gulf Arab elder of 81, sparse white beard, sunken cheeks, thin papery hands, only the eyes still proud. Extreme close-up of the old man's thin papery hand sliding a wooden prayer bead string toward the edge of a table, fingers trembling. Deep dusk, one warm bedside lamp against cold blue dark, soft shadows, intimate close focus. No text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "7 seconds. Extreme close-up. The fingers push the beads a few centimeters, then stop. Locked-off macro, shallow focus, only the hand moves.",
+          "sound": "ElevenLabs: صوت حبات المسبحة الخشبية تنزلق ببطء. Suno: silence with faint held pad"
+        },
+        {
+          "id": "E09-04-C",
+          "dur_sec": 9,
+          "camera": "Static",
+          "midjourney": "Cinematic still, anamorphic 21:9, shallow depth of field. Salem, a Gulf Arab man of 51, lighter build than his brother, short trimmed beard, restless posture, plain white thobe. Salem weeping silently with the prayer beads clenched in his fist, head bowed, his brother's silhouette visible in the crack of the door. Deep dusk, one warm bedside lamp against cold blue dark, soft shadows, intimate close focus. No text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "9 seconds. Static. His shoulders shake without sound. In the door gap behind, a silhouette watches and withdraws. Locked-off frame.",
+          "sound": "ElevenLabs: بكاء مكتوم بلا كلمات، نفس متقطع. Suno: soft cello, restrained release"
+        }
+      ]
+    },
+    {
+      "id": "E09-05",
+      "year": 2019,
+      "location": "غرفة حمد",
+      "time_of_day": "مغرب قريب",
+      "cast": [
+        "noura",
+        "hamad"
+      ],
+      "dur_sec": 170,
+      "setting": "bedside_night",
+      "camera": "Slow dolly",
+      "beat_ar": "نورة وحدها مع حمد تمسح يده. يناديها باسمها لأول مرة بلا أمر، يقول إنها هي التي صبرت، ويدعو لها.",
+      "caption_ar": "أنتِ… اللي صبرتِ.",
+      "shots": [
+        {
+          "id": "E09-05-A",
+          "dur_sec": 8,
+          "camera": "Slow push-in",
+          "midjourney": "Cinematic still, anamorphic 21:9, shallow depth of field. Noura, a Gulf Arab woman of 53, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait; Hamad, a frail Gulf Arab elder of 81, sparse white beard, sunken cheeks, thin papery hands, only the eyes still proud. Noura wipes the old man's fingers one by one with a damp cloth, her eyes lowered, his eyes half open and looking at her as a person for the first time. Dusk interior, warm lamplight against cold blue window, muted desaturated grade, 35mm texture. No text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "8 seconds. Slow push-in. She cleans a finger, then the next. His head turns slowly toward her. Slow push-in.",
+          "sound": "ElevenLabs: نورة تهمس أصابعك يا عمي كانت أكبر، صوت دافئ. Suno: gentle piano, warm and sad"
+        },
+        {
+          "id": "E09-05-B",
+          "dur_sec": 7,
+          "camera": "Static close-up",
+          "midjourney": "Cinematic still, anamorphic 21:9, shallow depth of field. Hamad, a frail Gulf Arab elder of 81, sparse white beard, sunken cheeks, thin papery hands, only the eyes still proud. Close-up of the old man's mouth and sunken cheek as he speaks a single word, breath shallow, lamp glow on his sparse white beard. Dusk interior, warm lamplight against cold blue window, muted desaturated grade, 35mm texture. No text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "7 seconds. Static close-up. His lips move to form her name, then another quiet phrase. Static, very shallow focus.",
+          "sound": "ElevenLabs: حمد يقول نورة بصوت واطي أنتِ اللي صبرتِ. Suno: sustained soft pad, intimate"
+        },
+        {
+          "id": "E09-05-C",
+          "dur_sec": 8,
+          "camera": "Slow pull-back",
+          "midjourney": "Cinematic still, anamorphic 21:9, shallow depth of field. Noura, a Gulf Arab woman of 53, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait. Noura turns her back to the bed, shoulders trembling silently, a cup in her hand, dusk gray at the window. Dusk interior, warm lamplight against cold blue window, muted desaturated grade, 35mm texture. No text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "8 seconds. Slow pull-back. Her shoulders shake for a moment, then still. Slow pull-back, the bed slightly out of focus behind.",
+          "sound": "ElevenLabs: ضحكة قصيرة تتحول لنفس مرتجف. Suno: quiet strings, dignified sorrow"
+        }
+      ]
+    },
+    {
+      "id": "E09-06",
+      "year": 2019,
+      "location": "ممر البيت وباب المطبخ",
+      "time_of_day": "غروب",
+      "cast": [
+        "youssef",
+        "noura",
+        "khalid"
+      ],
+      "dur_sec": 200,
+      "setting": "kitchen",
+      "camera": "Slow dolly",
+      "beat_ar": "الممر أحمر. يوسف يعترف لنورة أنه لم يسأل أباه مرة إن كان راضياً عنه، ويتذكر ظهره في الحوش، وتقول له إنها بقيت لأنها أرادت أن يلتفت أحد إليه.",
+      "caption_ar": "كنت أشوف ولد صغير يمشي وراء ظهر… ولا أحد يلتفت له. وقلت: خلّي أحد يلتفت.",
+      "shots": [
+        {
+          "id": "E09-06-A",
+          "dur_sec": 9,
+          "camera": "Slow dolly",
+          "midjourney": "Cinematic still, anamorphic 21:9, shallow depth of field. Youssef, a Gulf Arab man of 56 with a full grey-white beard, deep lines around the eyes, plain white thobe, gentle weary hands; Noura, a Gulf Arab woman of 53, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait. Youssef leans against a corridor wall holding a glass of tea, Noura beside him, deep red sunset light from a tall window at the end of the hallway. Dusk interior, warm lamplight against cold blue window, muted desaturated grade, 35mm texture. No text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "9 seconds. Slow dolly. They stand side by side without looking at each other. Slow dolly forward along the corridor.",
+          "sound": "ElevenLabs: يوسف يقول أنا سويت زين بصوت مكسور. Suno: low ambient guitar, patient, yearning"
+        },
+        {
+          "id": "E09-06-B",
+          "dur_sec": 8,
+          "camera": "Static close-up",
+          "midjourney": "Cinematic still, anamorphic 21:9, shallow depth of field. Noura, a Gulf Arab woman of 53, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait; Youssef, a Gulf Arab man of 56 with a full grey-white beard, deep lines around the eyes, plain white thobe, gentle weary hands. Close-up two-shot of Noura looking straight at Youssef, her hand resting lightly on his forearm, the red light on their faces. Dusk interior, warm lamplight against cold blue window, muted desaturated grade, 35mm texture. No text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "8 seconds. Static close-up. She speaks quietly; his eyes close. Static, faint breathing only.",
+          "sound": "ElevenLabs: نورة تقول خلي أحد يلتفت بهدوء تام. Suno: fragile solo piano, understated"
+        },
+        {
+          "id": "E09-06-C",
+          "dur_sec": 7,
+          "camera": "Slow pull-back",
+          "midjourney": "Cinematic still, anamorphic 21:9, shallow depth of field. Youssef, a Gulf Arab man of 56 with a full grey-white beard, deep lines around the eyes, plain white thobe, gentle weary hands; Khalid, a Gulf Arab young man of 25, short beard, casual shirt, quiet watchful eyes. Khalid stands in the corridor with an empty coffee tray facing his father, awkward and sincere, as Youssef looks at his son. Dusk interior, warm lamplight against cold blue window, muted desaturated grade, 35mm texture. No text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "7 seconds. Slow pull-back. Khalid speaks, turns, walks off. Youssef stares after him. Slow pull-back.",
+          "sound": "ElevenLabs: خالد يقول أعرف قالها جدي بحياء. Suno: soft bowed strings, slow"
+        }
+      ]
+    },
+    {
+      "id": "E09-07",
+      "year": 2019,
+      "location": "غرفة حمد",
+      "time_of_day": "مغرب",
+      "cast": [
+        "hamad",
+        "salem",
+        "mariam",
+        "youssef"
+      ],
+      "dur_sec": 170,
+      "setting": "night_room",
+      "camera": "Slow push-in",
+      "beat_ar": "في الهذيان يخاطب حمد الوالدة الغائبة: الولد وراي؟ لا يقدر أن يلتفت لأنه لو التفت وقف. الكل يسمع ويوسف لا يتحرك.",
+      "caption_ar": "لو التفت… وقفت. وإذا وقفت… ما يمشي أحد.",
+      "shots": [
+        {
+          "id": "E09-07-A",
+          "dur_sec": 9,
+          "camera": "Slow push-in",
+          "midjourney": "Cinematic still, anamorphic 21:9, shallow depth of field. Hamad, a frail Gulf Arab elder of 81, sparse white beard, sunken cheeks, thin papery hands, only the eyes still proud. The old man's unfocused eyes drift to an empty corner of the room, a faint hint of a smile crumbling on his lips, warm lamp against a blue window. Deep dusk, one warm bedside lamp against cold blue dark, soft shadows, intimate close focus. No text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "9 seconds. Slow push-in. His gaze settles on the empty corner as he speaks to someone unseen. Slow push-in, breath rhythm irregular.",
+          "sound": "ElevenLabs: حمد يقول الولد وراي بنبرة عادية جداً. Suno: distant childlike hum, very faint"
+        },
+        {
+          "id": "E09-07-B",
+          "dur_sec": 8,
+          "camera": "Static",
+          "midjourney": "Cinematic still, anamorphic 21:9, shallow depth of field. Youssef, a Gulf Arab man of 56 with a full grey-white beard, deep lines around the eyes, plain white thobe, gentle weary hands; Mariam, a Gulf Arab woman of 29, dark abaya, loose scarf, direct steady gaze. Youssef sits frozen with a single tear tracking down his beard, Mariam beside him watching his face for a reaction. Deep dusk, one warm bedside lamp against cold blue dark, soft shadows, intimate close focus. No text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "8 seconds. Static. A single tear slides down. Mariam glances at him. Locked-off, nothing else moves.",
+          "sound": "ElevenLabs: صمت ثقيل ثم همس خالد ماما. Suno: held sustained note, aching"
+        },
+        {
+          "id": "E09-07-C",
+          "dur_sec": 7,
+          "camera": "Slow dolly",
+          "midjourney": "Cinematic still, anamorphic 21:9, shallow depth of field. Salem, a Gulf Arab man of 51, lighter build than his brother, short trimmed beard, restless posture, plain white thobe; Hamad, a frail Gulf Arab elder of 81, sparse white beard, sunken cheeks, thin papery hands, only the eyes still proud. Salem clenching the wooden prayer beads at the bedside while the old man searches the blanket with his fingers, Salem whispering that he has them. Deep dusk, one warm bedside lamp against cold blue dark, soft shadows, intimate close focus. No text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "7 seconds. Slow dolly. The old man's hand feels along the blanket; Salem's fist tightens on the beads. Slow dolly in.",
+          "sound": "ElevenLabs: سالم يهمس عندي يبه بصوت مخنوق. Suno: warm low strings, tender"
+        }
+      ]
+    },
+    {
+      "id": "E09-08",
+      "year": 2019,
+      "location": "غرفة حمد",
+      "time_of_day": "ليل مبكر",
+      "cast": [
+        "youssef",
+        "hamad",
+        "salem",
+        "mariam",
+        "khalid",
+        "noura"
+      ],
+      "dur_sec": 200,
+      "setting": "bedside_night",
+      "camera": "Slow push-in",
+      "beat_ar": "القمة. الانتظار الطويل، توقف النفس، ثم أصابع حمد تضغط على يد يوسف بقوة، يفتح عينيه، يقول الجملة، ويغمض ويسترخي.",
+      "caption_ar": "ما فيك شيء إلا أنت.",
+      "shots": [
+        {
+          "id": "E09-08-A",
+          "dur_sec": 10,
+          "camera": "Extreme close-up",
+          "midjourney": "Cinematic still, anamorphic 21:9, shallow depth of field. Hamad, a frail Gulf Arab elder of 81, sparse white beard, sunken cheeks, thin papery hands, only the eyes still proud; Youssef, a Gulf Arab man of 56 with a full grey-white beard, deep lines around the eyes, plain white thobe, gentle weary hands. Extreme close-up of the old man's thin papery hand clamping hard on Youssef's gentle weary hand, knuckles whitening, the only warm lamp in a dark room. Deep dusk, one warm bedside lamp against cold blue dark, soft shadows, intimate close focus. No text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "10 seconds. Extreme close-up. The old fingers close with sudden force, Youssef does not pull away. Locked-off macro, shallow focus.",
+          "sound": "ElevenLabs: صمت ثم صوت الضغط، شهقة خافتة من مريم. Suno: complete silence"
+        },
+        {
+          "id": "E09-08-B",
+          "dur_sec": 10,
+          "camera": "Slow push-in",
+          "midjourney": "Cinematic still, anamorphic 21:9, shallow depth of field. Hamad, a frail Gulf Arab elder of 81, sparse white beard, sunken cheeks, thin papery hands, only the eyes still proud; Youssef, a Gulf Arab man of 56 with a full grey-white beard, deep lines around the eyes, plain white thobe, gentle weary hands. The old man's eyes suddenly clear and open, looking straight at Youssef, full of pride, exhaustion and something without a name, Youssef's face soft-focus in the foreground. Deep dusk, one warm bedside lamp against cold blue dark, soft shadows, intimate close focus. No text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "10 seconds. Slow push-in. The eyes open and find him without hesitation; the mouth forms the sentence. Slow push-in on the eyes only.",
+          "sound": "ElevenLabs: حمد بصوت صافٍ ثابت: ما فيك شيء إلا أنت. Suno: no music, only faint room tone"
+        },
+        {
+          "id": "E09-08-C",
+          "dur_sec": 7,
+          "camera": "Static",
+          "midjourney": "Cinematic still, anamorphic 21:9, shallow depth of field. Hamad, a frail Gulf Arab elder of 81, sparse white beard, sunken cheeks, thin papery hands, only the eyes still proud; Youssef, a Gulf Arab man of 56 with a full grey-white beard, deep lines around the eyes, plain white thobe, gentle weary hands. Wide still of the family frozen around the bed, Hamad closing his eyes and his body relaxing into the pillow while Youssef stares at his own hand. Deep dusk, one warm bedside lamp against cold blue dark, soft shadows, intimate close focus. No text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "7 seconds. Static. His eyelids close, the grip loosens, the face softens. Static wide frame, family motionless.",
+          "sound": "ElevenLabs: زفير طويل هادئ من حمد ثم لا صوت. Suno: a single low sustained tone fading out"
+        }
+      ]
+    },
+    {
+      "id": "E09-09",
+      "year": 2019,
+      "location": "غرفة حمد",
+      "time_of_day": "ليل",
+      "cast": [
+        "youssef",
+        "noura",
+        "salem",
+        "mariam",
+        "khalid",
+        "hamad"
+      ],
+      "dur_sec": 130,
+      "setting": "bedside_night",
+      "camera": "Slow pull-back",
+      "beat_ar": "الصمت بعد الجملة. كل واحد يحمل معناها بشكل مختلف. يد يوسف تحت يد أبيه، والعائلة تمد أيديها في سلسلة صامتة، وتنتهي بالنافذة المفتوحة.",
+      "caption_ar": "سمعتك.",
+      "shots": [
+        {
+          "id": "E09-09-A",
+          "dur_sec": 9,
+          "camera": "Slow push-in",
+          "midjourney": "Cinematic still, anamorphic 21:9, shallow depth of field. Youssef, a Gulf Arab man of 56 with a full grey-white beard, deep lines around the eyes, plain white thobe, gentle weary hands; Hamad, a frail Gulf Arab elder of 81, sparse white beard, sunken cheeks, thin papery hands, only the eyes still proud. Youssef looking down at his father's relaxed hand resting over his own, seeing its sun spots and blue veins for the first time, lamp glow on both hands. Deep dusk, one warm bedside lamp against cold blue dark, soft shadows, intimate close focus. No text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "9 seconds. Slow push-in. His thumb moves once over his father's knuckle. Slow push-in on the joined hands.",
+          "sound": "ElevenLabs: يوسف يهمس الجملة لنفسه بلا صوت تقريباً. Suno: sparse piano, three notes, unresolved"
+        },
+        {
+          "id": "E09-09-B",
+          "dur_sec": 8,
+          "camera": "Slow pull-back",
+          "midjourney": "Cinematic still, anamorphic 21:9, shallow depth of field. Noura, a Gulf Arab woman of 53, dark abaya and loose headscarf, patient, capable hands, eyes that have learned to wait; Salem, a Gulf Arab man of 51, lighter build than his brother, short trimmed beard, restless posture, plain white thobe; Mariam, a Gulf Arab woman of 29, dark abaya, loose scarf, direct steady gaze; Khalid, a Gulf Arab young man of 25, short beard, casual shirt, quiet watchful eyes; Youssef, a Gulf Arab man of 56 with a full grey-white beard, deep lines around the eyes, plain white thobe, gentle weary hands; Hamad, a frail Gulf Arab elder of 81, sparse white beard, sunken cheeks, thin papery hands, only the eyes still proud. Five family members gathered close around the bed, hands resting on shoulders and feet in a silent chain, an open window with a curtain stirring in the night wind. Deep dusk, one warm bedside lamp against cold blue dark, soft shadows, intimate close focus. No text in frame. --ar 21:9 --style raw --v 7",
+          "runway": "8 seconds. Slow pull-back. The curtain moves in the breeze. Family motionless. Slow pull-back until the lamp becomes a small light in darkness.",
+          "sound": "ElevenLabs: هواء الليل، ستارة تتحرك، همس سمعتك. Suno: soft fading pad, resolved stillness"
+        }
+      ]
+    }
+  ]
+}

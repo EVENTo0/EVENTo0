@@ -118,7 +118,7 @@
           "id": "E01-03-B",
           "dur_sec": 8,
           "camera": "Static close-up",
-          "midjourney": "Close-up of a Gulf Arab man of 56 with a full grey-white beard, deep lines around the eyes, plain white thobe, gentle weary hands with tired eyes looking at his son off-frame, a Gulf Arab young man of 25, short beard, casual shirt, quiet watchful eyes partially blurred in the foreground, honey-coloured lamplight on the wall, deep shadow, shallow depth of field, a son realising something unsaid, no text --ar 21:9 --style raw --v 7",
+          "midjourney": "Close-up of a Gulf Arab man of 56 with a full grey-white beard, deep lines around the eyes, plain white thobe, gentle weary hands with tired eyes looking at his son off-frame, a Gulf Arab young man of 25, short beard, casual shirt, quiet watchful eyes softly blurred in the foreground, his frail father a frail Gulf Arab elder of 81, sparse white beard, sunken cheeks, thin papery hands, only the eyes still proud asleep in the bed at the edge of frame, honey-coloured lamplight on the wall, deep shadow, shallow depth of field, a son realising something unsaid, no text --ar 21:9 --style raw --v 7",
           "runway": "Static close-up for 8 seconds on a weary father's face as he listens, a slight tremor crossing his jaw, the blurred figure of his son in front, warm lamp light, minimal movement.",
           "sound": "ElevenLabs: خالد بهدوء: بس أنا ما كنت أعرف إذا هذا صح. Suno: sparse piano single notes, ache, restraint"
         },
@@ -126,7 +126,7 @@
           "id": "E01-03-C",
           "dur_sec": 6,
           "camera": "Static macro",
-          "midjourney": "Extreme close-up of the closed eyelid of a frail Gulf Arab elder of 81, sparse white beard, sunken cheeks, thin papery hands, only the eyes still proud, thin papery skin trembling almost imperceptibly, sparse white beard at the edge of frame, honey lamplight, dust in air, macro shallow depth of field, silent, no text --ar 21:9 --style raw --v 7",
+          "midjourney": "Extreme close-up of the closed eyelid of the dying father, a frail Gulf Arab elder of 81, sparse white beard, sunken cheeks, thin papery hands, only the eyes still proud, thin papery skin trembling almost imperceptibly, sparse white beard at the edge of frame, honey lamplight, dust in the air, macro shallow depth of field, hushed and silent, the tiniest sign of life, no text --ar 21:9 --style raw --v 7",
           "runway": "Locked-off static macro for 6 seconds of an old man's closed eyelid twitching once, the barest tremor, warm lamp light, absolute stillness afterward, no camera movement beyond a slight breathing drift.",
           "sound": "ElevenLabs: صمت ثقيل ثم هسهسة الأكسجين وتك الساعة. Suno: held low tone, silence, near-inaudible pulse"
         },
@@ -134,7 +134,7 @@
           "id": "E01-03-D",
           "dur_sec": 5,
           "camera": "Static wide",
-          "midjourney": "Memory flash, a tall, hard-jawed Gulf Arab man of 35, black beard, dark bisht over white thobe, an unbending gaze that never turns back walking away across a vast pale desert with his back to the camera, while a thin ten-year-old Gulf Arab boy in a faded white thobe, sun-darkened skin, tired serious eyes runs behind him with feet sinking in sand, 1973 desert dawn: bleached amber and pale gold, hard low sun, 35mm film grain, dust in the air, vast empty horizon, a cold brief glimpse, no text --ar 21:9 --style raw --v 7",
+          "midjourney": "Memory flash, a tall father, a tall, hard-jawed Gulf Arab man of 35, black beard, dark bisht over white thobe, an unbending gaze that never turns back, walking away across a vast pale desert with his back to the camera, while a thin ten-year-old Gulf Arab boy in a faded white thobe, sun-darkened skin, tired serious eyes runs behind him with feet sinking in sand, 1973 desert dawn: bleached amber and pale gold, hard low sun, 35mm film grain, dust in the air, vast empty horizon, a cold brief glimpse, no text --ar 21:9 --style raw --v 7",
           "runway": "Static wide shot for 4 seconds, a tall man in white walking away across white desert with his back turned, a small boy running to catch up, wind blowing sand across the frame, film grain.",
           "sound": "ElevenLabs: رياح رملية وحفيف ثوب قصير جداً. Suno: cold wind texture, single distant note"
         }
@@ -176,7 +176,7 @@
           "id": "E01-04-C",
           "dur_sec": 7,
           "camera": "Static medium",
-          "midjourney": "Warm memory glimpse of a young woman with tied hair standing at an old oven with her back to the camera in a golden 1990s kitchen, deep shadow, 1993 interiors: warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, a man's silhouette in the doorway, fleeting, no text --ar 21:9 --style raw --v 7",
+          "midjourney": "Warm memory glimpse of a young woman with tied hair standing at an old oven with her back to the camera in a golden 1990s Gulf kitchen, a tall man's silhouette in the doorway, 1993 interiors: warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, heavy fabric, low ceilings, fleeting, dreamlike, shallow depth of field, no text --ar 21:9 --style raw --v 7",
           "runway": "Static medium shot for 4 seconds of a young woman at an oven with her back turned in a warm tungsten kitchen, a tall shadow at the doorway calling out, brief flicker, grainy 16mm feel.",
           "sound": "ElevenLabs: صوت رجل ينادي: يوسف، من بعيد. Suno: fading warm memory chord, tape hiss"
         }
@@ -226,8 +226,8 @@
           "id": "E01-05-D",
           "dur_sec": 6,
           "camera": "Static wide",
-          "midjourney": "Memory flash of two small boys standing hand in hand beside an old stone well in a bleached desert, the older gripping the younger tightly, 1973 desert dawn: bleached amber and pale gold, hard low sun, 35mm film grain, dust in the air, vast empty horizon, brief, cold, no text --ar 21:9 --style raw --v 7",
-          "runway": "Static wide for 4 seconds, two boys hand in hand beside a stone well in white desert light, wind blowing dust, film grain.",
+          "midjourney": "Memory flash of two small boys standing hand in hand beside an old stone well in a bleached desert, the older gripping the younger tightly, seen from a distance, 1973 desert dawn: bleached amber and pale gold, hard low sun, 35mm film grain, dust in the air, vast empty horizon, brief, cold, sun-bleached, shallow depth of field, no faces turned to camera, no text --ar 21:9 --style raw --v 7",
+          "runway": "Static wide for 4 seconds, two small boys holding hands beside an old stone well in white desert light, wind blowing dust across the frame, the older boy gripping the younger tightly, grainy film texture, no dialogue, no camera movement.",
           "sound": "ElevenLabs: ريح فقط بلا كلام. Suno: thin wind pad, faint memory shimmer"
         }
       ]
@@ -269,7 +269,7 @@
           "dur_sec": 8,
           "camera": "Slow push-in",
           "midjourney": "Close-up of a Gulf Arab man of 56 with a full grey-white beard, deep lines around the eyes, plain white thobe, gentle weary hands bringing a small spoon of water to the parted lips of a frail Gulf Arab elder of 81, sparse white beard, sunken cheeks, thin papery hands, only the eyes still proud, the old man's eyes still closed, sparse white beard, thin papery hands, warm lamp, deep shadow, shallow depth of field, tender, no text --ar 21:9 --style raw --v 7",
-          "runway": "Slow push-in for 8 seconds on a son feeding his father a spoonful of water, the old man's lips parting, throat moving once, warm lamp light, absolute quiet.",
+          "runway": "Slow push-in for 8 seconds on a son feeding his father a spoonful of water, the old man's lips parting, throat moving once as he swallows, warm lamp light, deep shadow, absolute quiet, gentle film grain.",
           "sound": "ElevenLabs: حمد بصوت خشن بالكاد يُسمع: ماي... فين الجماعة؟. Suno: single sustained note, fragile, close-breath"
         },
         {
@@ -277,7 +277,7 @@
           "dur_sec": 8,
           "camera": "Static close-up",
           "midjourney": "Close-up of the thin hand of a frail Gulf Arab elder of 81, sparse white beard, sunken cheeks, thin papery hands, only the eyes still proud under the large hand of a Gulf Arab man of 56 with a full grey-white beard, deep lines around the eyes, plain white thobe, gentle weary hands, fingers moving by the barest movement, a black prayer-bead loop on the wrist, warm lamp, shallow depth of field, the tiniest sign of life, no text --ar 21:9 --style raw --v 7",
-          "runway": "Static close-up for 8 seconds of an old man's fingers moving faintly under his son's palm, the son perfectly still, prayer beads shifting, warm light, no cut.",
+          "runway": "Static close-up for 8 seconds of an old man's fingers moving faintly under his son's palm, the son perfectly still, black prayer beads shifting on the wrist, warm lamp light, shallow focus, held in one continuous take, no cut.",
           "sound": "ElevenLabs: صمت ثم همس سالم: يبه أنا سالم. Suno: quiet piano fragment, held silence"
         }
       ]
@@ -302,7 +302,7 @@
           "dur_sec": 10,
           "camera": "Slow push-in",
           "midjourney": "Wide dim bedroom before dawn, a second man asleep in a small chair, everyone else gone, a Gulf Arab man of 56 with a full grey-white beard, deep lines around the eyes, plain white thobe, gentle weary hands awake and upright beside the bed, hand still holding the hand of a frail Gulf Arab elder of 81, sparse white beard, sunken cheeks, thin papery hands, only the eyes still proud, brass clock face glowing faintly, single honey lamp, deep shadow, solitary, no text --ar 21:9 --style raw --v 7",
-          "runway": "Slow push-in for 10 seconds toward a lone man awake beside a bed while another sleeps in the corner, oxygen hiss, brass clock ticking, honey lamp light steady, stillness.",
+          "runway": "Slow push-in for 10 seconds toward a lone man awake beside a bed while another man sleeps in a small chair in the corner, oxygen hiss, brass clock ticking on the wall, honey lamp light steady, deep shadow, stillness, subtle film grain.",
           "sound": "ElevenLabs: تك الساعة وهسهسة الأكسجين وشخير خفيف بعيد. Suno: long low drone, lonely, night hour"
         },
         {
@@ -310,15 +310,15 @@
           "dur_sec": 8,
           "camera": "Static extreme close-up",
           "midjourney": "Extreme close-up of the thumb of a Gulf Arab man of 56 with a full grey-white beard, deep lines around the eyes, plain white thobe, gentle weary hands passing once over a dark age spot on the back of the thin hand of a frail Gulf Arab elder of 81, sparse white beard, sunken cheeks, thin papery hands, only the eyes still proud, papery skin, blue veins, honey lamplight, macro shallow depth of field, no text --ar 21:9 --style raw --v 7",
-          "runway": "Locked-off static macro for 8 seconds of a large thumb stroking once over an old man's papery hand, a dark age spot, blue veins, warm light, minimal motion.",
+          "runway": "Locked-off static macro for 8 seconds of a large weathered thumb slowly stroking once over an old man's papery hand, across a dark age spot and blue veins, warm lamp light, minimal motion, shallow focus, the hand beneath perfectly still, no cuts.",
           "sound": "ElevenLabs: تنفس متقطع خافت جداً. Suno: felt piano, single held note, intimate"
         },
         {
           "id": "E01-07-C",
           "dur_sec": 5,
           "camera": "Static wide",
-          "midjourney": "Memory triptych glimpse, a thin ten-year-old Gulf Arab boy in a faded white thobe, sun-darkened skin, tired serious eyes walking behind a tall white-robed man in bleached desert, then a Gulf Arab man of 30 with a trimmed black beard, white thobe and ghutra, restrained posture silent at a long dinner table under 1993 interiors: warm tungsten lamplight against deep shadow, 16mm texture, muted reds and browns, then a Gulf Arab man of 47 with a short beard flecked with grey, white thobe, the settled shoulders of a man who now carries decisions following an ageing Gulf Arab patriarch of 72, white beard, fading authority, shoulders beginning to fold down a white clinic corridor under 2010 daylight: clean natural light, slightly cooler neutral grade, modern digital clarity, institutional greens and greys, brief and cold, no text --ar 21:9 --style raw --v 7",
-          "runway": "Static rapid-cut memory montage for 5 seconds: desert back-of-man, dinner table hand striking wood, white clinic corridor, each cut abrupt, subtle grain shifts.",
+          "midjourney": "Memory triptych glimpse, a thin ten-year-old Gulf Arab boy in a faded white thobe, sun-darkened skin, tired serious eyes walking behind a tall white-robed father in bleached desert light, then a man at a long dinner table under tungsten lamps with one hand striking wood, then two men in a white clinic corridor in clean daylight, brief, cold, fleeting, no text --ar 21:9 --style raw --v 7",
+          "runway": "Static rapid-cut memory montage for 5 seconds: a desert back-of-a-man walking away, a dinner table with a hand striking wood, a white clinic corridor with two men walking, each cut abrupt and locked-off, subtle grain shifts, cold tones.",
           "sound": "ElevenLabs: طرقة يد على خشب ورياح وخطوات في ممر، متتالية سريعة. Suno: memory shimmer, three short chords"
         },
         {
@@ -326,7 +326,7 @@
           "dur_sec": 12,
           "camera": "Slow push-in",
           "midjourney": "Close-up of a Gulf Arab man of 56 with a full grey-white beard, deep lines around the eyes, plain white thobe, gentle weary hands, his beard grey-white and his eyes red-rimmed and wet, leaning toward a frail Gulf Arab elder of 81, sparse white beard, sunken cheeks, thin papery hands, only the eyes still proud, whispering, honey lamp light, deep shadow, shallow depth of field, held back grief, no text --ar 21:9 --style raw --v 7",
-          "runway": "Slow push-in for 12 seconds on a man whispering to his sleeping father, his eyes filling, he does not look away, warm lamp light, no camera shake.",
+          "runway": "Slow push-in for 12 seconds on a grey-bearded man whispering to his sleeping father, his eyes slowly filling with tears, he does not look away, warm lamp light and deep shadow, no camera shake, subtle film grain, quiet restrained emotion.",
           "sound": "ElevenLabs: يوسف بصوت مخنوق: لا تروح قبل الفجر يبه. Suno: solo piano, sparse, breath before dawn"
         }
       ]
