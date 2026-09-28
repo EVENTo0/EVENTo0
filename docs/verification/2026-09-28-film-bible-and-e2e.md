@@ -31,3 +31,16 @@
 ## Next action
 
 Add a real key to `.env.local`, run RUN ALL once, and review the Midjourney text for face consistency across S02 / S03 / S08.
+
+## Addendum — Animatic (free pre-production preview)
+
+`public/previz/animatic.html` (served at `/previz/animatic.html`) is a self-contained, zero-cost previz: 10 procedurally animated scenes (camera move, era grade, lighting, age-correct silhouettes), a full-film player (84 s), key-frame strip, procedural sound, and an in-page test suite executed on rendered pixels.
+
+| Check | Result |
+|---|---|
+| In-page tests (renders / motion / cast-age / length / fade per scene + 5 film-level) | PASS 55/55 |
+| Playback, seek, next, pause, end-of-film, sound toggle | PASS, no console errors (Chromium) |
+| Phone width (400 px) | PASS, no page-level horizontal overflow |
+| Visual review | Reviewed contact sheets; found and fixed broken seated pose, face mask, floating car occupants |
+
+Limits: this is a stylised animatic, not photoreal AI video. It validates pacing, framing, continuity and shot lengths; it does not validate how Midjourney/Runway will render faces. Sound is a procedural drone/wind bed, not a score.

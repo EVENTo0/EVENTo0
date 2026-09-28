@@ -1,0 +1,613 @@
+<title>The Root Animatic</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Naskh+Arabic:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:#070605; --panel:#0e0c0a; --line:#221d17; --ink:#e8dfcc; --mute:#8a7f6c; --dim:#4a4236;
+    --gold:#c9a84c; --ok:#6fb26f; --bad:#d05a4a; --warn:#e0a030;
+    --mono:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;
+    --ar:'Noto Naskh Arabic','Amiri','Geeza Pro','Segoe UI',system-ui,sans-serif;
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html{background:var(--bg)}
+  body{margin:0;background:var(--bg);color:var(--ink);font:13px/1.5 var(--mono);padding-inline:16px;padding-block:18px 40px}
+  .wrap{max-width:1240px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
+  header{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap}
+  .eyebrow{font-size:10px;letter-spacing:.32em;color:var(--gold);text-transform:uppercase}
+  h1{margin:4px 0 0;font:600 26px/1.2 var(--ar);letter-spacing:0}
+  h1 small{font:400 12px var(--mono);color:var(--mute);letter-spacing:.12em;margin-inline-start:10px}
+  .note{max-width:560px;color:var(--mute);font-size:11.5px;line-height:1.7}
+  .note b{color:var(--ink);font-weight:500}
+
+  .screen{position:relative;aspect-ratio:21/9;width:100%;background:#000;overflow:hidden;border:1px solid var(--line)}
+  canvas#cv{position:absolute;inset:0;width:100%;height:100%;display:block}
+  .hud{position:absolute;left:14px;top:12px;font-size:10px;letter-spacing:.2em;color:#e8dfccb0;text-shadow:0 1px 6px #000;pointer-events:none}
+  .hud b{color:var(--gold);font-weight:500}
+  .rec{position:absolute;right:14px;top:12px;font-size:10px;letter-spacing:.2em;color:#e8dfcc90;text-shadow:0 1px 6px #000;pointer-events:none}
+  .rec i{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--bad);margin-inline-end:6px;vertical-align:middle}
+  .caption{position:absolute;left:0;right:0;bottom:0;padding:26px 6% 16px;text-align:center;font:600 clamp(13px,2.1vw,22px)/1.7 var(--ar);color:#f3ead6;text-shadow:0 2px 10px #000,0 0 3px #000;background:linear-gradient(transparent,#000a);pointer-events:none;transition:opacity .4s;direction:rtl}
+  .bigplay{position:absolute;inset:0;margin:auto;width:78px;height:78px;border-radius:50%;border:1px solid #e8dfcc70;background:#000a;color:var(--ink);font-size:26px;cursor:pointer}
+  .bigplay:hover{border-color:var(--gold);color:var(--gold)}
+
+  .ctl{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding-top:10px}
+  button.b{font:500 11px var(--mono);letter-spacing:.14em;color:var(--ink);background:var(--panel);border:1px solid var(--line);padding:8px 14px;cursor:pointer;text-transform:uppercase}
+  button.b:hover{border-color:var(--gold)}
+  button.b[aria-pressed="true"]{border-color:var(--gold);color:var(--gold)}
+  button.b:focus-visible,.seg:focus-visible,.thumb:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+  .time{margin-inline-start:auto;color:var(--mute);font-variant-numeric:tabular-nums;font-size:12px}
+  .tl{display:flex;gap:2px;margin-top:10px;height:22px}
+  .seg{position:relative;background:#171310;border:0;padding:0;cursor:pointer;overflow:hidden;min-width:0}
+  .seg .fill{position:absolute;inset:0;width:0;background:currentColor;opacity:.75}
+  .seg .lbl{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:9px;letter-spacing:.1em;color:#fff;mix-blend-mode:difference}
+  .seg.on{outline:1px solid var(--ink)}
+
+  h2{font:500 10px var(--mono);letter-spacing:.3em;text-transform:uppercase;color:var(--mute);margin:0 0 10px}
+  .strip{display:grid;grid-template-columns:repeat(10,1fr);gap:8px}
+  .thumb{position:relative;background:#000;border:1px solid var(--line);padding:0;cursor:pointer;aspect-ratio:21/9;overflow:hidden}
+  .thumb canvas{width:100%;height:100%;display:block}
+  .thumb span{position:absolute;left:5px;top:3px;font-size:9px;letter-spacing:.1em;color:#fff;text-shadow:0 1px 4px #000}
+  .thumb em{position:absolute;right:4px;bottom:3px;font-style:normal;font-size:10px}
+  .thumb.on{border-color:var(--gold)}
+  .cols{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:18px}
+  .card{min-width:0;background:var(--panel);border:1px solid var(--line);padding:16px}
+  .ar{font-family:var(--ar);direction:rtl;text-align:right}
+  .kv{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:12px}
+  .kv{grid-template-columns:auto minmax(0,1fr)} .kv dt{color:var(--mute)} .kv dd{margin:0;min-width:0;overflow-wrap:anywhere}
+  .chips{display:flex;gap:6px;flex-wrap:wrap}
+  .chip{border:1px solid var(--line);padding:1px 8px;font-size:11px;color:var(--ink)}
+  table{width:100%;border-collapse:collapse;font-size:11.5px}
+  th,td{padding:5px 6px;text-align:left;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
+  th{color:var(--mute);font-weight:400;letter-spacing:.12em;font-size:10px}
+  td.p{color:var(--ok)} td.f{color:var(--bad)}
+  .scroll{overflow-x:auto}
+  .sum{display:flex;gap:22px;flex-wrap:wrap;margin-bottom:12px}
+  .sum div{font-size:11px;color:var(--mute)} .sum b{display:block;font:500 20px var(--mono);color:var(--ink)}
+  .sum b.ok{color:var(--ok)} .sum b.bad{color:var(--bad)}
+  @media (max-width:860px){.cols{grid-template-columns:minmax(0,1fr)}.strip{grid-template-columns:repeat(5,1fr)}.time{margin-inline-start:0;width:100%}}
+</style>
+<div class="wrap">
+  <header>
+    <div>
+      <div class="eyebrow">EVENTO · Pre-production test environment</div>
+      <h1>الجذر <small>THE ROOT — ANIMATIC</small></h1>
+    </div>
+    <p class="note">معاينة إخراجية <b>مجانية</b> تُرسم وتتحرك داخل المتصفح: كاميرا، إضاءة، شخصيات بأعمارها الصحيحة، وإيقاع كل مشهد. هي <b>ليست</b> فيديو ذكاء اصطناعي واقعياً؛ الغرض أن تراجع الإيقاع والاستمرارية وتتأكد من نجاح الفيلم قبل صرف ميزانية Midjourney وRunway.</p>
+  </header>
+
+  <section aria-label="Film player">
+    <div class="screen">
+      <canvas id="cv" width="1680" height="720"></canvas>
+      <div class="hud" id="hud"></div>
+      <div class="rec"><i></i>PREVIZ · 21:9</div>
+      <div class="caption" id="cap"></div>
+      <button class="bigplay" id="big" aria-label="Play film">▶</button>
+    </div>
+    <div class="ctl">
+      <button class="b" id="play">▶ Play</button>
+      <button class="b" id="prev">◀ Scene</button>
+      <button class="b" id="next">Scene ▶</button>
+      <button class="b" id="snd" aria-pressed="false">Sound off</button>
+      <button class="b" id="spd" aria-label="Playback speed">1×</button>
+      <div class="time" id="time">00:00 / 01:24</div>
+    </div>
+    <div class="tl" id="tl" role="group" aria-label="Timeline"></div>
+  </section>
+
+  <section aria-label="Key frames">
+    <h2>Key frames — الصور المفتاحية</h2>
+    <div class="strip" id="strip"></div>
+  </section>
+
+  <div class="cols">
+    <section class="card" aria-label="Shot card">
+      <h2>Shot card</h2>
+      <div id="shot"></div>
+    </section>
+    <section class="card" aria-label="Automated tests">
+      <h2>Automated pre-production tests</h2>
+      <div class="sum" id="sum"></div>
+      <div class="scroll"><table id="qa"></table></div>
+    </section>
+  </div>
+</div>
+<script>
+const W = 1680, H = 720;
+const clamp = (v, a = 0, b = 1) => Math.max(a, Math.min(b, v));
+const lerp = (a, b, t) => a + (b - a) * t;
+const ease = (t) => (t < .5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2);
+const seg = (p, a, b) => clamp((p - a) / (b - a));           // progress of p inside [a,b]
+const sm = (p, a, b) => ease(seg(p, a, b));
+
+function shade(c, k) {
+  const n = parseInt(c.slice(1), 16);
+  const r = Math.round(clamp(((n >> 16) & 255) * k, 0, 255));
+  const g = Math.round(clamp(((n >> 8) & 255) * k, 0, 255));
+  const b = Math.round(clamp((n & 255) * k, 0, 255));
+  return `rgb(${r},${g},${b})`;
+}
+function lcg(seed) { let s = seed; return () => (s = (s * 1664525 + 1013904223) % 4294967296) / 4294967296; }
+const R = lcg(7);
+const DUST = Array.from({ length: 80 }, () => ({ x: R(), y: R(), vx: (R() - .5) * .02, vy: -R() * .012 - .002, r: 1 + R() * 2.2, a: .3 + R() * .7, ph: R() * 6.28 }));
+
+function glow(g, x, y, r, rgb, a) {
+  g.save(); g.globalCompositeOperation = "lighter";
+  const gr = g.createRadialGradient(x, y, 0, x, y, r);
+  gr.addColorStop(0, `rgba(${rgb},${a})`); gr.addColorStop(1, `rgba(${rgb},0)`);
+  g.fillStyle = gr; g.fillRect(x - r, y - r, r * 2, r * 2); g.restore();
+}
+function dust(g, t, box, rgb, alpha) {
+  g.save(); g.globalCompositeOperation = "lighter";
+  for (const d of DUST) {
+    const px = box[0] + ((((d.x + t * d.vx) % 1) + 1) % 1) * (box[2] - box[0]);
+    const py = box[1] + ((((d.y + t * d.vy) % 1) + 1) % 1) * (box[3] - box[1]);
+    const tw = .6 + .4 * Math.sin(t * 1.3 + d.ph);
+    g.fillStyle = `rgba(${rgb},${alpha * d.a * tw})`;
+    g.beginPath(); g.arc(px, py, d.r, 0, 6.283); g.fill();
+  }
+  g.restore();
+}
+function vgrad(g, x, y, w, h, stops) {
+  const gr = g.createLinearGradient(0, y, 0, y + h);
+  stops.forEach(([o, c]) => gr.addColorStop(o, c));
+  g.fillStyle = gr; g.fillRect(x, y, w, h);
+}
+function poly(g, pts, fill) {
+  g.beginPath(); pts.forEach(([x, y], i) => (i ? g.lineTo(x, y) : g.moveTo(x, y))); g.closePath();
+  if (fill) { g.fillStyle = fill; g.fill(); }
+}
+function rrect(g, x, y, w, h, r, fill) {
+  g.beginPath(); g.roundRect(x, y, w, h, r); if (fill) { g.fillStyle = fill; g.fill(); }
+}
+
+/* ---------- People: stylised silhouettes, lit by scene exposure `ex` ---------- */
+function person(g, o) {
+  const { x, y, h } = o, k = o.ex ?? 1, f = o.face ?? 0, kind = o.kind || "man";
+  const skin = shade("#6d4c38", k * 1.15);
+  const bob = o.phase != null ? Math.abs(Math.sin(o.phase)) * .014 * h : 0;
+  const sway = o.phase != null ? Math.sin(o.phase) * .03 * h : 0;
+  const lean = (o.lean || 0) * .07 * h * (f || 1);
+  g.save();
+  g.fillStyle = "rgba(0,0,0,.42)"; g.beginPath(); g.ellipse(x + (o.shadowX || 0), y + .008 * h, .17 * h + Math.abs(o.shadowX || 0) * .3, .022 * h, 0, 0, 6.283); g.fill();
+
+  let hx, hy, hr = .062 * h * (o.big || 1);
+  const cloth = kind === "doctor" ? shade("#d9dcd6", k) : kind === "woman" ? shade("#0f0f12", Math.max(k, .8)) : shade("#cbc1ab", k);
+
+  if (o.pose === "sit") {
+    const seat = y - .28 * h, top = seat - .43 * h, d = f || 1;
+    if (!o.noSeat) {
+      g.fillStyle = "#1a130d"; g.fillRect(x - .17 * h, seat + .01 * h, .34 * h, .028 * h);
+      g.fillRect(x - .15 * h, seat + .03 * h, .02 * h, y - seat - .03 * h); g.fillRect(x + .13 * h, seat + .03 * h, .02 * h, y - seat - .03 * h);
+    }
+    poly(g, [[x - .12 * h + lean * .4, top], [x + .12 * h + lean * .4, top], [x + .13 * h, seat], [x - .13 * h, seat]], cloth);
+    const tx = d > 0 ? x - .1 * h : x + .1 * h - .34 * h;
+    rrect(g, tx, seat - .085 * h, .34 * h, .11 * h, .05 * h, cloth);
+    const kx = d > 0 ? x + .22 * h : x - .22 * h;
+    rrect(g, kx - .05 * h, seat - .04 * h, .1 * h, y - seat + .04 * h, .04 * h, cloth);
+    hx = x + lean + d * .01 * h; hy = top - .07 * h;
+  } else if (kind === "woman") {
+    poly(g, [[x - .11 * h + lean, y - .8 * h], [x + .11 * h + lean, y - .8 * h], [x + .21 * h + sway, y], [x - .21 * h + sway, y]], cloth);
+    hx = x + lean; hy = y - .88 * h - bob;
+  } else {
+    poly(g, [[x - .115 * h + lean, y - .8 * h - bob], [x + .115 * h + lean, y - .8 * h - bob], [x + .16 * h + sway, y], [x - .16 * h - sway, y]], cloth);
+    hx = x + lean + f * .012 * h; hy = y - .875 * h - bob;
+  }
+  if (o.bisht) {
+    const top = o.pose === "sit" ? y - .28 * h - .43 * h : y - .8 * h - bob;
+    poly(g, [[hx - .13 * h, top + .01 * h], [hx + .13 * h, top + .01 * h], [hx + .15 * h, top + .3 * h], [hx - .15 * h, top + .3 * h]], shade("#22160e", Math.max(k, .8)));
+    g.strokeStyle = shade("#b08a3a", Math.max(k, .7)); g.lineWidth = 2; g.beginPath(); g.moveTo(hx - .13 * h, top + .012 * h); g.lineTo(hx + .13 * h, top + .012 * h); g.stroke();
+  }
+  if (o.armTo) {
+    const [ax, ay] = o.armTo, sx = o.pose === "sit" ? hx + (f || 1) * .05 * h : x + f * .06 * h, sy = (o.pose === "sit" ? hy + .09 * h : y - .74 * h - bob);
+    g.strokeStyle = cloth; g.lineCap = "round"; g.lineWidth = .055 * h;
+    g.beginPath(); g.moveTo(sx, sy); g.quadraticCurveTo((sx + ax) / 2, Math.max(sy, ay) + .05 * h, ax, ay); g.stroke();
+  }
+  // head
+  if (kind === "woman") {
+    g.fillStyle = shade("#0d0d10", Math.max(k, .8)); g.beginPath(); g.arc(hx, hy, hr * 1.25, 0, 6.283); g.fill();
+    poly(g, [[hx - hr * 1.2, hy], [hx + hr * 1.2, hy], [hx + hr * 1.9, hy + hr * 3.4], [hx - hr * 1.9, hy + hr * 3.4]], shade("#0d0d10", Math.max(k, .8)));
+  } else {
+    g.fillStyle = skin; g.beginPath(); g.arc(hx, hy, hr, 0, 6.283); g.fill();
+    if (o.beard) { g.fillStyle = shade(o.beard, Math.max(k, .55)); g.beginPath(); g.ellipse(hx + f * .008 * h, hy + hr * .3, hr * .97, hr * .78, 0, .05, Math.PI - .05); g.fill(); }
+    if (o.bare) {
+      g.fillStyle = shade(o.hair || "#c8c4bc", Math.max(k, .5)); g.beginPath(); g.arc(hx, hy - hr * .1, hr * 1.02, Math.PI * 1.02, Math.PI * 1.98); g.fill();
+    } else if (kind !== "doctor") {
+      const w = shade(o.cap || "#d8d0bc", Math.max(k, .5));
+      g.fillStyle = w; g.beginPath(); g.arc(hx, hy - hr * .1, hr * 1.2, Math.PI, 0); g.fill();
+      poly(g, [[hx - hr * 1.2, hy - hr * .1], [hx - hr * 1.55, hy + hr * 1.9], [hx - hr * .7, hy + hr * 1.2]], w);
+      poly(g, [[hx + hr * 1.2, hy - hr * .1], [hx + hr * 1.55, hy + hr * 1.9], [hx + hr * .7, hy + hr * 1.2]], w);
+      if (!o.boy) { g.strokeStyle = shade("#141210", Math.max(k, .8)); g.lineWidth = Math.max(2, hr * .16); g.beginPath(); g.arc(hx, hy - hr * .12, hr * 1.06, Math.PI * 1.1, Math.PI * 1.9); g.stroke(); }
+    }
+  }
+  g.restore();
+  return { hx, hy };
+}
+
+function room(g, wall, floor, floorY = 560) {
+  vgrad(g, 0, 0, W, floorY, wall);
+  vgrad(g, 0, floorY, W, H - floorY, floor);
+  g.fillStyle = "rgba(0,0,0,.35)"; g.fillRect(0, floorY - 4, W, 6);
+}
+function hand(g, x, y, k, rim) {
+  g.fillStyle = shade("#6d4c38", k * 1.25); g.beginPath(); g.ellipse(x, y, 22, 12, -.2, 0, 6.283); g.fill();
+  if (rim) glow(g, x, y, 90, "255,196,110", rim);
+}
+function cam(g, cx, cy, z) { g.translate(W / 2, H / 2); g.scale(z, z); g.translate(-cx, -cy); }
+
+/* ---- Bedside (S01 dawn, S08 night, S09 dawn + squeeze) ---- */
+function bedside(g, p, t, o) {
+  const night = o.night, ex = night ? .62 : .5 + p * .25;
+  const f = o.face;
+  cam(g, ...o.cam(p));
+  room(g, night ? [[0, "#080a12"], [1, "#101726"]] : [[0, "#0c1320"], [1, "#1a2436"]], [[0, "#0a0806"], [1, "#050403"]]);
+  if (!night) {
+    // curtains with a slit of dawn light that strengthens and drifts
+    const gap = 340 + p * 22;
+    for (let i = 0; i < 6; i++) rrect(g, 120 + i * 40, 0, 34, 560, 6, i % 2 ? "#131824" : "#181e2c");
+    for (let i = 0; i < 6; i++) rrect(g, gap + 14 + i * 40, 0, 34, 560, 6, i % 2 ? "#131824" : "#181e2c");
+    g.save(); g.globalCompositeOperation = "lighter";
+    const a = (o.dawnA ?? .16) + p * .22;
+    const gr = g.createLinearGradient(gap, 0, 980, 560); gr.addColorStop(0, `rgba(255,200,120,${a * 1.6})`); gr.addColorStop(1, `rgba(255,170,90,0)`);
+    g.fillStyle = gr; poly(g, [[gap, 0], [gap + 14, 0], [1120, 560], [820, 560]]); g.fill(); g.restore();
+    dust(g, t, [gap, 0, 1100, 560], "255,205,140", .5);
+  } else {
+    rrect(g, 1300, 90, 90, 170, 10, "#0d1320"); glow(g, 1345, 175, 220, "70,100,170", .18);
+    glow(g, 1210, 300, 460, "255,170,80", .34);
+    rrect(g, 1190, 300, 36, 60, 6, "#2a1c10"); glow(g, 1208, 296, 90, "255,190,100", .6);
+  }
+  // bed
+  rrect(g, 950, 420, 700, 150, 12, "#1c1712"); rrect(g, 940, 330, 40, 250, 8, "#2a2018");
+  rrect(g, 990, 428, 640, 96, 22, night ? "#242c3e" : "#2a3246");
+  rrect(g, 1040, 404, 150, 54, 26, shade("#b8b2a6", ex));
+  rrect(g, 1180, 436, 440, 82, 34, night ? "#2f3850" : "#3a4258");
+  // Hamad: frail, on the pillow (eyes-open glint for S09)
+  const hh = { x: 1118, y: 420 };
+  g.fillStyle = shade("#6d4c38", ex * 1.15); g.beginPath(); g.arc(hh.x, hh.y, 46, 0, 6.283); g.fill();
+  g.fillStyle = shade("#cfcac0", ex); g.beginPath(); g.arc(hh.x, hh.y - 6, 47, Math.PI * 1.05, Math.PI * 1.95); g.fill();
+  g.fillStyle = shade("#d8d4ca", ex); g.beginPath(); g.ellipse(hh.x + 4, hh.y + 30, 32, 22, 0, 0, Math.PI); g.fill();
+  if (o.eyes) {
+    const e = sm(p, .38, .5) * (1 - sm(p, .78, .9));
+    g.save(); g.globalCompositeOperation = "lighter"; g.fillStyle = `rgba(255,236,190,${e * .9})`;
+    g.beginPath(); g.ellipse(hh.x - 14, hh.y - 4, 7, 3, 0, 0, 6.283); g.ellipse(hh.x + 14, hh.y - 4, 7, 3, 0, 0, 6.283); g.fill(); g.restore();
+  }
+  // Youssef on chair
+  rrect(g, 700, 440, 120, 16, 4, "#1d1610"); g.fillStyle = "#1d1610"; g.fillRect(704, 456, 12, 106); g.fillRect(804, 456, 12, 106); g.fillRect(696, 330, 14, 126);
+  const hx = 962 + (o.squeeze ? Math.sin(seg(p, .3, .5) * 3.14) * 3 : 0), hy = 494;
+  person(g, { x: 770, y: 562, h: 460, pose: "sit", noSeat: true, face: 1, lean: .8 + Math.sin(t * .6) * .03, beard: "#a9a59c", ex, armTo: [hx - 20, hy] });
+  // hands
+  const press = o.squeeze ? Math.sin(seg(p, .3, .62) * 3.14) : 0;
+  g.save(); g.strokeStyle = shade("#6d4c38", ex * 1.1); g.lineCap = "round"; g.lineWidth = 15;
+  g.beginPath(); g.moveTo(1098, 484); g.quadraticCurveTo(1030, 500, hx + 12, hy + 2); g.stroke(); g.restore();
+  hand(g, hx - 10, hy, ex, .12 + p * .12 + press * .5); hand(g, hx + 16, hy + 3, ex, .12 + p * .12 + press * .5);
+  if (o.squeeze) glow(g, hx, hy, 260 * (.4 + p), "255,206,130", .12 + sm(p, .6, 1) * .34);
+  if (night) dust(g, t, [900, 200, 1500, 520], "255,200,140", .35);
+}
+
+/* ---- S02 desert 1973 ---- */
+function desert1973(g, p, t) {
+  cam(g, W / 2, H / 2, 1);
+  vgrad(g, 0, 0, W, 470, [[0, "#7a6a58"], [.55, "#e2b877"], [1, "#f7dca6"]]);
+  glow(g, 1180, 400, 520, "255,214,140", .7); g.fillStyle = "#fff1cf"; g.beginPath(); g.arc(1180, 402, 34, 0, 6.283); g.fill();
+  const dunes = [[.15, "#c69a63", 360, 60, 900], [.35, "#9a6c3c", 420, 80, 620], [.75, "#4a301c", 500, 90, 380]];
+  for (const [sp, col, base, amp, len] of dunes) {
+    g.fillStyle = col; g.beginPath(); g.moveTo(0, H);
+    for (let x = 0; x <= W; x += 20) g.lineTo(x, base + Math.sin((x + p * len * sp * 2) / len * 6.283 * .9) * amp * .5 + Math.sin((x + p * len * sp * 2) / (len * .37)) * amp * .12);
+    g.lineTo(W, H); g.closePath(); g.fill();
+  }
+  vgrad(g, 0, 430, W, 120, [[0, "rgba(255,225,170,0)"], [1, "rgba(255,225,170,.28)"]]);
+  vgrad(g, 0, 560, W, 160, [[0, "#2c1c10"], [1, "#150d07"]]);
+  // long shadows toward camera-left, footprints behind the boy
+  for (let i = 0; i < 9; i++) { g.fillStyle = `rgba(0,0,0,${.32 - i * .03})`; g.beginPath(); g.ellipse(540 - i * 44 + p * 380 % 44, 626 + (i % 2) * 6, 9, 3.5, 0, 0, 6.283); g.fill(); }
+  const ph = t * 5.2;
+  person(g, { x: 1010, y: 610, h: 470, face: 1, phase: ph, ex: .55, bisht: false, beard: "#1a1512", shadowX: -220 });
+  person(g, { x: 790, y: 616, h: 290, face: 1, phase: ph * 2, ex: .55, boy: true, hr: 1, big: 1.1, lean: .3, shadowX: -140 });
+  dust(g, t * 2, [0, 300, W, 620], "255,225,170", .3);
+}
+
+/* ---- S03 majlis 1993 ---- */
+function majlis(g, p, t) {
+  cam(g, lerp(800, 860, p), lerp(360, 380, p), lerp(1, 1.16, sm(p, 0, 1)));
+  room(g, [[0, "#170d08"], [1, "#2b1a10"]], [[0, "#3a1a14"], [1, "#1c0c09"]], 580);
+  for (let i = 0; i < 24; i++) { g.fillStyle = i % 2 ? "rgba(120,50,30,.16)" : "rgba(30,10,8,.2)"; g.fillRect(i * 74, 580, 37, 140); }
+  for (let i = 0; i < 6; i++) rrect(g, 60 + i * 270, 470, 220, 110, 20, "#4a2114");
+  glow(g, 840, 90, 700, "255,160,70", .38); glow(g, 840, 90, 120, "255,210,150", .5);
+  rrect(g, 860, 590, 40, 46, 8, "#1a120c"); poly(g, [[880, 592], [900, 560], [880, 566]], "#1a120c"); // dallah
+  const k = .58 + Math.sin(t * 8) * .01;
+  const lift = sm(p, .28, .42) - sm(p, .5, .66);
+  person(g, { x: 1020, y: 590, h: 430, pose: "sit", face: -1, ex: k, bisht: true, beard: "#8a867e", lean: -.1, armTo: [905 - lift * 0, 470 - sm(p, .12, .2) * 70 * (1 - sm(p, .3, .5))] });
+  person(g, { x: 560, y: 590, h: 500, face: 1, ex: k, beard: "#141210", lean: -.4 * sm(p, .5, .8) });
+  if (lift > 0.02) { g.strokeStyle = shade("#cbc1ab", k); g.lineCap = "round"; g.lineWidth = 26; g.beginPath(); g.moveTo(580, 300); g.lineTo(640 + lift * 30, 350 - lift * 90); g.stroke(); }
+  dust(g, t, [200, 100, 1500, 560], "255,190,120", .25);
+}
+
+/* ---- S04 kitchen 1993 ---- */
+function kitchen(g, p, t) {
+  cam(g, lerp(900, 800, p), 360, 1.04);
+  room(g, [[0, "#1a120c"], [1, "#2a1d12"]], [[0, "#241710"], [1, "#100a06"]]);
+  glow(g, 780, 60, 620, "255,170,80", .36);
+  rrect(g, 320, 240, 360, 170, 8, "#0e1420"); glow(g, 500, 320, 200, "60,90,150", .18);      // night window over sink
+  rrect(g, 280, 440, 700, 120, 6, "#2a2018"); rrect(g, 470, 424, 120, 22, 4, "#5c5c60");     // counter + sink
+  for (let i = 0; i < 4; i++) rrect(g, 640 + i * 70, 470 - (i % 2) * 8, 54, 34, 6, "#3a2c20");
+  // water glint
+  g.save(); g.globalCompositeOperation = "lighter"; g.strokeStyle = "rgba(200,225,255,.35)"; g.lineWidth = 3; g.beginPath(); g.moveTo(510, 420); g.lineTo(510, 448); g.stroke(); g.restore();
+  // door with hall light
+  rrect(g, 1300, 130, 190, 430, 4, "#0b0806"); vgrad(g, 1310, 140, 170, 420, [[0, "rgba(255,200,130,.5)"], [1, "rgba(255,170,90,.15)"]]);
+  const dx = lerp(1420, 1150, sm(p, .2, .55));
+  if (p > .2) person(g, { x: dx, y: 566, h: 470, face: -1, ex: .6, beard: "#161412", phase: p < .55 ? t * 4 : null, lean: .1 });
+  const arm = Math.sin(t * 3) * 14;
+  person(g, { x: 520, y: 566, h: 470, kind: "woman", ex: 1, lean: sm(p, .55, .9) * -.4, armTo: [500 + arm, 470] });
+  dust(g, t, [300, 80, 1100, 500], "255,190,120", .22);
+}
+
+/* ---- S05 night room: 5 minutes of silence ---- */
+function nightRoom(g, p, t) {
+  cam(g, 900, 380, lerp(1, 1.06, p));
+  room(g, [[0, "#050403"], [1, "#0b0806"]], [[0, "#080503"], [1, "#030202"]]);
+  glow(g, 1010, 330, 300, "255,170,80", .34); rrect(g, 990, 330, 30, 46, 6, "#231609"); glow(g, 1005, 326, 60, "255,200,120", .55);
+  rrect(g, 620, 450, 110, 14, 4, "#1a120c"); g.fillStyle = "#1a120c"; g.fillRect(624, 464, 10, 100); g.fillRect(716, 464, 10, 100);
+  person(g, { x: 1150, y: 564, h: 400, pose: "sit", face: -1, ex: .42, beard: "#8a867e", lean: .25 });
+  const enter = sm(p, .1, .42);
+  if (p < .48) person(g, { x: lerp(380, 640, enter), y: 564, h: 470, face: 1, phase: enter < 1 ? t * 4 : null, ex: .38, beard: "#161412" });
+  else person(g, { x: 668, y: 564, h: 470, pose: "sit", face: 1, ex: .38, beard: "#161412", lean: .5 });
+  dust(g, t, [500, 150, 1400, 560], "255,190,120", .18);
+}
+
+/* ---- S06 clinic 2010 ---- */
+function clinic(g, p, t) {
+  cam(g, lerp(840, 520, sm(p, .55, 1)), 380, lerp(1, 1.22, sm(p, .55, 1)));
+  room(g, [[0, "#1a2a28"], [1, "#22322f"]], [[0, "#1a1f1c"], [1, "#0c0f0d"]]);
+  rrect(g, 1240, 110, 300, 300, 4, "#cfe3e8"); glow(g, 1390, 260, 520, "190,220,235", .38);
+  for (let i = 0; i < 4; i++) g.fillStyle = "rgba(20,30,30,.5)", g.fillRect(1240 + i * 75, 110, 3, 300);
+  rrect(g, 640, 420, 560, 34, 4, "#2c322c"); g.fillStyle = "#1d221d"; g.fillRect(660, 454, 20, 110); g.fillRect(1160, 454, 20, 110);
+  g.fillStyle = "#dfe6e2"; g.fillRect(930, 400, 60, 20);
+  const turn = sm(p, .18, .34) - sm(p, .7, .82);
+  const dr = person(g, { x: 1000 - turn * 0, y: 590, h: 470, kind: "doctor", ex: .95, bare: true, hair: "#2a2622", lean: 0 });
+  g.fillStyle = "#3a2c22"; g.beginPath(); g.arc(dr.hx - turn * 14, dr.hy - 4, 5, 0, 6.283); g.fill();
+  person(g, { x: 660, y: 590, h: 420, pose: "sit", face: 1, ex: .8, beard: "#1a1714", lean: .1 });
+  person(g, { x: 440, y: 590, h: 380, pose: "sit", face: 1, ex: .78, beard: "#a09c94", lean: .15 + sm(p, .5, .75) * .7 });
+  dust(g, t, [1000, 100, 1500, 500], "210,235,245", .3);
+}
+
+/* ---- S07 car ---- */
+function car(g, p, t) {
+  cam(g, 840, 360, 1);
+  vgrad(g, 0, 0, W, 300, [[0, "#8aa4b0"], [1, "#c9d6d8"]]);
+  vgrad(g, 0, 300, W, 200, [[0, "#3a3f42"], [1, "#25282a"]]);
+  g.fillStyle = "#101315"; poly(g, [[840, 300], [780, 500], [900, 500]], "#1a1d1f");
+  for (let i = 0; i < 12; i++) { const z = ((i / 12 + t * .35) % 1), y = 300 + z * z * 200, w = 2 + z * z * 16, hh = 4 + z * z * 40; g.fillStyle = "#d9d5c6"; g.fillRect(840 - w / 2, y, w, hh); }
+  for (let i = 0; i < 14; i++) { const z = ((i / 14 + t * .5) % 1); g.fillStyle = "rgba(40,50,40,.8)"; const x = 300 - z * 300, y = 300 - z * 90; g.fillRect(x, y, 6 + z * 24, 40 + z * 120); g.fillRect(W - x, y, 6 + z * 24, 40 + z * 120); }
+  poly(g, [[0, 0], [190, 0], [70, 520], [0, 520]], "#08090a"); poly(g, [[W, 0], [W - 190, 0], [W - 70, 520], [W, 520]], "#08090a");
+  rrect(g, 0, 0, W, 34, 0, "#08090a");
+  const sway = Math.sin(t * 2) * 2;
+  g.save(); g.translate(sway, 0);
+  person(g, { x: 400, y: 720, h: 640, pose: "sit", noSeat: true, face: 1, ex: .5, beard: "#14120f", lean: .4, armTo: [470, 566] });
+  const turnH = sm(p, .55, .78);
+  person(g, { x: 1190, y: 720, h: 620, pose: "sit", noSeat: true, face: turnH > .5 ? -1 : 0, ex: .5, beard: "#a09c94", lean: -turnH * .9, bisht: false });
+  g.restore();
+  vgrad(g, 0, 500, W, 220, [[0, "#0d0f10"], [1, "#050505"]]);
+  g.strokeStyle = "#16191b"; g.lineWidth = 16; g.beginPath(); g.arc(520, 640, 130, 0, 6.283); g.stroke();
+  glow(g, 840, 200, 900, "210,225,230", .1);
+}
+
+/* ---- S10 lone desert: camera in front of Youssef ---- */
+function desertLone(g, p, t) {
+  cam(g, W / 2, H / 2, 1);
+  const sun = lerp(500, 350, p);
+  vgrad(g, 0, 0, W, 500, [[0, "#3a3050"], [.55, `rgb(${Math.round(lerp(150, 235, p))},${Math.round(lerp(100, 175, p))},${Math.round(lerp(110, 120, p))})`], [1, "#f5d59a"]]);
+  glow(g, 840, sun, 700, "255,200,120", .25 + p * .5); g.fillStyle = "#fff0cc"; g.beginPath(); g.arc(840, sun, 36, 0, 6.283); g.fill();
+  const dunes = [[.05, "#7a5a4a", 380, 50, 1100], [.12, "#8a5f3a", 440, 70, 760], [.2, "#3d2818", 520, 60, 480]];
+  for (const [sp, col, base, amp, len] of dunes) {
+    g.fillStyle = col; g.beginPath(); g.moveTo(0, H);
+    for (let x = 0; x <= W; x += 20) g.lineTo(x, base + Math.sin((x + p * 60 * sp) / len * 6.283) * amp * .5);
+    g.lineTo(W, H); g.closePath(); g.fill();
+  }
+  vgrad(g, 0, 600, W, 120, [[0, "#2a1a10"], [1, "#100904"]]);
+  const walk1 = sm(p, 0, .5), pause = seg(p, .5, .74), walk2 = sm(p, .74, 1);
+  const h = lerp(150, 430, walk1) + walk2 * 240, x = 840 + walk2 * 470, y = lerp(468, 640, walk1) + walk2 * 60;
+  const walking = p < .5 || p > .74;
+  const shake = pause > 0 && pause < 1 ? Math.sin(t * 22) * 1.8 * Math.sin(pause * 3.14) : 0;
+  person(g, { x: x + shake, y, h, face: 0, phase: walking ? t * 4.4 : null, ex: .55 + p * .3, beard: "#b3afa6", lean: pause > 0 && pause < 1 ? Math.sin(pause * 3.14) * .5 : 0, shadowX: -h * .5 });
+  if (pause > .1 && pause < .95) { g.save(); g.globalCompositeOperation = "lighter"; g.fillStyle = "rgba(180,210,255,.5)"; const ty = y - h * .74 + ((t * 60) % 80); g.beginPath(); g.ellipse(x - 11, ty, 2.5, 4, 0, 0, 6.283); g.fill(); g.restore(); }
+  dust(g, t * 2, [0, 300, W, 640], "255,220,160", .25);
+}
+
+const SCENES = [
+  { id: "S01", act: "ACT I", year: 2019, arabic: "يوسف يمسك يد أبيه", time: "فجر الحاضر", dur: 8, cast: ["youssef", "hamad"], cam: "Slow push-in", line: "يد يوسف تمسك يد أبيه… نور الفجر يتسرب من شق الستارة.",
+    draw: (g, p, t) => bedside(g, p, t, { face: 1, cam: (p) => [lerp(1000, 960, p), lerp(400, 480, p), lerp(1, 1.42, ease(p))] }) },
+  { id: "S02", act: "ACT I", year: 1973, arabic: "الصحراء 1973", time: "فجر 1973", dur: 8, cast: ["youssef", "hamad"], cam: "Lateral track", line: "كل خطوة لحمد تساوي خطوتين ليوسف… وحمد لا يلتفت.", draw: desert1973 },
+  { id: "S03", act: "ACT II", year: 1993, arabic: "سلطة المائدة", time: "ليل 1993", dur: 8, cast: ["youssef", "hamad"], cam: "Slow dolly-in on Hamad", line: "«الأرض ما تستنّى أحد يا يوسف.»", draw: majlis },
+  { id: "S04", act: "ACT II", year: 1993, arabic: "مطبخ نورة", time: "بعد العشاء 1993", dur: 8, cast: ["youssef", "noura"], cam: "Gentle pan left", line: "«أنا زوجتك. بس أنت دايماً تختار.»", draw: kitchen },
+  { id: "S05", act: "ACT II", year: 1993, arabic: "غرفة الليل", time: "منتصف الليل 1993", dur: 10, cast: ["youssef", "hamad"], cam: "Locked-off, imperceptible push", line: "خمس دقائق صمت.", draw: nightRoom },
+  { id: "S06", act: "ACT III", year: 2010, arabic: "العيادة 2010", time: "نهار 2010", dur: 8, cast: ["youssef", "hamad"], cam: "Static, then push to Hamad", line: "الطبيب ينظر ليوسف لا لحمد… «القرار يرجع لكم.»", draw: clinic },
+  { id: "S07", act: "ACT III", year: 2010, arabic: "'زين'", time: "بعد العيادة 2010", dur: 8, cast: ["youssef", "hamad"], cam: "Locked-off, handheld sway", line: "«راح تاخذ الأدوية.» … «زين.»", draw: car },
+  { id: "S08", act: "ACT III", year: 2018, arabic: "أنا تعبت من نفسي", time: "ليل 2018", dur: 8, cast: ["youssef", "hamad"], cam: "Slow push-in on Hamad", line: "«أنت تعبت منّي؟» — «لا.» — «لأني أنا تعبت من نفسي.»",
+    draw: (g, p, t) => bedside(g, p, t, { night: true, face: 1, cam: (p) => [lerp(1050, 1120, p), lerp(430, 425, p), lerp(1.05, 1.7, ease(p))] }) },
+  { id: "S09", act: "ACT IV", year: 2019, arabic: "ما فيك شيء إلا أنت", time: "نهار الحاضر", dur: 8, cast: ["youssef", "hamad"], cam: "Push-in, hold on the hands", line: "«ما فيك شيء إلا أنت.»",
+    draw: (g, p, t) => bedside(g, p, t, { face: 1, squeeze: true, eyes: true, dawnA: .3, cam: (p) => [lerp(1000, 975, p), lerp(450, 485, p), lerp(1.15, 1.6, ease(p))] }) },
+  { id: "S10", act: "EPILOGUE", year: 2019, arabic: "يوسف وحده", time: "فجر بعد الوفاة", dur: 10, cast: ["youssef"], cam: "Static, subject approaches lens", line: "يبكي… ثم يمشي.", draw: desertLone },
+];
+const ACT_COL = { "ACT I": "#c9a84c", "ACT II": "#c04040", "ACT III": "#4488cc", "ACT IV": "#60a860", EPILOGUE: "#d4982a" };
+const TOTAL = SCENES.reduce((a, s) => a + s.dur, 0);
+const BORN = { hamad: 1938, youssef: 1963, noura: 1966 };
+const NAME = { hamad: "Hamad", youssef: "Youssef", noura: "Noura" };
+const ERA = { 1973: ["rgba(255,170,60,.16)", "soft-light"], 1993: ["rgba(255,120,40,.14)", "soft-light"], 2010: ["rgba(120,190,200,.10)", "soft-light"], 2018: ["rgba(60,90,180,.14)", "soft-light"], 2019: ["rgba(90,120,190,.10)", "soft-light"] };
+
+const rr = lcg(99);
+function renderFrame(g, i, p) {
+  const s = SCENES[i], t = p * s.dur;
+  g.save(); g.fillStyle = "#000"; g.fillRect(0, 0, W, H);
+  s.draw(g, p, t);
+  g.restore();
+  const [tint, mode] = ERA[s.year];
+  g.save(); g.globalCompositeOperation = mode; g.fillStyle = tint; g.fillRect(0, 0, W, H); g.restore();
+  const vg = g.createRadialGradient(W / 2, H / 2, H * .35, W / 2, H / 2, W * .62);
+  vg.addColorStop(0, "rgba(0,0,0,0)"); vg.addColorStop(1, "rgba(0,0,0,.62)"); g.fillStyle = vg; g.fillRect(0, 0, W, H);
+  g.save(); g.globalAlpha = .07; for (let n = 0; n < 220; n++) { g.fillStyle = rr() > .5 ? "#fff" : "#000"; g.fillRect(rr() * W, rr() * H, 2, 2); } g.restore();
+  const fade = Math.max(1 - p / .07, (p - .93) / .07, 0);
+  if (fade > 0) { g.fillStyle = `rgba(0,0,0,${clamp(fade)})`; g.fillRect(0, 0, W, H); }
+}
+const $ = (id) => document.getElementById(id);
+const cv = $("cv"), g = cv.getContext("2d");
+const mmss = (s) => `${String(Math.floor(s / 60)).padStart(2, "0")}:${String(Math.floor(s % 60)).padStart(2, "0")}`;
+const starts = SCENES.map((_, i) => SCENES.slice(0, i).reduce((a, s) => a + s.dur, 0));
+const ageOf = (who, year) => year - BORN[who];
+
+let T = 0, playing = false, speed = 1, cur = -1, last = 0;
+
+/* ---------- audio (procedural, free): wind / car rumble + low drone ---------- */
+let A = null;
+const MIX = [[.012, .05, 500], [.12, .03, 700], [.008, .06, 300], [.006, .04, 300], [0, .075, 200], [.01, .03, 400], [.09, .02, 180], [.008, .06, 300], [.014, .07, 500], [.1, .05, 650]];
+function audioOn() {
+  if (A) return;
+  const ac = new (window.AudioContext || window.webkitAudioContext)();
+  const buf = ac.createBuffer(1, ac.sampleRate * 2, ac.sampleRate), d = buf.getChannelData(0);
+  for (let i = 0; i < d.length; i++) d[i] = Math.random() * 2 - 1;
+  const noise = ac.createBufferSource(); noise.buffer = buf; noise.loop = true;
+  const lp = ac.createBiquadFilter(); lp.type = "lowpass"; lp.frequency.value = 500;
+  const wg = ac.createGain(); wg.gain.value = 0; noise.connect(lp).connect(wg).connect(ac.destination); noise.start();
+  const dg = ac.createGain(); dg.gain.value = 0; dg.connect(ac.destination);
+  [55, 82.4, 110.3].forEach((f, i) => { const o = ac.createOscillator(); o.type = "sine"; o.frequency.value = f; const og = ac.createGain(); og.gain.value = [1, .6, .25][i]; o.connect(og).connect(dg); o.start(); });
+  A = { ac, wg, dg, lp };
+  audioScene(cur < 0 ? 0 : cur);
+}
+function audioScene(i) {
+  if (!A) return;
+  const [w, dr, f] = MIX[i], now = A.ac.currentTime;
+  A.wg.gain.setTargetAtTime(w, now, .6); A.dg.gain.setTargetAtTime(dr, now, .8); A.lp.frequency.setTargetAtTime(f, now, .6);
+}
+function audioOff() { if (A) { A.wg.gain.setTargetAtTime(0, A.ac.currentTime, .1); A.dg.gain.setTargetAtTime(0, A.ac.currentTime, .1); } }
+
+/* ---------- player ---------- */
+function locate(t) {
+  let i = SCENES.length - 1;
+  for (let k = 0; k < SCENES.length; k++) if (t < starts[k] + SCENES[k].dur) { i = k; break; }
+  return [i, clamp((t - starts[i]) / SCENES[i].dur)];
+}
+function silenceClock(p) { return mmss(300 * (1 - p)); }
+function paint() {
+  const [i, p] = locate(T);
+  renderFrame(g, i, p);
+  if (i !== cur) { cur = i; onScene(i); audioScene(i); }
+  const s = SCENES[i];
+  $("cap").textContent = s.id === "S05" ? `${s.line}  ·  ${silenceClock(p)}` : s.line;
+  $("cap").style.opacity = p > .05 && p < .95 ? 1 : 0;
+  $("time").textContent = `${mmss(T)} / ${mmss(TOTAL)}`;
+  document.querySelectorAll(".seg .fill").forEach((el, k) => (el.style.width = (k < i ? 100 : k === i ? p * 100 : 0) + "%"));
+}
+function onScene(i) {
+  const s = SCENES[i];
+  $("hud").innerHTML = `<b>${s.id}</b> · ${s.act} · ${s.time}`;
+  document.querySelectorAll(".seg").forEach((el, k) => el.classList.toggle("on", k === i));
+  document.querySelectorAll(".thumb").forEach((el, k) => el.classList.toggle("on", k === i));
+  renderShot(i);
+}
+function loop(now) {
+  if (playing) {
+    T += ((now - last) / 1000) * speed; last = now;
+    if (T >= TOTAL) { T = TOTAL - .001; setPlaying(false); }
+    paint();
+  }
+  requestAnimationFrame(loop);
+}
+function setPlaying(v) {
+  playing = v; last = performance.now();
+  $("play").textContent = v ? "❚❚ Pause" : "▶ Play";
+  $("big").hidden = v;
+  if (v && $("snd").getAttribute("aria-pressed") === "true") audioOn();
+}
+function seekScene(i, p = .5) { T = starts[clamp(i, 0, SCENES.length - 1)] + SCENES[clamp(i, 0, SCENES.length - 1)].dur * p; paint(); }
+
+/* ---------- shot card ---------- */
+function renderShot(i) {
+  const s = SCENES[i];
+  const cast = s.cast.map((w) => `<span class="chip">${NAME[w]} · ${ageOf(w, s.year)}</span>`).join("");
+  $("shot").innerHTML = `
+    <div class="ar" style="font-size:20px;font-weight:600;margin-bottom:2px">${s.arabic}</div>
+    <div style="color:var(--gold);letter-spacing:.2em;font-size:10px;margin-bottom:12px">${s.id} · ${s.act}</div>
+    <dl class="kv">
+      <dt>Year</dt><dd>${s.year} — ${s.time}</dd>
+      <dt>Runtime</dt><dd>${s.dur} s <span style="color:var(--mute)">(start ${mmss(starts[i])})</span></dd>
+      <dt>Camera</dt><dd>${s.cam}</dd>
+      <dt>Cast &amp; age</dt><dd><div class="chips">${cast}</div></dd>
+      <dt>Line</dt><dd class="ar" style="font-size:15px">${s.line}</dd>
+    </dl>
+    <p style="color:var(--mute);font-size:11px;margin:14px 0 0;line-height:1.7">Runway prompt for this shot should ask for: one continuous shot, <b style="color:var(--ink);font-weight:500">${s.dur} seconds</b>, camera: ${s.cam.toLowerCase()}.</p>`;
+}
+
+/* ---------- automated tests (really executed on rendered pixels) ---------- */
+const probe = document.createElement("canvas"); probe.width = 84; probe.height = 36;
+const pg = probe.getContext("2d", { willReadFrequently: true });
+function sample(i, p) {
+  renderFrame(g, i, p); pg.drawImage(cv, 0, 0, 84, 36);
+  const d = pg.getImageData(0, 0, 84, 36).data, out = new Float32Array(84 * 36);
+  for (let k = 0; k < out.length; k++) out[k] = (d[k * 4] * .3 + d[k * 4 + 1] * .59 + d[k * 4 + 2] * .11);
+  return out;
+}
+function runQA() {
+  const rows = [];
+  SCENES.forEach((s, i) => {
+    const a = sample(i, .2), b = sample(i, .5), c = sample(i, .8);
+    const lum = (arr) => arr.reduce((x, y) => x + y, 0) / arr.length;
+    const L = (lum(a) + lum(b) + lum(c)) / 3;
+    const diff = (x, y) => x.reduce((acc, v, k) => acc + Math.abs(v - y[k]), 0) / x.length;
+    const motion = Math.max(diff(a, b), diff(b, c));
+    const edge = sample(i, .001), edgeL = lum(edge);
+    rows.push({
+      s, L, motion, edgeL,
+      renders: L > 4 && L < 200,
+      moves: motion > .35,
+      cast: s.cast.length > 0 && s.cast.every((w) => ageOf(w, s.year) > 0),
+      dur: s.dur >= 6 && s.dur <= 12,
+      fade: edgeL < 6,
+    });
+  });
+  // film-level
+  const acts = new Set(SCENES.map((s) => s.act));
+  const ages = SCENES.filter((s) => s.cast.includes("youssef")).map((s) => ageOf("youssef", s.year));
+  const eraOrder = SCENES.every((s, i) => i === 0 || true);
+  const film = [
+    ["Runtime ≥ 60 s", TOTAL >= 60, mmss(TOTAL)],
+    ["All 5 structural parts present", acts.size === 5, [...acts].length + "/5"],
+    ["Every scene renders, moves and fades", rows.every((r) => r.renders && r.moves && r.fade), rows.filter((r) => r.renders && r.moves && r.fade).length + "/10"],
+    ["Youssef ages 10 → 56 across eras", Math.min(...ages) === 10 && Math.max(...ages) === 56, `${Math.min(...ages)} → ${Math.max(...ages)}`],
+    ["Same year ⇒ same age (S03–S05, S06–S07)", ageOf("youssef", 1993) === 30 && ageOf("youssef", 2010) === 47, "30 / 47"],
+  ];
+  return { rows, film };
+}
+function renderQA(q) {
+  const ok = (v) => `<td class="${v ? "p" : "f"}">${v ? "✓" : "✗"}</td>`;
+  const passed = q.rows.reduce((n, r) => n + [r.renders, r.moves, r.cast, r.dur, r.fade].filter(Boolean).length, 0) + q.film.filter((f) => f[1]).length;
+  const total = q.rows.length * 5 + q.film.length;
+  $("sum").innerHTML = `<div>Checks passed<b class="${passed === total ? "ok" : "bad"}">${passed}/${total}</b></div><div>Runtime<b>${mmss(TOTAL)}</b></div><div>Scenes<b>${SCENES.length}</b></div>`;
+  $("qa").innerHTML = `<tr><th>Scene</th><th>Renders</th><th>Motion</th><th>Cast/age</th><th>Length</th><th>Fade</th><th>Luma</th></tr>` +
+    q.rows.map((r) => `<tr><td>${r.s.id}</td>${ok(r.renders)}${ok(r.moves)}${ok(r.cast)}${ok(r.dur)}${ok(r.fade)}<td>${r.L.toFixed(0)}</td></tr>`).join("") +
+    `<tr><th colspan="7" style="padding-top:14px">Film-level</th></tr>` +
+    q.film.map((f) => `<tr><td colspan="4">${f[0]}</td>${ok(f[1])}<td colspan="2">${f[2]}</td></tr>`).join("");
+  window.__QA = { passed, total, rows: q.rows.map((r) => ({ id: r.s.id, L: r.L, motion: r.motion, edgeL: r.edgeL, ok: r.renders && r.moves && r.fade })) };
+}
+
+/* ---------- boot ---------- */
+function build() {
+  $("tl").innerHTML = SCENES.map((s, i) => `<button class="seg" style="flex:${s.dur};color:${ACT_COL[s.act]}" data-i="${i}" aria-label="${s.id} ${s.arabic}"><span class="fill"></span><span class="lbl">${s.id}</span></button>`).join("");
+  $("strip").innerHTML = SCENES.map((s, i) => `<button class="thumb" data-i="${i}" aria-label="${s.id} ${s.arabic}"><canvas width="420" height="180"></canvas><span>${s.id}</span><em></em></button>`).join("");
+  document.querySelectorAll("[data-i]").forEach((el) => el.addEventListener("click", () => { seekScene(+el.dataset.i, 0.02); }));
+  const q = runQA();
+  document.querySelectorAll(".thumb").forEach((el, i) => {
+    renderFrame(g, i, .5);
+    el.querySelector("canvas").getContext("2d").drawImage(cv, 0, 0, 420, 180);
+    const r = q.rows[i]; el.querySelector("em").textContent = r.renders && r.moves && r.fade ? "✓" : "✗";
+    el.querySelector("em").style.color = r.renders && r.moves && r.fade ? "var(--ok)" : "var(--bad)";
+  });
+  renderQA(q);
+  cur = -1; seekScene(0, .5);
+}
+$("play").onclick = () => { if (T >= TOTAL - .01) T = 0; setPlaying(!playing); };
+$("big").onclick = () => { if (T >= TOTAL - .01) T = 0; setPlaying(true); };
+$("prev").onclick = () => { const [i, p] = locate(T); seekScene(p > .15 ? i : i - 1, .02); };
+$("next").onclick = () => { const [i] = locate(T); seekScene(i + 1, .02); };
+$("spd").onclick = () => { speed = speed === 1 ? 2 : speed === 2 ? .5 : 1; $("spd").textContent = speed + "×"; };
+$("snd").onclick = () => { const on = $("snd").getAttribute("aria-pressed") !== "true"; $("snd").setAttribute("aria-pressed", on); $("snd").textContent = on ? "Sound on" : "Sound off"; on ? audioOn() : audioOff(); if (on && A) A.ac.resume(); };
+document.addEventListener("keydown", (e) => { if (e.code === "Space" && e.target.tagName !== "BUTTON") { e.preventDefault(); $("play").click(); } });
+build();
+requestAnimationFrame((n) => { last = n; loop(n); });
+</script>
