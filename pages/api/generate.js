@@ -1,52 +1,68 @@
-export default async function handler(req, res) {
-  if (req.method !== "POST") return res.status(405).end();
+import { getScene } from "../../lib/scenes.js";
+import { buildSystemPrompt, buildUserPrompt, castFor } from "../../lib/filmBible.js";
+import { extractJson, validatePrompts } from "../../lib/validate.js";
 
-  const { scene } = req.body;
-  if (!scene) return res.status(400).json({ error: "scene required" });
+const MODEL = process.env.ANTHROPIC_MODEL || "claude-sonnet-5";
+const BASE_URL = process.env.ANTHROPIC_BASE_URL || "https://api.anthropic.com";
+const MAX_ATTEMPTS = 2;
+
+async function callModel(apiKey, system, user) {
+  const ctrl = new AbortController();
+  const timer = setTimeout(() => ctrl.abort(), 60000);
+  try {
+    const r = await fetch(`${BASE_URL}/v1/messages`, {
+      method: "POST",
+      signal: ctrl.signal,
+      headers: { "Content-Type": "application/json", "x-api-key": apiKey, "anthropic-version": "2023-06-01" },
+      body: JSON.stringify({ model: MODEL, max_tokens: 1200, system, messages: [{ role: "user", content: user }] }),
+    });
+    const data = await r.json();
+    if (!r.ok) {
+      const err = new Error(data?.error?.message || `Anthropic HTTP ${r.status}`);
+      err.status = r.status;
+      throw err;
+    }
+    return data.content?.[0]?.text || "";
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+export default async function handler(req, res) {
+  if (req.method !== "POST") return res.status(405).json({ error: "POST only" });
+
+  const scene = getScene(req.body?.sceneId);
+  if (!scene) return res.status(400).json({ error: "unknown sceneId" });
 
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey) return res.status(500).json({ error: "ANTHROPIC_API_KEY not configured" });
 
-  const prompt = `You are a world-class AI film production director.
-For this Arabic screenplay scene, generate 3 prompts in JSON format only (no markdown, no explanation):
+  const system = buildSystemPrompt();
+  let feedback = "";
+  let prompts = null;
+  let issues = ["no response"];
+  let attempts = 0;
 
-Scene: ${scene.arabic}
-Time: ${scene.time}
-Emotion: ${scene.emotion}
-Script excerpt: ${scene.script}
-
-Return ONLY this JSON:
-{
-  "midjourney": "cinematic still [full English Midjourney v7 prompt, 80-100 words, ending with --ar 21:9 --style raw --v 7]",
-  "runway": "video prompt [50-70 words for Runway Gen-3, specify motion, duration in seconds, camera movement]",
-  "sound": "ElevenLabs: [10-word Arabic voice tone direction]. Suno: [8-word music mood]"
-}`;
-
-  const response = await fetch("https://api.anthropic.com/v1/messages", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "x-api-key": apiKey,
-      "anthropic-version": "2023-06-01",
-    },
-    body: JSON.stringify({
-      model: "claude-sonnet-4-5",
-      max_tokens: 1000,
-      messages: [{ role: "user", content: prompt }],
-    }),
-  });
-
-  const data = await response.json();
-
-  if (!response.ok) {
-    return res.status(response.status).json({ error: data.error?.message || "API error" });
-  }
-
-  const text = data.content?.[0]?.text || "";
   try {
-    const parsed = JSON.parse(text.replace(/```json|```/g, "").trim());
-    return res.json(parsed);
-  } catch {
-    return res.json({ midjourney: text.slice(0, 400), runway: "", sound: "" });
+    while (attempts < MAX_ATTEMPTS) {
+      attempts++;
+      const text = await callModel(apiKey, system, buildUserPrompt(scene, feedback));
+      const parsed = extractJson(text);
+      const check = validatePrompts(parsed, scene);
+      if (parsed) prompts = { midjourney: parsed.midjourney || "", runway: parsed.runway || "", sound: parsed.sound || "" };
+      issues = parsed ? check.issues : ["response was not valid JSON"];
+      if (check.ok) break;
+      feedback = issues.join("; ");
+    }
+  } catch (e) {
+    return res.status(e.status && e.status < 600 ? e.status : 502).json({ error: e.name === "AbortError" ? "model timed out" : e.message });
   }
+
+  if (!prompts) return res.status(502).json({ error: `model returned unusable output: ${issues.join("; ")}` });
+
+  return res.status(200).json({
+    prompts,
+    quality: { ok: issues.length === 0, issues, attempts },
+    cast: castFor(scene).map(({ name, age }) => ({ name, age })),
+  });
 }

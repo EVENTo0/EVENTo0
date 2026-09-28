@@ -1,26 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import Head from "next/head";
-
-const SCENES = [
-  { id: "S01", act: "ACT I",    arabic: "يوسف يمسك يد أبيه",    time: "فجر الحاضر",       emotion: "حنين، ترقب، حب صامت",                  script: "يوسف جالس على كرسي بجانب سرير حمد المحتضر منذ الليل. يده تمسك يد أبيه. نور فجر خافت يتسرب من شق الستارة." },
-  { id: "S02", act: "ACT I",    arabic: "الصحراء 1973",          time: "فجر 1973",          emotion: "طفولة، قسوة الحب، الطريق الطويل",        script: "يوسف عشر سنوات يمشي خلف أبيه في رمال الصحراء. كل خطوة لحمد تساوي خطوتين ليوسف. حمد يمشي دون أن يلتفت." },
-  { id: "S03", act: "ACT II",   arabic: "سلطة المائدة",          time: "ليل 1993",          emotion: "سلطة، امتثال، توتر تحت السطح",           script: "حمد يجلس في صدر المجلس كالملك. يوسف يحاول يعترض لكنه يصمت. 'الأرض ما تستنّى أحد يا يوسف.'" },
-  { id: "S04", act: "ACT II",   arabic: "مطبخ نورة",             time: "بعد العشاء 1993",   emotion: "ضعف مكتوم، حب جريح، صبر المرأة",        script: "نورة تغسل الصحون من الخلف. يوسف يدخل. 'أنا زوجتك. بس أنت دايماً تختار.'" },
-  { id: "S05", act: "ACT II",   arabic: "غرفة الليل",            time: "منتصف الليل 1993",  emotion: "وحدة المسنّ، لغة بلا كلمات",             script: "حمد يجلس في الظلام وحده. يوسف يدخل ويجلس بجانبه بدون كلام. خمس دقائق صمت." },
-  { id: "S06", act: "ACT III",  arabic: "العيادة 2010",          time: "نهار 2010",         emotion: "انعكاس السلطة، خجل الضعف",               script: "الطبيب يتكلم وينظر ليوسف لا لحمد. 'القرار يرجع لكم.' حمد يلاحظ هذا أول مرة." },
-  { id: "S07", act: "ACT III",  arabic: "'زين'",                  time: "بعد العيادة 2010",  emotion: "تحوّل ساكت، إعادة ترتيب العالم",         script: "يوسف يقود بحزم. 'راح تاخذ الأدوية.' حمد ينظر لابنه. 'زين.' أول مرة يسمعها هكذا." },
-  { id: "S08", act: "ACT III",  arabic: "أنا تعبت من نفسي",     time: "ليل 2018",          emotion: "أعمق ضعف في الفيلم، إنسانية مجردة",      script: "حمد في السرير. 'أنت تعبت منّي؟' 'لا.' 'لأني أنا تعبت من نفسي.' أول مرة في ثمانين سنة." },
-  { id: "S09", act: "ACT IV",   arabic: "ما فيك شيء إلا أنت",   time: "نهار الحاضر",       emotion: "أعلى نقطة عاطفية في الفيلم",             script: "أصابع حمد تضغط على يد يوسف بقوة. يفتح عينيه. 'ما فيك شيء إلا أنت.' يغمض ويسترخي." },
-  { id: "S10", act: "EPILOGUE", arabic: "يوسف وحده",            time: "فجر بعد الوفاة",   emotion: "حرية مؤلمة، اكتمال، بداية",              script: "يوسف وحيداً في نفس الصحراء. الكاميرا أمامه هذه المرة. يبكي. ثم يمشي." },
-];
-
-const ACT_COLORS = {
-  "ACT I":    "#C9A84C",
-  "ACT II":   "#C04040",
-  "ACT III":  "#4488CC",
-  "ACT IV":   "#60A860",
-  "EPILOGUE": "#D4982A",
-};
+import { SCENES, ACT_COLORS } from "../lib/scenes";
 
 const STATUS_STYLE = {
   pending: { color: "#444",    label: "QUEUED",  dot: "#333"    },
@@ -33,7 +13,7 @@ async function generatePrompts(scene) {
   const res = await fetch("/api/generate", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ scene }),
+    body: JSON.stringify({ sceneId: scene.id }),
   });
   const data = await res.json();
   if (!res.ok) throw new Error(data.error || `HTTP ${res.status}`);
@@ -51,6 +31,8 @@ function exportAllPrompts(statuses) {
       emotion: s.emotion,
       status: st.status,
       prompts: st.prompts || null,
+      cast: st.cast || null,
+      quality: st.quality || null,
     };
   });
 
@@ -115,8 +97,8 @@ export default function PipelineDashboard() {
       setSelected(scene.id);
       addLog(`⟳  ${scene.id} — ${scene.arabic}`, "info");
       try {
-        const prompts = await generatePrompts(scene);
-        setStatus(scene.id, { status: "done", prompts });
+        const r = await generatePrompts(scene);
+        setStatus(scene.id, { status: "done", prompts: r.prompts, quality: r.quality, cast: r.cast });
         done++;
         addLog(`✓  ${scene.id} — prompts generated`, "success");
       } catch (e) {
@@ -140,8 +122,8 @@ export default function PipelineDashboard() {
     setSelected(scene.id);
     addLog(`⟳  Running ${scene.id} — ${scene.arabic}`, "info");
     try {
-      const prompts = await generatePrompts(scene);
-      setStatus(scene.id, { status: "done", prompts });
+      const r = await generatePrompts(scene);
+      setStatus(scene.id, { status: "done", prompts: r.prompts, quality: r.quality, cast: r.cast });
       addLog(`✓  ${scene.id} done`, "success");
     } catch (e) {
       setStatus(scene.id, { status: "error", error: e.message });
@@ -356,8 +338,25 @@ export default function PipelineDashboard() {
                   { key: "runway",     label: "🎬 RUNWAY GEN-3",    color: "#E84545", content: p.runway     },
                   { key: "sound",      label: "🎵 SOUND DIRECTION", color: "#00C9A7", content: p.sound      },
                 ];
+                const q = selectedStatus.quality;
                 return (
                   <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+                    <div style={{ display: "flex", gap: "10px", flexWrap: "wrap", alignItems: "center", fontSize: "9px", letterSpacing: "1px" }}>
+                      {q && (
+                        <span style={{ padding: "3px 9px", border: `1px solid ${q.ok ? "#50A05060" : "#E8A02060"}`, color: q.ok ? "#50A050" : "#E8A020" }}>
+                          {q.ok ? "✓ QUALITY CHECKS PASSED" : `⚠ ${q.issues.length} ISSUE${q.issues.length > 1 ? "S" : ""}`}
+                          {q.attempts > 1 ? ` · AUTO-FIXED IN ${q.attempts} TRIES` : ""}
+                        </span>
+                      )}
+                      {selectedStatus.cast?.map(c => (
+                        <span key={c.name} style={{ color: "#666" }}>{c.name} · {c.age}</span>
+                      ))}
+                    </div>
+                    {q && !q.ok && (
+                      <div style={{ fontSize: "10px", color: "#E8A020", lineHeight: 1.7, border: "1px solid #E8A02030", padding: "8px 12px" }}>
+                        {q.issues.map(i => <div key={i}>· {i}</div>)}
+                      </div>
+                    )}
                     {blocks.map(b => (
                       <PromptBlock key={b.key} label={b.label} color={b.color} content={b.content} />
                     ))}
@@ -386,10 +385,10 @@ export default function PipelineDashboard() {
                        : entry.type === "system"  ? "#C9A84C"
                        : entry.type === "warn"    ? "#E8A020"
                        : "#444",
-                  fontFamily: "monospace",
+                  fontFamily: "monospace", direction: "ltr", unicodeBidi: "isolate",
                 }}>
                   <span style={{ color: "#1E1E1E", marginRight: "6px" }}>{entry.t}</span>
-                  {entry.msg}
+                  <bdi>{entry.msg}</bdi>
                 </div>
               ))}
               <div ref={logEndRef} />

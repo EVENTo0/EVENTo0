@@ -9,7 +9,7 @@ visual (Midjourney v7), motion (Runway Gen-3), and sound (ElevenLabs/Suno).
 ## Model and provider
 
 - **Provider:** Anthropic
-- **Model:** `claude-sonnet-4-5`
+- **Model:** `claude-sonnet-5` (default; override with `ANTHROPIC_MODEL`)
 - **Max tokens:** 1000 per call
 - **Fallback:** If JSON parse fails, raw model output is returned in the `midjourney` field
 - **Cost estimate:** ~$0.003–0.006 per scene (10 scenes ≈ $0.03–0.06 per full run)
@@ -54,3 +54,9 @@ The API route parses the response with a regex strip of markdown fences before J
 ## Verification evidence
 
 See `docs/verification/2026-08-07-storyboard-launch.md`.
+
+## Update 2026-09-28 — continuity and validation
+
+- A film bible (`lib/filmBible.js`) is sent as the system prompt; each request adds the era look and age-correct cast descriptions so faces stay consistent across scenes.
+- Output is validated by `lib/validate.js`; failures are fed back for one retry, and remaining issues are surfaced in the UI.
+- The API accepts `sceneId` only; scene content is server-side.
